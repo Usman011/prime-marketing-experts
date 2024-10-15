@@ -65,11 +65,11 @@ export const Footer = () => {
 					<p className='text-lg'><span className='font-bold'>Email:</span>hello@primemarketingexperts.com</p>
 					<p className='text-lg'><span className='font-bold'>Phone:</span>617-651-1457</p>
 					<ul className='flex items-center justify-center gap-3  md:gap-5'>
-						<li className='w-10 md:w-20 rounded-full pt-2 pl-2 h-8 border hover:bg-blue-600 hover:text-white bg-white text-blue-950'><Link href="https://www.facebook.com/primemarketingexperts"><FaFacebookF/></Link></li>
-						<li className='w-10 md:w-20 rounded-full pt-2 pl-2 h-8 border hover:bg-cyan-400 hover:text-white bg-white text-blue-950'><Link href="https://twitter.com/primeexperts"><CiTwitter/></Link></li>
-						<li className='w-10 md:w-20 rounded-full pt-2 pl-2 h-8 hover:bg-cyan-400 hover:text-white border bg-white text-blue-950'><Link href="https://www.linkedin.com/company/prime-marketing-experts"><FaLinkedinIn/></Link></li>
-						<li className='w-10 md:w-20 rounded-full pt-2 pl-2 h-8 border hover:bg-red-500 hover:text-white bg-white text-blue-950'><Link href="https://www.instagram.com/primemarketingexperts/"><FaInstagram/></Link></li>
-						<li className='w-10 md:w-20 rounded-full pt-2 pl-2 h-8 border hover:bg-red-500 hover:text-white bg-white text-blue-950'><Link href="https://www.pinterest.com/primemarketingexperts"><FaPinterestP/></Link></li>
+						<li className='w-10 md:w-20 rounded-full pt-2 pl-2 h-8 border hover:bg-blue-600 hover:text-white bg-white text-blue-950'><Link href="https://www.facebook.com/primemarketingexperts"><FaFacebookF/></Link> </li>
+						<li className='w-10 md:w-20 rounded-full pt-2 pl-2 h-8 border hover:bg-cyan-400 hover:text-white bg-white text-blue-950'><Link href="https://twitter.com/primeexperts"><CiTwitter/></Link> </li>
+						<li className='w-10 md:w-20 rounded-full pt-2 pl-2 h-8 hover:bg-cyan-400 hover:text-white border bg-white text-blue-950'><Link href="https://www.linkedin.com/company/prime-marketing-experts"><FaLinkedinIn/></Link> </li>
+						<li className='w-10 md:w-20 rounded-full pt-2 pl-2 h-8 border hover:bg-red-500 hover:text-white bg-white text-blue-950'><Link href="https://www.instagram.com/primemarketingexperts/"><FaInstagram/></Link> </li>
+						<li className='w-10 md:w-20 rounded-full pt-2 pl-2 h-8 border hover:bg-red-500 hover:text-white bg-white text-blue-950'><Link href="https://www.pinterest.com/primemarketingexperts"><FaPinterestP/></Link> </li>
 					</ul>
 				</div>
 
