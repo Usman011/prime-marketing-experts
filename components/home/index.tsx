@@ -1,12 +1,11 @@
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { ArrowRight, Award, Briefcase, Users } from 'lucide-react'
-import Link from 'next/link'
-import Image from 'next/image'
+
+import HomeBanner from './HomeBanner/HomeBanner'
+import HomeServices from './ServicesHome/HomeServices'
 export const Home = () => {
 	return (
-		<div className="h-[70vh] my-10 bg-black flex justify-center items-center">
-			<div className="text-9xl text-white">Welcome to Home Page</div>
-		</div>
+		<div className="h-auto mx-10 flex flex-col md:justify-center md:items-center gap-32 mt-20 justify-center items-center">
+    <HomeBanner/>
+	<HomeServices/>
+</div>
 	)
 }
