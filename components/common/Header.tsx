@@ -111,8 +111,8 @@ export const Header: React.FC = () => {
 	return (
 		<nav className="bg-background bg-blue-950 border-blue-900 text-white border-b">
 	<div className="flex flex-col md:flex-row justify-between items-center h-full">
-
-  <div className='flex flex-col md:flex-row h-12'>
+  {/* Contact Info Section - Hidden on smaller screens */}
+  <div className='flex flex-col md:flex-row h-12 md:flex hidden'>
     <div className="flex items-center border-r border-blue-500 pr-4 h-12">
       <span className="mr-2 text-orange-600"><MdEmail/></span>
       <span> hello@primemarketingexperts.com </span>
@@ -123,7 +123,16 @@ export const Header: React.FC = () => {
     </div>
   </div>
 
-  <div className="flex flex-col md:flex-row items-center mt-4 md:mt-0">
+  {/* Search Input for mobile view */}
+  <div className="flex flex-col md:flex-row items-center mt-4 md:mt-0 flex md:hidden">
+    <input 
+      type="text" 
+      placeholder="Search..." 
+      className="border border-blue-500 rounded-md py-2 px-4 w-full" 
+    />
+  </div>
+
+  <div className="flex flex-col md:flex-row items-center mt-4 hidden md:mt-0">
     <div className="flex space-x-8 text-orange-600 mr-16">
       <Link href="https://www.facebook.com/primemarketingexperts"><FaFacebookF/></Link>
       <Link href="https://twitter.com/primeexperts"><CiTwitter/></Link> 
@@ -131,12 +140,17 @@ export const Header: React.FC = () => {
       <Link href="https://www.instagram.com/primemarketingexperts/"><FaInstagram/></Link>
       <Link href="https://www.pinterest.com/primemarketingexperts"><FaPinterestP/></Link>
     </div>
-    <div className="flex items-center border-l border-blue-500 pr-4 h-12 mt-4 md:mt-0">
-      <p className="text-orange-600 mx-4"><Link href="https://primemarketingexperts.com/free-strategy-session/?_gl=1*1yqb3iw*_ga*OTQ0MjMzNjEwLjE3MjgyOTU3MDg.*_ga_REBTVSBTD7*MTcyODk3NjU1Ni4zMS4xLjE3Mjg5NzY2NjguMC4wLjA.*_ga_7PKP8KX54L*MTcyODk3NjU1Ni4zMS4xLjE3Mjg5NzY2NjguMC4wLjA.">Free Strategy Session </Link></p>
+    <div className="flex items-center border-l border-blue-500 hidden pr-4 h-12 mt-4 md:mt-0">
+      <p className="text-orange-600 mx-4">
+        <Link href="https://primemarketingexperts.com/free-strategy-session/?_gl=1*1yqb3iw*_ga*OTQ0MjMzNjEwLjE3MjgyOTU3MDg.*_ga_REBTVSBTD7*MTcyODk3NjU1Ni4zMS4xLjE3Mjg5NzY2NjguMC4wLjA.*_ga_7PKP8KX54L*MTcyODk3NjU1Ni4zMS4xLjE3Mjg5NzY2NjguMC4wLjA.">
+          Free Strategy Session
+        </Link>
+      </p>
     </div>
   </div>
 </div>
 <div className="flex flex-col md:flex-row border-blue-500 justify-between md:gap-96 border-b"></div>
+
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between h-20">
 					<div className="flex items-center justify-center">
@@ -144,7 +158,7 @@ export const Header: React.FC = () => {
 							<Image src={NaveLogo} alt='logo' />
 						</Link>
 					</div>
-					<div className="md:block">
+					<div className="md:hidden lg:block">
  <div className="ml-10 flex items-baseline space-x-4  hidden md:flex">
     {navItems.map((item) => (
         <div key={item.name} className="relative group " onMouseEnter={() => handleMouseEnter(item.name)} onMouseLeave={handleMouseLeave}>
@@ -167,11 +181,11 @@ export const Header: React.FC = () => {
     ))}
 </div>
 					</div>
-					<div className="md:hidden">
+					<div className="lg:hidden">
 						<Sheet open={isOpen} onOpenChange={setIsOpen}>
 							<SheetTrigger asChild>
-								<Button variant="outline" size="icon">
-									<Menu className="h-6 w-6" />
+								<Button variant="outline" className='ml-4' size="icon">
+									<Menu className="h-6 text-black  w-6" />
 									<span className="sr-only">Open menu</span>
 								</Button>
 							</SheetTrigger>
@@ -182,7 +196,7 @@ export const Header: React.FC = () => {
                 <div key={item.name}>
                     <button
                         onClick={() => handleMouseEnter(item.name)}
-                        className="flex justify-center items-center px-3  py-2 rounded-md text-base font-medium text-foreground hover:bg-accent hover:text-accent-foreground mx-auto"
+                        className="flex justify-center items-center px-3  py-2  rounded-md text-base font-medium text-foreground hover:bg-accent hover:text-accent-foreground mx-auto"
                     >
                         {item.name} {item.subMenu && (openSubMenu[item.name] ? < IoChevronUpOutline/> : < IoChevronDownOutline/>)}
                     </button>
