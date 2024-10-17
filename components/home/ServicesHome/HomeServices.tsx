@@ -107,7 +107,7 @@ const HomeServices = () => {
     </div>
 </section>
 
-            <section className='mt-10 flex flex-col gap-44 md:flex-col lg:flex-row'>
+   <section className='mt-10 flex flex-col gap-44 md:flex-col lg:flex-row'>
   <div className='md:w-1/2 p-4'>
   <h1 className='text-3xl pb-4 font-bold'>
   Free Lead Generation Consultation</h1>

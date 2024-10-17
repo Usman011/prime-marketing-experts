@@ -74,7 +74,7 @@ const navItems: NavItem[] = [
 
 const renderSubMenu = (subMenu: NavItem[], isOpen: boolean) => {
 	return (
-		<ul className={`pl-4 ${isOpen ? 'block' : 'hidden'} bg-white w-full grid gap-4 max grid-cols-1 sm:grid-cols-2 md:grid-cols-3 shadow-md rounded-md mt-2`}>
+		<ul className={`pl-4 transition-all duration-300 ease-in-out ${isOpen ? 'block' : 'hidden'} bg-white w-full grid gap-4 max grid-cols-1 sm:grid-cols-2 md:grid-cols-3 shadow-md rounded-md mt-2`}  >
   {subMenu.map((subItem) => (
     <li key={subItem.name} className="border-b  last:border-b-0">
       <Link href={subItem.href} className="block px-3 py-2 text-sm text-foreground hover:bg-accent hover:text-accent-foreground">
@@ -112,7 +112,7 @@ export const Header: React.FC = () => {
 		<nav className="bg-background bg-blue-950 border-blue-900 text-white border-b">
 	<div className="flex flex-col md:flex-row justify-between items-center h-full">
   {/* Contact Info Section - Hidden on smaller screens */}
-  <div className='flex flex-col md:flex-row h-12 md:flex hidden'>
+  <div className='flex flex-col md:flex-row h-12 md:flex '>
     <div className="flex items-center border-r border-blue-500 pr-4 h-12">
       <span className="mr-2 text-orange-600"><MdEmail/></span>
       <span> hello@primemarketingexperts.com </span>
@@ -124,7 +124,7 @@ export const Header: React.FC = () => {
   </div>
 
   {/* Search Input for mobile view */}
-  <div className="flex flex-col md:flex-row items-center mt-4 md:mt-0 flex md:hidden">
+  <div className="flex flex-col md:flex-row items-center mt-4 md:mt-0  md:hidden">
     <input 
       type="text" 
       placeholder="Search..." 
@@ -132,7 +132,7 @@ export const Header: React.FC = () => {
     />
   </div>
 
-  <div className="flex flex-col md:flex-row items-center mt-4 hidden md:mt-0">
+  <div className="flex flex-col md:flex-row items-center mt-4  md:mt-0">
     <div className="flex space-x-8 text-orange-600 mr-16">
       <Link href="https://www.facebook.com/primemarketingexperts"><FaFacebookF/></Link>
       <Link href="https://twitter.com/primeexperts"><CiTwitter/></Link> 
@@ -140,7 +140,7 @@ export const Header: React.FC = () => {
       <Link href="https://www.instagram.com/primemarketingexperts/"><FaInstagram/></Link>
       <Link href="https://www.pinterest.com/primemarketingexperts"><FaPinterestP/></Link>
     </div>
-    <div className="flex items-center border-l border-blue-500 hidden pr-4 h-12 mt-4 md:mt-0">
+    <div className="flex items-center border-l border-blue-500  pr-4 h-12 mt-4 md:mt-0">
       <p className="text-orange-600 mx-4">
         <Link href="https://primemarketingexperts.com/free-strategy-session/?_gl=1*1yqb3iw*_ga*OTQ0MjMzNjEwLjE3MjgyOTU3MDg.*_ga_REBTVSBTD7*MTcyODk3NjU1Ni4zMS4xLjE3Mjg5NzY2NjguMC4wLjA.*_ga_7PKP8KX54L*MTcyODk3NjU1Ni4zMS4xLjE3Mjg5NzY2NjguMC4wLjA.">
           Free Strategy Session
@@ -161,7 +161,7 @@ export const Header: React.FC = () => {
 					<div className="md:hidden lg:block">
  <div className="ml-10 flex items-baseline space-x-4  hidden md:flex">
     {navItems.map((item) => (
-        <div key={item.name} className="relative group " onMouseEnter={() => handleMouseEnter(item.name)} onMouseLeave={handleMouseLeave}>
+        <div key={item.name} className="relative group " style={{ position: 'sticky', top: '0', zIndex: 50 }} onMouseEnter={() => handleMouseEnter(item.name)} onMouseLeave={handleMouseLeave}>
 			<Link href={item.href}>
             <button
                 className="text-foreground text-white hover:bg-accent flex items-center gap-4 hover:text-accent-foreground px-3  py-2 rounded-md text-sm font-medium"
@@ -184,8 +184,8 @@ export const Header: React.FC = () => {
 					<div className="lg:hidden">
 						<Sheet open={isOpen} onOpenChange={setIsOpen}>
 							<SheetTrigger asChild>
-								<Button variant="outline" className='ml-4' size="icon">
-									<Menu className="h-6 text-black  w-6" />
+								<Button variant="outline" className='ml-4 bg-blue-900 ' size="icon">
+									<Menu className="h-6 text-black   w-6" />
 									<span className="sr-only">Open menu</span>
 								</Button>
 							</SheetTrigger>
