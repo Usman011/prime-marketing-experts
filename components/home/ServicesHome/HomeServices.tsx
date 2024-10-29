@@ -218,7 +218,8 @@ const HomeServices = () => {
       </p>
     </div>
   </div>
-</section>        </>
+</section>        
+</>
     );
 }
 

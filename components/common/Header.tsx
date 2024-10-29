@@ -29,7 +29,7 @@ const navItems: NavItem[] = [
 	{ name: 'Home', href: '/' },
 	{ 
 		name: 'Business', 
-		href: '/business',
+		href: '/',
 		subMenu: [
 			{ name: 'Market Research', href: '/business/market-research' },
 			{ name: 'Operational Assessment', href: '/business/operational-assessment' },
@@ -40,32 +40,34 @@ const navItems: NavItem[] = [
 	},
 	{ 
 		name: 'Marketing', 
-		href: '/marketing',
+		href: '/',
 		subMenu: [
+			{name: 'Branding', href: '/marketing/branding' },
+			{name: 'Social Media Marketing', href: '/marketing/social-media-marketing' },
+			{name: 'Search Engine Advertising', href: '/marketing/search-engine-advertising'},
+			{name: 'Google Grant Management', href: '/marketing/google-grant-management'},
+			{name: 'Google Shopping Campaigns', href: '/marketing/google-shopping-campaigns'},
 			{name: 'SEO', href: '/marketing/seo',},
 			{name: 'SEO Web Design', href: '/marketing/seo-web-design'},
 			{name: 'Video SEO', href: '/marketing/video-seo'},
 			{name: 'Local SEO', href: '/marketing/local-seo'},
-			{name: 'Social Media Marketing', href: '/marketing/social-media-marketing' },
 			{name: 'Content Marketing', href: '/marketing/content-marketing' },
-			{name: 'Search Engine Advertising', href: '/marketing/search-engine-advertising'},
-			{name: 'Google Grant Management', href: '/marketing/google-grant-management'},
-			{name: 'Google Shopping Campaigns', href: '/marketing/google-shopping-campaigns'},
 			{name: 'Email Marketing', href: '/marketing/email-marketing' },
-			{name: 'Branding', href: '/marketing/branding' },
 			{name: 'Text Message Marketing', href: '/marketing/text-message-marketing' },
 			{name: 'Marketing Automation', href: '/marketing/marketing-automation' },
-			{name: 'Marketing Plans', href: '/marketing/marketing-plans' }
+			{name: 'Marketing Plans', href: '/marketing/marketing-plans' },
+			{name: 'Inbound Marketing', href: '/marketing/inbound-marketing-services' },
+			{name: 'E-Commerce Services', href: '/marketing/e-commerce-digital-marketing-services' }
 		]
 	},
 	{ 
-		name: 'Website & Mobile App Development', 
-		href: '/website-mobile-app-development',
+		name: 'Technology', 
+		href: '/',
 		subMenu: [
-			{ name: 'Web Development', href: '/website-mobile-app-development/web-development' },
-			{ name: 'Chatbot Development', href: '/website-mobile-app-development/chatbot-development' },
-			{ name: 'Mobile App Development', href: '/website-mobile-app-development/mobile-app-development'},
-			{ name: 'Website Accessibility', href: '/website-mobile-app-development/website-accessibility'},
+			{ name: 'Web Development', href: '/Technology/web-development' },
+			{ name: 'Chatbot Development', href: '/Technology/chatbot-development' },
+			{ name: 'Mobile App Development', href: '/Technology/mobile-app-development'},
+			{ name: 'Website Accessibility', href: '/Technology/website-accessibility'},
 		]
 	},
 	{ name: 'Blog', href: '/blog' },
@@ -110,9 +112,9 @@ export const Header: React.FC = () => {
 
 	return (
 		<nav className="bg-background bg-blue-950 border-blue-900 text-white border-b">
-	<div className="flex flex-col md:flex-row justify-between items-center h-full">
+	<div className="flex flex-col md:flex-row  justify-between items-center h-full">
   {/* Contact Info Section - Hidden on smaller screens */}
-  <div className='flex flex-col md:flex-row h-12 md:flex '>
+  <div className='flex flex-col lg:flex md:flex-row h-12  md:hidden '>
     <div className="flex items-center border-r border-blue-500 pr-4 h-12">
       <span className="mr-2 text-orange-600"><MdEmail/></span>
       <span> hello@primemarketingexperts.com </span>
@@ -123,16 +125,9 @@ export const Header: React.FC = () => {
     </div>
   </div>
 
-  {/* Search Input for mobile view */}
-  <div className="flex flex-col md:flex-row items-center mt-4 md:mt-0  md:hidden">
-    <input 
-      type="text" 
-      placeholder="Search..." 
-      className="border border-blue-500 rounded-md py-2 px-4 w-full" 
-    />
-  </div>
+ 
 
-  <div className="flex flex-col md:flex-row items-center mt-4  md:mt-0">
+  <div className="flex flex-col lg:flex md:flex-row items-center mt-4  md:hidden md:mt-0">
     <div className="flex space-x-8 text-orange-600 mr-16">
       <Link href="https://www.facebook.com/primemarketingexperts"><FaFacebookF/></Link>
       <Link href="https://twitter.com/primeexperts"><CiTwitter/></Link> 
@@ -142,7 +137,7 @@ export const Header: React.FC = () => {
     </div>
     <div className="flex items-center border-l border-blue-500  pr-4 h-12 mt-4 md:mt-0">
       <p className="text-orange-600 mx-4">
-        <Link href="https://primemarketingexperts.com/free-strategy-session/?_gl=1*1yqb3iw*_ga*OTQ0MjMzNjEwLjE3MjgyOTU3MDg.*_ga_REBTVSBTD7*MTcyODk3NjU1Ni4zMS4xLjE3Mjg5NzY2NjguMC4wLjA.*_ga_7PKP8KX54L*MTcyODk3NjU1Ni4zMS4xLjE3Mjg5NzY2NjguMC4wLjA.">
+        <Link href="/free-strategy-session">
           Free Strategy Session
         </Link>
       </p>
@@ -158,8 +153,8 @@ export const Header: React.FC = () => {
 							<Image src={NaveLogo} alt='logo' />
 						</Link>
 					</div>
-					<div className="md:hidden lg:block">
- <div className="ml-10 flex items-baseline space-x-4  hidden md:flex">
+					<div className="md:hidden  lg:block">
+ <div className="ml-10 flex  items-baseline  lg:flex space-x-4  md:flex">
     {navItems.map((item) => (
         <div key={item.name} className="relative group " style={{ position: 'sticky', top: '0', zIndex: 50 }} onMouseEnter={() => handleMouseEnter(item.name)} onMouseLeave={handleMouseLeave}>
 			<Link href={item.href}>

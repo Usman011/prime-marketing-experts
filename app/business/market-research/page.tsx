@@ -139,7 +139,7 @@ const Page = () => {
 
               <li className='font-bold'>Quantitative Research</li>
               <p>
-                This type of research primarily deals with numbers and trends. The key hotspots for performing this research include social media analysis, polls, previously researched data, and surveys.
+                This type of research primarily deals with numbers and trends. The key host pots for performing this research include social media analysis, polls, previously researched data, and surveys.
               </p>
               <p>
                 The quantitative research technique for researching the market offers the genuinely necessary numerical information and the least imperative benchmark to dissect and chart success in the wake of considering the brand interest, viability, and the productivity of the campaigns.
