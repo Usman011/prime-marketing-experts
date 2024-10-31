@@ -2,209 +2,212 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import { Menu, PhoneCallIcon } from 'lucide-react'
-import { IoChevronUpOutline } from "react-icons/io5";
-import { IoChevronDownOutline } from "react-icons/io5";
-import { MdEmail } from "react-icons/md";
-import { FaFacebookF } from "react-icons/fa";
-import { CiTwitter } from "react-icons/ci";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { FaPinterestP } from "react-icons/fa6";
-import { FaPhoneAlt } from "react-icons/fa";
+import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react'
 
-
-import NaveLogo from '../../public/logo.png'
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from '@/components/ui/sheet'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
-interface NavItem {
-	name: string;
-	href: string;
-	subMenu?: NavItem[];
-}
-
-const navItems: NavItem[] = [
-	{ name: 'Home', href: '/' },
-	{ 
-		name: 'Business', 
-		href: '/',
-		subMenu: [
-			{ name: 'Market Research', href: '/business/market-research' },
-			{ name: 'Operational Assessment', href: '/business/operational-assessment' },
-			{ name: 'Professional Business Plans', href: '/business/professional-business-plans' },
-			{ name: 'Business Model Transformation', href: '/business/business-model-transformation' },
-			{ name: 'Event Management', href: '/business/event-management' }
-		]
-	},
-	{ 
-		name: 'Marketing', 
-		href: '/',
-		subMenu: [
-			{name: 'Branding', href: '/marketing/branding' },
-			{name: 'Social Media Marketing', href: '/marketing/social-media-marketing' },
-			{name: 'Search Engine Advertising', href: '/marketing/search-engine-advertising'},
-			{name: 'Google Grant Management', href: '/marketing/google-grant-management'},
-			{name: 'Google Shopping Campaigns', href: '/marketing/google-shopping-campaigns'},
-			{name: 'SEO', href: '/marketing/seo',},
-			{name: 'SEO Web Design', href: '/marketing/seo-web-design'},
-			{name: 'Video SEO', href: '/marketing/video-seo'},
-			{name: 'Local SEO', href: '/marketing/local-seo'},
-			{name: 'Content Marketing', href: '/marketing/content-marketing' },
-			{name: 'Email Marketing', href: '/marketing/email-marketing' },
-			{name: 'Text Message Marketing', href: '/marketing/text-message-marketing' },
-			{name: 'Marketing Automation', href: '/marketing/marketing-automation' },
-			{name: 'Marketing Plans', href: '/marketing/marketing-plans' },
-			{name: 'Inbound Marketing', href: '/marketing/inbound-marketing-services' },
-			{name: 'E-Commerce Services', href: '/marketing/e-commerce-digital-marketing-services' }
-		]
-	},
-	{ 
-		name: 'Technology', 
-		href: '/',
-		subMenu: [
-			{ name: 'Web Development', href: '/Technology/web-development' },
-			{ name: 'Chatbot Development', href: '/Technology/chatbot-development' },
-			{ name: 'Mobile App Development', href: '/Technology/mobile-app-development'},
-			{ name: 'Website Accessibility', href: '/Technology/website-accessibility'},
-		]
-	},
-	{ name: 'Blog', href: '/blog' },
-	{ name: 'Contact', href: '/contact' },
+const menuItems = [
+	{ title: 'Home', href: '/' },
+  {
+    title: 'Business',
+    items: [
+      { 
+        title: 'Analytics', 
+        href: '#analytics',
+        items: [
+          { title: 'Dashboard', href: '#dashboard' },
+          { title: 'Reports', href: '#reports' },
+        ]
+      },
+      { title: 'Engagement', href: '#engagement' },
+      { 
+        title: 'Security', 
+        href: '#security',
+        items: [
+          { title: 'Authentication', href: '#authentication' },
+          { title: 'Encryption', href: '#encryption' },
+        ]
+      },
+      { title: 'Integrations', href: '#integrations' },
+    ],
+  },
+  {
+    title: 'Resources',
+    items: [
+      { title: 'Blog', href: '#blog' },
+      { title: 'Case Studies', href: '#case-studies' },
+      { title: 'Webinars', href: '#webinars' },
+    ],
+  },
+  { title: 'Pricing', href: '#pricing' },
+  { title: 'Contact', href: '#contact' },
 ]
 
-const renderSubMenu = (subMenu: NavItem[], isOpen: boolean) => {
-	return (
-		<ul className={`pl-4 transition-all duration-300 ease-in-out ${isOpen ? 'block' : 'hidden'} bg-white w-full grid gap-4 max grid-cols-1 sm:grid-cols-2 md:grid-cols-3 shadow-md rounded-md mt-2`}  >
-  {subMenu.map((subItem) => (
-    <li key={subItem.name} className="border-b  last:border-b-0">
-      <Link href={subItem.href} className="block px-3 py-2 text-sm text-foreground hover:bg-accent hover:text-accent-foreground">
-        {subItem.name}
-      </Link>
-      {subItem.subMenu && renderSubMenu(subItem.subMenu, isOpen)}
-    </li>
-  ))}
-</ul>
-	)
-}
 
-export const Header: React.FC = () => {
-	const [openSubMenu, setOpenSubMenu] = React.useState<{ [key: string]: boolean }>({})
-	const [isOpen, setIsOpen] = React.useState<boolean>(false)
-
-	const handleMouseEnter = (name: string) => {
-		setOpenSubMenu((prev) => {
-			const newState = Object.keys(prev).reduce((acc, key) => {
-				acc[key] = false
-				return acc
-			}, {} as { [key: string]: boolean })
-			return {
-				...newState,
-				[name]: true,
-			}
-		})
-	}
-
-	const handleMouseLeave = () => {
-		setOpenSubMenu({})
-	}
-
-	return (
-		<nav className="bg-background bg-blue-950 border-blue-900 text-white border-b">
-	<div className="flex flex-col md:flex-row  justify-between items-center h-full">
-  {/* Contact Info Section - Hidden on smaller screens */}
-  <div className='flex flex-col lg:flex md:flex-row h-12  md:hidden '>
-    <div className="flex items-center border-r border-blue-500 pr-4 h-12">
-      <span className="mr-2 text-orange-600"><MdEmail/></span>
-      <span> hello@primemarketingexperts.com </span>
-    </div>
-    <div className='flex pt-3 md:mt-0 ml-5'>
-      <span className="mr-2 text-orange-600"><FaPhoneAlt/></span>
-      <span>(617) 651-1457</span>
-    </div>
-  </div>
-
- 
-
-  <div className="flex flex-col lg:flex md:flex-row items-center mt-4  md:hidden md:mt-0">
-    <div className="flex space-x-8 text-orange-600 mr-16">
-      <Link href="https://www.facebook.com/primemarketingexperts"><FaFacebookF/></Link>
-      <Link href="https://twitter.com/primeexperts"><CiTwitter/></Link> 
-      <Link href="https://www.linkedin.com/company/prime-marketing-experts"><FaLinkedinIn/></Link>
-      <Link href="https://www.instagram.com/primemarketingexperts/"><FaInstagram/></Link>
-      <Link href="https://www.pinterest.com/primemarketingexperts"><FaPinterestP/></Link>
-    </div>
-    <div className="flex items-center border-l border-blue-500  pr-4 h-12 mt-4 md:mt-0">
-      <p className="text-orange-600 mx-4">
-        <Link href="/free-strategy-session">
-          Free Strategy Session
-        </Link>
-      </p>
-    </div>
-  </div>
-</div>
-<div className="flex flex-col md:flex-row border-blue-500 justify-between md:gap-96 border-b"></div>
-
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="flex items-center justify-between h-20">
-					<div className="flex items-center justify-center">
-						<Link href="/" className="text-2xl font-bold text-primary">
-							<Image src={NaveLogo} alt='logo' />
-						</Link>
-					</div>
-					<div className="md:hidden  lg:block">
- <div className="ml-10 flex  items-baseline  lg:flex space-x-4  md:flex">
-    {navItems.map((item) => (
-        <div key={item.name} className="relative group " style={{ position: 'sticky', top: '0', zIndex: 50 }} onMouseEnter={() => handleMouseEnter(item.name)} onMouseLeave={handleMouseLeave}>
-			<Link href={item.href}>
-            <button
-                className="text-foreground text-white hover:bg-accent flex items-center gap-4 hover:text-accent-foreground px-3  py-2 rounded-md text-sm font-medium"
-            >
-                {item.name} {item.subMenu && (openSubMenu[item.name] ? < IoChevronUpOutline/> : < IoChevronDownOutline/>)}
-            </button>
-			</Link>
-            {item.subMenu && openSubMenu[item.name] && (
-                <div
-                    className="absolute left-0 w-96 flex  text-white shadow-lg rounded-md mt-2"
-                    style={{ zIndex: 50 }}
-                >
-                    {renderSubMenu(item.subMenu, openSubMenu[item.name])}
-                </div>
-            )}
-        </div>
-    ))}
-</div>
-					</div>
-					<div className="lg:hidden">
-						<Sheet open={isOpen} onOpenChange={setIsOpen}>
-							<SheetTrigger asChild>
-								<Button variant="outline" className='ml-4 bg-blue-900 ' size="icon">
-									<Menu className="h-6 text-black   w-6" />
-									<span className="sr-only">Open menu</span>
-								</Button>
-							</SheetTrigger>
-							<SheetContent side="right">
-    <div className="mt-6 flow-root">
-        <div className="space-y-2 py-6 text-start">
-            {navItems.map((item) => (
-                <div key={item.name}>
-                    <button
-                        onClick={() => handleMouseEnter(item.name)}
-                        className="flex justify-center items-center px-3  py-2  rounded-md text-base font-medium text-foreground hover:bg-accent hover:text-accent-foreground mx-auto"
-                    >
-                        {item.name} {item.subMenu && (openSubMenu[item.name] ? < IoChevronUpOutline/> : < IoChevronDownOutline/>)}
-                    </button>
-                    {item.subMenu && renderSubMenu(item.subMenu, openSubMenu[item.name])}
-                </div>
-            ))}
-        </div>
-    </div>
-</SheetContent>
-						</Sheet>
-					</div>
+const DesktopSubmenu = ({ items }: { items: any }) => (
+	<div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
+	  <div className="py-1" role="menu" aria-orientation="vertical">
+		{items.map((item: any) => (
+		  <div key={item.title} className="relative group/nested">
+			{item.items ? (
+			  <>
+				<button className="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" role="menuitem">
+				  {item.title} 
+				  <ChevronRight className="inline-block ml-2 h-4 w-4" />
+				</button>
+				<div className="absolute left-full top-0 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-300 ease-in-out">
+				  <div className="py-1">
+					{item.items.map((subItem: any) => (
+					  <Link
+						key={subItem.title}
+						href={subItem.href}
+						className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+						role="menuitem"
+					  >
+						{subItem.title}
+					  </Link>
+					))}
+				  </div>
 				</div>
-			</div>
-		</nav>
-	)
+			  </>
+			) : (
+			  <Link
+				href={item.href}
+				className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+				role="menuitem"
+			  >
+				{item.title}
+			  </Link>
+			)}
+		  </div>
+		))}
+	  </div>
+	</div>
+  )
+  
+  // Declare items here
+  const items: any = [
+	// Add your items here
+  ];
+  
+  const MobileSubmenu = ({ items }: { items: any }) => (
+	<Accordion type="single" collapsible className="w-full">
+	  {items.map((item: any, index: number) => (
+		<AccordionItem value={`item-${index}`} key={item.title}>
+		  {item.items ? (
+			<>
+			  <AccordionTrigger className="py-2 px-4">{item.title}</AccordionTrigger>
+			  <AccordionContent>
+				<div className="pl-4">
+				  {item.items.map((subItem: any) => (
+					<Button
+					  key={subItem.title}
+					  variant="ghost"
+					  className="w-full justify-start my-1"
+					  asChild
+					>
+					  <Link href={subItem.href}>{subItem.title}</Link>
+					</Button>
+				  ))}
+				</div>
+			  </AccordionContent>
+			</>
+		  ) : (
+			<Button
+			  variant="ghost"
+			  className="w-full justify-start my-1"
+			  asChild
+			>
+			  <Link href={item.href}>{item.title}</Link>
+			</Button>
+		  )}
+		</AccordionItem>
+	  ))}
+	</Accordion>
+  )
+  
+export default function Heade() {
+  const [isOpen, setIsOpen] = React.useState(false)
+
+  return (
+    <nav className="bg-white shadow">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16">
+          <div className="flex">
+            <div className="flex-shrink-0 flex items-center">
+              <span className="text-2xl font-bold text-gray-800">Logo</span>
+            </div>
+          </div>
+          <div className="sm:ml-6  xl:flex sm:items-center">
+            {menuItems.map((item) => (
+              <div key={item.title} className="relative group">
+                {item.items ? (
+                  <>
+                    <Button variant="ghost" className="inline-flex items-center group">
+                      {item.title}
+                      <ChevronDown className="ml-1 h-4 w-4 transition-transform group-hover:rotate-180" />
+                    </Button>
+                    <DesktopSubmenu items={item.items} />
+                  </>
+                ) : (
+                  <Button variant="ghost" asChild>
+                    <Link href={item.href}>{item.title}</Link>
+                  </Button>
+                )}
+              </div>
+            ))}
+          </div>
+          <div className="flex items-center sm:hidden">
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <span className="sr-only">Open main menu</span>
+                  {isOpen ? (
+                    <X className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <Menu className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                <nav className="mt-5">
+                  {menuItems.map((item) => (
+                    <React.Fragment key={item.title}>
+                      {item.items ? (
+                        <div className="py-2">
+                          <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider px-4">
+                            {item.title}
+                          </h3>
+                          <MobileSubmenu items={item.items} />
+                        </div>
+                      ) : (
+                        <Button
+                          variant="ghost"
+                          className="w-full justify-start my-1"
+                          asChild
+                        >
+                          <Link href={item.href}>{item.title}</Link>
+                        </Button>
+                      )}
+                    </React.Fragment>
+                  ))}
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
+        </div>
+      </div>
+    </nav>
+  )
 }

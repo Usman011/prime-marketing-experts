@@ -4,7 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 
-const page = () => {
+const ContactPage = () => {
   return (
     <>
       <section>
@@ -115,4 +115,4 @@ const page = () => {
   )
 }
 
-export default page;
+export default ContactPage;

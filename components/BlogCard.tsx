@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import React from 'react';
-import { Button } from './ui/button';
 import Link from 'next/link';
 
 interface BlogCardProps {
@@ -25,7 +24,10 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, description, category, image
                 <p className="mb-3 text-sm tracking-tight text-gray-700">{description}</p>
             </div>
             <Link href={`/blog/${id}`} className="flex items-center justify-center py-2 font-semibold text-center">
-                <Button>Read More</Button>
+            <button className="relative inline-flex items-center justify-center px-4 py-2 text-orange-600 font-medium group">
+            <span className="absolute inset-0 w-full h-full border-b-2 border-orange-600 transform scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
+            <span className="relative">Read More</span>
+          </button>
             </Link>
         </div>
     );

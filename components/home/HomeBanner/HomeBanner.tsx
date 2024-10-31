@@ -1,25 +1,34 @@
-import Image from 'next/image';
 import React from 'react';
-import heroImg from "../../../public/images/image.png"
+import Image from 'next/image';
+import backgroundImage from '../../../public/images/section05.jpg'; // Replace with your background image
 
 const HomeBanner = () => {
     return (
-       <main className='h-auto md:px-8'>
-        <div className='flex flex-col md:flex-row gap-10 md:gap-10 items-center md:items-start'>
-
-            <div className='flex flex-col gap-4 md:gap-8 justify-start pt-8 md:pt-12 text-center md:text-left'>
-            <h1 className='font-bold text-xl md:text-2xl leading-8 md:leading-10 tracking-wide'>DIGITAL MARKETING AGENCY <br/> THAT GROWS COMPANIES</h1>
-            <p className='text-xl md:text-base'>We are a full services digital agency that helps companies attract, convert, and retain more customers. Our integrated, customized solutions maximize ROI for our clients.</p>
-            <button className='bg-orange-500 transition-transform transform hover:scale-105 hover:bg-orange-400 w-32 md:w-40 h-12 md:h-14 sm:justify-center justify-center items-center text-center'>Learn More</button>
+        <main className="flex flex-col items-center justify-center w-full h-[100vh]">
+            <div className="relative w-full h-screen">
+                <Image
+                    src={backgroundImage}
+                    alt="Hero Background"
+                    layout="fill"
+                    objectFit="cover" 
+                    className="absolute inset-0 z-10 opacity-30" 
+                />
+                <div className="flex items-center justify-start w-full h-full bg-black bg-opacity-10 z-20">
+                    <div className="text-left text-black gap-8 px-6 py-20 sm:px-10 md:pl-20 md:pr-10 lg:pr-20 max-w-3xl">
+                        <p className="text-xl sm:text-xl md:text-xl font-bold tracking-tighter leading-relaxed mb-6">
+                            At the core of Prime Marketing Experts’ work are three key pillars:
+                            fostering strong partnerships, conducting thorough research, and
+                            delivering tangible outcomes.
+                        </p>
+                        <p className="text-lg sm:text-x md:text-sm leading-relaxed">
+                            Our expertise spans Search Engine Marketing, website optimization, and Social
+                            Media campaigns, empowering businesses since 2017 in Boston.
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <div className='w-full md:w-auto '>
-            <Image src={heroImg} layout='responsive' height={500} width={500} alt='hero image'/>
-            </div>
-
-        </div>
-       </main>
+        </main>
     );
-}
+};
 
 export default HomeBanner;
