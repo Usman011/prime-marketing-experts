@@ -8,11 +8,11 @@ import HomeServicesPage from './ServicesHme/page'
 export const Home = () => {
 	return (
 		<> 
-		<HomeBanner/>
+		 <HomeBanner/> 
 		<InfoSection/>		
 	<div className="h-auto mx-10 flex flex-col md:justify-center md:items-center gap-32 mt-20 justify-center items-center">
 	<HomeServicesPage/>
-	{/* <HomeServices/> */}
+	 {/* <HomeServices/>  */}
 	<BlogList/>
 	<ContactPage/>
 </div>
