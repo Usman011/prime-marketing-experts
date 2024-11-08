@@ -14,11 +14,11 @@ interface BlogCardProps {
 
 const BlogCard: React.FC<BlogCardProps> = ({ title, description, category, image,id }) => {
     return (
-        <div className="max-w-[330px] sm:max-w-[300px] bg-white border border-gray-500 hover:shadow-[-7px_7px_0px_#FA7A1F]">
+        <div className="max-w-[330px] p-2  sm:max-w-[300px] bg-white transition-transform transform hover:scale-105 hover:shadow-2xl rounded-lg  border">
             <Link href={`/blog/${id}`}>
-            <Image src={image} alt="blog_img" width={400} height={400} className="border-b border-black" />
+            <Image src={image} alt="blog_img" width={400} height={400} className="border-b" />
             </Link>
-            <p className="ml-5 mt-5 px-1 inline-block bg-black text-white text-sm">{category}</p>
+            {/* <p className="ml-5 mt-5 px-1 inline-block bg-orange-500 text-black text-sm">{category}</p> */}
             <div className="p-5">
                 <h5 className="mb-2 text-lg font-medium tracking-tight text-gray-900">{title}</h5>
                 <p className="mb-3 text-sm tracking-tight text-gray-700">{description}</p>
