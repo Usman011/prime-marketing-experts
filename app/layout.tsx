@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { Header } from '@/components/common/Header'
 import { Footer } from '@/components/common/Footer'
+import  {Header } from '@/components/common/Header'
 
 export const metadata: Metadata = {
 	title: 'Prime Marketing Experts',
@@ -16,7 +16,8 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<Header />
+				
+			<Header/>
 				{children}
 				<Footer />
 			</body>
