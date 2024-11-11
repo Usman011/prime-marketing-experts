@@ -85,10 +85,10 @@ export default function InteractiveCarousel() {
 	return (
 		<div className="py-12 bg-gradient-to-br from-blue-50 to-purple-50">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<h2 className="text-4xl font-extrabold text-center mb-12 text-gray-900">
+				<h2 className=" text-3xl md:text-4xl font-extrabold text-center mb-12 text-gray-900">
 					Explore Prime Marketing Experts
 				</h2>
-				<div className="flex items-center justify-center mb-8 flex-wrap">
+				<div className=" hidden md:flex items-center justify-center mb-8 flex-wrap">
 					{carouselItemsData.map((item, index) => (
 						<Button
 							key={index}
@@ -103,7 +103,7 @@ export default function InteractiveCarousel() {
 				<div className="overflow-hidden" ref={emblaRef}>
 					<div className="flex">
 						{carouselItemsData.map((item, index) => (
-							<div className="flex-[0_0_100%] min-w-0 px-5" key={index}>
+							<div className="flex-[0_0_100%] min-w-0 md:px-5" key={index}>
 								<Card className="border-none shadow-lg bg-white rounded-2xl overflow-hidden">
 									<CardContent className="p-0">
 										<div className="flex flex-col lg:flex-row">

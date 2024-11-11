@@ -11,18 +11,6 @@ import firebaseService from '@/utils/firebase.utils'
 import { DocumentData } from 'firebase/firestore'
 import Link from 'next/link'
 
-export const blog_data = [
-	{
-		id: 1,
-		title: 'A detailed step by step guide to manage your lifestyle',
-		description:
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..',
-		image: '/placeholder.svg?height=400&width=600&text=Lifestyle',
-		category: 'Lifestyle',
-		author: 'Alex Bennett',
-	},
-]
-
 export default function BlogList() {
 	const [hoveredId, setHoveredId] = useState<number | null>(null)
 	const [blogs, setBlogs] = useState<DocumentData[]>([])
@@ -66,7 +54,11 @@ export default function BlogList() {
 								<Card className="overflow-hidden h-full flex flex-col bg-white/80 backdrop-blur-sm border-none shadow-lg">
 									<div className="relative">
 										{blog.imageUrl ? (
-											<img src={blog.image} alt={blog.title} className="w-full h-60 object-cover" />
+											<img
+												src={blog.imageUrl}
+												alt={blog.title}
+												className="w-full h-60 object-cover"
+											/>
 										) : (
 											<div className="bg-gray-300 h-60 w-full flex justify-center items-center">
 												<div className="text-white text-4xl font-bold">400 x 400</div>
