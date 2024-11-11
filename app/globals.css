@@ -29,7 +29,7 @@
 		--chart-3: 197 37% 24%;
 		--chart-4: 43 74% 66%;
 		--chart-5: 27 87% 67%;
-		--main: #622999;
+		--main: #ff7e00;
 	}
 
 	.dark {
@@ -58,4 +58,8 @@
 		--chart-4: 280 65% 60%;
 		--chart-5: 340 75% 55%;
 	}
+}
+
+.bg-gradient-main {
+	background: linear-gradient(to right, #ffc600 10%, #ff4200 100%);
 }
