@@ -13,3 +13,12 @@ export interface AuthStoreProps {
 	user: UserProps
 	token: string
 }
+
+export interface BlogType {
+	title: string
+	description: string
+	authorName: string
+	imageUrl: string
+	documentId: string
+	content: string
+}
