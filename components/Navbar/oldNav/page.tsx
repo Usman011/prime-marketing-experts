@@ -76,7 +76,7 @@ const navItems: NavItem[] = [
 
 const renderSubMenu = (subMenu: NavItem[], isOpen: boolean) => {
 	return (
-		<ul className={`pl-4 transition-all duration-300 ease-in-out ${isOpen ? 'block' : 'hidden'} bg-white w-full grid gap-4 max grid-cols-1 sm:grid-cols-2 md:grid-cols-3 shadow-md rounded-md mt-2`}  >
+		<ul className={`pl-4 transition-all duration-300 ease-in-out ${isOpen ? 'block' : 'hidden'} bg-white w-full grid gap-4 max grid-cols-1 sm:grid-cols-1 md:grid-cols-1 shadow-md rounded-md mt-2`}  >
   {subMenu.map((subItem) => (
     <li key={subItem.name} className="border-b  last:border-b-0">
       <Link href={subItem.href} className="block px-3 py-2 text-sm text-foreground hover:bg-accent hover:text-accent-foreground">
