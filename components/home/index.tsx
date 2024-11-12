@@ -6,6 +6,7 @@ import HomeServicesPage from './ServicesHme/page'
 import About from './AboutUs/page'
 import Insight from '../Insights'
 import { WhoWeServeSection } from '../WhoWeServe'
+import CaseStudiesList from '../CaseStudiesList'
 export const Home = () => {
 	return (
 		<>
@@ -16,8 +17,8 @@ export const Home = () => {
 			<About />
 			<BlogList />
 			<InfoSection />
+			<CaseStudiesList />
 			<Contact />
-			
 		</>
 	)
 }

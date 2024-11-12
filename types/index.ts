@@ -21,4 +21,15 @@ export interface BlogType {
 	imageUrl: string
 	documentId: string
 	content: string
+	category: string
+}
+
+export interface CaseStudyType {
+	title: string
+	description: string
+	authorName: string
+	imageUrl: string
+	documentId: string
+	content: string
+	category: string
 }

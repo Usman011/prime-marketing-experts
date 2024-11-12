@@ -14,11 +14,11 @@ const HeaderMenu = ({ data, title, link }: HeaderMenuProps) => {
 	const [isHovered, setIsHovered] = useState(false)
 	return (
 		<div
-			className="relative"
+			className="relative "
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 		>
-			<Link href={link} className=" h-10 bg-red-500">
+			<Link href={link} className=" h-10">
 				<div
 					className={`flex justify-center items-center gap-1 py-5 text-nowrap ${isHovered ? 'text-[#ff7e00]' : 'text-white'}`}
 				>
@@ -47,7 +47,7 @@ const HeaderMenu = ({ data, title, link }: HeaderMenuProps) => {
 					}
 					className=" top-10 left-0 hidden absolute z-[999]"
 				>
-					<div className="pt-10">
+					<div className="pt-10 ">
 						<div className="bg-white rounded-lg py-5">
 							{data.map(({ title, url, children }) => (
 								<HeaderItems key={title} title={title} data={children} url={url} />

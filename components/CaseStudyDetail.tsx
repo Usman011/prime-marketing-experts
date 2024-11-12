@@ -1,21 +1,20 @@
 'use client'
 
-import { BlogType } from '@/types'
+import { CaseStudyType } from '@/types'
 import firebaseService from '@/utils/firebase.utils'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
-const BlogDetails = ({ id }: { id: string }) => {
-	const [blog, setBlog] = useState<BlogType | null>()
+const CaseStudyDetail = ({ id }: { id: string }) => {
+	const [caseStudy, setCaseStudy] = useState<CaseStudyType | null>()
 	const [loading, setLoading] = useState(true)
 
 	useEffect(() => {
 		const getBlogById = async () => {
 			setLoading(true)
 			try {
-				const data = await firebaseService.getDocumentById('blogs', id)
-				setBlog(data as BlogType)
-				console.log('::::blog', data)
+				const data = await firebaseService.getDocumentById('case-studies', id)
+				setCaseStudy(data as CaseStudyType)
 			} catch (err: any) {
 				console.log(err)
 			} finally {
@@ -32,16 +31,16 @@ const BlogDetails = ({ id }: { id: string }) => {
 					<div className=" text-4xl md:text-8xl font-bold ">Blog Details</div>
 				</div>
 			</div>
-			{!loading && blog ? (
+			{!loading && caseStudy ? (
 				<div className="container">
 					<div className="pt-5">
-						<div className=" text-xl md:text-3xl font-bold  mt-5">{blog.title || ''}</div>
-						<div className=" text-base md:text-lg text-gray-500 mt-2">{`By ${blog.authorName || ''}`}</div>
+						<div className=" text-xl md:text-3xl font-bold  mt-5">{caseStudy.title || ''}</div>
+						<div className=" text-base md:text-lg text-gray-500 mt-2">{`By ${caseStudy.authorName || ''}`}</div>
 					</div>
-					{blog?.imageUrl && (
+					{caseStudy?.imageUrl && (
 						<div className="flex justify-center items-center">
 							<Image
-								src={blog?.imageUrl || ''}
+								src={caseStudy?.imageUrl || ''}
 								alt={'No Image'}
 								width={800}
 								height={800}
@@ -52,15 +51,15 @@ const BlogDetails = ({ id }: { id: string }) => {
 					<div className="editor-content py-10">
 						<div
 							className="mt-1 text-sm text-gray-700 border p-5 rounded-2xl"
-							dangerouslySetInnerHTML={{ __html: blog?.content || '' }}
+							dangerouslySetInnerHTML={{ __html: caseStudy?.content || '' }}
 						/>
 					</div>
 				</div>
 			) : (
-				<div className="container py-20 text-2xl text-center">Blog Not Found</div>
+				<div className="container py-20 text-2xl text-center">Case Study Not Found</div>
 			)}
 		</div>
 	)
 }
 
-export default BlogDetails
+export default CaseStudyDetail
