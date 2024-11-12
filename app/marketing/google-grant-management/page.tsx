@@ -42,7 +42,7 @@ const Page = () => {
 
 
 
-        <div className="flex flex-col mb-10 space-y-6 justify-start">
+        <div className="flex flex-col mb-10 bg-blue-50 p-2 space-y-6 justify-start">
           <h1 className="font-bold text-4xl">Don’t have a Google grant yet? Don’t worry; Prime Marketing Experts can help you out!</h1>
           <div className="space-y-6">
             <p>
@@ -78,7 +78,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10 space-y-6 justify-start">
+        <div className="flex flex-col mb-10 bg-blue-50 p-2 space-y-6 justify-start">
           <h1 className="font-bold text-4xl">Hire Prime Marketing Experts for Effective Google Grant Management</h1>
           <div className="space-y-6">
             <p>
@@ -128,7 +128,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10 space-y-6 justify-start">
+        <div className="flex flex-col mb-10 bg-blue-50 p-2 space-y-6 justify-start">
           <h1 className="font-bold text-4xl">Why Prime Marketing Experts?
           </h1>
           <div className="space-y-6">
@@ -183,7 +183,7 @@ const Page = () => {
 
 
         
-        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto bg-orange-500 h-auto lg:h-32 mt-10 items-center justify-center lg:justify-around px-4'>
+        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto bg-orange-500 h-auto lg:h-32 mt-6 mb-6 items-center justify-center lg:justify-around px-4'>
   <h1 className='font-bold text-white text-center lg:text-left text-2xl lg:text-4xl'>
     Grow Your Nonprofit Today!
   </h1>

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
-import IMG1 from '../../../public/images/E-Commerce Digital Marketing Services/image1.png';
-import IMG2 from '../../../public/images/E-Commerce Digital Marketing Services/image2.png';
+import IMG1 from '../../../public/images/Maketing/E-Commerce Digital Marketing Services/image1.png';
+import IMG2 from '../../../public/images/Maketing/E-Commerce Digital Marketing Services/image2.png';
 import Image from 'next/image';
 
 const Page = () => {
@@ -22,7 +22,7 @@ const Page = () => {
       </div>
 
       <div className='gap-20 mt-10'>
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <h1 className="font-bold text-4xl">
             Driving ROI Through Comprehensive E-Commerce Marketing Services
           </h1>
@@ -35,7 +35,7 @@ const Page = () => {
                 Our E-Commerce Digital Marketing Services achieves exceptional ROI by deploying the comprehensive marketing strategy through infusing creativity and the latest marketing technology. Through this, we help our clients increase brand recognition, conversion rate, and revenue.
               </p>
               <p>
-                We maximize results by providing an integrated approach to our strategy, and offer expertise in <Link href='/web-development' className='text-blue-600'>website development</Link>, <Link href='/seo-web-design' className='text-blue-600'>SEO</Link>, <Link href='/' className='text-blue-600'>search engine ads</Link>, <Link href='/content-marketing' className='text-blue-600'>content marketing</Link>, <Link href='/email-marketing' className='text-blue-600'>email marketing</Link>, and more!
+                We maximize results by providing an integrated approach to our strategy, and offer expertise in <Link href='/Technology/web-development' className='text-blue-600'>website development</Link>, <Link href='/marketing/seo-web-design' className='text-blue-600'>SEO</Link>, <Link href='/marketing/seo-web-design' className='text-blue-600'>search engine ads</Link>, <Link href='/marketing/content-marketing' className='text-blue-600'>content marketing</Link>, <Link href='/email-marketing' className='text-blue-600'>email marketing</Link>, and more!
               </p>
             </div>
             <div className="w-full mt-10 h-full">
@@ -66,7 +66,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10 space-y-6 justify-start">
+        <div className="flex flex-col mb-10 space-y-6 bg-blue-50 p-2 justify-start">
           <h1 className="font-bold text-4xl">Why Our E-Commerce Marketing Service?</h1>
           <div className="space-y-6">
             <p>Our clients experience tremendous success with our e-commerce marketing services because we are very different from what other usual marketing agencies:</p>
@@ -79,7 +79,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto bg-orange-500 h-auto lg:h-32 mt-10 items-center justify-center lg:justify-around px-4'>
+        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto bg-orange-500 h-auto lg:h-32 mt-8 mb-8 items-center justify-center lg:justify-around px-4'>
           <h1 className='font-bold text-white text-center lg:text-left text-2xl lg:text-4xl'>
             Attract, Convert, and Retain More Customers Today
           </h1>

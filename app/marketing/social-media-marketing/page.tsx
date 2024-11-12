@@ -11,7 +11,7 @@ import IMG7 from '../../../public/images/Maketing/Social Media Marketing/image7.
 
 const Page = () => {
   return (
-    <section>
+    <section className='container'>
       <div className="flex flex-col items-center justify-center text-center w-full h-52">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
           Social Media Marketing
@@ -49,7 +49,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <h1 className="font-bold text-4xl">
             Surpassing Your Social Media Goals
           </h1>
@@ -62,7 +62,7 @@ const Page = () => {
                 We deploy social media strategies that are customized to your overall digital marketing goals. To develop brand recognition, we deploy strategies that grow followers relevant to your demographics, behaviors, and interests of your typical clients. Increasing the number of followers will improve word of mouth marketing and the volume of referrals. We incorporate strategies that increase engagement to ensure that your campaign builds relationships, which increases the likelihood that people will buy from your company.
               </p>
               <p>
-                We explore and harness the level of synergies that your social media campaigns have with other digital marketing initiatives. It amplifies the <Link href="/" className="text-blue-600">value of your blog content, improves search engine rankings</Link>, assists in reputation management initiatives, enhances the value of running contests, and improves customer service.
+                We explore and harness the level of synergies that your social media campaigns have with other digital marketing initiatives. It amplifies the <Link href="/marketing/content-marketing" className="text-blue-600">value of your blog content, improves search engine rankings</Link>, assists in reputation management initiatives, enhances the value of running contests, and improves customer service.
               </p>
             </div>
           </div>
@@ -90,7 +90,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <h1 className="font-bold text-4xl">
             Social Media Advertising That Generates Results
           </h1>
@@ -108,7 +108,7 @@ const Page = () => {
             </div>
           </div>
           <p>
-            We can also track the intent of each user that submitted a form through the <Link href="/" className="text-blue-600">use of an advanced marketing automation platform.</Link>
+            We can also track the intent of each user that submitted a form through the <Link href="/marketing/marketing-automation" className="text-blue-600">use of an advanced marketing automation platform.</Link>
           </p>
           <p>
             We deploy retargeting ads to strategically to strengthen social media campaigns and stay in front of visitors and increase conversions. It assists in achieving the 7 impressions it takes the average customer to make a purchase.
@@ -137,7 +137,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <h1 className="font-bold text-4xl">
             Relationship Building Social Media Marketing Services
           </h1>
@@ -179,16 +179,14 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="w-full flex flex-col gap-4 lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-10 lg:flex-row items-center justify-around">
-          <h1 className="font-bold text-white text-4xl text-center">
-            Get a Free Quote & Learn About Our Social Media Marketing Plans Today
-          </h1>
-          <Link href="/contact">
-            <button className="bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 justify-center hover:text-black text-white items-center text-center">
-              CONTACT NOW
-            </button>
-          </Link>
-        </div>
+        <div className='w-full flex flex-col  lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 mr-8 lg:flex-row items-center justify-evenly'>
+        <h1 className='font-bold text-white text-4xl text-center'>
+        Get a Free Quote & Learn About Our Social Media <br /> Marketing Plans Today
+        </h1>
+        <Link href="/contact">
+          <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 justify-center hover:text-black text-white items-center text-center'>CONTACT NOW</button>
+        </Link>
+      </div>
       </div>
     </section>
   );

@@ -37,12 +37,12 @@ const Page = () => {
             What Is Website Accessibility?
           </h1>
           <div className='space-y-6'>
-            <p>Website accessibility is the most prominent way through which everyone can <Link href="/" className='text-blue-500'>access any website easily</Link>. This assistive technology may help those who have some permanent disabilities like visually impaired, hearing impaired, and those with some limited movements in their body, also, for those who have some temporary or situational disabilities.</p>
+            <p>Website accessibility is the most prominent way through which everyone can <Link href="/Technology/web-development" className='text-blue-500'>access any website easily</Link>. This assistive technology may help those who have some permanent disabilities like visually impaired, hearing impaired, and those with some limited movements in their body, also, for those who have some temporary or situational disabilities.</p>
             <p>All this disability may also include the temporary issue of the internet. In some regions, there may be restrictions due to which people may not be able to use the internet properly. Web accessibility helps you level the restricted use of the internet by quickly joining and participating in the website. The internet was not a big issue in the early days as it was just a corresponding part of our lives. However, it has now become a needed element that helps us in many ways, so these days it is crucial to have proper internet access.</p>
           </div>
         </div>
 
-        <div className='flex flex-col space-y-6 justify-start'>
+        <div className='flex flex-col space-y-6 bg-blue-50 p-2 justify-start'>
           <h1 className='font-bold text-4xl'>
             Best Tools Lead To Best Accessibility
           </h1>
@@ -69,7 +69,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col space-y-6 justify-start'>
+        <div className='flex flex-col bg-blue-50 p-2 space-y-6 justify-start'>
           <h1 className='font-bold text-4xl'>
             Key Website Accessibility Software Features
           </h1>
@@ -107,7 +107,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col space-y-6 justify-start'>
+        <div className='flex flex-col space-y-6 bg-blue-50 p-2 justify-start'>
           <h1 className='font-bold text-4xl'>
             Don’t you want to achieve the accessibility of your website?
           </h1>

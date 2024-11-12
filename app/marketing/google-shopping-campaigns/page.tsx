@@ -20,7 +20,7 @@ const Page = () => {
       </div>
 
 
-      <div className='gap-20 mt-10'>
+      <div className='gap-20 mt-10  mb-6'>
         <div className="flex flex-col  space-y-6">
           <h1 className="font-bold justify-start text-start text-4xl">
           Google Shopping Campaign Services That Increases Sales
@@ -87,7 +87,7 @@ const Page = () => {
             </div>
 
 
-          <div className="flex flex-col  space-y-6">
+          <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <h1 className="font-bold justify-start text-start text-4xl">
           About Our Google Shopping Management Agency Services
           </h1>
@@ -105,7 +105,7 @@ const Page = () => {
              
               <ul className='list-disc pl-5 space-y-2'>
               <li><span className='font-bold'>Slash down marketing costs:</span> Reduce customer acquisition costs on Google and other platforms like Facebook or Instagram by streamlining marketing funnels, improving audience targeting, and incorporating more compelling advertisements</li>
-              <li><span  className='font-bold'>Upgrade ranking:</span> Increase search engine rankings with our advanced<Link href="/" className='text-blue-600'> SEO solutions</Link>, while running Google Ads campaigns to dominate search engine visibility.</li>
+              <li><span  className='font-bold'>Upgrade ranking:</span> Increase search engine rankings with our advanced<Link href="/marketing/local-seo" className='text-blue-600'> SEO solutions</Link>, while running Google Ads campaigns to dominate search engine visibility.</li>
               <li><span className='font-bold'>High conversion rates:</span> Google Shopping Ads offer the highest intent form of advertising We also improve website conversion rates by securing landing pages and A/B testing product pages.</li>
           
               </ul>
@@ -140,7 +140,7 @@ const Page = () => {
             </div>
 
 
-          <div className="flex flex-col  space-y-6">
+          <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <h1 className="font-bold justify-start text-start text-4xl">
           Why You Should Choose Us?
           </h1>
@@ -169,7 +169,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="flex flex-col  space-y-6">
+          <div className="flex flex-col space-y-6">
           <h1 className="font-bold justify-start text-start text-4xl">
           Achieving the Best Results With Google Shopping
           </h1>

@@ -8,14 +8,14 @@ const Page = () => {
     <section className="container mx-auto px-4">
       <div className="flex flex-col items-center justify-center text-center w-full h-52">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-          Chatbot Development
+          Mobile App Development
         </h1>
         <div className="flex gap-6 justify-center mt-4">
           <Link href="/">
             <p className="text-gray-500 hover:text-gray-800">Home</p>
           </Link>
           <ul className="list-disc">
-            <li>Chatbot Development</li>
+            <li> Mobile App Development</li>
           </ul>
         </div>
       </div>
@@ -23,7 +23,7 @@ const Page = () => {
       <div className="flex flex-col mx-2 gap-10 mt-10">
         <div className="flex flex-col space-y-6">
           <h1 className="font-bold text-4xl">
-            Revolutionize Customer Experiences with Chatbot
+          Mobile App Development that Builds Brands
           </h1>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="space-y-8 mt-14">
@@ -33,15 +33,15 @@ const Page = () => {
               <p>If the answer is no, you need to ask if your business is ready for a mobile app.</p>
               <p>Ask whether your business is ready to provide a mobile experience that can show your bigger picture on a smartphone screen.</p>
               <p>If these words are alienating, you really need to find out all the answers below, from your what, when, how to ifs and buts!</p>
-              <p>From <Link href="/" className="text-blue-500">email campaigns</Link> to <Link href="/" className="text-blue-500">social media marketing</Link>, there are a plethora of digital marketing services that help your business grow and improve brand recognition. However, mobile application development can elevate your digital marketing, branding, and loyalty initiatives to a new level. It is a one-stop-shop and bulletproof solution to differentiate your business from your competitors in the business ring.</p>
-              <p>We are amongst the top <Link href="/" className="text-blue-500">Mobile App Design Companies</Link> according to DesignRush!</p>
+              <p>From <Link href="/marketing/email-marketing" className="text-blue-500">email campaigns</Link> to <Link href="/marketing/social-media-marketing" className="text-blue-500">social media marketing</Link>, there are a plethora of digital marketing services that help your business grow and improve brand recognition. However, mobile application development can elevate your digital marketing, branding, and loyalty initiatives to a new level. It is a one-stop-shop and bulletproof solution to differentiate your business from your competitors in the business ring.</p>
+              <p>We are amongst the top <Link href="/Technology/mobile-app-development" className="text-blue-500">Mobile App Design Companies</Link> according to DesignRush!</p>
             </div>
             <div className="w-full h-full mt-10">
               <Image src={IMG6} alt="Market Research" layout="responsive" width={1500} height={1200} />
             </div>
           </div>
 
-          <div className="flex flex-col space-y-6 justify-start">
+          <div className="flex flex-col bg-blue-50 p-2 space-y-6 justify-start">
             <h1 className="font-bold text-4xl">
               Wondering what it can do to your business?
             </h1>
@@ -65,7 +65,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6 justify-start">
+        <div className="flex flex-col space-y-6 bg-blue-50 p-2 justify-start">
           <h1 className="font-bold text-4xl">
             Why choose Android App Development Services for your business?
           </h1>
@@ -108,7 +108,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6 justify-start">
+        <div className="flex flex-col space-y-6 bg-blue-50 p-2 justify-start">
           <h1 className="font-bold text-4xl">
             Our Prime Mobile App Development Process
           </h1>
@@ -141,7 +141,7 @@ const Page = () => {
               <p>We constantly monitor, analyze, improve, maintain, and update the app to keep it up to its best performance.</p>
               <p className="font-bold">This is our style of how we provide exceptional service that keeps us at the top of our game to also keep you on the top of your game.</p>
               <p>Get in touch with us for your custom-built mobile apps! We will combine your objective and technological solutions to achieve your business goals because, with more than 2 million apps on the Google Play and 1.85 million on App Store, mobile apps are expected to generate $200 billion in revenue by 2021. So engage yourself to increase brand exposure, distribution, and optimized tactics.</p>
-              <p>As a <Link href="/" className="text-blue-500">top eCommerce App Development Company</Link>, we can help you build an app that converts browsers into customers like a well-oiled machine!</p>
+              <p>As a <Link href="/marketing/e-commerce-digital-marketing-services" className="text-blue-500">top eCommerce App Development Company</Link>, we can help you build an app that converts browsers into customers like a well-oiled machine!</p>
             </ul>
           </div>
         </div>

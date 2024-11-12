@@ -5,7 +5,7 @@ import IMG from '../../../public/images/marketResearch/marketResearch.png';
 
 const Page = () => {
   return (
-    <section>
+    <section className='container'>
       {/* Market Research Header */}
       <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
@@ -21,7 +21,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='flex flex-col mx-2 justify-start'>
+      <div className='flex flex-col mx-2 space-y-5 justify-start'>
         <h1 className='font-bold text-4xl'>
           Market Research Services That Spark Profitable Growth!
         </h1>
@@ -63,19 +63,20 @@ const Page = () => {
             </p>
           </div>
 
-          <div>
+          <div className='bg-blue-50 p-2 space-y-6'>
             <h1 className='pt-14 font-bold text-4xl'>
               How We Handle Your Market Research Needs…
             </h1>
             <p>
               Market research includes gathering, examining, and deciphering data about products, markets, and customers, be it past customers, present customers, or potential customers.
             </p>
-          </div>
+          
           <p>
             Marketing research services conduct relevant research on attributes and ways of managing the money, location, and necessities of your business’s target market, the industry in general, and your specific contenders.
           </p>
+          </div>
 
-          <div>
+          <div className='space-y-5'>
             <h1 className='pt-14 font-bold text-4xl'>
               Detailed Market Research That Grows Businesses
             </h1>
@@ -98,7 +99,7 @@ const Page = () => {
           </ul>
           <p>At Prime Marketing Experts, you, our clients, are our utmost priority.</p>
 
-          <div>
+          <div className='space-y-5'>
             <h1 className='pt-14 font-bold text-4xl'>
               Connecting Consumers With Businesses
             </h1>
@@ -117,7 +118,7 @@ const Page = () => {
             Our team provides a sheer level of professionalism and take heed in keeping you in the loop with the progress of your project.
           </p>
 
-          <div>
+          <div className='space-y-5'>
             <h1 className='pt-14 font-bold text-4xl'>
               How We Use Marketing Research In Customer-Centric Marketing
             </h1>
@@ -126,7 +127,7 @@ const Page = () => {
             </p>
           </div>
 
-          <div>
+          <div className='bg-blue-50 space-y-5 pb-10'>
             <h1 className='pt-14 font-bold text-4xl'>Types of Market Research</h1>
             <ul className='list-disc pl-5 space-y-6'>
               <li className='font-bold'>Qualitative Research</li>

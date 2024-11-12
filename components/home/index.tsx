@@ -4,7 +4,6 @@ import InfoSection from './GetstartedHome/page'
 import HomeBanner from './HomeBanner/HomeBanner'
 import HomeServicesPage from './ServicesHme/page'
 import About from './AboutUs/page'
-import HomeServices from './ServicesHome/HomeServices'
 import Insight from '../Insights'
 import { WhoWeServeSection } from '../WhoWeServe'
 export const Home = () => {
@@ -18,7 +17,7 @@ export const Home = () => {
 			<BlogList />
 			<InfoSection />
 			<Contact />
-			{/* <HomeServices /> */}
+			
 		</>
 	)
 }

@@ -6,8 +6,8 @@ import { RiMessage2Line } from "react-icons/ri";
 
 const Page = () => {
   return (
-    <section className='container mx-auto px-4'>
-      <div className='flex flex-col items-center justify-center text-center w-full h-52'>
+    <section className='container'>
+      <div className='flex flex-col items-center justify-center text-center  w-full h-52'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
           Chatbot Development
         </h1>
@@ -38,7 +38,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col space-y-6'>
+        <div className='flex flex-col bg-blue-50 p-2 space-y-6'>
           <h1 className='font-bold text-4xl'>
             Now, you must be intrigued about chatbot, and what exactly are these?
           </h1>
@@ -107,7 +107,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col mt-10 gap-14'>
+        <div className='flex flex-col bg-blue-50 p-2 mt-10 gap-14'>
           <h2 className='text-4xl'>Types of Chat bots</h2>
 
           <div className='space-y-6'>
@@ -167,7 +167,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col gap-10'>
+        <div className='flex flex-col bg-blue-50 p-2 mb-8 gap-10'>
           <h1 className='font-bold text-4xl'>Why Have Us Develop Your Chatbot?</h1>
           <ul className='list-disc pl-5 space-y-2'>
             <li>We deliver a flawless user experience using user-friendly interactions.</li>

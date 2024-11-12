@@ -6,7 +6,7 @@ import IMG2 from '../../../public/images/eventmangement/image.png';
 
 const Page = () => {
   return (
-    <section>
+    <section className='container'>
       <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
           Event Management Services
@@ -45,11 +45,11 @@ const Page = () => {
           <p>Lean on the gurus. After countless years of event management experience, we are the most qualified to handle your events like pros. We, as Prime Marketing Experts, live, eat, and sleep event planning!</p>
         </div>
 
-        <div className='flex flex-col space-y-6 justify-start'>
+        <div className='flex flex-col  space-y-6 justify-start'>
           <h1 className='font-bold text-4xl'>
             Know Your Event Planners
           </h1>
-          <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
+          <div className='flex flex-col bg-blue-50 p-2 lg:flex-row gap-8 lg:gap-20'>
             <div className='space-y-6'>
               <p>Prime Marketing Experts is not just yet another company, but THE best event management company. Our team of experts who ace their game makes us the finest firm across the globe.</p>
               <p className='font-bold'>We create and put life in your ideas, while you save your time to dream more about your event.</p>
@@ -117,7 +117,7 @@ const Page = () => {
             <p>We possess a unique ability to plan, design, and create an unforgettable, customized, and authentic experiences while being tasteful and refined. We make sure to book a venue that is perfect according to your event and tastes.</p>
 
             <li className='font-bold'>Designing</li>
-            <p>We have a squad of in-house designers to cater to all your designing needs. Be it invitations or flyers to <Link href="/" className='text-blue-500'>social media ads</Link>, we will create everything you desire and help you engage, connect, and evolve.</p>
+            <p>We have a squad of in-house designers to cater to all your designing needs. Be it invitations or flyers to <Link href="/marketing/social-media-marketing" className='text-blue-500'>social media ads</Link>, we will create everything you desire and help you engage, connect, and evolve.</p>
 
             <li className='font-bold'>Invitation Creation & Distribution</li>
             <p>Invitations make the event feels complete. If there are no invitations, no one will know about your event. On top of that, it is important to take the invitations to the right audience to make your event rocking.</p>
@@ -127,7 +127,7 @@ const Page = () => {
             <p>Organizing events can be a little daunting, and even more when it comes to the guest list. Well, our team is an expert in attendee registration management so that you won’t have to listen to any complaint regarding hospitality.</p>
 
             <li className='font-bold'>Social Media Marketing</li>
-            <p>We will help you <Link href="/" className='text-blue-600'>engage your social media audience</Link> like never before to promote your event. We make certain that your brand gets the visibility it deserves. We will create engaging posts that people cannot ignore, but they instead click on it.</p>
+            <p>We will help you <Link href="/marketing/email-marketing" className='text-blue-600'>engage your social media audience</Link> like never before to promote your event. We make certain that your brand gets the visibility it deserves. We will create engaging posts that people cannot ignore, but they instead click on it.</p>
 
             <li className='font-bold'>Specialty Lighting</li>
             <p>We take heed of every little detail for you. From sound to lighting, we have skilled and dedicated staff only to enhance your event and make it unforgettable. We will help you with:</p>

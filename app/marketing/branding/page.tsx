@@ -3,7 +3,7 @@ import React from 'react';
 
 const Page = () => {
     return (
-        <section>
+        <section className='container'>
         <div className="flex flex-col items-center justify-center text-center w-full h-52">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
         Branding
@@ -49,7 +49,7 @@ const Page = () => {
 
 
 
-          <div className='flex flex-col mx-2 space-y-6 justify-start'>
+          <div className='flex flex-col mx-2 bg-blue-50 p-2 space-y-6 justify-start'>
           <h1 className='font-bold text-4xl'>
           What is Branding?
           </h1>
@@ -98,7 +98,7 @@ const Page = () => {
           </div>
 
 
-          <div className='flex flex-col mx-2 space-y-6 justify-start'>
+          <div className='flex flex-col mx-2 bg-blue-50 p-2 space-y-6 justify-start'>
           <h1 className='font-bold text-4xl'>
           Importance Of Branding
           </h1>
@@ -146,14 +146,14 @@ const Page = () => {
               <p>And, we will make sure it is catchy, memorable and stands out from your competitors’.</p>
               <p>Along with these things, we make certain to discover your brand’s personality and work keeping the same in mind. By choosing an attractive color palette, we focus on creating pieces that instantly catch user’s attention and boost your sales.</p>
               <p>So, are you ready to race out your competitors? Well, welcome to the league of winning more clients!</p>
-              <p className='font-bold'>We have a dedicated and friendly team of branding experts, so don’t hesitate to get in touch with us for your queries. After all, we are amongst the top<Link href="/" className='text-blue-600'>Digital Agencies!</Link> </p>
+              <p className='font-bold'>We have a dedicated and friendly team of branding experts, so don’t hesitate to get in touch with us for your queries. After all, we are amongst the top<Link href="https://www.designrush.com/agency/digital-agencies" className='text-blue-600'> Digital Agencies!</Link> </p>
               </ul>
             </div>
             </div>
           </div>
 
 
-          <div className='w-full flex flex-col gap-4 lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-10 lg:flex-row items-center justify-around'>
+          <div className='w-full flex flex-col gap-4 lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center justify-around'>
         <h1 className='font-bold text-white text-4xl text-center'>
           Plan The Future Growth Of Your Business
         </h1>

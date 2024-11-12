@@ -40,7 +40,9 @@ const Page = () => {
         <p>
           Therefore, if you are a budding businessperson, but fail to explain what a business model is, we recommend you find answers and not skip this page, for you will need to bookmark us.
         </p>
+        
 
+        <div className='bg-blue-50 space-y-6 p-4'>
         <div>
           <h1 className='mt-14 font-bold text-4xl'>
             What is Business Model Transformation?
@@ -65,6 +67,7 @@ const Page = () => {
         <p>
           This is where we, Prime Marketing Experts, come in the picture to help transform your business model; rather have one business model in the first place. We help you to reform your business model to scale up sales, production, as well as cut costs and to let your business embrace newer goals, all with our business model transformation service.
         </p>
+        </div>
 
         <h1 className='mt-14 font-bold text-4xl'>
           Transforming Business Models
@@ -88,7 +91,7 @@ const Page = () => {
         <ul className='list-disc pl-5 space-y-6'>
           <li>
             <span className='font-bold'>Create a strategic identity: </span>
-            We articulate a single desirable objective or create a vision of your business model first, focus on the efforts that are required to achieve it, and then plan the transformation strategy. We conduct a <Link href="/" className='text-blue-500'>variety of market research initiatives</Link> to back the identity of what your target market is looking for.
+            We articulate a single desirable objective or create a vision of your business model first, focus on the efforts that are required to achieve it, and then plan the transformation strategy. We conduct a <Link href="/market-research" className='text-blue-500'>variety of market research initiatives</Link> to back the identity of what your target market is looking for.
           </li>
           <li>
             <span className='font-bold'>Delete obsolete practices:</span>
@@ -112,13 +115,14 @@ const Page = () => {
           </li>
           <li>
             <span className='font-bold'>Streamlining your digital marketing processes:</span>
-            As a <Link href="/" className='text-blue-600'>leading digital marketing agency</Link>, we evaluate the behavior of your target audience to strategize what levels of specific marketing initiatives will achieve the best results. We use leading marketing platforms to further optimize your SEO, <Link href="/" className='text-blue-600'>social media</Link>, <Link href="/" className='text-blue-600'>email marketing</Link>, <Link href="/" className='text-blue-600'>search engine advertising</Link>, and <Link href="/" className='text-blue-600'>text message marketing campaigns.</Link>
+            As a <Link href="/marketing/marketing-plans" className='text-blue-600'>leading digital marketing agency</Link>, we evaluate the behavior of your target audience to strategize what levels of specific marketing initiatives will achieve the best results. We use leading marketing platforms to further optimize your SEO, <Link href="/marketing/social-media-marketing" className='text-blue-600'>social media</Link>, <Link href="/marketing/email-marketing" className='text-blue-600'>email marketing</Link>, <Link href="/marketing/local-seo" className='text-blue-600'>search engine advertising</Link>, and <Link href="/marketing/text-message-marketing" className='text-blue-600'>text message marketing campaigns.</Link>
           </li>
         </ul>
         <p>
           At any scale, a cultural shift and having highly engaged leaders is necessary. They take control of the steering wheel of your organization. And we are the front foot, award-winning leaders.
         </p>
-
+         
+         <div className='bg-blue-50 space-y-6 p-4'>
         <h1 className='mt-14 font-bold text-4xl'>
           Why do you need a Business Model Transformation?
         </h1>
@@ -160,6 +164,7 @@ const Page = () => {
         <p>
           At any scale, a cultural shift and having highly engaged leaders is necessary. They take control of the steering wheel of your organization. And we are the front foot, award-winning leaders.
         </p>
+        </div>
 
         <h1 className='mt-14 font-bold text-4xl'>
           Transforming Business Models
@@ -176,7 +181,8 @@ const Page = () => {
         <p>
           Read on to learn how our Prime Marketing Experts help boost your business performance.
         </p>
-
+        
+        <div className='bg-blue-50 space-y-6 p-4'>
         <h1 className='mt-14 font-bold text-4xl'>
           Critical Elements of Our Business Model Transformation Service
         </h1>
@@ -210,6 +216,7 @@ const Page = () => {
         <p className='font-bold'>
           Contact Prime Marketing Experts today to learn how business model transformation can grow your business to new heights!
         </p>
+        </div>
       </div>
     </section>
   );

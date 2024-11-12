@@ -11,7 +11,7 @@ import {
 
 const Page = () => {
   return (
-    <section>
+    <section className='container'>
       <div className="flex flex-col items-center justify-center w-full h-52 text-center">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
           Marketing Plan Services
@@ -27,7 +27,7 @@ const Page = () => {
       </div>
 
       <div className="flex flex-col mx-2 gap-10 mt-10">
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <h1 className="font-bold text-4xl">
             Give Your Emails The Right Service, Strategy, And Execution
           </h1>
@@ -71,7 +71,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10 space-y-6 justify-start">
+        <div className="flex flex-col mb-10 bg-blue-50 p-2 space-y-6 justify-start">
           <h1 className="font-bold text-4xl">What Is A Marketing Plan?</h1>
           <div className="space-y-6">
             <p>
@@ -111,7 +111,7 @@ const Page = () => {
                 <AccordionTrigger>Paid Marketing Plan:</AccordionTrigger>
                 <AccordionContent>
                   This plan is designed to highlight paid strategies, such as native advertising,
-                  <Link href="/" className="text-blue-600">search engine advertising</Link>, or paid social media promotions.
+                  <Link href="/marketing/seo-web-design" className="text-blue-600">search engine advertising</Link>, or paid social media promotions.
                 </AccordionContent>
               </AccordionItem>
 
@@ -119,7 +119,7 @@ const Page = () => {
                 <AccordionTrigger>Social Media Marketing Plan:</AccordionTrigger>
                 <AccordionContent>
                   This is one of the popular marketing plans. It defines and
-                  <Link href="/" className="text-blue-600">highlights the social media channels</Link>, tactics, and campaigns you should intend to undertake expressly on social media platforms like Facebook, Instagram, and others.
+                  <Link href="/marketing/social-media-marketing" className="text-blue-600">highlights the social media channels</Link>, tactics, and campaigns you should intend to undertake expressly on social media platforms like Facebook, Instagram, and others.
                 </AccordionContent>
               </AccordionItem>
 
@@ -127,8 +127,8 @@ const Page = () => {
                 <AccordionTrigger>Content Marketing Plan:</AccordionTrigger>
                 <AccordionContent>
                   The content marketing plan is a fail-proof plan if done in the right way. With
-                  <Link href="/" className="text-blue-600">our content marketing service</Link>, we plan, identify, and highlight different strategies and tactics to effectively build trust with your targeted audience and
-                  <Link href="/" className="text-blue-600">improve search engine rankings</Link>. This plan may include the ideal strategy of how your company should construct and maintain a blog. Our content marketing services are proven to promote your business or product.
+                  <Link href="/marketing/content-marketing" className="text-blue-600">our content marketing service</Link>, we plan, identify, and highlight different strategies and tactics to effectively build trust with your targeted audience and
+                  <Link href="/marketing/local-seo" className="text-blue-600">improve search engine rankings</Link>. This plan may include the ideal strategy of how your company should construct and maintain a blog. Our content marketing services are proven to promote your business or product.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -137,11 +137,11 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10 space-y-6 justify-start">
+        <div className="flex flex-col mb-10 bg-blue-50 p-2 space-y-6 justify-start">
           <h1 className="font-bold text-4xl">Benefits of Our Marketing Plan Services</h1>
           <div className="space-y-6">
             <p>
-              It is a tough challenge for all business firms to make their marketing dollars stretch at the farthest. Designing a marketing plan is a cumbersome process as it is not merely advertising but a mixture of <Link href="/" className="text-blue-600">branding</Link>, customer service, product pricing, and the right promotion.
+              It is a tough challenge for all business firms to make their marketing dollars stretch at the farthest. Designing a marketing plan is a cumbersome process as it is not merely advertising but a mixture of <Link href="/marketing/branding" className="text-blue-600">branding</Link>, customer service, product pricing, and the right promotion.
             </p>
             <p>
               All these aspects should be engaged for an ultimate marketing solution that delivers all the right practices. Hence, it is crucial to choose a systematic approach while curating a marketing plan that can help you reap unlimited benefits to jump-start success.
@@ -191,7 +191,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10 space-y-6 justify-start">
+        <div className="flex flex-col mb-10 bg-blue-50 p-2 space-y-6 justify-start">
           <h1 className="font-bold text-4xl">Wait! One more thing about marketing plans!</h1>
           <div className="space-y-6">
             <p>

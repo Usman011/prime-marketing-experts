@@ -9,21 +9,21 @@ const Page = () => {
        <section className='container'>
          <div className="flex flex-col items-center justify-center w-full h-52 text-center">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-          Marketing Plan Services
+        Inbound Marketing Services
         </h1>
         <div className="flex gap-6 justify-center mt-4">
           <Link href="/">
             <p className="text-gray-500 hover:text-gray-800">Home</p>
           </Link>
           <ul className="list-disc">
-            <li>Marketing Plan Services</li>
+            <li> Inbound Marketing Services</li>
           </ul>
         </div>
       </div>
 
       <div className="flex flex-col mx-2 gap-10 mt-10">
 
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <h1 className="font-bold text-4xl">
           Inbound Marketing That Reaches Your Growth Goals Faster!
           </h1>
@@ -80,11 +80,11 @@ const Page = () => {
         </div>
 
         
-        <div className="flex flex-col mb-10 space-y-6 justify-start">
+        <div className="flex flex-col mb-10 bg-blue-50 p-2 space-y-6 justify-start">
           <h1 className="font-bold text-4xl">Why Prime Marketing Experts?</h1>
           <div className="space-y-6">
             <p>
-            We start by developing an in-depth knowledge of your target customers to compose an understanding of their necessary information that would solve their problems. Then we <Link href="/" className='text-blue-600'>develop and share great content</Link> , including blogs, videos, e-books, infographics, webinars, and short guides, which attract the right audience to your website.
+            We start by developing an in-depth knowledge of your target customers to compose an understanding of their necessary information that would solve their problems. Then we <Link href="/marketing/content-marketing" className='text-blue-600'>develop and share great content</Link> , including blogs, videos, e-books, infographics, webinars, and short guides, which attract the right audience to your website.
             </p>
             <p>We also structure inbound marketing campaigns so that visitors are required to provide at least their email address on a landing page to receive a piece of content or special offer. This converts these website visitors into prospects, in which case we implement a lead nurturing program that brings strategic touches to each prospect. Therefore, opportunities at different stages of a buyer’s journey are cultivated so that your sales team can quickly take action.</p>
           </div>
@@ -108,7 +108,7 @@ const Page = () => {
 
 
         
-        <div className="flex flex-col mb-10 space-y-6 justify-start">
+        <div className="flex flex-col mb-10 bg-blue-50 p-2 space-y-6 justify-start">
           <h1 className="font-bold text-4xl">Our Inbound Services</h1>
           <div className="space-y-6">
           <ul className='list-disc pl-5 space-y-6'>
@@ -128,7 +128,7 @@ const Page = () => {
             <p>You can get the idea from this huge number of how much exposure your brand can get from social media and email marketing. It can also help you reach to wide masses of audience easily and effectively.</p>
             <p>But, it is not easy to make people open your email and click on that CTA unless you possess some exceptional writing and marketing skills. Well, worry, not! We are not saying it’s impossible. We can do this hard work for you at a very competitive price.</p>
             <p className='font-bold'>We have the experience and competence needed for email marketing!</p>
-            <p>From <Link href="/" className='text-blue-600'>personalizing your campaigns to creating engaging emails</Link>, we will help you create effective email campaigns that are sure to boost your sales and conversion rate. Be it designing, strategizing, or managing the campaigns; we know we can deliver you quality work.</p>
+            <p>From <Link href="/marketing/email-marketing" className='text-blue-600'>personalizing your campaigns to creating engaging emails</Link>, we will help you create effective email campaigns that are sure to boost your sales and conversion rate. Be it designing, strategizing, or managing the campaigns; we know we can deliver you quality work.</p>
             <p>Social marketing also runs on great content!</p>
             <p>Our agency will help you create the best social media posts for your brand. We dedicate ourselves to the development of innovative social media campaigns to build brand awareness and generate targeted site traffic. To do this, we create quality content for each post, provide professional design, and increase page engagement through hyper-targeted campaigns on social media.</p>
             <p>Furthermore, we will assess your current metrics and compare them with the best practices to see where you might be lagging behind. We will then work on the needed areas to make your campaigns a success. Also, by keeping your audience’s interest, demographics, and behavior in mind, we make certain that our campaigns boost your sales.</p>

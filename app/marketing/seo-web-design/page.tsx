@@ -6,7 +6,7 @@ import IMG1 from '../../../public/images/Maketing/seo web design/image.png'
 const Page = () => {
     return (
         <section className='container'>
-             <div className="flex flex-col bg-slate-100 items-center justify-center text-center w-full h-52">
+             <div className="flex flex-col  items-center justify-center text-center w-full h-52">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
         SEO Web Design
         </h1>
@@ -20,7 +20,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='mb-10 mt-10'>
+      <div className='mb-10 bg-blue-50 p-2 mt-10'>
         <div className="flex flex-col ">
           <h1 className="font-bold  text-4xl">
           Web Design That Strengthens Search Engine Ranking
@@ -39,7 +39,7 @@ const Page = () => {
               <Image src={IMG1} alt="Market Research" layout="responsive" width={1200} height={1000} />
             </div>
           </div>
-          <p>Our team integrates the best SEO web design practices when we <Link href="/website-mobile-app-development/web-development" className='text-blue-600'>develop a new website</Link> , and we can in many cases perform these services on your current website.</p>
+          <p>Our team integrates the best SEO web design practices when we <Link href="/Technology/web-development" className='text-blue-600'>develop a new website</Link> , and we can in many cases perform these services on your current website.</p>
         </div>
         </div>
 

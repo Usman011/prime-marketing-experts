@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import IMG1 from '../../../public/images/email marketing/image1.png';
-import IMG2 from '../../../public/images/email marketing/image2.png';
-import IMG3 from '../../../public/images/email marketing/image3.png';
+import IMG1 from '../../../public/images/Maketing/email marketing/image1.png';
+import IMG2 from '../../../public/images/Maketing/email marketing/image2.png';
+import IMG3 from '../../../public/images/Maketing/email marketing/image3.png';
 
 const Page = () => {
   return (
@@ -24,7 +24,7 @@ const Page = () => {
 
       <div className="flex flex-col mx-4 md:mx-8 lg:mx-16 gap-10 mt-10">
 
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <h1 className="font-bold text-4xl">
             Give Your Emails The Right Service, Strategy, And Execution
           </h1>
@@ -66,7 +66,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <h1 className="font-bold text-4xl">
             Give Your Emails The Right Service, Strategy, And Execution
           </h1>
@@ -113,7 +113,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col space-y-6 justify-start'>
+        <div className='flex flex-col space-y-6 bg-blue-50 p-2 justify-start'>
           <h1 className='font-bold text-4xl'>
             Using The Best Email Marketing Strategies & Technology.
           </h1>

@@ -7,7 +7,7 @@ import IMG2 from '../../../public/images/operational-assessment/image2.png'
 const Page = () => {
     return (
         <>
-      <section>
+      <section className='container p-4'>
         <div className='flex justify-center items-center w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
         Operational Assessment
@@ -24,7 +24,7 @@ const Page = () => {
       
       <div className='mx-2'>
       <div className='flex flex-col mx-2 justify-start'>
-        <h1 className='font-bold text-4xl'>
+        <h1 className='font-bold pb-4 text-4xl'>
         Operational Assessment Services That Drive Growth
         </h1>
         <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
@@ -51,7 +51,7 @@ const Page = () => {
         <p>You don’t have to worry about any of the above situations if you hire PRIME MARKETING EXPERTS! Yes, we can assist you with complex problems and offer you actionable solutions with an operational assessment.</p>
         </div>
 
-        <div className='flex flex-col lg:flex-row gap-8 mt-10 lg:gap-20'>
+        <div className='flex flex-col bg-blue-50 lg:flex-row gap-8 mt-10 lg:gap-20'>
 
         <div className='w-full h-auto'>
             <Image src={IMG2} alt="Market Research" className='w-full h-auto object-cover' />
@@ -81,7 +81,7 @@ const Page = () => {
 
         <div className='space-y-6'>
           <div>
-            <h1 className='pt-14 font-bold text-4xl'>
+            <h1 className='pt-14 font-bold pb-4 text-4xl'>
             Prepare For Future Growth with Prime Marketing Experts
             </h1>
             <p>
@@ -110,7 +110,7 @@ const Page = () => {
           
 
           <div>
-            <h1 className='pt-14 font-bold text-4xl'>
+            <h1 className='pt-14 pb-4 font-bold text-4xl'>
             Why Are Operation Assessments Important?
             </h1>
             <p>
@@ -120,7 +120,7 @@ const Page = () => {
           <p>Unfortunately, many businesses believe that they do not have enough time or financial resources to do an operational assessment, which often results in much higher costs due to the inefficiency that eventually grows.</p>
 
           <div>
-            <h1 className='pt-14 font-bold text-4xl'>
+            <h1 className='pt-14 pb-4 font-bold text-4xl'>
             Motivate Employees With Operational Assessments
             </h1>
             <p>
@@ -138,8 +138,8 @@ const Page = () => {
           </ul>
 
 
-          <div>
-            <h1 className='pt-14 font-bold text-4xl'>Operational Assessment Benefits</h1>
+          <div className='bg-blue-50 p-4'>
+            <h1 className='pt-14 bg-blue-50 pb-4 font-bold text-4xl'>Operational Assessment Benefits</h1>
             <ul className='list-disc pl-5 space-y-6'>
               <li className='font-bold'>Helping Organizations Gain Efficiency </li>
               <p>
@@ -180,7 +180,7 @@ const Page = () => {
             </ul>
 
             <div>
-            <h1 className='pt-14 font-bold text-4xl'>
+            <h1 className='pt-14 pb-4 font-bold text-4xl'>
             Support Your Company’s Continual Growth with Prime Marketing Experts
             </h1>
             <p>

@@ -6,7 +6,7 @@ import { RiMessage2Line } from 'react-icons/ri';
 
 const Page = () => {
     return (
-        <section>
+        <section className='container'>
             <div className="flex flex-col items-center justify-center text-center w-full h-52">
                 <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
                     Text Message Marketing
@@ -22,7 +22,7 @@ const Page = () => {
             </div>
 
             <div className="flex flex-col mx-2 gap-10 mt-10">
-                <div className="flex flex-col space-y-6">
+                <div className="flex flex-col bg-blue-50 p-2 space-y-6">
                     <h1 className="font-bold text-4xl">
                         Give Your Emails The Right Service, Strategy, And Execution
                     </h1>
@@ -74,7 +74,7 @@ const Page = () => {
                     </div>
                 </div>
 
-                <div className='flex flex-col mt-10 gap-10'>
+                <div className='flex flex-col bg-blue-50 p-2 mt-10 mb-4 gap-10'>
                     <h2 className='text-4xl'>Providing The Best Text Message Marketing</h2>
                     <p>Here is an explanation of what you should expect from our effective and world-class service. Our prime aim is to make the text messaging service affordable, user-friendly, and customizable.</p>
                     <div className='space-y-6'>
@@ -247,7 +247,7 @@ const Page = () => {
                         <p className='pl-14'>Text messaging marketing tools are the most influential and reasonably priced way to engage your prospects and customers. It has an assured 99% read rate, unlike sending 1,000 email newsletters out of which only 151 are opened, and with Facebook, you get only a 6% reach out rate. Nevertheless, with text messaging marketing, your branding messages won’t be unnoticed ever again.</p> 
                     </div>
 
-                    <div className='space-y-4'>
+                    <div className='space-y-4 pb-10'>
                         
                         <p className='font-bold'>Prime Marketing Experts proposes a handy text message marketing platform for your business. We are experienced, and with a user-friendly analytics dashboard, and we offer several prized features like customized keywords, free incoming text messages, contact management service, and robust analytics and reporting suite. If you are looking for someone who is organized and knows your calendar better than you know, and scheduling master, here we present ourselves. With our marketing service, we offer your business to double your sales and expand your business 20x.</p>
                     </div>

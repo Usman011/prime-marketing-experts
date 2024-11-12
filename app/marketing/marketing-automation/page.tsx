@@ -5,7 +5,7 @@ import IMG1 from '../../../public/images/Maketing/automation services/image.png'
 
 const Page = () => {
   return (
-    <section className="px-4 py-8">
+    <section className="container">
       <div className="flex flex-col items-center justify-center w-full h-52 text-center">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
           Marketing Automation
@@ -21,7 +21,7 @@ const Page = () => {
       </div>
 
       <div className="flex flex-col mx-2 gap-10 mt-10">
-        <div className="flex flex-col space-y-6">
+        <div className="flex bg-blue-50 p-2 flex-col space-y-6">
           <h1 className="font-bold mt-10 text-4xl">
             Marketing Automation Increases Conversion
           </h1>
@@ -76,7 +76,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6 justify-start">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6 justify-start">
           <h1 className="font-bold text-4xl">
             Benefits Of Marketing Automation Software
           </h1>

@@ -40,7 +40,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div>
+          <div className='bg-blue-50 p-4'>
             <h1 className='pt-14 font-bold text-4xl'>
               A Business Plan gives you a Clear Growth Roadmap!
             </h1>
@@ -72,9 +72,9 @@ const Page = () => {
           <p className='font-bold'>Reason 4: Strict clientele confidentiality:</p>
           <p>With a friendly personal approach, we obligate to non-disclosure norms for all customer engagements at all times. All your internal business information is safe and secured with us.</p>
           <p className='font-bold'>Reason 5: Affordable, Accessible, Available, and Integrated</p>
-          <p>We offer a plethora of business and digital marketing services for all business sizes. From attracting customers through search engine advertising or <Link href="" className='text-blue-500'>social media posting</Link> to deploying efficient <Link href="/" className='text-blue-600'>email marketing campaigns</Link>, we have you covered. We have extensive knowledge for almost all business backgrounds through <Link href="/" className='text-blue-500'>competitive marketing research</Link>, which makes our service accessible for all at a very affordable price. Also, we will provide support via personalized and direct support on calls, messages, emails, or videoconference.</p>
+          <p>We offer a plethora of business and digital marketing services for all business sizes. From attracting customers through search engine advertising or <Link href="/social-media-marketing" className='text-blue-500'>social media posting</Link> to deploying efficient <Link href="/email-marketing" className='text-blue-600'>email marketing campaigns</Link>, we have you covered. We have extensive knowledge for almost all business backgrounds through <Link href="/market-research" className='text-blue-500'>competitive marketing research</Link>, which makes our service accessible for all at a very affordable price. Also, we will provide support via personalized and direct support on calls, messages, emails, or videoconference.</p>
 
-          <div>
+          <div className='bg-blue-50 p-4'>
             <h1 className='pt-14 font-bold text-4xl'>
               Why is a Business Plan Vital?
             </h1>

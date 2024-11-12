@@ -34,7 +34,7 @@ const Page = () => {
       </div>
 
       <div className='gap-20 mt-10'>
-        <div className="flex flex-col bg-slate-100 space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <h1 className="font-bold justify-center text-center text-4xl">
             Our Content Marketing Services Boosts Brands
           </h1>
@@ -83,7 +83,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mt-10 bg-slate-100 space-y-6">
+        <div className="flex flex-col mt-10 bg-blue-50 space-y-6">
           <h1 className="font-bold text-center justify-center text-4xl">
             Excellent Quality Content Tailored To Your Needs
           </h1>
@@ -166,7 +166,7 @@ const Page = () => {
               </Link>
             </div>
 
-            <div className='flex flex-col w-full items-center text-center gap-4'>
+            <div className='flex flex-col w-full bg-blue-50 p-2 items-center text-center gap-4'>
               <div className='text-white bg-violet-600 w-20 h-20 justify-center items-center rounded-full font-bold'>
                 <Image src={IconIMG7} alt='IconIMG1' className='w-10 h-10 justify-center items-center m-5' />
               </div>
@@ -222,7 +222,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-slate-100 space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="w-full bg-orange-600 h-[90vh] text-black mt-14 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
@@ -272,7 +272,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-slate-100 space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="w-full bg-orange-600 h-[90vh] text-black mt-14 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
@@ -313,7 +313,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-slate-100 space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="w-full bg-orange-600 h-[90vh] text-black mt-14 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
@@ -364,7 +364,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-slate-100 space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="w-full bg-orange-600 h-[90vh] text-black mt-14 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
@@ -411,7 +411,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-slate-100 space-y-6">
+          <div className="flex flex-col bg-blue-50 p-2 space-y-6">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
               <div className="w-full mt-10 h-full">
                 <Image src={IMG4} alt="Market Research" layout="responsive" width={1200} height={1000} />
@@ -449,7 +449,7 @@ const Page = () => {
         <div className='mt-20'>
           <h1 className='italic font-bold text-3xl'>Our team continues to provide its services without any interruption as the world continues to deal with the COVID-19 pandemic.</h1>
         </div>
-        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto bg-orange-500 h-auto lg:h-32 mt-10 items-center justify-center lg:justify-around px-4'>
+        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto bg-orange-500 h-auto lg:h-32 mt-8 mb-8 items-center justify-center lg:justify-around px-4'>
           <h1 className='font-bold text-white text-center lg:text-left text-2xl lg:text-4xl'>
             Learn More on How Content Marketing Can Grow Your Business!
           </h1>

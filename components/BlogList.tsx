@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button'
 import firebaseService from '@/utils/firebase.utils'
 import { DocumentData } from 'firebase/firestore'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const blog_data = [
 	{
@@ -66,7 +67,7 @@ export default function BlogList() {
 								<Card className="overflow-hidden h-full flex flex-col bg-white/80 backdrop-blur-sm border-none shadow-lg">
 									<div className="relative">
 										{blog.imageUrl ? (
-											<img src={blog.image} alt={blog.title} className="w-full h-60 object-cover" />
+											<Image src={blog.image} alt={blog.title} className="w-full h-60 object-cover" />
 										) : (
 											<div className="bg-gray-300 h-60 w-full flex justify-center items-center">
 												<div className="text-white text-4xl font-bold">400 x 400</div>

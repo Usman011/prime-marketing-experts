@@ -7,6 +7,20 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaPinterestP } from "react-icons/fa6";
 import Image from 'next/image';
 
+const Service = [
+	{ name: 'Marketing Automation', href: '/marketing/marketing-automation' },
+	{ name: 'Search Engine Optimization – SEO', href: '/marketing/local-seo' },
+	{ name: 'Search Engine Advertising', href: '/marketing/search-engine-advertising' },
+	{ name: 'Inbound Marketing Services', href: '/marketing/inbound-marketing-services' },
+	{ name: 'Marketing Plan Services', href: '/marketing/marketing-plans' },
+	{ name: 'Social Media Marketing', href: '/marketing/social-media-marketing' },
+	{ name: 'Content Marketing Services Old', href: '/marketing/content-marketing' },
+	{ name: 'Email Marketing Services', href: '/marketing/email-marketing' },
+	{ name: 'Event Management Services', href: '/business/event-management' },
+	{ name: 'Text Message Marketing', href: '/marketing/text-message-marketing' },
+	{ name: 'Chatbot Development Services', href: '/Technology/chatbot-development' },
+  ];
+
 export const Footer = () => {
 	return (
 		<footer className="flex flex-col text-white bg-blue-950 border-t">
@@ -20,11 +34,12 @@ export const Footer = () => {
 				<div className='flex flex-col gap-4 lg:gap-6'>
 					<h1 className='mt-4 font-bold text-lg lg:text-2xl'>Services</h1>
 					<ul className='mt-2 lg:mt-6 text-xs md:text-sm lg:text-base list-disc list-inside'>
-						{['Marketing Automation', 'Search Engine Optimization – SEO', 'Search Engine Advertising', 'Inbound Marketing Services', 'Marketing Plan Services', 'Social Media Marketing', 'Content Marketing Services Old', 'Email Marketing Services', 'Event Management Services', 'Text Message Marketing', 'Chatbot Development Services'].map((service, index) => (
-							<Link key={index} href="/" className='hover:underline underline-offset-1 hover:text-blue-500'>
-								<li>{service}</li>
-							</Link>
-						))}
+					{
+					Service.map((service, index) => (
+                   <Link key={index} href={service.href} className='block hover:underline underline-offset-1 hover:text-blue-500'>
+                   <div className='mb-2'>{service.name}</div>
+                  </Link>
+                   ))}
 					</ul>
 				</div>
 
