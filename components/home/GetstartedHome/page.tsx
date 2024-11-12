@@ -51,7 +51,7 @@ const InfoSection: React.FC = () => {
 				<p className="text-base text-center mb-12 text-gray-600">
 					Discover how we are revolutionizing the industry with our cutting-edge solutions
 				</p>
-				<div className="flex flex-col lg:flex-row h-full gap-8 border p-10 border-gray-200 rounded-lg shadow-lg">
+				<div className="flex flex-col lg:flex-row h-full gap-8 border p-5 md:p-10 border-gray-200 rounded-lg shadow-lg">
 					<div className="lg:w-1/2">
 						<Image
 							src={sampleImage}

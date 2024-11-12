@@ -56,7 +56,7 @@ const gridItemsData = [
 	},
 	{
 		icon: <Hospital />,
-		title: 'Healthcare',
+		title: 'Hea text-3xl md:lth text-sm md:care',
 	},
 ]
 
@@ -106,8 +106,10 @@ export const WhoWeServeSection = () => {
 							transition={{ duration: 0.5 }}
 							className="text-center mb-12"
 						>
-							<h2 className="text-4xl  font-bold ">{serveData.title}</h2>
-							<p className="text-base text-gray-600 max-w-3xl mx-auto mt-3">{serveData.subtitle}</p>
+							<h2 className=" text-3xl md:text-4xl  font-bold ">{serveData.title}</h2>
+							<p className=" text-sm md:text-base text-gray-600 max-w-3xl mx-auto mt-3">
+								{serveData.subtitle}
+							</p>
 						</motion.div>
 
 						<div className="grid md:grid-cols-2 gap-12 items-center">
@@ -161,14 +163,16 @@ export const WhoWeServeSection = () => {
 				</section>
 			</div>
 
-			<div className=" py-20">
-				<h2 className="text-4xl font-extrabold text-center text-gray-900">Industries We Served</h2>
-				<p className="text-base text-gray-600 max-w-3xl mx-auto mt-3 pb-10 text-center">
+			<div className=" py-20 container">
+				<h2 className=" text-3xl md:text-4xl font-extrabold text-center text-gray-900">
+					Industries We Served
+				</h2>
+				<p className="md:text-base text-sm text-gray-600 max-w-3xl mx-auto mt-3 pb-10 text-center">
 					Empowering diverse industries with customized, results-driven marketing solutions tailored
 					to their unique needs and goals.
 				</p>
 
-				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 container">
+				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 					{gridItemsData.map((item, index) => (
 						<motion.div
 							key={index}

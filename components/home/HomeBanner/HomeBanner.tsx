@@ -34,7 +34,7 @@ const HomeBanner = () => {
 			<Carousel plugins={[Autoplay({ delay: 5000 })]} className="w-full h-full">
 				<CarouselContent>
 					<CarouselItem>
-						<div className="relative w-full h-[80vh] sm:h-[90vh] md:h-[100vh]">
+						<div className="relative w-full h-[100vh]">
 							<Image
 								src={backgroundImage}
 								alt="Hero Background"
@@ -47,7 +47,7 @@ const HomeBanner = () => {
 					</CarouselItem>
 
 					<CarouselItem>
-						<div className="relative w-full h-[80vh] sm:h-[90vh] md:h-[100vh]">
+						<div className="relative w-full h-[100vh]">
 							<Image
 								src={backgroundImage1}
 								alt="Hero Background"
@@ -60,7 +60,7 @@ const HomeBanner = () => {
 					</CarouselItem>
 
 					<CarouselItem>
-						<div className="relative w-full h-[80vh] sm:h-[90vh] md:h-[100vh]">
+						<div className="relative w-full h-[100vh]">
 							<Image
 								src={backgroundImage2}
 								alt="Hero Background"
