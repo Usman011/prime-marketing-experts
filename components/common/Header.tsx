@@ -12,7 +12,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/component
 import Image from 'next/image'
 import { MdEmail } from 'react-icons/md'
 import HeaderMenu from './HeaderMenu'
-import { businessData, marketingData, mobileMenu } from '@/constants'
+import { businessData, marketingData, mobileMenu,TechnologyData } from '@/constants'
 import { Button } from '../ui/button'
 import { Menu } from 'lucide-react'
 
@@ -23,8 +23,8 @@ export function Header() {
 		setOpenItems((prev) => ({ ...prev, [title]: !prev[title] }))
 	}
 	return (
-		<nav className=" bg-[#040c5e] w-full h-auto py-3   shadow-lg">
-			<div className=" items-center justify-between container h-16 hidden md:flex">
+		<nav className=" bg-[#040c5e] w-full h-20 py-3   shadow-lg">
+			<div className=" items-center justify-between container h-auto hidden  md:flex">
 				<div className="flex items-center">
 					<Link href="/" className="text-2xl font-bold text-primary">
 						<Image src={NaveLogo} alt="logo" width={200} height={160} />
@@ -35,6 +35,9 @@ export function Header() {
 					<HeaderMenu title="Home" link="/" />
 					<HeaderMenu title="Business" link="/" data={businessData} />
 					<HeaderMenu title="Marketing" link="/" data={marketingData} />
+					<HeaderMenu title="Technology" link="/" data={TechnologyData} />
+					<HeaderMenu title="Blog" link="/blog"/>
+					<HeaderMenu title="Contact" link="/contact"/>
 				</div>
 
 				<Link href="/free-strategy-session">
