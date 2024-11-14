@@ -1,222 +1,99 @@
-'use client'
+"use client"
+import Link from "next/link";
+import { BrickWall, ChevronRight, Dumbbell, Eraser, Hospital, MapPinHouse, Pyramid, Salad, ScanBarcode, Workflow } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
-import { useState } from 'react'
-import {
-	BarChart,
-	BrickWall,
-	Dumbbell,
-	Eraser,
-	Hospital,
-	MapPinHouse,
-	Pyramid,
-	Salad,
-	ScanBarcode,
-	Target,
-	Users,
-	Workflow,
-} from 'lucide-react'
-import { ArrowRight } from 'lucide-react'
-import { Card, CardContent } from '@/components/ui/card'
-import { motion } from 'framer-motion'
-import { Button } from './ui/button'
-import Link from 'next/link'
 
-const gridItemsData = [
-	{
-		icon: <MapPinHouse />,
-		title: 'Real Estate',
-	},
-	{
-		icon: <Workflow />,
-		title: 'Automotive',
-	},
-	{
-		icon: <Salad />,
-		title: 'Restaurants',
-	},
-	{
-		icon: <ScanBarcode />,
-		title: 'Retail',
-	},
-	{
-		icon: <Eraser />,
-		title: 'Cleaning Companies',
-	},
-	{
-		icon: <Dumbbell />,
-		title: 'Gyms',
-	},
-	{
-		icon: <BrickWall />,
-		title: 'Construction',
-	},
-	{
-		icon: <Pyramid />,
-		title: 'Tourism',
-	},
-	{
-		icon: <Hospital />,
-		title: 'Hea text-3xl md:lth text-sm md:care',
-	},
-]
-
-const serveData = {
-	title: 'Who We Serve',
-	subtitle:
-		'We offer superior marketing tailored for small to medium-sized businesses that deserve Fortune 500 quality they can trust.',
-	content: {
-		title: 'Marketing for the Small to Medium Business Owner',
-		text: 'PM is dedicated to helping SMBs achieve their marketing goals with top-notch, industry-specific strategies. We focus on providing exceptional service that fits within their budget.',
-		link: {
-			href: '/industry-specific',
-			text: 'Discover Industry-Specific Solutions',
-		},
-	},
-}
-
-const features = [
-	{
-		icon: Users,
-		title: 'Tailored Strategies',
-		description: 'Customized marketing plans for your unique business needs',
-	},
-	{
-		icon: BarChart,
-		title: 'Data-Driven Approach',
-		description: 'Leverage analytics to maximize your marketing ROI',
-	},
-	{
-		icon: Target,
-		title: 'Industry Expertise',
-		description: 'Specialized knowledge across various business sectors',
-	},
-]
-
-export const WhoWeServeSection = () => {
-	const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
-
+export function WhoWeServeSection() {
 	return (
-		<div>
-			<div className="bg-blue-50 w-auto md:w-auto px:auto md:px-8">
-				<section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
-					<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-						<motion.div
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.5 }}
-							className="text-center mb-12"
-						>
-							<h2 className=" text-3xl md:text-4xl  font-bold ">{serveData.title}</h2>
-							<p className=" text-sm md:text-base text-gray-600 max-w-3xl mx-auto mt-3">
-								{serveData.subtitle}
-							</p>
-						</motion.div>
-
-						<div className="grid md:grid-cols-2 gap-12 items-center">
-							<motion.div
-								initial={{ opacity: 0, x: -50 }}
-								animate={{ opacity: 1, x: 0 }}
-								transition={{ duration: 0.5, delay: 0.2 }}
-							>
-								<h3 className="text-3xl font-bold mb-6 text-gray-800">{serveData.content.title}</h3>
-								<p className="text-lg text-gray-600 mb-8">{serveData.content.text}</p>
-								<div>
-									<Button className="bg-[#ff7e00] hover:bg-[#ff962c]">
-										<Link href={serveData.content.link.href} className="flex gap-3 items-center">
-											{serveData.content.link.text}
-											<ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-										</Link>
-									</Button>
-								</div>
-							</motion.div>
-
-							<motion.div
-								initial={{ opacity: 0, x: 50 }}
-								animate={{ opacity: 1, x: 0 }}
-								transition={{ duration: 0.5, delay: 0.4 }}
-								className="grid gap-6"
-							>
-								{features.map((feature, index) => (
-									<Card key={index} className="overflow-hidden">
-										<CardContent className="p-6">
-											<motion.div
-												whileHover={{ scale: 1.05 }}
-												transition={{ type: 'spring', stiffness: 300 }}
-												className="flex items-start"
-											>
-												<div className="flex-shrink-0 mr-4">
-													<div className="p-3 bg-gradient-main rounded-full">
-														<feature.icon className="h-6 w-6 text-white" />
-													</div>
-												</div>
-												<div>
-													<h4 className="text-lg font-semibold mb-2">{feature.title}</h4>
-													<p className="text-gray-600">{feature.description}</p>
-												</div>
-											</motion.div>
-										</CardContent>
-									</Card>
-								))}
-							</motion.div>
-						</div>
-					</div>
-				</section>
-			</div>
-
-			<div className=" py-20 container">
-				<h2 className=" text-3xl md:text-4xl font-extrabold text-center text-gray-900">
-					Industries We Served
-				</h2>
-				<p className="md:text-base text-sm text-gray-600 max-w-3xl mx-auto mt-3 pb-10 text-center">
-					Empowering diverse industries with customized, results-driven marketing solutions tailored
-					to their unique needs and goals.
-				</p>
-
-				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-					{gridItemsData.map((item, index) => (
-						<motion.div
-							key={index}
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.5, delay: index * 0.1 }}
-						>
-							<Card
-								className="overflow-hidden cursor-pointer transition-all duration-300"
-								onMouseEnter={() => setHoveredIndex(index)}
-								onMouseLeave={() => setHoveredIndex(null)}
-							>
-								<CardContent className="p-6">
-									<div className="flex flex-col items-center text-center">
-										<div className="mb-4 p-4 rounded-full bg-gradient-main">
-											<motion.div
-												animate={{
-													scale: hoveredIndex === index ? 1.2 : 1,
-													rotate: hoveredIndex === index ? 360 : 0,
-												}}
-												transition={{ duration: 0.3 }}
-												className="text-white"
-											>
-												{item.icon}
-												{/* {item.icon && <item.icon size={32} className="text-blue-600" />} */}
-											</motion.div>
-										</div>
-										<h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-										<p className="text-gray-600 text-sm">
-											Specialized solutions for {item.title.toLowerCase()} industry
-										</p>
-									</div>
-								</CardContent>
-								<div
-									className="h-1 w-full bg-gradient-to-r from-yellow-500 to-orange-500 transform origin-left transition-transform duration-300 ease-in-out"
-									style={{
-										transform: `scaleX(${hoveredIndex === index ? 1 : 0})`,
-									}}
-								/>
-							</Card>
-						</motion.div>
-					))}
-				</div>
-			</div>
+	  <section className="bg-blue-50 w-auto md:w-auto py-16 px:auto md:px-8">
+		<div className="max-w-6xl mx-auto text-center">
+		  <div className='md:mx-auto mx-10'>
+		  <h2 className="text-4xl font-extrabold text-gray-800 mb-4">Who We Serve</h2>
+		  <p className="text-xl text-gray-600 mb-10">
+			We offer superior marketing tailored for small to medium-sized businesses that deserve Fortune 500 quality they can trust.
+		  </p>
+  
+		  <div className="bg-white shadow-lg rounded-lg p-6 mb-12 text-left">
+			<h3 className="text-2xl font-bold text-orange-600 mb-2">Marketing for the Small to Medium Business Owner</h3>
+			<p className="text-gray-700">
+			  PM is dedicated to helping SMBs achieve their marketing goals with top-notch, industry-specific strategies. We focus on providing exceptional service that fits within their budget.
+			</p>
+			<Link href="/industry-specific" className="inline-flex items-center mt-4 text-blue-500 hover:text-blue-700 transition">
+			  <span>Discover Industry-Specific Solutions</span>
+			  <ArrowRight className="ml-2" />
+			</Link>
+		  </div>
+		  </div>
+  
+		  <h3 className="text-2xl font-bold text-gray-800 mb-8">Industries We Served</h3>
+  
+		  <div className="grid ml-20  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+	<div className="flex h-20 w-56 gap-6 text-center p-6  items-center   rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
+	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
+	  <MapPinHouse />
+	  </div>
+	  <h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Real Estate</h3>
+	</div>
+  
+	<div className="flex h-20 w-56 gap-6 text-center  items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
+	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
+	  <Workflow />
+	  </div>
+	  <h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Automotive</h3>
+	</div>
+  
+	<div className="flex h-20 w-56 gap-6 text-center items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
+	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
+	  <Salad />
+	  </div>
+	  <h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Restaurants</h3>
+	</div>
+  
+	<div className="flex h-20 w-56 gap-6 text-center items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
+	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
+	  <ScanBarcode />
+	  </div>
+	  <h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Retail</h3>
+	</div>
+  
+	<div className="flex h-20 w-56 gap-6 text-center items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
+	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
+	  <Eraser />
+	  </div>
+	  <h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Cleaning Companies</h3>
+	</div>
+  
+	<div className="flex h-20 w-56 gap-6 text-center items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
+	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
+	  <Dumbbell />
+	  </div>
+	  <h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Gyms</h3>
+	</div>
+  
+	<div className="flex h-20 w-56 gap-6 text-center items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
+	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
+	  <BrickWall />
+	  </div>
+	  <h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Construction</h3>
+	</div>
+  
+	<div className="flex h-20 w-56 gap-6 text-center items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
+	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
+	  <Pyramid />
+	  </div>
+	  <h3 className="mt-4 pb-4 text-lg font-semibold text-gray-800">Tourism</h3>
+	</div>
+  
+	<div className="flex h-20 w-56 gap-6 text-center items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
+	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
+	  <Hospital />
+	  </div>
+	  <h3 className="mt-4 pb-4 text-lg font-semibold text-gray-800">Healthcare</h3>
+	</div>
+  
+  </div>
 		</div>
-	)
-}
+	  </section>
+	);
+  }

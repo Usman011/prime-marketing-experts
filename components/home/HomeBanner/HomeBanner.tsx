@@ -12,10 +12,10 @@ import Link from 'next/link'
 
 const HomeBanner = () => {
 	return (
-		<main className="flex flex-col items-center justify-center w-full h-[100vh] relative">
-			<div className="flex w-full h-full absolute top-0 left-0 z-50 items-center bg-full-shade">
+		<main className="flex flex-col items-center justify-center w-full h-[100vh]  relative">
+			<div className="flex w-full h-full absolute top-0 left-0  items-center bg-full-shade">
 				<div className="container">
-					<div className="max-w-[700px] ">
+					<div className="max-w-[700px]">
 						<div className="font-bold text-5xl leading-[60px] uppercase text-white">
 							Digital Marketing Agency that grow companies
 						</div>

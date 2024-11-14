@@ -36,6 +36,9 @@ export const businessData = [
 
 
 export const marketingData = [
+	
+	
+
 	{
 		title: 'SEO',
 		url: 'undefined',
@@ -104,6 +107,7 @@ export const marketingData = [
 		title: 'E-Commerce Services',
 		url: '/marketing/e-commerce-digital-marketing-services',
 	},
+	
 ]
 
 export const 
@@ -131,6 +135,33 @@ TechnologyData = [
 
 
 export const mobileMenu = [
+	{
+		title:'Home',
+		url:'/',
+		},	
+      
+		{
+			title:'Business',
+			url:'undefined',
+			children:[
+				{
+					title: 'Website Development',
+					url: '/Technology/chatbot-development',
+				},
+				{
+					title: 'Chatbot Development',
+					url: '/Technology/chatbot-development',
+				},
+				{
+					title: 'Mobile Application Development',
+					url: '/Technology/mobile-app-development',
+				},
+				{
+					title: 'Website Accessibility',
+					url: '/Technology/website-accessibility',
+				},
+			]
+		},
 	{
 		title: 'Market Research',
 		url: 'https://www.primemarketingexperts.com/market-research-services/',
@@ -219,4 +250,39 @@ export const mobileMenu = [
 		title: 'E-Commerce Services',
 		url: 'https://www.primemarketingexperts.com/e-commerce-digital-marketing-services/',
 	},
+
+	{
+		title:'Technology',
+		url:'undefined',
+		children:[
+			{
+				title: 'Website Development',
+				url: '/Technology/chatbot-development',
+			},
+			{
+				title: 'Chatbot Development',
+				url: '/Technology/chatbot-development',
+			},
+			{
+				title: 'Mobile Application Development',
+				url: '/Technology/mobile-app-development',
+			},
+			{
+				title: 'Website Accessibility',
+				url: '/Technology/website-accessibility',
+			},
+		]
+	},
+
+	{
+		title:'Blog',
+		url:'/blog',
+	},
+
+	{
+		title:'Contact',
+		url:'/contact'
+	},
+
+	
 ]

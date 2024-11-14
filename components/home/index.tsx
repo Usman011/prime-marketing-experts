@@ -4,19 +4,19 @@ import InfoSection from './GetstartedHome/page'
 import HomeBanner from './HomeBanner/HomeBanner'
 import HomeServicesPage from './ServicesHme/page'
 import About from './AboutUs/page'
-import Insight from '../Insights'
+import { CarouselSection } from '../Insights'
 import { WhoWeServeSection } from '../WhoWeServe'
 import CaseStudiesList from '../CaseStudiesList'
 export const Home = () => {
 	return (
 		<>
 			<HomeBanner />
+			<InfoSection />
 			<HomeServicesPage />
 			<WhoWeServeSection />
-			<Insight />
+			<CarouselSection/>
 			<About />
 			<BlogList />
-			<InfoSection />
 			<CaseStudiesList />
 			<Contact />
 		</>
