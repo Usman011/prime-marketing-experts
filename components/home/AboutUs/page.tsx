@@ -1,83 +1,68 @@
-"use client"
-import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'; 
+import { FaHandshake, FaUserCircle, FaHeart, FaGem, FaUsers, FaThumbsUp, FaChartLine, FaCoins, FaStar } from "react-icons/fa";
 
+import FounderPhoto from '../../../public/images/section6.jpg'; // Replace with the actual path to your image
 
-type Slide = {
-  title: string;
-  content: string;
-  image: string;
-};
-
-const slides: Record<string, Slide> = {
-  caseStudy: {
-    title: "Case Study",
-    content: "Discover how we’ve solved diverse challenges and delivered innovative solutions across industries.",
-    image: "/images/carousel/image1.png",
-  },
-  work: {
-    title: "Work",
-    content: "Our aim is to push the boundaries of digital solutions, combining creativity with technical expertise to foster future growth.",
-    image: "/images/carousel/image02.png",
-  },
-  ourStory: {
-    title: "Our Story",
-    content: "Our foundation was set in 2017, driven by a mission to empower businesses through high-quality, future-forward digital services.",
-    image: "/images/carousel/image3.png",
-  },
-};
-
-export default function About() {
-  const [activeSlide, setActiveSlide] = useState<keyof typeof slides>("caseStudy");
-
+const AboutUs = () => {
   return (
-    <section className="flex flex-col items-center bg-white p-10 w-full h-auto">
-        <h2 className="text-4xl font-extrabold text-gray-800 mb-8">Who We Serve</h2>
-      {/* Navigation Menu */}
-      <nav className="flex space-x-4 mb-8">
-        {Object.keys(slides).map((key) => (
-          <button
-            key={key}
-            onClick={() => setActiveSlide(key as keyof typeof slides)}
-            className={`px-4 py-2 rounded ${
-              activeSlide === key
-                ? "bg-orange-500 text-white"
-                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-            }`}
-          >
-            {slides[key].title}
-          </button>
-        ))}
-      </nav>
+    <section className="bg-gray-100 container py-16 px-6 md:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Heading */}
+        <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
+          About Us
+        </h2>
 
-      {/* Slide Content */}
-      <div className="w-full p-4 md:p-20 md:max-w-7xl flex flex-col md:flex-row  items-center gap-8 bg-gray-50 shadow-lg rounded-2xl">
-
-         {/* Content */}
-         <div className="w-full md:w-1/2 flex flex-col items-start">
-          <h2 className="text-3xl font-bold mb-4">{slides[activeSlide].title}</h2>
-          <p className="text-gray-700 mb-4">{slides[activeSlide].content}</p>
-          <Link href='/'>
-          <button className="relative inline-flex items-center justify-center px-4 py-2 text-orange-600 font-medium group">
-            <span className="absolute inset-0 w-full h-full border-b-2 border-orange-600 transform scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
-            <span className="relative">Read More</span>
-          </button>
-        </Link>
-        </div>
-        {/* Image */}
-        <div className="w-full md:w-1/2 h-64 md:h-80 relative">
-          <Image
-            src={slides[activeSlide].image}
-            alt={slides[activeSlide].title}
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg shadow-lg"
-          />
+        {/* Introduction */}
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className="flex-shrink-0">
+            <div className="relative w-full h-72 md:w-80 lg:w-96 overflow-hidden rounded-lg shadow-lg transition-all duration-500 transform hover:scale-105">
+              <Image
+                src={FounderPhoto}
+                alt="Michael Kreiger"
+                className="object-cover w-full h-full"
+                width={800}
+                height={800}
+              />
+            </div>
+          </div>
+          <div>
+            <p className="text-lg text-gray-700 mb-6">
+              Prime Marketing Experts was founded in 2017 by Michael Kreiger, a native Bostonian.
+            </p>
+            <blockquote className="text-gray-600 italic border-l-4 border-orange-500 pl-4">
+              “As an entrepreneur myself, I am dedicated to helping small businesses grow their
+              business and online presence. We have many tools to choose from to help SMBs grow,
+              BUT one thing is for certain, the foundation of all successful online businesses
+              is one’s website. Without a strong website that has a clear message and brand
+              and is built to attract the targeted audience... maintaining an online presence
+              in this ever-competitive marketplace is almost impossible.”
+            </blockquote>
+          </div>
         </div>
 
-       
-      </div>
+        {/* Meet Michael */}
+        <div className="mt-12">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            Meet Michael
+          </h3>
+          <p className="text-gray-700 mb-6">
+            Prime Marketing Experts has served for over 7 years, helping hundreds of companies in the Boston area.
+            After earning his Master of Science at the University of Massachusetts, Lowell, Michael built a
+            company that has become a one-stop marketing shop for small to medium-sized companies and their
+            marketing needs. PME excels at creating robust websites, social media campaigns, email campaigns,
+            LinkedIn partnerships, Bing and Google ads, and more.
+          </p>
+          <blockquote className="text-gray-600 italic border-l-4 border-orange-500 pl-4">
+            “Every day, I see that what truly separates us from other marketing firms is our dedication to
+            effectively building relationships with key potential clients over time. For us, being a
+            relationship-driven marketing firm means always prioritizing long-term, meaningful connections
+            over traditional transactional approaches.”
+          </blockquote>
+        </div>
+
+    </div>
     </section>
   );
-}
+};
+
+export default AboutUs;

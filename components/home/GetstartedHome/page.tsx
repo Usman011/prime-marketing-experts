@@ -16,26 +16,32 @@ interface AccordionItem {
 }
 
 const accordionData: AccordionItem[] = [
+	
 	{
-		question: 'What is your strategy for starting a new project?',
-		answer:
-			'We begin with an initial discovery phase to understand your requirements. Then, we develop a tailored approach based on those insights.',
+		question: 'How can we generate more sales-qualified leads and revenue?',
+		answer:'Are you looking to generate more leads and drive more revenue? Execute customizes revenue marketing tactics to generate more high-quality sales lead and boost overall sales? ',
 	},
 	{
-		question: 'How do you measure the success of your campaigns?',
+		question: 'Why is my website not attracting enough potential customers?',
 		answer:
-			'We measure the success of our campaigns by monitoring various key performance indicators (KPIs) such as website traffic, conversion rates, engagement metrics, and return on investment (ROI).',
+			'Does your business find getting qualified leads into your pipeline to be a challenge? Boost your leads generation potential with our tailored digital marketing strategies and website development services designed to meet your specific business requirements.',
 	},
 	{
-		question: 'What is the pricing structure of your services?',
+		
+		question: 'Why is our marketing and sales data not interconnected?',
 		answer:
-			'Our pricing structure is determined based on the services selected and the overall complexity of the project. We will be happy to offer a customized estimate after discussing your requirements.',
+			'We use marketing automation and CRM technology to align your sales and marketing efforts and maximize your return on investment for each sales qualified lead (SQL). This will help you organize your data, so salespeople can analyze efforts for better result and reports.  ',
 	},
 	{
-		question: 'What makes XSuite different from other agencies?',
+		question: 'Why does our website get very little traffic?',
 		answer:
-			'XSuite distinguishes itself from other agencies by prioritizing customization, ensuring data security, delivering top-tier performance, and maintaining transparent communication.',
+			"When your website has low traffic,your're missing out on potential business opportunities.We provide customizable SEO services, as well as Social Media and Search Engine PPC advertising, to enhance your website visibility on search engines and attract more visitors",
 	},
+	{
+		question: 'Why does managing digital campaigns take so much time?',
+		answer:'We help your company use latest advertising strategies and technology to make the most of your advertising budget. Our experts will optimize your advertising budget by targeting ads,creating engaging graphics, and distributing your budget effectively across platforms',
+	},
+	
 ]
 
 const InfoSection: React.FC = () => {
@@ -47,16 +53,16 @@ const InfoSection: React.FC = () => {
 	return (
 		<div className="mt-10">
 			<div className="container mx-auto px-4 py-8 mt-5">
-				<h1 className="text-4xl font-extrabold text-center mb-3">Frequently Asked Questions</h1>
+				<h1 className="text-3xl font-extrabold text-center mb-3">We Accept All Challenges</h1>
 				<p className="text-base text-center mb-12 text-gray-600">
-					Discover how we are revolutionizing the industry with our cutting-edge solutions
+					Prime Marketing Experts solves your digital marketing and website bottlenecks.
 				</p>
-				<div className="flex flex-col lg:flex-row h-full gap-8 border p-5 md:p-10 border-gray-200 rounded-lg shadow-lg">
+				<div className="flex flex-col lg:flex-row h-full gap-8 border p-5  md:p-10 border-gray-200 rounded-lg shadow-lg">
 					<div className="lg:w-1/2">
 						<Image
 							src={sampleImage}
 							alt="FAQ Illustration"
-							className="rounded-lg shadow-md w-full h-auto object-cover"
+							className="rounded-lg shadow-md pt-6 w-full h-auto object-cover"
 						/>
 					</div>
 					<div className="lg:w-1/2 h-auto flex items-center">

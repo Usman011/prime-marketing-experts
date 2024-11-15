@@ -28,7 +28,7 @@ const CaseStudyDetail = ({ id }: { id: string }) => {
 		<div>
 			<div className="  py-10 bg-gray-100 ">
 				<div className="container h-96 flex items-center justify-center">
-					<div className=" text-4xl md:text-8xl font-bold ">Blog Details</div>
+					<div className=" text-3xl md:text-4xl font-bold ">Blog Details</div>
 				</div>
 			</div>
 			{!loading && caseStudy ? (

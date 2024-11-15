@@ -6,12 +6,12 @@ import { ArrowRight } from 'lucide-react';
 
 export function WhoWeServeSection() {
 	return (
-	  <section className="bg-blue-50 w-auto md:w-auto py-16 px:auto md:px-8">
+	  <section className="bg-blue-50 container w-auto md:w-auto py-16 px:auto md:px-8">
 		<div className="max-w-6xl mx-auto text-center">
 		  <div className='md:mx-auto mx-10'>
-		  <h2 className="text-4xl font-extrabold text-gray-800 mb-4">Who We Serve</h2>
+		  <h2 className="text-3xl font-extrabold text-gray-800 mb-4">Who We Serve</h2>
 		  <p className="text-xl text-gray-600 mb-10">
-			We offer superior marketing tailored for small to medium-sized businesses that deserve Fortune 500 quality they can trust.
+		  In today`s competitive business landscape, a one-size-fits-all approach to marketing is no longer sufficient. Successful marketing strategies must be tailored to the specific needs, challenges, and goals of each industry. That is why we empower diverse industries with customized, results-driven marketing solutions tailored to their unique needs and goals.
 		  </p>
   
 		  <div className="bg-white shadow-lg rounded-lg p-6 mb-12 text-left">

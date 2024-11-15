@@ -116,10 +116,10 @@ export function Header() {
 		setOpenItems((prev) => ({ ...prev, [title]: !prev[title] }))
 	}
   return (
-	<nav className="bg-background bg-gray-100 w-full h-auto  shadow-lg">
+	<nav className="bg-background bg-gray-100 w-full  h-auto  shadow-lg">
 
 
-		<div className="items-center justify-around h-16 hidden  md:flex">
+		<div className="items-center justify-evenly h-16 hidden  md:flex">
 
     <div className="flex items-center">
   <Link href="/" className="text-2xl font-bold text-primary">
@@ -131,6 +131,7 @@ export function Header() {
 
 <NavigationMenu>
   <NavigationMenuList>
+    
     <NavigationMenuItem>
       <Link href="/" legacyBehavior passHref>
         <NavigationMenuLink className="bg-transparent text-black font-sans text-lg font-semibold hover:text-orange-500">
@@ -138,6 +139,24 @@ export function Header() {
         </NavigationMenuLink>
       </Link>
     </NavigationMenuItem>
+
+    <NavigationMenuItem>
+      <Link href="/weserve" legacyBehavior passHref>
+        <NavigationMenuLink className="bg-transparent text-black font-sans text-lg font-semibold hover:text-orange-500">
+        Who We Serve
+        </NavigationMenuLink>
+      </Link>
+    </NavigationMenuItem>
+
+    <NavigationMenuItem>
+      <Link href="/about" legacyBehavior passHref>
+        <NavigationMenuLink className="bg-transparent text-black font-sans text-lg font-semibold hover:text-orange-500">
+        About
+        </NavigationMenuLink>
+      </Link>
+    </NavigationMenuItem>
+
+  
 
     <NavigationMenuItem>
       <NavigationMenuTrigger className="bg-transparent text-black  font-sans text-lg font-semibold hover:text-orange-500">
@@ -203,7 +222,7 @@ export function Header() {
     </div>
 
     <Link href="/free-strategy-session">
-  <button className="bg-orange-500 text-white font-semibold py-2 px-4 rounded-3xl hover:bg-orange-600 hover:shadow-lg transition duration-300 ease-in-out">
+  <button className=" bg-gradient-main text-white font-semibold py-2 px-4 rounded-3xl hover:bg-orange-600 hover:shadow-lg transition duration-300 ease-in-out">
     Free Strategy Session
   </button>
 </Link>
