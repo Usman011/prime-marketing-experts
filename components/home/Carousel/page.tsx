@@ -3,24 +3,15 @@ import { ArrowRight } from 'lucide-react';
 import { FaHandshake, FaUserCircle, FaHeart, FaGem, FaUsers, FaThumbsUp, FaChartLine, FaCoins, FaStar } from "react-icons/fa";
 
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+
 
 
 export function CarouselSection() {
     return (
       <section className="bg-gray-100 container py-10 flex flex-col justify-center items-center  md:mt-auto mb-10 w-full h-auto">
         {/* <h2 className="text-4xl font-bold text-center mb-10 ">Inside Prime Marketing</h2> */}
-        <Carousel className="md:mx-auto w-[90%] h-auto">
-      <CarouselContent>
-
-          <CarouselItem>
-          <div className="flex flex-col md:flex-row items-center mx-auto p-4 md:p-8 gap-4 md:gap-20">
+        
+          <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto gap-10 md:mx-20 md:gap-20">
       {/* Left Side: Text */}
     <div className="w-full md:w-2/4 h-auto md:h-[90-vh] gap-20 bg-gray-50 shadow-lg rounded-2xl">
     <button className="bg-gradient-main text-black  border-2  rounded-tl-2xl rounded-br-2xl px-14 py-2 hover:bg-orange-600">
@@ -108,14 +99,7 @@ export function CarouselSection() {
       </div>
 
     </div>
-          </CarouselItem>
-
-
-
-          
-      </CarouselContent>
-     
-    </Carousel>
+         
       </section>
     );
   }

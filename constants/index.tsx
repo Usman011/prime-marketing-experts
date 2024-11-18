@@ -138,7 +138,15 @@ export const mobileMenu = [
 	{
 		title:'Home',
 		url:'/',
-		},	
+		},
+		{
+			title:'Who We Serve',
+			url:'/weserve',
+			},	
+			{
+				title:'About',
+				url:'/about',
+				},		
       
 		{
 			title:'Business',

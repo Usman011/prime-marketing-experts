@@ -73,7 +73,7 @@ const InfoSection: React.FC = () => {
 									key={index}
 									className=" border border-gray-200 rounded-lg px-5 py-2"
 								>
-									<AccordionTrigger>{item.question}</AccordionTrigger>
+									<AccordionTrigger className='text-start'>{item.question}</AccordionTrigger>
 									<AccordionContent>{item.answer}</AccordionContent>
 								</AccordionItem>
 							))}
