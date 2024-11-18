@@ -22,7 +22,7 @@ const HomeBanner = () => {
 						</div>
 						<div className="mt-5 text-gray-200 ">
 						We are a full service relationship-driven marketing firm. We craft connections, to drive results with integrated, customized solutions that maximize ROI for our clients.
-                        We are focused on serving Small and Medium size businesses that need quality and affordable marketing solutions to help them grow and compete effectively in today's complex digital landscape. 
+                        We are focused on serving Small and Medium size businesses that need quality and affordable marketing solutions to help them grow and compete effectively in today`s complex digital landscape. 
 						</div>
 						<Link href="https://www.primemarketingexperts.com/digital-marketing-services/">
 							<div className="py-4 px-8 bg-gradient-main inline-block rounded-lg text-white font-medium mt-10">

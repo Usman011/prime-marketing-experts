@@ -132,7 +132,7 @@ export function Header() {
 <NavigationMenu>
   <NavigationMenuList>
     
-    <div className="space-x-5 flex">
+    <div className="space-x-5 pr-1 flex">
     <NavigationMenuItem>
       <Link href="/weserve" legacyBehavior passHref>
         <NavigationMenuLink className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500">
