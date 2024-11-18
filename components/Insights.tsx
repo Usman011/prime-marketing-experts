@@ -92,7 +92,7 @@ export default function Insight() {
 						<Button
 							key={index}
 							variant={selectedIndex === index ? 'default' : 'outline'}
-							className={`m-2 transition-all duration-300 ${selectedIndex === index ? 'bg-[#ff7e00] hover:bg-[#ff962c]' : ''}`}
+							className={`m-2 transition-all duration-300 ${selectedIndex === index ? 'bg-gradient-main hover:bg-[#ff962c]' : ''}`}
 							onClick={() => scrollTo(index)}
 						>
 							{item.buttonText}
@@ -115,7 +115,7 @@ export default function Insight() {
 												))}
 												<Button
 													asChild
-													className={`mt-4 ${selectedIndex === index ? 'bg-[#ff7e00] hover:bg-[#ff962c]' : ''}`}
+													className={`mt-4 ${selectedIndex === index ? 'bg-gradient-main hover:bg-[#ff962c]' : ''}`}
 												>
 													<a href={item.linkHref}>{item.linkText}</a>
 												</Button>

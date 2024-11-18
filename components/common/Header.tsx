@@ -132,34 +132,32 @@ export function Header() {
 <NavigationMenu>
   <NavigationMenuList>
     
-    <NavigationMenuItem>
-      <Link href="/" legacyBehavior passHref>
-        <NavigationMenuLink className="bg-transparent text-black font-sans text-lg font-semibold hover:text-orange-500">
-          Home
-        </NavigationMenuLink>
-      </Link>
-    </NavigationMenuItem>
-
+    <div className="space-x-5 flex">
     <NavigationMenuItem>
       <Link href="/weserve" legacyBehavior passHref>
-        <NavigationMenuLink className="bg-transparent text-black font-sans text-lg font-semibold hover:text-orange-500">
+        <NavigationMenuLink className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500">
         Who We Serve
         </NavigationMenuLink>
       </Link>
     </NavigationMenuItem>
+  
+
+    
 
     <NavigationMenuItem>
       <Link href="/about" legacyBehavior passHref>
-        <NavigationMenuLink className="bg-transparent text-black font-sans text-lg font-semibold hover:text-orange-500">
+        <NavigationMenuLink className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500">
         About
         </NavigationMenuLink>
       </Link>
     </NavigationMenuItem>
 
+    </div>
+
   
 
     <NavigationMenuItem>
-      <NavigationMenuTrigger className="bg-transparent text-black  font-sans text-lg font-semibold hover:text-orange-500">
+      <NavigationMenuTrigger className="bg-transparent text-black  font-sans text-[16px] font-semibold hover:text-orange-500">
         Business
       </NavigationMenuTrigger>
       <NavigationMenuContent>
@@ -174,7 +172,7 @@ export function Header() {
     </NavigationMenuItem>
 
     <NavigationMenuItem>
-      <NavigationMenuTrigger className="bg-transparent text-black font-sans text-lg font-semibold hover:text-orange-500">
+      <NavigationMenuTrigger className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500">
         Marketing
       </NavigationMenuTrigger>
       <NavigationMenuContent>
@@ -187,7 +185,7 @@ export function Header() {
     </NavigationMenuItem>
 
     <NavigationMenuItem>
-      <NavigationMenuTrigger className="bg-transparent  text-black font-sans text-lg font-semibold hover:text-orange-500">
+      <NavigationMenuTrigger className="bg-transparent  text-black font-sans text-[16px] font-semibold hover:text-orange-500">
         Technology
       </NavigationMenuTrigger>
       <NavigationMenuContent>
@@ -202,7 +200,7 @@ export function Header() {
 
     <NavigationMenuItem>
       <Link href="/blog" legacyBehavior passHref>
-        <NavigationMenuLink className="bg-transparent text-black font-sans text-lg font-semibold hover:text-orange-500">
+        <NavigationMenuLink className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500">
           Blog
         </NavigationMenuLink>
       </Link>
@@ -211,7 +209,7 @@ export function Header() {
     <div className="pl-4">
       <NavigationMenuItem>
         <Link href="/contact" legacyBehavior passHref>
-          <NavigationMenuLink className="bg-transparent text-black font-sans text-lg font-semibold hover:text-orange-500">
+          <NavigationMenuLink className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500">
             Contact
           </NavigationMenuLink>
         </Link>

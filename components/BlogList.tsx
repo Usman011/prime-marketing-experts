@@ -112,7 +112,7 @@ export default function BlogList({ showAll }: { showAll?: boolean }) {
 				{!showAll && (
 					<Link href={'/blog'}>
 						<div className="flex justify-center mt-10 md:mt-14 ">
-							<Button className="bg-[#ff7e00] hover:bg-[#ff962c]">Read More Blogs</Button>
+							<Button className="bg-gradient-main hover:bg-[#ff962c]">Read More Blogs</Button>
 						</div>
 					</Link>
 				)}

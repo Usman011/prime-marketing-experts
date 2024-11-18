@@ -122,7 +122,7 @@ export default function HomeServicesPage() {
 						<div className="flex justify-center mt-14">
 							<button
 								onClick={() => setShowMore((prev) => !prev)}
-								className="px-6 py-2 bg-orange-600 text-white font-medium rounded-md hover:bg-orange-700 transition duration-300"
+								className="px-6 py-2 bg-gradient-main text-white font-medium rounded-md hover:bg-orange-700 transition duration-300"
 							>
 								{showMore ? 'Show Less' : 'Show More'}
 							</button>

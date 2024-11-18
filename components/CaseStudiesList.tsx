@@ -112,7 +112,7 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 				{!showAll && (
 					<Link href={'/case-studies'}>
 						<div className="flex justify-center mt-10 md:mt-14 ">
-							<Button className="bg-[#ff7e00] hover:bg-[#ff962c]">Read More</Button>
+							<Button className="bg-gradient-main hover:bg-[#ff962c]">Read More</Button>
 						</div>
 					</Link>
 				)}

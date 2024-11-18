@@ -23,7 +23,7 @@ export function CarouselSection() {
           <div className="flex flex-col md:flex-row items-center mx-auto p-4 md:p-8 gap-4 md:gap-20">
       {/* Left Side: Text */}
     <div className="w-full md:w-2/4 h-auto md:h-[90-vh] gap-20 bg-gray-50 shadow-lg rounded-2xl">
-    <button className="bg-orange-500 text-black  border-2  rounded-tl-2xl rounded-br-2xl px-14 py-2 hover:bg-orange-600">
+    <button className="bg-gradient-main text-black  border-2  rounded-tl-2xl rounded-br-2xl px-14 py-2 hover:bg-orange-600">
      Our Culture
      </button>
        <div className='flex flex-col gap-6 m-4'>
@@ -70,7 +70,7 @@ export function CarouselSection() {
 
       {/* Right Side */}
       <div className="w-full md:w-2/4 h-auto md:h-[83vh] gap-20  bg-gray-50 shadow-lg rounded-2xl">
-    <button className="bg-orange-500 text-black  border-2  rounded-tl-2xl rounded-br-2xl px-14 py-2 hover:bg-orange-600">
+    <button className="bg-gradient-main text-black  border-2  rounded-tl-2xl rounded-br-2xl px-14 py-2 hover:bg-orange-600">
     Our Awards
      </button>
        <div className='flex flex-col gap-6 m-4'>
