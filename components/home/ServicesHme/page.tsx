@@ -4,6 +4,11 @@ import { FaLaptop, FaBullhorn, FaChartLine, FaCogs } from 'react-icons/fa'
 import { GiAutomaticSas } from 'react-icons/gi'
 import { MdBarChart } from 'react-icons/md'
 import Link from 'next/link'
+import { BiBookContent } from "react-icons/bi";
+import { MdBrandingWatermark } from "react-icons/md";
+import { MdMarkEmailUnread } from "react-icons/md";
+import { BsGraphUp } from "react-icons/bs";
+import { PiTrainBold } from "react-icons/pi";
 
 type ServiceCardProps = {
 	icon: React.ReactNode
@@ -59,33 +64,33 @@ export default function HomeServicesPage() {
 			link: '/marketing/text-message-marketing',
 		},
 		{
-			icon: <FaLaptop className="text-orange-600 text-4xl" />,
+			icon: <BiBookContent  className="text-orange-600 text-4xl" />,
 			title: 'Content Marketing',
-			description: 'Some description here...',
+			description: 'We understand a comprehensive content marketing strategy is important for building brand authority, brand awareness, and lead generation.',
 			link: '/marketing/content-marketing',
 		},
 		{
-			icon: <GiAutomaticSas className="text-orange-600 text-4xl" />,
+			icon: <MdBrandingWatermark className="text-orange-600 text-4xl" />,
 			title: 'Branding',
-			description: 'Some description here...',
+			description: ' Branding is an effective strategy designed by the enterprises to help their audience quickly identify and experience their brand.',
 			link: '/marketing/branding',
 		},
 		{
-			icon: <MdBarChart className="text-orange-600 text-4xl" />,
-			title: 'Text Message Marketing',
-			description: 'Some description here...',
-			link: '/marketing/text-message-marketing',
+			icon: <MdMarkEmailUnread className="text-orange-600 text-4xl" />,
+			title: 'Email Marketing',
+			description: 'Email Marketing program or managing your ongoing campaigns, our team can tackle each aspect of your email efforts.',
+			link: '/marketing/email-marketing/',
 		},
 		{
-			icon: <FaChartLine className="text-orange-600 text-4xl" />,
+			icon: <BsGraphUp className="text-orange-600 text-4xl" />,
 			title: 'Marketing Plans',
-			description: 'Some description here...',
+			description: 'A business with no marketing plan fetches you nothing except a haphazard, start-stop journey with wastage of money, time, and other resources.',
 			link: '/marketing/marketing-plans',
 		},
 		{
-			icon: <FaBullhorn className="text-orange-600 text-4xl" />,
+			icon: <PiTrainBold className="text-orange-600 text-4xl" />,
 			title: 'Inbound Marketing',
-			description: 'Some description here...',
+			description: ' While outbound marketing interrupts your audience with unwanted content, inbound marketing forms the connections with visitors and solves the problems.',
 			link: '/marketing/inbound-marketing',
 		},
 	]

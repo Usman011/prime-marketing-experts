@@ -60,7 +60,7 @@ export function CarouselSection() {
       </div>
 
       {/* Right Side */}
-      <div className="w-full md:w-2/4 h-auto md:h-[83vh] gap-20  bg-gray-50 shadow-lg rounded-2xl">
+      <div className="w-full md:w-2/4 h-90vh md:h-[83vh] gap-20  bg-gray-50 shadow-lg rounded-2xl">
     <button className="bg-gradient-main text-black  border-2  rounded-tl-2xl rounded-br-2xl px-14 py-2 hover:bg-orange-600">
     Our Awards
      </button>
