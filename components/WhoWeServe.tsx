@@ -33,35 +33,35 @@ export function WhoWeServeSection() {
 	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
 	  <MapPinHouse />
 	  </div>
-	  <h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Real Estate</h3>
+	  <Link href="/industry/real-estate"><h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Real Estate</h3></Link>
 	</div>
   
 	<div className="flex h-20 w-70 md:w-56 justify-start gap-6 text-center  items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
 	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
 	  <Workflow />
 	  </div>
-	  <h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Automotive</h3>
+	  <Link href='/industry/automotive' className="mt-4 text-lg pb-4 font-semibold text-gray-800">Automotive</Link>
 	</div>
   
 	<div className="flex h-20 w-70 md:w-56 justify-start gap-6 text-center items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
 	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
 	  <Salad />
 	  </div>
-	  <h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Restaurants</h3>
+	  <Link href="/industry/restaurant" className="mt-4 text-lg pb-4 font-semibold text-gray-800">Restaurants</Link>
 	</div>
   
 	<div className="flex h-20 w-70 md:w-56 justify-start gap-6 text-center items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
 	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
 	  <ScanBarcode />
 	  </div>
-	  <h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Retail</h3>
+	  <Link href='/industry/retail' className="mt-4 text-lg pb-4 font-semibold text-gray-800">Retail</Link>
 	</div>
   
 	<div className="flex h-20 w-70 md:w-56 justify-start gap-6 text-center items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
 	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
 	  <Eraser />
 	  </div>
-	  <h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Cleaning Companies</h3>
+	  <Link href="/industry/cleaning-companies" className="mt-4 text-lg pb-4 font-semibold text-gray-800">Cleaning Companies</Link>
 	</div>
   
 	<div className="flex h-20 w-70 md:w-56 justify-start gap-6 text-center items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>
@@ -75,7 +75,7 @@ export function WhoWeServeSection() {
 	  <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
 	  <BrickWall />
 	  </div>
-	  <h3 className="mt-4 text-lg pb-4 font-semibold text-gray-800">Construction</h3>
+	  <Link href="/industry/construction" className="mt-4 text-lg pb-4 font-semibold text-gray-800">Construction</Link>
 	</div>
   
 	<div className="flex h-20 w-70 md:w-56 justify-start gap-6 text-center items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}>

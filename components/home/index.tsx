@@ -8,6 +8,7 @@ import CaseStudiesList from '../CaseStudiesList'
 import { CarouselSection } from './Carousel/page'
 import Insight from '../Insights'
 import AboutUs from './AboutUs/page'
+
 export const Home = () => {
 	return (
 		<>
