@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import IMG5 from "../../../public/images/website-mobile-app-development/image5.png";
+import IMG7 from "../../../public/images/website-mobile-app-development/image7.png";
 import { RiMessage2Line } from "react-icons/ri";
 
 const Page = () => {
@@ -21,13 +22,15 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='flex flex-col mx-2 gap-10 mt-10'>
-        <div className='flex flex-col space-y-6'>
-          <h1 className='font-bold text-4xl'>
+      <div className='flex flex-col gap-10 mt-10'>
+        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 item-center space-y-6'>
+          
+          <div className='flex flex-col lg:flex-row items-center gap-8 lg:gap-20'>
+            
+            <div className='space-y-8 '>
+            <h1 className='font-bold text-4xl'>
             Revolutionize Customer Experiences with Chatbot
           </h1>
-          <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
-            <div className='space-y-8 mt-14'>
               <p>“67% of consumers globally used a chatbot for customer support in the past year.”</p>
               <p>That’s a huge number, right? In fact, 57% of businesses believe that chatbot deliver large ROI with the least effort. Isn’t that a win-win situation for both your customers and your business?</p>
               <p>Considering these figures, don’t you think you should start thinking of how you’re going to implement a chatbot on your website?</p>
@@ -38,76 +41,144 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col bg-blue-50 p-2 space-y-6'>
-          <h1 className='font-bold text-4xl'>
-            Now, you must be intrigued about chatbot, and what exactly are these?
-          </h1>
-          <div className='space-y-6'>
-            <p>
-              Well, chatbot are built on artificial intelligence software, which stimulates a conversation with your customers in a natural language over the internet. These can communicate through websites, mobile apps, messaging applications, or phones.
-            </p>
-            <p>Want to be a unicorn in a sea of donkeys? It seems hard, but in reality, it’s simple. You just have to implement chatbot for your application and website!</p>
-            <p>Besides boosting your employee productivity, chatbot are known to increase conversion rate since they offer round the clock assistance to your prospects and customers.</p>
-            <p>We will make sure that you get exceptional customer service, so you also have full knowledge of what exactly is going on with your project. We are transparent and make sure to keep you in the loop.</p>
-            <p>We have dedicated and professional staff, which will be at your service all through the day. So, feel free to contact us right away if you need to ask about chatbot development.</p>
-          </div>
-        </div>
+        <div className="flex flex-col lg:flex-row bg-blue-50 p-6 space-y-6 lg:space-y-0 lg:space-x-6 items-center">
+ 
 
-        <div className='flex flex-col space-y-6'>
-          <h1 className='font-bold text-4xl'>
-            We develop chatbot…
-          </h1>
-          <h1 className='font-bold text-4xl'>And we are pretty good at it!</h1>
-          <div className='space-y-6'>
-            <p>
-              So, whether you own a Fortune 500 corporation or a startup, we would be glad if we could assist you in creating a chatbot for you. Give us a chance, and you won’t be disappointed!
-            </p>
-            <h1 className='font-bold text-2xl'>
-              With Us, You Will Get Conversational UI And Nothing Else…
-            </h1>
-            <p>Want to integrate custom AI bot on your website? At Prime Marketing Experts, we strive to help fast-growing companies and budding startups build a scalable, successful AI-based chatbot that they love.</p>
-            <p>We apply deep technological expertise in the development of machine learning and artificial intelligence to help customers deliver personalization and user comfort on a large scale. Thanks to our R&D capabilities for rapid prototyping, we let customers tap into invisible market segments by efficient custom machine learning solutions. This allows them to become more efficient and achieve measurable business results.</p>
-            <p>Bestowed with skilled industry experts, Prime Marketing Experts have worked on a myriad of automated features across tons of applications.</p>
-            <p>We offer the best-in-class AI software for IoT applications, as well as data services and digital transformation for businesses. Over a decade of familiarity with startups in Fortune 500 companies has given us the competence to offer design, perfection, strategy, engineering, and exceptional services.</p>
-            <p>Not only chatbot improve user experience, but they are also capable of 24/7 customer service. Along with web and mobile development, you can even count us in for apps for cloud environments.</p>
-            <p>Be it retail, healthcare, manufacturing, marketing, or technology, there is a bot for everyone.</p>
-            <p className='font-bold'>Let us set the pace of change in your industry. Join our family to become a part of the trending crowd!</p>
-            <p>Whether you are deploying your existing app or building a new one, our professionals make the most of multiple AI options to help you manage your chatbot easily.</p>
-            <p>As a reputable and promising chatbot development company, we use advanced and revolutionary technology to deliver outstanding chatbot applications.</p>
-            <p>Our skilled chatbot developers are fully capable of developing AI-based bots that use dynamic learning and frequently upgrade via human interactions or fixed bots, where the possibilities for upgrading are limited.</p>
-            <p>We strive to become the best chatbot developing company. Hiring our chatbot developers allows you complete freedom to work in tandem with our time-honored team. We can help you in:</p>
-            <ul className='list-disc pl-5 space-y-2'>
-              <li>Developing bots to improve digital marketing initiatives</li>
-              <li>Developing telecom bots</li>
-              <li>Developing social media assistants</li>
-              <li>Developing news bots</li>
-              <li>Developing business integration chatbot</li>
-              <li>Developing customized bots</li>
-            </ul>
+  {/* Text Section */}
+  <div className="lg:w-2/3 space-y-6">
+    <h1 className="font-bold text-4xl">
+      Now, you must be intrigued about chatbot, and what exactly are these?
+    </h1>
+    <div className="space-y-6">
+      <p>
+        Well, chatbot are built on artificial intelligence software, which stimulates a conversation with your customers in a natural language over the internet. These can communicate through websites, mobile apps, messaging applications, or phones.
+      </p>
+      <p>
+        Want to be a unicorn in a sea of donkeys? It seems hard, but in reality, it’s simple. You just have to implement chatbot for your application and website!
+      </p>
+      <p>
+        Besides boosting your employee productivity, chatbot are known to increase conversion rate since they offer round-the-clock assistance to your prospects and customers.
+      </p>
+      <p>
+        We will make sure that you get exceptional customer service, so you also have full knowledge of what exactly is going on with your project. We are transparent and make sure to keep you in the loop.
+      </p>
+      <p>
+        We have dedicated and professional staff, which will be at your service all through the day. So, feel free to contact us right away if you need to ask about chatbot development.
+      </p>
+    </div>
+  </div>
+   {/* Image Section */}
+   <div className="lg:w-1/3 flex-shrink-0">
+    <Image
+      src={IMG7} 
+      alt="Chatbot Illustration" 
+      className="w-full h-auto rounded-lg shadow-md"
+    />
+  </div>
+</div>
 
-            <ul className='list-disc pl-5 space-y-6'>
-              <p>One of the most promising and advanced interaction modes, chat bots has a plethora of benefits, some of which are:</p>
-              <li className='font-bold'>Chat bots Improve Customer Service</li>
-              <p>Did you know 83% of shoppers require online support during shopping?</p>
-              <p>Chat bots are known to improve customer service by offering extensive customer assistance. So, you might need to help your customers to find the right product according to their needs.</p>
-              <p>Chat bots are helpful in assisting in real-time, just like a real person does in a real store. Also, chat bots can provide round the clock customer support. They are structured to give automatic and planned answers to repetitive and forward the call to a real person when needed.</p>
-              <p>Unlike humans, bots can initiate a conversation regarding any issue with the users. This improves brand perception in the long run.</p>
 
-              <li className='font-bold'>Chat bots Monitor Consumer Data </li>
-              <p>Chat bots collect feedback through straightforward questions and leverage that information to improve the products and services of a particular organization. With this data, you can also adjust low converting pages on your website.</p>
+       {/* How We Use Market Research Section */}
+<div className="space-y-6 rounded-lg shadow-lg p-6 ">
+  <h1 className="font-bold text-4xl text-black">How We Use Marketing Research In Customer-Centric Marketing</h1>
+  <p>
+    We can utilize your market research to develop customized content and messaging to make sure your customers are getting exactly what they are looking for. For prioritizing your needs first, we put the needs of your clients first. We give them the special treatment they expect, which will, in turn, convert your leads into sales.
+  </p>
+</div>
 
-              <li className='font-bold'>Chat bots Help Better Lead Generation.</li>
-              <p>By asking relevant and necessary questions, chat bots prompt users to generate a lead for you.</p>
+{/* Types of Market Research Section */}
+<div className="space-y-6 rounded-lg shadow-lg p-6  bg-blue-50">
+  <h1 className="font-bold text-4xl text-black">Types of Market Research</h1>
 
-              <li className='font-bold'>Chat bots Increase Customer Engagement </li>
-              <p>Chat bots are a sure-shot way of keeping your customers engaged with your brand. Many reports have shown that marketers have really seen an increase in their customer spending with the use of chat bots.</p>
-              <li className='font-bold'>Chat bots Save Money </li>
-              <p>Chat bots are much faster and cheaper than hiring numerous employees for each of your customer service tasks.</p>
-            </ul>
-          </div>
-        </div>
+  {/* Qualitative Research */}
+  <div>
+    <h2 className="font-bold text-xl text-black">Qualitative Research</h2>
+    <p>
+      Our team conducts qualitative research to increase in-depth knowledge of various inquiries. We use various tools to conduct this research, including face-to-face interviews, research, or observational studies.
+    </p>
+    <p>
+      By embracing qualitative research, the expectations, inspirational factors, and explanations for explicit market conduct can be known. This type of research helps in the simple introduction of inquiries identifying the why and how of the distinctive market patterns and brand matters as opposed to just depending on the basic facts.
+    </p>
+  </div>
 
-        <div className='flex flex-col bg-blue-50 p-2 mt-10 gap-14'>
+  {/* Quantitative Research */}
+  <div>
+    <h2 className="font-bold text-xl text-black">Quantitative Research</h2>
+    <p>
+      This type of research primarily deals with numbers and trends. The key host pots for performing this research include social media analysis, polls, previously researched data, and surveys.
+    </p>
+    <p>
+      The quantitative research technique for researching the market offers the genuinely necessary numerical information and the least imperative benchmark to analyze and chart success in the wake of considering the brand interest, viability, and the profitability of the campaigns.
+    </p>
+  </div>
+</div>
+
+{/* Importance of Market Research Services */}
+<div className="space-y-8  px-6 lg:px-16 py-10 shadow-lg rounded-xl">
+  <h1 className="font-bold text-4xl text-gray-900 text-center mb-8">
+    Importance of Market Research Services
+  </h1>
+
+  {/* Sections List */}
+  <div className="space-y-8">
+    
+    {/* Identifying Budding Problems */}
+    <div className="p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <h2 className="font-semibold text-2xl text-gray-800 mb-4">Identifying Budding Problems</h2>
+      <p className="text-lg text-gray-700 mb-4">
+        If you own a start-up, you must be evident to the issues that have hindered your growth. If you don’t address those problems at an early stage, they are likely to become a big issue.
+      </p>
+      <p className="text-lg text-gray-700">
+        Utilizing market research, potential issues are distinguished and tended to before they get out of control. We have advanced knowledge of the latest market trends, which will be beneficial in creating result-driven strategies and solving the prevailing issues in a company.
+      </p>
+    </div>
+
+    {/* Reaching Your Target Audience at the Optimal Time */}
+    <div className="p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <h2 className="font-semibold text-2xl text-gray-800 mb-4">Reaching Your Target Audience at the Optimal Time</h2>
+      <p className="text-lg text-gray-700 mb-4">
+        Market research allows your company to reach a better target audience. The tools used in market research, such as questionnaires, face-to-face interviews, discussions, and meetings, have a major hand in getting to know the target audience.
+      </p>
+    </div>
+
+    {/* Tracking Competitors */}
+    <div className="p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <h2 className="font-semibold text-2xl text-gray-800 mb-4">Tracking Competitors</h2>
+      <p className="text-lg text-gray-700 mb-4">
+        Even if your business idea is unique, there are many other companies, just like yours, focusing on the same products and services as you. It means they are vying for the same clients.
+      </p>
+      <p className="text-lg text-gray-700">
+        So, if you want to be a successful name in your industry, you need to keep your market share. For this, you need to know what your competitors are doing, what strategies they are implementing, and what audience they are targeting.
+      </p>
+    </div>
+
+    {/* Accelerating Sales Growth */}
+    <div className="p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <h2 className="font-semibold text-2xl text-gray-800 mb-4">Accelerating Sales Growth</h2>
+      <p className="text-lg text-gray-700 mb-4">
+        Market research, when embraced, gives significant knowledge to your organization about how effective its products or services are probably going to be, the typical cost to be set for the service, and categories that consumers will buy. All these data help with forecasting sales growth.
+      </p>
+    </div>
+
+    {/* Research for Financing Solutions */}
+    <div className="p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <h2 className="font-semibold text-2xl text-gray-800 mb-4">Research for Financing Solutions</h2>
+      <p className="text-lg text-gray-700 mb-4">
+        Affordable finance is essential for the success of startup companies. Financing is required for various purposes, such as the expansion and development of new products. Even though there are numerous lenders in the market, most of them do not lend to private startups due to the risk they are willing to take.
+      </p>
+    </div>
+
+    {/* Evaluating New Market Opportunities */}
+    <div className="p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <h2 className="font-semibold text-2xl text-gray-800 mb-4">Evaluating New Market Opportunities</h2>
+      <p className="text-lg text-gray-700 mb-4">
+        The market consistently has new opportunities for companies to embrace. Some of them are not very obvious, and one needs to perform research to identify and evaluate them.
+      </p>
+    </div>
+  </div>
+</div>
+
+        <div className='flex flex-col bg-blue-50 p-6  gap-14'>
           <h2 className='text-4xl'>Types of Chat bots</h2>
 
           <div className='space-y-6'>
@@ -152,7 +223,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col space-y-6'>
+        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6'>
           <h1 className='font-bold text-4xl'>
             Our Chatbot Development Process
           </h1>
@@ -167,7 +238,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col bg-blue-50 p-2 mb-8 gap-10'>
+        <div className='flex flex-col bg-blue-50 p-6 mb-8 gap-10'>
           <h1 className='font-bold text-4xl'>Why Have Us Develop Your Chatbot?</h1>
           <ul className='list-disc pl-5 space-y-2'>
             <li>We deliver a flawless user experience using user-friendly interactions.</li>

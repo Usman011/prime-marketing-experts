@@ -2,10 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import IMG6 from '../../../public/images/website-mobile-app-development/image6.png';
+import IMG8 from '../../../public/images/image8.png';
 
 const Page = () => {
   return (
-    <section className="container mx-auto px-4">
+    <section className="container mx-auto">
       <div className="flex flex-col items-center justify-center text-center w-full h-52">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
           Mobile App Development
@@ -20,13 +21,13 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="flex flex-col mx-2 gap-10 mt-10">
-        <div className="flex flex-col space-y-6">
-          <h1 className="font-bold text-4xl">
+      <div className="flex flex-col  p-6 gap-10 mt-10">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
+            <div className="space-y-8 ">
+            <h1 className="font-bold text-4xl">
           Mobile App Development that Builds Brands
           </h1>
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="space-y-8 mt-14">
               <p>
                 Is your business still not pacing forward, but your competitors’ is?
               </p>
@@ -41,7 +42,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-blue-50 p-2 space-y-6 justify-start">
+          <div className="flex flex-col  p-2 space-y-6 justify-start">
             <h1 className="font-bold text-4xl">
               Wondering what it can do to your business?
             </h1>
@@ -51,7 +52,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6 justify-start">
+        <div className="flex flex-col space-y-6 bg-blue-50 p-6 justify-start">
           <h1 className="font-bold text-4xl">
             Killing Two Birds With One Stone Produces Increases Profitability!
           </h1>
@@ -65,16 +66,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6 bg-blue-50 p-2 justify-start">
-          <h1 className="font-bold text-4xl">
-            Why choose Android App Development Services for your business?
-          </h1>
-          <div className="space-y-6">
-            <p>Since Google Play Store is one of the largest mobile app marketplace, you can get inspired on what you should build to appeal to the millions of Android users. No reason better than that justifies the development of mobile applications for Android devices. As an award-winning Android app development company, we understand this and have built the strongest Android development team on our premises. Whether for smartphones, portable devices, or TV, the end-user experience we offer is unrivaled. We sit down with our clients to comprehend their business objectives and achieve them with the best technology stack and expertise.</p>
-          </div>
-        </div>
-
-        <div className="flex flex-col space-y-6 justify-start">
+        <div className="flex flex-col space-y-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 justify-start">
           <h1 className="font-bold text-4xl">
             Why choose iOS App Development Services for your business?
           </h1>
@@ -84,7 +76,35 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6 justify-start">
+
+        <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 justify-center items-center bg-blue-50 p-6 lg:p-6">
+  {/* Left Side - Image */}
+  <div className="lg:w-1/3 flex-shrink-0">
+    <Image
+      src={IMG8} // Replace with the actual image path
+      alt="iOS App Development"
+      className="w-full h-96 rounded-lg shadow-lg"
+    />
+  </div>
+
+  {/* Right Side - Content */}
+  <div className="lg:w-2/3 p-10 space-y-6">
+    <h1 className="font-bold text-4xl text-gray-800">
+      Why Choose iOS App Development Services for Your Business?
+    </h1>
+    <div className="space-y-6">
+      <p className="text-gray-700 text-lg">
+        iOS apps generate the highest revenue. No wonder entrepreneurs are opting for the development of personalized iOS apps on all Apple devices. As a trusted iPhone app development company, we boldly turn your idea into reality, prepare it to profitably generate revenue, and present it by assimilating technologies beyond your imagination. Be it iPhone, iWatch, or iPad; we develop applications for all these devices with a unique user experience. Our team can adapt iOS solutions to focus on specific business needs. How do we do it? By defying the standard to make your mobile application stand out.
+      </p>
+      <p className="text-gray-700 text-lg">
+        That said, our prime experts are highly capable developers with a breadth of experience and skill to comprehend the distinctive requirements of your business and accordingly design feasible mobile applications that excel in all aspects, from a friendly user interface to excellent user experience.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+        <div className="flex flex-col space-y-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 justify-start">
           <h1 className="font-bold text-4xl">
             How Prime Mobile Apps Help Your Company?
           </h1>
@@ -108,44 +128,93 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6 bg-blue-50 p-2 justify-start">
-          <h1 className="font-bold text-4xl">
-            Our Prime Mobile App Development Process
-          </h1>
-          <div className="space-y-6">
-            <ul className="list-disc pl-5 space-y-2">
-              <p>We have a highly efficient and crystal-clear process to excel in all niches of mobile app development. Our strict process aligns business goals and honors our promised timeline while we make a beautiful platform to grow your business!</p>
+       
+  <div className="flex flex-col space-y-6 bg-blue-50 p-6 justify-start">
+  <h1 className="font-bold text-4xl text-gray-800">
+    Our Prime Mobile App Development Process
+  </h1>
 
-              <li className="font-bold">Ideation:</li>
-              <p className="font-bold">Everything begins with one idea!</p>
-              <p>It’s good to see you glued and holding on to the details of this versatile tool! And since the application idea has crystallized fully in your mind, the next step is to strategize to make it happen. That is where you need prime experts.</p>
-              <p><span className="font-bold">You need us!</span> Our app developers with the right skills and expertise brainstorm to set everything in motion after determining concepts for your app.</p>
+  <p className="text-lg text-gray-700 mb-6">
+    We have a highly efficient and crystal-clear process to excel in all niches of mobile app development. Our strict process aligns business goals and honors our promised timeline while we create a beautiful platform to grow your business!
+  </p>
 
-              <li className="font-bold">Requirements:</li>
-              <p>We gather requirements to curate a list of features that are critical to making your app attain its business goals, functionality, and then smoothly launch it. In addition, we thoroughly understand your requirements by performing competitive analysis, which identifies prime competitors in your field and craft apps that give you an upper edge against them.</p>
+  {/* Card Layout */}
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {/* Card 1: Ideation */}
+    <div className="bg-white p-6 shadow-lg rounded-lg">
+      <p className="font-bold text-xl text-gray-800">Ideation:</p>
+      <p className="text-lg text-gray-700 mb-4">
+        Everything begins with one idea! Once the application idea has crystallized fully in your mind, we strategize to make it happen. That`s where you need Prime Experts.
+      </p>
+      <p className="text-lg text-gray-700">
+        <span className="font-bold">You need us!</span> Our app developers brainstorm to set everything in motion after determining concepts for your app.
+      </p>
+    </div>
 
-              <li className="font-bold">Designing:</li>
-              <p>After defining a strategy based on your requirements, we begin to position the building blocks for your app. Our prime developers create a structure of the app with inclusive elements such as the features and screen to be displayed.<span className="font-bold">It is a map for the app!</span> </p>
-              <p>After developing and thorough testing of wire frames and high fidelity prototypes, we create final workflows to map out the journey of the app user.</p>
+    {/* Card 2: Requirements */}
+    <div className="bg-white p-6 shadow-lg rounded-lg">
+      <p className="font-bold text-xl text-gray-800">Requirements:</p>
+      <p className="text-lg text-gray-700 mb-4">
+        We gather requirements to curate a list of features critical to making your app attain its business goals and functionality. We also perform competitive analysis to give you an edge over your competitors.
+      </p>
+    </div>
 
-              <li className="font-bold">Develop-Test-Develop</li>
-              <p>After successfully designing the outline of your app, our teams test code by following a standardized iterative process.</p>
+    {/* Card 3: Designing */}
+    <div className="bg-white p-6 shadow-lg rounded-lg">
+      <p className="font-bold text-xl text-gray-800">Designing:</p>
+      <p className="text-lg text-gray-700 mb-4">
+        After defining a strategy, we begin to create a structure for your app. This includes the features and screen flow – it’s the map for your app!
+      </p>
+      <p className="text-lg text-gray-700">
+        After testing wireframes and prototypes, we finalize the user journey through the app.
+      </p>
+    </div>
 
-              <li className="font-bold">We make your dream idea come to life.</li>
-              <p>We develop custom mobile applications by implementing styles and functional elements and assign them to the Quality Assurance department for reviewing and reporting bugs if any. The testing protocol includes functional testing, performance testing, app behavior, and user-friendliness.</p>
-              <p>The process is sprinted, and the test results are shared with you as well.</p>
-              <p>Therefore, you are also our team member because we agree that “great things in business are done by a TEAM and not just one person”.</p>
+    {/* Card 4: Develop-Test-Develop */}
+    <div className="bg-white p-6 shadow-lg rounded-lg">
+      <p className="font-bold text-xl text-gray-800">Develop-Test-Develop:</p>
+      <p className="text-lg text-gray-700 mb-4">
+        After designing the app, our teams test the code through an iterative process, ensuring everything works as expected before moving forward.
+      </p>
+    </div>
 
-              <li className="font-bold">Deploy & Maintain:</li>
-              <p>After assembling and verifying all the bits and pieces, your idea then becomes a reality when we take your app live and launch in the iOS App Store or Google Play. But that’s not all; we have more to offer on the plate.</p>
-              <p>We constantly monitor, analyze, improve, maintain, and update the app to keep it up to its best performance.</p>
-              <p className="font-bold">This is our style of how we provide exceptional service that keeps us at the top of our game to also keep you on the top of your game.</p>
-              <p>Get in touch with us for your custom-built mobile apps! We will combine your objective and technological solutions to achieve your business goals because, with more than 2 million apps on the Google Play and 1.85 million on App Store, mobile apps are expected to generate $200 billion in revenue by 2021. So engage yourself to increase brand exposure, distribution, and optimized tactics.</p>
-              <p>As a <Link href="/marketing/e-commerce-digital-marketing-services" className="text-blue-500">top eCommerce App Development Company</Link>, we can help you build an app that converts browsers into customers like a well-oiled machine!</p>
-            </ul>
-          </div>
-        </div>
-      </div>
+    {/* Card 5: We Make Your Dream Idea Come to Life */}
+    <div className="bg-white p-6 shadow-lg rounded-lg">
+      <p className="font-bold text-xl text-gray-800">We Make Your Dream Idea Come to Life:</p>
+      <p className="text-lg text-gray-700 mb-4">
+        We develop custom mobile applications, implementing styles and elements, while our QA team ensures quality through rigorous testing.
+      </p>
+      <p className="text-lg text-gray-700">
+        We value collaboration, so you’re part of the team during the testing process. Your feedback is essential!
+      </p>
+    </div>
+
+    {/* Card 6: Deploy & Maintain */}
+    <div className="bg-white p-6 shadow-lg rounded-lg">
+      <p className="font-bold text-xl text-gray-800">Deploy & Maintain:</p>
+      <p className="text-lg text-gray-700 mb-4">
+        Once your app is ready, we launch it on the iOS App Store or Google Play. But our service doesn’t end there; we constantly monitor and update the app to maintain peak performance.
+      </p>
+      <p className="font-bold text-lg text-gray-700">
+        Our exceptional service keeps you at the top of your game.
+      </p>
+    </div>
+
+    {/* Final Call to Action Card */}
+    <div className="bg-white p-6 shadow-lg rounded-lg col-span-1 md:col-span-2 lg:col-span-3">
+      <p className="text-lg text-gray-700 mb-4">
+        Get in touch with us for your custom-built mobile apps! With millions of apps in the store, mobile apps are expected to generate significant revenue. Let us help you build an app that converts browsers into customers!
+      </p>
+      <p className="text-lg text-gray-700">
+        As a <Link href="/marketing/e-commerce-digital-marketing-services" className="text-blue-500">top eCommerce App Development Company</Link>, we can help you achieve your business goals through a well-designed app.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+     
     </section>
   );
 };

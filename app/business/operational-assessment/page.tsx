@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import IMG from '../../../public/images/operational-assessment/image1.png'
 import IMG2 from '../../../public/images/operational-assessment/image2.png'
+import IMG3 from '../../../public/images/operational-assessment/image3.png'
 
 const Page = () => {
     return (
@@ -109,15 +110,25 @@ const Page = () => {
           </ul>
           
 
-          <div>
-            <h1 className='pt-14 pb-4 font-bold text-4xl'>
-            Why Are Operation Assessments Important?
-            </h1>
-            <p>
-            An operational assessment is a powerful tool that shows how well your business reaches its maximum potential. Business owners and executives should think that an annual review for them is very much like an operational assessment, as they can often find concerns with operations before they become a major problem in the business.
-            </p>
-          </div>
-          <p>Unfortunately, many businesses believe that they do not have enough time or financial resources to do an operational assessment, which often results in much higher costs due to the inefficiency that eventually grows.</p>
+      <div className='flex flex-col bg-blue-50 p-6 lg:flex-row gap-8 '>
+  <div className='lg:w-1/2'>
+    <h1 className='pt-4 pb-4 font-bold text-4xl'>
+      Why Are Operational Assessments Important?
+    </h1>
+    <p className='mb-4'>
+      An operational assessment is a powerful tool that shows how well your business reaches its maximum potential. Business owners and executives should think that an annual review for them is very much like an operational assessment, as they can often find concerns with operations before they become a major problem in the business.
+    </p>
+    <p className='mb-4'>
+      Unfortunately, many businesses believe that they do not have enough time or financial resources to do an operational assessment, which often results in much higher costs due to the inefficiency that eventually grows.
+    </p>
+  </div>
+  <div className='lg:w-1/2'>
+    <Image src={IMG3} alt="Operational Assessments" className='w-full h-auto object-cover' />
+  </div>
+</div>
+
+
+          
 
           <div>
             <h1 className='pt-14 pb-4 font-bold text-4xl'>
@@ -138,55 +149,91 @@ const Page = () => {
           </ul>
 
 
-          <div className='bg-blue-50 p-4'>
-            <h1 className='pt-14 bg-blue-50 pb-4 font-bold text-4xl'>Operational Assessment Benefits</h1>
-            <ul className='list-disc pl-5 space-y-6'>
-              <li className='font-bold'>Helping Organizations Gain Efficiency </li>
-              <p>
-              If you are also one of those who says, “This is what we always do,” you need to change that attitude to help your company grow. People need to work superbly; however, mostly, they don’t have a clue how to carry out that responsibility. Necessities and procedures have changed; however, those progressions were ignored or not imparted.
-              </p>
-              <p>
-              Operational assessments can help you plan out things and help you maximize your profit. With the necessary advancements in this assessment, organizations can now gain efficiencies along with maintaining compliance.
-              </p>
+          <div className='bg-blue-50 p-8 rounded-lg shadow-md'>
+  <h1 className='pt-14 pb-4 font-bold text-4xl text-center text-black'>
+    Operational Assessment Benefits
+  </h1>
+  
+  <div className='space-y-8'>
+    <div className='bg-white p-6 rounded-lg shadow-lg'>
+      <h2 className='font-bold text-2xl text-black'>
+        Helping Organizations Gain Efficiency
+      </h2>
+      <p className='mt-4 text-gray-700'>
+        If you are also one of those who says, “This is what we always do,” you need to change that attitude to help your company grow. People need to work superbly; however, mostly, they don’t have a clue how to carry out that responsibility. Necessities and procedures have changed; however, those progressions were ignored or not imparted.
+      </p>
+      <p className='mt-4 text-gray-700'>
+        Operational assessments can help you plan out things and help you maximize your profit. With the necessary advancements in this assessment, organizations can now gain efficiencies along with maintaining compliance.
+      </p>
+    </div>
 
-              <li className='font-bold'>It Helps Organizations Prepare For Growth </li>
-              <p>
-              Operational assessments endow you with the knowledge of what changes or improvements your company needs to expand your business at an exponential rate successfully.
-              </p>
-            
-              <li className='font-bold'>It Helps Identifies & Prioritizes Essential Enhancements </li>
-              <p>
-              An operational assessment can give the rundown of procedures or frameworks that should be upgraded. Data can be accumulated to give direction on the best way to effectively and agreeably organize required changes.
-              </p>
-             
-              <li className='font-bold'>Reducing Employee Turnover </li>
-              <p>
-              Employee turnover has been lower for companies that focus on following prescribed procedures in business process management. Taking out the risk of high representative turnover can be as basic as committing time and assets to proceed with education programs, employee recognition platform, and streamlined cross-sector communication.
-              </p>
-              <p>
-              Along with this, you need to equip your employees with operational processes to:
-              </p>
-            <ul className='list-disc pl-5 space-y-6'>
-            <li>Minimize errors</li>
-            <li>Automate daily processes</li>
-            <li>Improve employee performance</li>
-            <p>Whenever employee retention is lacking, you need to adopt the best protocol of identifying the processes that are not working well and isolating them.</p>
-            <p>If you take the best interests of your employee in mind, your organization’s best interests are taken into account. We help you become more transparent throughout the external and indoor recruitment. With this, you can reduce the odds of employee turnover and enables your staff to find their perfect fit.</p>
-            <p>If you see an increase in employee turnover, you need to hire a trusted brand name that is ready to conduct your business’s operational assessment.</p>
-            <li>Automating Processes</li>
-            <p>There are a large number of risk factors with regards to stale, obsolete business processes. If there is a single percent chance that your organization still uses a high stack of documents or follows an approach that utilizes a large number of incoherent shared spreadsheets, you are in dire need of operational assessment.</p>
-            <p>For this, you need to find a company that can help you manage and automate your manual process, hence increasing your profit.</p>
-          </ul>
-            </ul>
+    <div className='bg-white p-6 rounded-lg shadow-lg'>
+      <h2 className='font-bold text-2xl text-black'>
+        It Helps Organizations Prepare For Growth
+      </h2>
+      <p className='mt-4 text-gray-700'>
+        Operational assessments endow you with the knowledge of what changes or improvements your company needs to expand your business at an exponential rate successfully.
+      </p>
+    </div>
 
-            <div>
-            <h1 className='pt-14 pb-4 font-bold text-4xl'>
-            Support Your Company’s Continual Growth with Prime Marketing Experts
-            </h1>
-            <p>
-            We understand all organizations are different and face unique challenges. This is why; we emphasize customized solutions tailored specifically for you and your organization’s needs.
-            </p>
-          </div>
+    <div className='bg-white p-6 rounded-lg shadow-lg'>
+      <h2 className='font-bold text-2xl text-black'>
+        It Helps Identify & Prioritize Essential Enhancements
+      </h2>
+      <p className='mt-4 text-gray-700'>
+        An operational assessment can give the rundown of procedures or frameworks that should be upgraded. Data can be accumulated to give direction on the best way to effectively and agreeably organize required changes.
+      </p>
+    </div>
+
+    <div className='bg-white p-6 rounded-lg shadow-lg'>
+      <h2 className='font-bold text-2xl text-black'>
+        Reducing Employee Turnover
+      </h2>
+      <p className='mt-4 text-gray-700'>
+        Employee turnover has been lower for companies that focus on following prescribed procedures in business process management. Taking out the risk of high employee turnover can be as basic as committing time and assets to proceed with education programs, employee recognition platforms, and streamlined cross-sector communication.
+      </p>
+      <p className='mt-4 text-gray-700'>
+        Along with this, you need to equip your employees with operational processes to:
+      </p>
+      <ul className='list-disc pl-6 mt-2 text-gray-700'>
+        <li>Minimize errors</li>
+        <li>Automate daily processes</li>
+        <li>Improve employee performance</li>
+      </ul>
+      <p className='mt-4 text-gray-700'>
+        Whenever employee retention is lacking, you need to adopt the best protocol of identifying the processes that are not working well and isolating them.
+      </p>
+      <p className='mt-4 text-gray-700'>
+        If you take the best interests of your employee in mind, your organization’s best interests are taken into account. We help you become more transparent throughout the external and internal recruitment. This reduces the odds of employee turnover and enables your staff to find their perfect fit.
+      </p>
+      <p className='mt-4 text-gray-700'>
+        If you see an increase in employee turnover, you need to hire a trusted brand name that is ready to conduct your business’s operational assessment.
+      </p>
+    </div>
+
+    <div className='bg-white p-6 rounded-lg shadow-lg'>
+      <h2 className='font-bold text-2xl text-black'>
+        Automating Processes
+      </h2>
+      <p className='mt-4 text-gray-700'>
+        There are a large number of risk factors with regards to stale, obsolete business processes. If there is even a single chance that your organization still uses a high stack of documents or follows an approach that utilizes a large number of incoherent shared spreadsheets, you are in dire need of an operational assessment.
+      </p>
+      <p className='mt-4 text-gray-700'>
+        For this, you need to find a company that can help you manage and automate your manual processes, hence increasing your profit.
+      </p>
+    </div>
+  </div>
+
+  <div className='mt-8'>
+    <h1 className='pt-14 pb-4 font-bold text-4xl text-center text-blue-700'>
+      Support Your Company’s Continual Growth with Prime Marketing Experts
+    </h1>
+    <p className='text-gray-700 text-center'>
+      We understand all organizations are different and face unique challenges. This is why we emphasize customized solutions tailored specifically for you and your organization’s needs.
+    </p>
+  </div>
+
+
           </div>
           <p>We know your operational processes should be aligned with the latest technology to survive in this competitive world. If you hire us, all these things are taken care of. With our services, you will rest assured that your enterprise will be greatly benefited.</p>
           <p className='font-bold'>Get ready to scale your company by giving us a call right away to arrange a meeting! </p>

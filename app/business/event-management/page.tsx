@@ -21,35 +21,69 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='flex flex-col mx-2 gap-10 mt-10'>
-        <div className='flex flex-col space-y-6 justify-start'>
-          <h1 className='font-bold text-4xl'>
-            Run The Best Event With Us!
-          </h1>
-          <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
-            <div className='space-y-6'>
-              <p>One’s life is never short of events!</p>
-              <p>From birthdays to weddings, and from conferences to live shows, life is filled with endless events.</p>
-              <p>As either a host or guest, we spend nearly 20,719 hours of our lives in such events. It is overwhelming to always think on your toes and plan an event. Yet the chances are that it can go all wrong even if you plan it to your heart’s content.</p>
-              <p>Now the preference is yours, whether you wish to do the stressful stuff or want to enjoy your event by leaving the logistics to us.</p>
-              <p>A lot goes behind the stage to put up a rock star event. Creativity, designing, innovations, ideas, venue selection, team building, and branding are some of the key ingredients to have a master plan for any event.</p>
-            </div>
+      <div className='flex flex-col  gap-10 mt-10'>
+      <div className='flex flex-col space-y-10 justify-start p-6 lg:px-16  rounded-lg shadow-lg'>
+  {/* Main Title */}
+  <h1 className='font-extrabold text-4xl text-center text-black mb-8'>
+    Run The Best Event With Us!
+  </h1>
 
-            <div className='w-full h-auto'>
-              <Image src={IMG1} alt="Market Research" width={400} height={400} />
-            </div>
-          </div>
+  {/* Two-column layout: Text and Image */}
+  <div className='flex flex-col lg:flex-row gap-8 lg:gap-16'>
+    {/* Text Content */}
+    <div className='space-y-6 text-lg text-gray-800 lg:w-1/2'>
+      <p className='font-semibold text-lg text-gray-600'>
+        One’s life is never short of events!
+      </p>
+      <p className='text-gray-700'>
+        From birthdays to weddings, and from conferences to live shows, life is filled with endless events.
+      </p>
+      <p className='text-gray-700'>
+        As either a host or guest, we spend nearly 20,719 hours of our lives in such events. It’s overwhelming to always think on your toes and plan an event. Yet, the chances are that it can go all wrong even if you plan it to your heart’s content.
+      </p>
+      <p className='text-gray-700'>
+        Now the preference is yours, whether you wish to do the stressful stuff or want to enjoy your event by leaving the logistics to us.
+      </p>
+      <p className='text-gray-700'>
+        A lot goes behind the stage to put up a rock star event. Creativity, designing, innovations, ideas, venue selection, team building, and branding are some of the key ingredients to have a master plan for any event.
+      </p>
+    </div>
 
-          <p>You should have a bird’s eye view to deal with multiple deliveries, build agendas, attend phone calls, answer millions of questions, predict everything, and have a backup for it. The detail is the devil, you miss one point, and all of it sinks down.</p>
-          <p>Too overwhelming?</p>
-          <p>Lean on the gurus. After countless years of event management experience, we are the most qualified to handle your events like pros. We, as Prime Marketing Experts, live, eat, and sleep event planning!</p>
-        </div>
+    {/* Image */}
+    <div className='w-full lg:w-1/2'>
+      <div className='relative overflow-hidden rounded-lg shadow-lg'>
+        <Image src={IMG1} alt="Event Planning" width={600} height={400} className='object-cover transition-all duration-300 transform hover:scale-105' />
+      </div>
+    </div>
+  </div>
 
-        <div className='flex flex-col  space-y-6 justify-start'>
+  {/* Additional Section */}
+  <div className='space-y-4 mt-8'>
+    <p className='text-lg text-gray-700'>
+      You should have a bird’s eye view to deal with multiple deliveries, build agendas, attend phone calls, answer millions of questions, predict everything, and have a backup for it. The detail is the devil, you miss one point, and all of it sinks down.
+    </p>
+    <p className='text-lg font-bold text-gray-700'>
+      Too overwhelming?
+    </p>
+    <p className='text-lg text-gray-700'>
+      Lean on the gurus. After countless years of event management experience, we are the most qualified to handle your events like pros. We, as Prime Marketing Experts, live, eat, and sleep event planning!
+    </p>
+  </div>
+
+  {/* Call to Action Button */}
+  <div className='flex justify-center mt-12'>
+    <Link href="/contact" className='bg-gradient-main text-white font-semibold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-blue-500 transform transition duration-300 hover:scale-105'>
+      Contact Us 
+    </Link>
+  </div>
+</div>
+
+
+        <div className='flex flex-col bg-blue-50 p-6 space-y-6 justify-start'>
           <h1 className='font-bold text-4xl'>
             Know Your Event Planners
           </h1>
-          <div className='flex flex-col bg-blue-50 p-2 lg:flex-row gap-8 lg:gap-20'>
+          <div className='flex flex-col  p-2 lg:flex-row gap-8 lg:gap-20'>
             <div className='space-y-6'>
               <p>Prime Marketing Experts is not just yet another company, but THE best event management company. Our team of experts who ace their game makes us the finest firm across the globe.</p>
               <p className='font-bold'>We create and put life in your ideas, while you save your time to dream more about your event.</p>
@@ -62,97 +96,129 @@ const Page = () => {
             </div>
           </div>
           <p>We are passionate event managers, which made us won praises and awards for delivering a well-organized and flawless event. The mantra for our service is to deliver outstanding client satisfaction, so we are at your service to cater to all your needs.</p>
-
-          <div>
-            <h1 className='pt-14 font-bold text-4xl'>
-              Prime Event Management Features:
-            </h1>
-            <p>
-              Since you have dreamt up the amazing concept for your event, and are finding someone to convert them into realize. You are on the right page!
-            </p>
           </div>
 
-          <p>
-            Our step one is to understand your dream concept and then pitch in our creative execution to blow your attendees’ minds away. With Prime Marketing Experts, you get a cocktail of event management services with the enlisted features.
-          </p>
+          <div className='bg-white p-8 space-y-12 rounded-lg shadow-lg'>
+  {/* Main Title */}
+  <h1 className='text-center text-4xl font-bold text-blue-700 mt-10'>
+    Prime Event Management Features:
+  </h1>
+  
+  {/* Intro Paragraph */}
+  <p className='text-lg text-gray-700'>
+    Since you have dreamt up the amazing concept for your event, and are finding someone to convert them into reality, you are on the right page!
+  </p>
 
-          <ul className='list-disc pl-5 space-y-4'>
-            <li className='font-bold'>Experienced Planners:</li>
-            <p>Event management is not everyone’s cup of tea because it can be hectic and exhaustive for some. However, for us, it is a cakewalk. From the planning of the event to the final execution, we give keen attention to all the details to ensure a smooth flow, and this is why we are seasoned professionals for the job.</p>
+  <p className='text-lg text-gray-700'>
+    Our step one is to understand your dream concept and then pitch in our creative execution to blow your attendees’ minds away. With Prime Marketing Experts, you get a cocktail of event management services with the enlisted features.
+  </p>
 
-            <li className='font-bold'>Bucketing Approvals: </li>
-            <p>It can be a daunting task to acquire permission and legal compliance to host an event. But with us, all these contracts and permission are handled by our expert and professional event managers. Thus, you save your time and shun stress.</p>
+  {/* Features List with Cards */}
+  <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+    {/* Feature Cards */}
+    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+      <h3 className='font-bold text-xl text-black mb-4'>Experienced Planners</h3>
+      <p className='text-gray-700'>
+        Event management is not everyone’s cup of tea, but for us, it’s a cakewalk. From the planning to the final execution, we ensure everything flows smoothly.
+      </p>
+    </div>
 
-            <li className='font-bold'>Stay On The Budget:</li>
-            <p>Establishing a budget for your event is important, but what’s more important is to stay on the planned budget. Many fantastic ideas fall by the wayside because of a leaky budgeting plan.</p>
-            <p>But we take this aspect into due consideration. We negotiate the best rate in the market for you. The venue, food, drinks, entertainment, décor, and all other miscellaneous expenses are arranged and managed efficiently to save you money.</p>
+    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+      <h3 className='font-bold text-xl text-black mb-4'>Bucketing Approvals</h3>
+      <p className='text-gray-700'>
+        We handle all the contracts and permissions, saving you time and effort while ensuring legal compliance for your event.
+      </p>
+    </div>
 
-            <li className='font-bold'>Pick Location And Date: </li>
-            <p>Many events have a pre-set date for a recurring event, but firming the right date is important for any new event.</p>
-            <p>For events that are required to be broadcasted or involve a live audience, we choose the right venue and time catering to the needs of your target audience. We generally keep in mind holiday periods, availability of key participants, and other occasions that you may fail to foresee.</p>
+    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+      <h3 className='font-bold text-xl text-black mb-4'>Stay On The Budget</h3>
+      <p className='text-gray-700'>
+        We help you establish and stick to your budget, ensuring that every expense is accounted for and that you get the best rates in the market.
+      </p>
+    </div>
 
-            <li className='font-bold'>Part Of An Effective Marketing Strategy: </li>
-            <p>Event planning is not just about weddings. Events can be a helpful enhancement in your company’s brand building initiatives or can assist in a successful product launch.</p>
+    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+      <h3 className='font-bold text-xl text-black mb-4'>Pick Location And Date</h3>
+      <p className='text-gray-700'>
+        We help choose the right venue and timing for your event, considering holidays, availability, and audience needs.
+      </p>
+    </div>
 
-            <li className='font-bold'>Take Ownership & Responsibility: </li>
-            <p>By choosing us as your professional event management partner, you free yourself from the hassle of making all the event arrangements.</p>
-            <p>We aim to make you our patrons; hence, we take ownership of your event with all our hearts.</p>
+    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+      <h3 className='font-bold text-xl text-black-800 mb-4'>Effective Marketing Strategy</h3>
+      <p className='text-gray-700'>
+        We ensure your event is part of a larger strategy to build your brand and create a successful product launch or promotional event.
+      </p>
+    </div>
 
-            <li className='font-bold'>Creative Professionals: </li>
-            <p>Event managers are artistic professionals with the needed organizational expertise and creativity required to make an event successful. They will arrange lights and decorate according to the occasion and the desired vibe.</p>
+    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+      <h3 className='font-bold text-xl text-black mb-4'>Take Ownership & Responsibility</h3>
+      <p className='text-gray-700'>
+        You can rest easy while we take full ownership of your event and ensure everything goes off without a hitch.
+      </p>
+    </div>
 
-            <li className='font-bold'>Driving Event Traffic:</li>
-            <p>We are experts in marketing, so we can market any event to bring in your desired audience so we can be that much more effective in building your brand image. We can also help you to increase registration, acquire new customers, and create an exciting agenda for your business.</p>
+    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+      <h3 className='font-bold text-xl text-black mb-4'>Creative Professionals</h3>
+      <p className='text-gray-700'>
+        Our team of creative professionals handles everything from lights to decorations, ensuring the right vibe for your event.
+      </p>
+    </div>
 
-            <li className='font-bold'>One-Stop Event Shop:</li>
-            <p>The most significant reason for choosing our event management service is that we are a one-stop shop. We cover every detail that an occasion requires equipment such as halogen lights, tarpaulin, seating arrangement for the quests and speakers, art and decoration, catering services, sound, photography, and videography. Our planners are detail-oriented, so nothing is left previsioned from our eagle eyes.</p>
+    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+      <h3 className='font-bold text-xl text-black mb-4'>Driving Event Traffic</h3>
+      <p className='text-gray-700'>
+        We help you market your event to bring in the right audience, increasing engagement and brand visibility.
+      </p>
+    </div>
 
-            <li className='font-bold'>Reduce Stress: </li>
-            <p>Our event managers can work under pressure and within a certain time constraint. Put the onus on our professionals, and you have to stress no more. <span className='font-bold'>Hakuna Matata!</span></p>
-            <p><span className='font-bold'></span>Prime Event Management Services</p>
-            <p>As a renowned event management company, we offer a wide range of services that let you plan and host the perfect event while choosing the best for you and your team.</p>
+    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+      <h3 className='font-bold text-xl text-black mb-4'>One-Stop Event Shop</h3>
+      <p className='text-gray-700'>
+        From equipment to catering, photography to sound, we cover every detail, making us your one-stop shop for all event needs.
+      </p>
+    </div>
 
-            <li className='font-bold'>Venue Selection</li>
-            <p>The very first step of creating an event is venue selection. And, we all know how difficult it is to find the perfect venue for your dream event. With Prime Marketing Experts, you don’t have to worry about this. We will do all the hard work, and you just have to wait and prepare yourself for the most spectacular event you have ever seen.</p>
-            <p>We possess a unique ability to plan, design, and create an unforgettable, customized, and authentic experiences while being tasteful and refined. We make sure to book a venue that is perfect according to your event and tastes.</p>
+    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+      <h3 className='font-bold text-xl text-black mb-4'>Reduce Stress</h3>
+      <p className='text-gray-700'>
+        Leave the pressure of event planning to us. We handle the logistics, so you can focus on enjoying the event. <span className='font-bold'>Hakuna Matata!</span>
+      </p>
+    </div>
+  </div>
 
-            <li className='font-bold'>Designing</li>
-            <p>We have a squad of in-house designers to cater to all your designing needs. Be it invitations or flyers to <Link href="/marketing/social-media-marketing" className='text-blue-500'>social media ads</Link>, we will create everything you desire and help you engage, connect, and evolve.</p>
+  {/* Additional Services Section */}
+  <div className='bg-blue-100 p-8 rounded-lg shadow-lg'>
+    <h2 className='text-3xl font-bold text-black mb-6'>
+      Prime Event Management Services
+    </h2>
 
-            <li className='font-bold'>Invitation Creation & Distribution</li>
-            <p>Invitations make the event feels complete. If there are no invitations, no one will know about your event. On top of that, it is important to take the invitations to the right audience to make your event rocking.</p>
-            <p>Well, our team will help you create eye-catching invitations and also distribute them so you can just concentrate on enjoying your event.</p>
+    <p className='text-lg text-gray-700 mb-4'>
+      We offer a wide range of event management services to ensure you plan and host the perfect event with ease.
+    </p>
 
-            <li className='font-bold'>Attendee Registration Management</li>
-            <p>Organizing events can be a little daunting, and even more when it comes to the guest list. Well, our team is an expert in attendee registration management so that you won’t have to listen to any complaint regarding hospitality.</p>
+    <ul className='list-disc pl-5 space-y-4'>
+      <li><span className='font-bold text-black'>Venue Selection:</span> We help you find the perfect venue for your event, tailored to your needs.</li>
+      <li><span className='font-bold text-black'>Designing:</span> Our in-house designers will handle everything from invitations to social media ads.</li>
+      <li><span className='font-bold text-black'>Invitation Creation & Distribution:</span> We create eye-catching invitations and ensure they reach the right audience.</li>
+      <li><span className='font-bold text-black'>Attendee Registration Management:</span> We manage guest lists, ensuring smooth and hassle-free registration.</li>
+      <li><span className='font-bold text-black'>Social Media Marketing:</span> We engage your audience and increase visibility through creative social media strategies.</li>
+      <li><span className='font-bold text-black'>Specialty Lighting:</span> We create unforgettable lighting setups and effects tailored to your event’s theme.</li>
+      <li><span className='font-bold text-black'>Email Marketing:</span> We design and execute email campaigns that effectively promote your event.</li>
+    </ul>
+  </div>
 
-            <li className='font-bold'>Social Media Marketing</li>
-            <p>We will help you <Link href="/marketing/email-marketing" className='text-blue-600'>engage your social media audience</Link> like never before to promote your event. We make certain that your brand gets the visibility it deserves. We will create engaging posts that people cannot ignore, but they instead click on it.</p>
+  {/* Closing Statement */}
+  <div className='text-center'>
+    <h3 className='text-2xl font-bold text-black mt-8'>
+      Host a Glorified Event With Prime Marketing Experts
+    </h3>
+    <p className='text-lg text-gray-700'>
+      We take pride in our successful event projects and look forward to making your event a standout occasion. Contact us now for a free quote!
+    </p>
+  </div>
+</div>
 
-            <li className='font-bold'>Specialty Lighting</li>
-            <p>We take heed of every little detail for you. From sound to lighting, we have skilled and dedicated staff only to enhance your event and make it unforgettable. We will help you with:</p>
-
-            <ul className='list-disc pl-5 space-y-2'>
-              <li>Concept & theme development</li>
-              <li>Special effects and lighting</li>
-              <li>The centerpiece and floral design</li>
-              <li>Thematic props</li>
-              <li>Seating selection</li>
-              <li>Marketing Collateral Designs</li>
-              <li>Videotaping And Photography</li>
-              <p>Whether you want to shoot a commercial or capture your event in HD, Prime Marketing Experts is all you need. We are definitely a one-stop-shop for all your video production needs.</p>
-            </ul>
-
-            <li className='font-bold'>Email Marketing</li>
-            <p>We design engaging and <Link href="/" className='text-blue-600'>captivating email marketing campaigns</Link> that drive desired actions. We know what we ace at, and we can create awesome email marketing campaigns for you to promote your brand’s event.</p>
-            <p>Along with all these, we help in Name Tag Printing & Distribution, Speaker Recruitment & Management, Celebrity Recruitment & Management, Audio Visual & Lighting Management, Signage & Brand Visibility, Detailed Budgeting & Invoicing, Refreshment & Meal Selection & Procurement, and On-site Management & Logistics Staff.</p>
-            <p className='font-bold'>Host a Glorified Event With Prime Marketing Experts</p>
-            <p>We feel pride in sharing that all our projects have been a great success. We have designed and delivered business events, including roadshows, conferences, and networking events. We enjoy the patronage of numerous recognized leaders.</p>
-            <p>With our tremendous experience, we can tackle any emerging situation with ease. Surprises are not an issue for us. Choosing to hire the pros in event management is the ninja technique to host a successful event.</p>
-            <p>We absorb all your anxiety and leave you worry-free!</p>
-            <p className='pb-10'>We know how to create out-of-the-box events, and we’d love to be a part of your next project. So, contact us now for a free quote.</p>
-          </ul>
-        </div>
       </div>
     </section>
   );

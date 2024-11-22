@@ -24,8 +24,8 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='gap-20 mt-10'>
-        <div className='flex flex-col  space-y-8 justify-start'>
+      <div className='gap-20  mt-10'>
+        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-8 justify-start'>
           <h1 className='font-bold pb-6 text-4xl'>
             Website Development
           </h1>
@@ -75,7 +75,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col mx-2 space-y-8 justify-start'>
+        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-8 justify-start'>
           <h1 className='font-bold text-4xl'>
             E-Commerce Website Development
           </h1>
