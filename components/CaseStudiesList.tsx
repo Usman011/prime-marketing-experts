@@ -29,7 +29,7 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 	}, [])
 
 	return (
-		<div className="py-16 bg-[#FAFAFA]">
+		<div className="container py-16 bg-blue-50">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<motion.h2 className="text-4xl font-extrabold text-center text-gray-900 pb-10 md:pb-14">
 					{showAll ? 'All Case Studies' : 'Our Case Studies'}

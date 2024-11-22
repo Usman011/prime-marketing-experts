@@ -53,7 +53,7 @@ const InfoSection: React.FC = () => {
 	return (
 		<div className="mt-10">
 			<div className="container mx-auto px-4 py-8 mt-5">
-				<h1 className="text-3xl font-extrabold text-center mb-3">We Accept All Challenges</h1>
+				<h1 className="text-3xl font-extrabold text-center mb-3">FAQ</h1>
 				<p className="text-base text-center mb-12 text-gray-600">
 					Prime Marketing Experts solves your digital marketing and website bottlenecks.
 				</p>

@@ -13,13 +13,13 @@ export const Home = () => {
 	return (
 		<>
 			<HomeBanner />
-			<WhoWeServeSection />
-			<AboutUs/>
 			<CarouselSection/>
+			<AboutUs/>
 			<HomeServicesPage />
+			<WhoWeServeSection />
 			<Insight />
-			<BlogList />
 			<CaseStudiesList />
+			<BlogList />
 			<InfoSection />
 			<Contact />
 		</>

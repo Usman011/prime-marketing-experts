@@ -82,7 +82,7 @@ export default function Insight() {
 	}, [emblaApi, onSelect])
 
 	return (
-		<div className="py-12 bg-gradient-to-br from-blue-50 to-purple-50">
+		<div className="container py-12 bg-gray-50">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<h2 className=" text-3xl md:text-3xl font-extrabold text-center mb-12 text-gray-900">
 					Explore Prime Marketing Experts

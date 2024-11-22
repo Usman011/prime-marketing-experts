@@ -133,16 +133,6 @@ export function Header() {
   <NavigationMenuList>
     
     <div className="space-x-5 pr-1 flex">
-    <NavigationMenuItem>
-      <Link href="/weserve" legacyBehavior passHref>
-        <NavigationMenuLink className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500">
-        Who We Serve
-        </NavigationMenuLink>
-      </Link>
-    </NavigationMenuItem>
-  
-
-    
 
     <NavigationMenuItem>
       <Link href="/about" legacyBehavior passHref>
@@ -154,6 +144,25 @@ export function Header() {
 
     </div>
 
+
+    <NavigationMenuItem>
+      <NavigationMenuTrigger className="bg-transparent text-black  font-sans text-[16px] font-semibold hover:text-orange-500">
+        Who We Serve
+      </NavigationMenuTrigger>
+      <NavigationMenuContent>
+        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-3 lg:w-[600px]">
+          <ListItem href="/industry/tourism" title="Tourism" />
+          <ListItem href="/industry/automotive" title="Automotive" />
+          <ListItem href="/industry/restaurant" title="Restaurants" />
+          <ListItem href="/industry/retail" title="Retails" />
+          <ListItem href="/industry/cleaning-companies" title="Cleaning Companies" />
+          <ListItem href="/industry/gyms" title="Gyms" />
+          <ListItem href="/industry/construction" title="Construction" />
+          <ListItem href="/industry/real-estate" title="Real Estate" />
+          <ListItem href="/industry/healthcare" title="Healthcare" />
+        </ul>
+      </NavigationMenuContent>
+    </NavigationMenuItem>
   
 
     <NavigationMenuItem>

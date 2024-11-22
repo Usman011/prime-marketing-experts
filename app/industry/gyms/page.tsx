@@ -129,16 +129,20 @@ export default function GymIndustryPage() {
 </div>
 
 
-         {/* Contact Section */}
-         <div className="py-16 bg-orange-600 text-white text-center rounded-lg shadow-xl">
-          <h2 className="text-3xl font-semibold">Ready to Transform Your Gym?</h2>
-          <p className="mt-4 text-lg"> Don’t wait any longer to take your gym to the next level. Contact us today to get started!.</p>
-          <Link href='/contact'>
-          <button className="mt-6 px-6 py-3 text-white bg-orange-200 font-semibold rounded-md hover:bg-gray-100 transition-all">
-          Contact Us Now
-          </button>
-          </Link>
-        </div>
+       
+
+          {/* Tourism Call-to-Action Section */}
+<div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center justify-evenly px-6 lg:px-12">
+  <h1 className="font-bold text-white text-2xl md:text-4xl text-center leading-tight">
+  Don’t wait any longer to take your gym to the next level
+  </h1>
+  <Link href="/contact">
+    <button className="bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 mt-4 lg:mt-0 flex justify-center items-center hover:text-black text-white rounded-lg">
+      CONTACT NOW
+    </button>
+  </Link>
+  
+</div>
       </div>
     </section>
   );

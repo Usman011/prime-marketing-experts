@@ -34,10 +34,10 @@ const AutomotivePage = () => {
             Elevate Your Brand with Prime Marketing Experts
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-          The automotive industry traces its origins back to the 1860s, marked by the efforts of numerous manufacturers to develop horseless carriages. Initially, cars were assembled manually by human workers, with engineers focusing on stationary vehicles. Over time, the process advanced to a conveyor belt system, where vehicles moved through various stations handled by specialized engineers. By the 1960s, robotic equipment was introduced, revolutionizing production. Today, the majority of cars are primarily assembled using automated machinery.
+          Just as the automotive industry embraces cutting-edge technology, your business needs forward-thinking strategies to stay ahead of the competition. At Prime Marketing Experts, we offer specialized marketing services designed to drive success for automotive brands.
           </p>
           <p className="text-gray-700 mb-6 leading-relaxed">
-            From building your online presence to executing data-driven campaigns, our team provides cutting-edge solutions to amplify your brand`s visibility and customer reach. Let`s drive success together!
+          At Prime Marketing Experts, we bring the same spirit of innovation and precision to marketing as the automotive industry brings to its vehicles. Whether you`re a dealership, parts manufacturer, or service provider, our cutting-edge solutions will help you stand out in a competitive market.
           </p>
           <div className="flex items-center gap-4">
           <Link href="/contact"> 
@@ -80,14 +80,14 @@ const AutomotivePage = () => {
         {/* Left Content */}
         <div className="text-content">
           <h1 className="text-3xl font-extrabold -600 mb-6 leading-tight">
-          Precision Targeting
+          Driving Results with Precision
           </h1>
          
           <p className="text-gray-700 mb-4 leading-relaxed">
-          Engage the right audience with data-backed campaigns that convert viewers into loyal customers.
+          In the automotive industry, precision isn’t just a standard—it’s a necessity. To ensure end-user safety, security, and compliance, rigorous tests and inspections are conducted at various stages of the value chain. These measures help prevent costly product recalls, which can have a significant financial and reputational impact.
           </p>
           <p className="text-gray-700 mb-6 leading-relaxed">
-          To prevent product recalls, tests and inspections are conducted at various stages of the value chain to ensure end-user safety, security, and compliance with automotive industry standards. Despite these measures, the industry remains highly concerned about product recalls due to their significant financial impact.
+          At Prime Marketing Experts, we apply this same level of precision to your marketing campaigns. By using data-driven strategies, we help your brand connect with the right audience, ensuring every effort translates into measurable results.
           </p>
         </div>
       </div>
@@ -100,14 +100,20 @@ const AutomotivePage = () => {
 {/* Left Content */}
 <div className="text-content">
   <h1 className="text-3xl font-extrabold -600 mb-6 leading-tight">
-  Actionable Insights
+  Drive Smarter Decisions with Actionable Insights
   </h1>
  
   <p className="text-gray-700 mb-4 leading-relaxed">
-  Production processes requiring substantial water usage include surface treatment, painting, coating, washing, cooling, air-conditioning, and boilers, excluding component manufacturing. Paintshop operations are particularly water-intensive, as equipment using water-based products also requires water for cleaning.
+  In automotive production, water-intensive processes such as surface treatment, painting, coating, and cooling require precision and resource management to maintain efficiency. Similarly, marketing strategies in the automotive sector demand careful analysis and optimization to achieve the best results.
+
+At Prime Marketing Experts, we provide actionable insights that empower you to fine-tune your campaigns, ensuring every effort contributes to your bottom line.
+
+
   </p>
   <p className="text-gray-700 mb-6 leading-relaxed">
-  Optimize your campaigns with advanced analytics, ensuring every dollar delivers maximum ROI.
+  Just as water is essential for crucial automotive processes, data is the lifeblood of effective marketing. With our actionable insights, you can identify opportunities, address inefficiencies, and maximize your ROI.
+
+
   </p>
 </div>
 
@@ -141,15 +147,15 @@ const AutomotivePage = () => {
         {/* Left Content */}
         <div className="text-content">
           <h1 className="text-3xl font-extrabold -600 mb-6 leading-tight">
-          Dedicated Expertise
+          Ensuring Safety and Success Through Expertise
           </h1>
          
           <p className="text-gray-700 mb-4 leading-relaxed">
-          Partner with experienced marketers who understand the unique challenges of the automotive industry.
+          In the automotive industry, safety is paramount—protecting users, operators, and manufacturers from potential hazards while ensuring vehicles are safeguarded against damage. Similarly, your marketing strategies require the same level of precision and care to protect your brand, enhance visibility, and drive growth.
           </p>
           <p className="text-gray-700 mb-6 leading-relaxed">
           
-         Safety entails protection from risks, dangers, damage, or potential injury. In the automotive industry, safety ensures that users, operators, and manufacturers are not exposed to hazards from motor vehicles or their components. Additionally, safety for the vehicles themselves means minimizing the risk of damage.
+          Just as safety ensures protection against physical risks in the automotive world, our marketing expertise safeguards your brand’s reputation and growth. With a deep understanding of industry challenges, we deliver campaigns that connect with your audience and inspire trust.
           </p>
         </div>
       </div>
@@ -157,20 +163,17 @@ const AutomotivePage = () => {
 
 
 
-      
-
-      {/* CTA Section */}
-      <div className="cta-section mt-16 bg-orange-500 py-16 text-center">
-        <h2 className="text-4xl font-bold mb-4">Ready to Transform Your Automotive Marketing?</h2>
-        <p className="text-lg mb-8">
-          Contact Prime Marketing Experts today to learn how we can help you drive success.
-        </p>
-        <Link href="/free-strategy-session"> 
-            <button className="px-8 py-3 bg-slate-300 text-white font-bold rounded-lg shadow-lg hover:bg-black hover:text-white transition">
-              Get Started
-            </button>
-          </Link>
-      </div>
+      {/* Tourism Call-to-Action Section */}
+<div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center justify-evenly px-6 lg:px-12">
+  <h1 className="font-bold text-white text-2xl md:text-4xl text-center leading-tight">
+ Ensuring Safety and Success Through Expertise
+  </h1>
+  <Link href="/contact">
+    <button className="bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 mt-4 lg:mt-0 flex justify-center items-center hover:text-black text-white rounded-lg">
+      CONTACT NOW
+    </button>
+  </Link>
+</div>
     </section>
   );
 };

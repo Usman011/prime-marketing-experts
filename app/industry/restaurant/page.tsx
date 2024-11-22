@@ -32,10 +32,10 @@ export default function RestaurantIndustry() {
             {/* Left Side - Content */}
             <div className="w-full lg:w-1/2 text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
-                Transform Your Restaurant`s Reach
+              Delicious Marketing Solutions, Served Fresh
               </h1>
               <p className="mt-4 text-gray-600 text-lg">
-                Discover tailored marketing solutions to help your restaurant attract more customers, build loyalty, and enhance online visibility. From local SEO to engaging social media campaigns, we’re here to elevate your brand.
+              Discover tailored marketing strategies that help your restaurant attract more customers, build loyalty, and enhance online visibility. At Prime Marketing Experts, we specialize in crafting campaigns that bring more diners through your doors while keeping them coming back for more.
               </p>
               <Link href="/free-strategy-session" className="my-6 "> 
             <button className="px-8 py-3 bg-gradient-main text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 transition">
@@ -59,7 +59,7 @@ export default function RestaurantIndustry() {
 
         {/* Marketing Strategies Section */}
         <div className="container mx-auto px-6 lg:px-20 py-16">
-          <h2 className="text-3xl font-bold text-center text-gray-800">Restaurant Marketing Strategies</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-800">How We Elevate Your Restaurant Brand</h2>
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
               <Image
@@ -71,7 +71,7 @@ export default function RestaurantIndustry() {
               />
               <h3 className="text-xl font-semibold mt-6">Social Media Engagement</h3>
               <p className="mt-2 text-gray-600">
-                Leverage platforms like Instagram, Facebook, and TikTok to engage with your audience, post enticing visuals of your dishes, and offer exclusive promotions.
+              Capture your audience’s attention with eye-catching content. We create social media campaigns that showcase your menu, highlight special events, and build a loyal online community.
               </p>
             </div>
             <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
@@ -84,7 +84,7 @@ export default function RestaurantIndustry() {
               />
               <h3 className="text-xl font-semibold mt-6">Local SEO Optimization</h3>
               <p className="mt-2 text-gray-600">
-                Boost your restaurant’s online presence with local SEO techniques to rank higher in search results and make it easier for customers to find you.
+              Partner with Prime Marketing Experts to align your restaurant with the latest industry trends, from digital transformation to sustainable dining. We help you connect with modern diners and make a lasting impact.
               </p>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function RestaurantIndustry() {
         {/* Industry Trends Section */}
         <div className="bg-gray-100 py-16">
           <div className="container mx-auto px-6 lg:px-20">
-            <h2 className="text-3xl font-bold text-center text-gray-800">Industry Trends in the Restaurant Sector</h2>
+            <h2 className="text-3xl font-bold text-center text-gray-800">Convenience is Key</h2>
             <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
                 <Image
@@ -103,9 +103,9 @@ export default function RestaurantIndustry() {
                   height={350}  // Specify the height
                   className="w-full h-56 object-cover rounded-lg"
                 />
-                <h3 className="text-xl font-semibold mt-6">The Rise of Online Ordering</h3>
+                <h3 className="text-xl font-semibold mt-6">Eco-Friendly Practices for a Greener Future</h3>
                 <p className="mt-2 text-gray-600">
-                  With the increase in demand for convenience, online ordering and delivery services have become an essential part of the restaurant business model.
+                Eco-conscious dining is on the rise as more restaurants adopt sustainable sourcing, reduce food waste, and support local farmers. Customers are increasingly drawn to businesses that prioritize ethical practices and environmental stewardship.
                 </p>
               </div>
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
@@ -116,7 +116,7 @@ export default function RestaurantIndustry() {
                   height={350}  // Specify the height
                   className="w-full h-56 object-cover rounded-lg"
                 />
-                <h3 className="text-xl font-semibold mt-6">Sustainability in Dining</h3>
+                <h3 className="text-xl font-semibold mt-6">Eco-Friendly Practices for a Greener Future</h3>
                 <p className="mt-2 text-gray-600">
                   Eco-conscious dining practices are on the rise. Restaurants are adopting sustainable sourcing, reducing food waste, and supporting local farmers.
                 </p>
