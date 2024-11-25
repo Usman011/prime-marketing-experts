@@ -1,12 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import IMG1 from '../../../public/images/Maketing/localSeo/image.png'
+import IMG1 from '../../../public/images/Maketing/localSeo/image1.png'
+import IMG2 from '../../../public/images/Maketing/localSeo/image2.png'
+import IMG3 from '../../../public/images/Maketing/localSeo/image3.png'
 
 const Page = () => {
     return (
         <section className='container'>
-             <div className="flex flex-col bg-slate-100 items-center justify-center text-center w-full h-52">
+             <div className="flex flex-col items-center justify-center text-center w-full h-52">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
         Local SEO
         </h1>
@@ -20,8 +22,8 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='mb-10  mt-10'>
-        <div className="flex flex-col ">
+      <div className='my-10 gap-10'>
+        <div className="flex rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6 flex-col ">
           <h1 className="text-4xl">
           Local SEO Helps People Find Your Neighborhood Business
           </h1>
@@ -57,22 +59,33 @@ const Page = () => {
 
         </div>
 
-        <div className='flex flex-col mx-2 bg-blue-50 p-2 space-y-6 justify-start'>
-          <h1 className='text-4xl'>
-          What Is Local SEO?
-          </h1>
-          <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
-            <div className='space-y-6'>
-              <p>Local SEO is a process of optimizing your online presence to make sure that local searchers can find you easily. With this, you will get more leads from relevant local searches. The local SEO pack is referred to as the three businesses that appear immediately under a map within the search results on a locally relevant keyword.
+        <div className="flex flex-col bg-blue-50 p-6 space-y-6 justify-start">
+  
+  {/* Content Section */}
+  <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-14">
+   
+     {/* Image Content */}
+     <div className="flex-shrink-0 w-full lg:w-2/4">
+      <Image
+        src={IMG2} // Replace IMG1 with your image source
+        alt="Local SEO Illustration"
+        className="rounded-lg shadow-md w-full h-auto"
+      />
+    </div>
+    {/* Text Content */}
+    
+    <div className="space-y-6 lg:w-2/3">
+    {/* Title */}
+  <h1 className="text-4xl font-bold">What Is Local SEO?</h1>
 
-              However, local SEO is not just about Google. People use a variety of search engines such as Google, Yelp, Bing, and Apple Maps to search for their nearby stores.</p>  
-            </div>
-            </div>
-          </div>
+      <p>
+        Local SEO is a process of optimizing your online presence to make sure that local searchers can find you easily. With this, you will get more leads from relevant local searches. The local SEO pack is referred to as the three businesses that appear immediately under a map within the search results on a locally relevant keyword.
+      </p>
+      <p>
+        However, local SEO is not just about Google. People use a variety of search engines such as Google, Yelp, Bing, and Apple Maps to search for their nearby stores.
+      </p>
 
-
-          <div className='flex flex-col mt-8 mx-2 space-y-6 justify-start'>
-          <h1 className='text-4xl'>
+      <h1 className='text-4xl'>
           Be Found and Chosen with Prime Marketing Experts
           </h1>
           <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
@@ -81,66 +94,167 @@ const Page = () => {
 
             </div>
             </div>
-          </div>
+    </div>
+
+   
+  </div>
+</div>
+
+
+
+        
 
           
-          <div className='flex flex-col bg-blue-50 p-2 mt-8 mx-2 space-y-6 justify-start'>
-          <h1 className='text-4xl'>
-          Local SEO that Sells
-          </h1>
-          <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
-            <div className='space-y-6'>
-              <p>We take pride in confessing that our team is creative, informed, communicative, and responsible. We study your business model in-depth and, at the same time, help you gain and retain customers.</p>  
-              <p>We take our work seriously. And, not to be bragging or anything, but we are pretty good at what we do. We live and breathe your goals, and we will not stop until you have 100% of what you have thought for your business. This is the only reason why thousands of our customers trust our team and us.</p>
-              <p>We keep track of your campaign’s performance with a robust analytics tool and keep you in the loop about ranking and leads.</p>
-              <p className='font-bold'>Be it tracking your citations, optimizing the keywords, creating backlinks, or optimizing citations; we do it all!</p>
-              <p>We strive to deliver unmatched digital marketing services to keep you ahead in the race with your competitors. No matter what your goal is for your business, we can help you out.</p>
-              <p>Our team uses in-depth research and exclusive data to endow you with a powerful, unique, and important perspective for each success plan.</p>
-              <p>We make sure that each local business citation that we create has detailed business information to drive high-quality referral website traffic and search engine ranking improvements.</p>
-              <p>We also create social media posts for your Google Business profile, which further improves your rank, and can trigger a snippet within search results to help your business stand out.</p>
-              <p>Join hands with our team, and we make sure that your local SEO campaign achieves remarkable success. By working on focused objectives, we strive to get the best results for your business. As a digital marketing leader, we can help you with converting visitors, driving traffic, and measuring effectiveness.</p>
-              <p className='font-bold'>We treat businesses as if they were our own!</p>
-              <p className='font-bold'>So, you don’t have to worry about anything ‘coz with us; you are in the right hands!</p>
-            </div>
-            </div>
-          </div>
+<div className="flex flex-col rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6 mt-8 space-y-8">
+  {/* Title */}
+  <h1 className="text-4xl font-bold">Local SEO That Sells</h1>
 
-          <div className='flex flex-col mt-8 mx-2 space-y-6 justify-start'>
-          <h1 className='text-4xl'>
-          Benefits of Local SEO
-          </h1>
-          <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
-            <div className='space-y-6'>
-            <ul className='list-disc pl-5 space-y-2'>
-              <li className='font-bold'>Local SEO boosts traffic and sales </li>
-              <p>Along with website traffic, local searches result in foot traffic as well. In fact, 78% of these searches result in offline purchases. If people are searching for local shops, they want to purchase something, which means genuine leads and buyers.</p> 
-              <p>Therefore, if you have your business in local results, you will attract more website visitors. The mobile-optimized website plays an important in local search results.</p>
-              <p>We have skilled website developers who can cater to your site’s needs instantly.</p>
-              <li className='font-bold'>It improves relevant search engine traffic</li>
-              <p>Since you have to consider a lot of on-page and off-page factors for local SEO, it leads to relevant searches. It will also benefit your store with improved search rankings.</p>
-              <p>All these things make sure your audience and customers have accurate and relevant content. Monitoring and improving page loading speed also helps ensure a good user experience, which helps build brand trust and loyalty and can directly lead to sales.</p>
-              <li className='font-bold'>Local SEO is free </li>
-              <p>If you are a marketing professional, you’ll be glad to know that local SEO is free. Yes, you can use various inexpensive online tools.</p>
-              <p>However, since the demand for local SEO has continuously increased, it has become a complicated procedure to be seen in the top results.</p>
-              <p>This is where we come in. We can handle your local SEO efficiently, and at an affordable price, so you don’t have to go through the tough procedure yourself.</p>
-              <li className='font-bold'>Local SEO helps you to race out your competitors.</li>
-              <p>Making yourself a part of local SEO will put you ahead of your competitors. Surprisingly enough, 56 percent of local businesses have not yet claimed a Google My Business listing.</p>
-              <p>It means there is a high chance that your rivals have yet to leverage this amazing opportunity. So, hire us now and let’s rise above your competitors together!</p>
-              <li className='font-bold'>Local SEO helps you reach every customer.</li>
-              <p>Well, it is hard to contradict the fact that more and more people are using local SEO in the place of maps while traveling. While users are on the go, they tend to use their mobile phones and tablets to locate the best local businesses that will give them what they want, and when they want it.</p>
-              <li className='font-bold'>Local SEO is result-driven and long term. </li>
-              <p>People more frequently choose organic results than paid advertisements. Therefore, it is always a wise option to invest in local SEO services, and then invest in <Link href="/marketing/seo-web-design" className='text-blue-500'>search engine advertising</Link> to gain more visibility within results.</p>
-              <p>Further more, unlike search engine ads, local SEO has long-term effects that can benefit you for a long time.</p>
-              <li className='font-bold'>Local SEO builds trust.</li>
-              <p>Reviews are important for your local store. Your company’s online reputation directly influences your traffic and conversion rate.</p>
-              <p>Having more reviews on your listing will increase your visibility in local search. We will make sure you have enough reviews so that your site gets on top of local searches. Also, our team makes sure to keep track of your reviews and see that all reviews are responded to.</p>
-              
-              </ul>
-            </div>
-            </div>
-          </div>
+  {/* Content Section */}
+  <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
+    {/* Text Content */}
+    <div className="space-y-6 lg:w-2/3">
+      {/* Introduction */}
+      <p>
+        We take pride in confessing that our team is creative, informed, communicative, and responsible. We study your business model in-depth and, at the same time, help you gain and retain customers.
+      </p>
 
-          <div className='flex flex-col mt-8 bg-blue-50 p-2 mx-2 space-y-6 justify-start'>
+      {/* Commitment */}
+      <p>
+        We take our work seriously. And, not to be bragging or anything, but we are pretty good at what we do. We live and breathe your goals, and we will not stop until you have 100% of what you have thought for your business. This is the only reason why thousands of our customers trust our team and us.
+      </p>
+
+      {/* Tracking and Tools */}
+      <p>
+        We keep track of your campaign’s performance with a robust analytics tool and keep you in the loop about ranking and leads.
+      </p>
+      <p className="font-bold">
+        Be it tracking your citations, optimizing the keywords, creating backlinks, or optimizing citations – we do it all!
+      </p>
+
+      {/* Competitive Edge */}
+      <p>
+        We strive to deliver unmatched digital marketing services to keep you ahead in the race with your competitors. No matter what your goal is for your business, we can help you out.
+      </p>
+      <p>
+        Our team uses in-depth research and exclusive data to endow you with a powerful, unique, and important perspective for each success plan.
+      </p>
+
+      {/* Citations and Social Media */}
+      <p>
+        We make sure that each local business citation we create has detailed business information to drive high-quality referral website traffic and search engine ranking improvements.
+      </p>
+      <p>
+        We also create social media posts for your Google Business profile, which further improves your rank and can trigger a snippet within search results to help your business stand out.
+      </p>
+
+      {/* Call to Action */}
+      <p>
+        Join hands with our team, and we will ensure that your local SEO campaign achieves remarkable success. By working on focused objectives, we strive to get the best results for your business. As a digital marketing leader, we can help you with converting visitors, driving traffic, and measuring effectiveness.
+      </p>
+      <p className="font-bold">
+        We treat businesses as if they were our own!
+      </p>
+      <p className="font-bold">
+        So, you don’t have to worry about anything, because with us, you are in the right hands!
+      </p>
+    </div>
+
+    {/* Optional Image Section */}
+    <div className="flex-shrink-0 w-full lg:w-1/3">
+      <Image
+        src={IMG3} // Replace with your image source
+        alt="Local SEO Services"
+        className="rounded-lg shadow-md w-full h-auto"
+      />
+    </div>
+  </div>
+</div>
+
+
+<div className="flex flex-col mt-8 bg-blue-50 p-6 space-y-8">
+  {/* Title */}
+  <h1 className="text-4xl font-bold text-center">Benefits of Local SEO</h1>
+
+  {/* Cards Section */}
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {/* Card 1 */}
+    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+      <h2 className="text-xl font-bold mb-4">Local SEO Boosts Traffic and Sales</h2>
+      <p>
+        Along with website traffic, local searches result in foot traffic as well. In fact, 78% of these searches result in offline purchases.
+      </p>
+      <p className="mt-2">
+        Therefore, if you have your business in local results, you will attract more website visitors. A mobile-optimized website is essential for success in local search.
+      </p>
+      <p className="mt-2">
+        Our skilled developers can instantly cater to your website needs to ensure success.
+      </p>
+    </div>
+
+    {/* Card 2 */}
+    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+      <h2 className="text-xl font-bold mb-4">Improves Relevant Search Engine Traffic</h2>
+      <p>
+        Local SEO ensures your audience gets accurate and relevant content, leading to better search rankings and brand trust.
+      </p>
+      <p className="mt-2">
+        Monitoring and improving page loading speed also enhances user experience, directly impacting sales and loyalty.
+      </p>
+    </div>
+
+    {/* Card 3 */}
+    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+      <h2 className="text-xl font-bold mb-4">Local SEO is Free</h2>
+      <p>
+        Local SEO is cost-effective and can be done using free or inexpensive tools. However, as competition grows, managing local SEO effectively has become complex.
+      </p>
+      <p className="mt-2">
+        Let us handle your local SEO efficiently and affordably, so you can focus on growing your business.
+      </p>
+    </div>
+
+    {/* Card 4 */}
+    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+      <h2 className="text-xl font-bold mb-4">Outpace Your Competitors</h2>
+      <p>
+        Surprisingly, 56% of local businesses have not claimed their Google My Business listing. Leverage this opportunity to get ahead of your competition.
+      </p>
+      <p className="mt-2">Hire us now and let’s rise above your competitors together!</p>
+    </div>
+
+    {/* Card 5 */}
+    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+      <h2 className="text-xl font-bold mb-4">Reach Every Customer</h2>
+      <p>
+        More people are using local SEO over maps to find businesses. Mobile users rely on local searches to find the best options nearby, right when they need them.
+      </p>
+    </div>
+
+    {/* Card 6 */}
+    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+      <h2 className="text-xl font-bold mb-4">Result-Driven & Long-Term</h2>
+      <p>
+        Local SEO offers long-term benefits by enhancing organic visibility. People prefer organic results over paid ads, making it a wise investment.
+      </p>
+      <p className="mt-2">
+        Pair local SEO with <Link href="/marketing/seo-web-design" className="text-blue-500">search engine advertising</Link> to maximize visibility.
+      </p>
+    </div>
+
+    {/* Card 7 */}
+    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+      <h2 className="text-xl font-bold mb-4">Builds Trust with Reviews</h2>
+      <p>
+        Reviews significantly influence traffic and conversions. We ensure you receive enough reviews to boost your visibility in local search results.
+      </p>
+      <p className="mt-2">
+        Our team also monitors reviews and ensures timely responses to maintain a strong reputation.
+      </p>
+    </div>
+  </div>
+</div>
+
+          <div className='flex flex-col mt-8 rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6 space-y-6 justify-start'>
           <h1 className='text-4xl'>
           Be Found and Chosen with Prime Marketing Experts
           </h1>
@@ -160,7 +274,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className='flex flex-col mt-8 mx-2 space-y-6 justify-start'>
+          <div className='flex flex-col mt-8 bg-blue-50 p-6 space-y-6 justify-start'>
           <h1 className='text-4xl'>
           Here Is How We Can Help
           </h1>
@@ -176,12 +290,12 @@ const Page = () => {
             </div>
           </div>
          
-          <div className='w-full flex flex-col gap-4 lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center justify-around'>
+          <div className='w-full flex flex-col gap-4 lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center  justify-around'>
         <h1 className='font-bold text-white text-4xl text-center'>
           Plan The Future Growth Of Your Business
         </h1>
         <Link href="/contact">
-          <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 justify-center hover:text-black text-white items-center text-center'>CONTACT NOW</button>
+          <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 my-6 md:my-auto justify-center hover:text-black text-white items-center text-center'>CONTACT NOW</button>
         </Link>
       </div>
          

@@ -20,8 +20,8 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="flex flex-col mx-2 gap-10 mt-10">
-        <div className="flex bg-blue-50 p-2 flex-col space-y-6">
+      <div className="flex flex-col  gap-10 mt-10">
+        <div className="flex rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex-col space-y-6">
           <h1 className="font-bold mt-10 text-4xl">
             Marketing Automation Increases Conversion
           </h1>
@@ -56,76 +56,149 @@ const Page = () => {
           </p>
         </div>
 
-        <div className="flex flex-col space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">
-            What Is Marketing Automation?
-          </h1>
-          <div className="space-y-6">
-            <p>Marketing automation is software that simplifies and automates marketing processes.</p>
-            <p>Many repetitive tasks such as email marketing, social media posting and even advertising campaigns are automated with the help of marketing automation.</p>
-            <p>Marketers use this tactic not only for efficiency but also to provide a more personalized experience for their customers.</p>
-            <p>If you want to convert your prospects into delighted customers, marketing automation is your cup of tea. Combining strategy and software, marketing automation helps you in nurturing your prospects with useful and highly personalized content.</p>
-            <p className="font-bold">We know how good marketing automation looks like! We know how to make it work for your specific business!</p>
-            <p className="font-bold">Marketing automation is all about optimization.</p>
-            <p>Be it optimizing your employee’s time or optimizing which customer to put effort into, marketing automation can make all your tasks easy and straightforward.</p>
-            <p>At Prime Marketing Experts, our team of digital marketers and innovators bring skills and expertise above and beyond the average to every project.</p>
-            <p className="font-bold">Pertinent personalized messages, best calling cadences, automated test messaging – we do it all!</p>
-            <p>Be it email marketing, or effective campaigns, we focus on assessing and improving your software for result-driven and meaningful results. We use the latest trends and advanced practices to make sure you get the best-in-class experience and service.</p>
-            <p className="font-bold">Make your brand reach new height with Prime Marketing Experts!</p>
-            <p>If you want to convert more leads, hire us, and we make sure you won’t regret your decision. We know how to engage your current customers and how to get new ones. We take pride in what we do and assure you no one can do better than us!</p>
-          </div>
-        </div>
+        <div className="bg-blue-50 p-6">
+  <h1 className="text-4xl font-bold text-gray-800 mb-6">
+    What Is Marketing Automation?
+  </h1>
+  
+  <div className="space-y-8">
+    <p className="text-black">
+      Marketing automation is software that simplifies and automates marketing processes.
+    </p>
+    <p className="text-black">
+      Many repetitive tasks such as email marketing, social media posting, and even advertising campaigns are automated with the help of marketing automation.
+    </p>
+    <p className="text-black">
+      Marketers use this tactic not only for efficiency but also to provide a more personalized experience for their customers.
+    </p>
+    <p className="text-black">
+      If you want to convert your prospects into delighted customers, marketing automation is your cup of tea. Combining strategy and software, marketing automation helps you in nurturing your prospects with useful and highly personalized content.
+    </p>
+    
+    <p className="font-semibold text-xl text-gray-800">
+      We know how good marketing automation looks like! We know how to make it work for your specific business!
+    </p>
+    <p className="font-semibold text-xl text-gray-800">
+      Marketing automation is all about optimization.
+    </p>
+    <p className="text-black">
+      Be it optimizing your employee’s time or optimizing which customer to put effort into, marketing automation can make all your tasks easy and straightforward.
+    </p>
+    <p className="text-black">
+      At Prime Marketing Experts, our team of digital marketers and innovators bring skills and expertise above and beyond the average to every project.
+    </p>
+    
+    <p className="font-semibold text-xl text-gray-800">
+      Pertinent personalized messages, best calling cadences, automated test messaging – we do it all!
+    </p>
+    <p className="text-black">
+      Be it email marketing, or effective campaigns, we focus on assessing and improving your software for result-driven and meaningful results. We use the latest trends and advanced practices to make sure you get the best-in-class experience and service.
+    </p>
+    <p className="font-semibold text-xl text-gray-800">
+      Make your brand reach new heights with Prime Marketing Experts!
+    </p>
+    <p className="text-black">
+      If you want to convert more leads, hire us, and we make sure you won’t regret your decision. We know how to engage your current customers and how to get new ones. We take pride in what we do and assure you no one can do better than us!
+    </p>
+  </div>
+</div>
 
-        <div className="flex flex-col bg-blue-50 p-2 space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">
-            Benefits Of Marketing Automation Software
-          </h1>
-          <div className="space-y-6">
-            <ul className="list-disc pl-5 space-y-6">
-              <li className="font-bold">It Drives More Leads</li>
-              <p>Automating the various steps of your business gives your staff to focus more on leads and profits. By implementing effective strategies, employees can focus on nurturing the leads. This will result in more prospects that convert into becoming clients.</p>
-              <p>As marketing automation endows you with a more detailed picture of your customer’s behavior, you can leverage this data to understand their interests to customize accordingly.</p>
 
-              <li className="font-bold">It Increases Client LTV</li>
-              <p>By automating your cross-selling, upselling, and customer follow-ups, you will notice an increase in the lifetime value of your customers. Combining that with better lead management and better prioritization, the probability of your business producing a better return on investment will increase.</p>
+<div className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 ">
+  <h1 className="font-bold text-4xl text-gray-800 mb-6">
+    Benefits Of Marketing Automation Software
+  </h1>
 
-              <li className="font-bold">It Converts Leads Into Sales.</li>
-              <p>With marketing automation, you can simplify and automate the entire lead maturation process. You can easily cut information from prospects from various social media channels and add them directly.</p>
-              <p>You can automate the categorization of prospects using lead scoring and send personalized emails using email automation. You can also improve your follow-ups with automatic responders.</p>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <h2 className="font-bold text-xl text-gray-800 mb-4">It Drives More Leads</h2>
+      <p className="text-gray-700 mb-2">
+        Automating various business steps gives your staff more time to focus on leads and profits. By implementing effective strategies, employees can focus on nurturing leads, resulting in more prospects converting into clients.
+      </p>
+      <p className="text-gray-700">
+        Marketing automation gives you a detailed picture of your customer’s behavior, allowing you to leverage this data to understand their interests and customize accordingly.
+      </p>
+    </div>
 
-              <li className="font-bold">It Recovers Lost Revenue.</li>
-              <p>You can send cart abandonment campaigns using marketing automation. It incentivizes customers to finalize their purchases.</p>
-              <p>This allows you to recover income that you might have otherwise had inherently lost. Sequentially, this increases revenue from your e-commerce website. Our clients report that revenue increases by 14% with this trick.</p>
+    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <h2 className="font-bold text-xl text-gray-800 mb-4">It Increases Client LTV</h2>
+      <p className="text-gray-700 mb-2">
+        Automating cross-selling, upselling, and customer follow-ups increases the lifetime value (LTV) of your customers. Combined with better lead management and prioritization, this improves ROI.
+      </p>
+    </div>
 
-              <li className="font-bold">It Boosts Creativity</li>
-              <p>Since marketing automation tools free your employees from the execution of repetitive campaigns, they can utilize that time to get more creative.</p>
-              <p>Therefore, marketers can think more creatively and deliver more efficient results. Staff productivity will increase, which will create a positive environment in the office.</p>
-              <p>This also enables your staff to reach their full potential. In other words, marketing automation software can improve the ROI for your business.</p>
+    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <h2 className="font-bold text-xl text-gray-800 mb-4">It Converts Leads Into Sales</h2>
+      <p className="text-gray-700 mb-2">
+        Marketing automation simplifies and automates the lead maturation process. Easily gather information from prospects via social media and add them directly to your funnel.
+      </p>
+      <p className="text-gray-700">
+        Use lead scoring to categorize prospects and send personalized emails, improving follow-ups with automatic responders.
+      </p>
+    </div>
 
-              <li className="font-bold">It Saves Time</li>
-              <p>Marketing automation tools enable businesses to quickly automate their regular marketing tasks, along with saving time to focus on other marketing strategies.</p>
-              <p>With this software, one can create several campaigns to send personalized as well as scheduled emails to any number of users. You can configure automatic responders for daily follow-ups, and even automate messages for various social media channels.</p>
+    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <h2 className="font-bold text-xl text-gray-800 mb-4">It Recovers Lost Revenue</h2>
+      <p className="text-gray-700 mb-2">
+        Marketing automation lets you send cart abandonment campaigns that incentivize customers to finalize their purchases, recovering revenue that would otherwise be lost.
+      </p>
+      <p className="text-gray-700">
+        This strategy increases revenue, with some clients reporting a 14% increase in revenue after implementation.
+      </p>
+    </div>
 
-              <li className="font-bold">It Monitors Various Channels.</li>
-              <p>You can keep a record of all the channels you use to interact with your customers and potential buyers with the help of marketing automation software. From emails to social media, this software can give you detailed information about which customer did what and where. Also, you can get the report in just a matter of minutes.</p>
+    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <h2 className="font-bold text-xl text-gray-800 mb-4">It Boosts Creativity</h2>
+      <p className="text-gray-700 mb-2">
+        Marketing automation frees your team from repetitive tasks, allowing them to focus on more creative strategies, boosting productivity and creating a positive office environment.
+      </p>
+    </div>
 
-              <li className="font-bold">It Empowers Your Team For Better Results.</li>
-              <p>The marketing automation reporting function helps in making your staff more accountable. Any marketing automation software worthy of the name comes with nifty reporting features. This allows you to create detailed and relevant reports automatically.</p>
-              <p>Complete reports allow you to quickly see how your marketing activities are supporting your sales funnel. With this feature, you can determine areas where there is a scope for improvement. It allows your entire team to make useful and necessary changes.</p>
+    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <h2 className="font-bold text-xl text-gray-800 mb-4">It Saves Time</h2>
+      <p className="text-gray-700 mb-2">
+        Automation tools streamline regular tasks, allowing your team more time to focus on important strategies. From personalized emails to automated social media posts, it simplifies many marketing processes.
+      </p>
+    </div>
 
-              <li className="font-bold">It Improves the Customer Experience.</li>
-              <p>Customer experience is not just personalization, but it is about understanding the needs and requirements of your customers. For increased user experience, you need to define your audience by evaluating what they use the most and what do they expect from you.</p>
-              <p>Marketing automation tools can help you solve these issues. From sending out relevant and personalized emails to follow up messages, the software allows you to track online interactions and the level in which you nurture prospects. You can deploy A/B testing to improve how much people resonate with your content.</p>
-              <p>The software will also let you monitor, launch, and refine your webinars, so you have a deep understanding of your customers and simplify the complexity of user experience.</p>
+    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <h2 className="font-bold text-xl text-gray-800 mb-4">It Monitors Various Channels</h2>
+      <p className="text-gray-700 mb-2">
+        Marketing automation software tracks interactions across multiple channels, from emails to social media, providing detailed reports on customer behavior and preferences.
+      </p>
+    </div>
 
-              <li className="font-bold">It Reduces Operating Costs.</li>
-              <p>Well, this is a significant benefit of marketing automation. It can reduce operating costs in an organization and help them increase the efficiency.</p>
-              <p>Automating the qualifying lead generation reduces labor costs, and when the sales team focuses only on quality leads or qualifying leads, it increases their efficiency.</p>
-            </ul>
-          </div>
-        </div>
+    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <h2 className="font-bold text-xl text-gray-800 mb-4">It Empowers Your Team For Better Results</h2>
+      <p className="text-gray-700 mb-2">
+        The reporting function in marketing automation software holds your team accountable by generating detailed reports. These reports show how well marketing activities support your sales funnel.
+      </p>
+      <p className="text-gray-700">
+        With these insights, your team can identify areas for improvement and make adjustments to improve performance.
+      </p>
+    </div>
 
-        <div className="flex flex-col mb-10 space-y-6 justify-start">
+    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <h2 className="font-bold text-xl text-gray-800 mb-4">It Improves the Customer Experience</h2>
+      <p className="text-gray-700 mb-2">
+        Marketing automation enhances customer experience by delivering relevant, personalized messages based on customer behavior. The software tracks interactions and nurtures prospects with tailored content.
+      </p>
+      <p className="text-gray-700">
+        Use A/B testing to optimize your content and refine the customer journey for an improved user experience.
+      </p>
+    </div>
+
+    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <h2 className="font-bold text-xl text-gray-800 mb-4">It Reduces Operating Costs</h2>
+      <p className="text-gray-700 mb-2">
+        Marketing automation reduces labor costs by automating lead qualification. It allows the sales team to focus only on the most qualified leads, increasing efficiency and reducing operational expenses.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+        <div className="flex flex-col mb-10 bg-blue-50 p-6 space-y-6 justify-start">
           <h1 className="font-bold text-4xl">
             Implementing Marketing Automation
           </h1>

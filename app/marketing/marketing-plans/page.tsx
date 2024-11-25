@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import IMG1 from '../../../public/images/Maketing/marketing plans/image.png';
+import IMG1 from '../../../public/images/Maketing/marketing plans/image1.png';
+import IMG2 from '../../../public/images/Maketing/marketing plans/image2.png';
+import IMG3 from '../../../public/images/Maketing/marketing plans/image3.png';
 import {
   Accordion,
   AccordionContent,
@@ -26,8 +28,8 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="flex flex-col mx-2 gap-10 mt-10">
-        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
+      <div className="flex flex-col  gap-10 mt-10">
+        <div className="flex flex-col  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
           <h1 className="font-bold text-4xl">
             Give Your Emails The Right Service, Strategy, And Execution
           </h1>
@@ -50,49 +52,75 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10 space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">Why Create a Marketing Plan?</h1>
-          <div className="space-y-6">
-            <p>
-              Fortunately, <span className="font-bold">a marketing plan</span> would help you curate a plan, which is rooted in data and proven to generate real results.
-            </p>
-            <p>
-              No matter how enthusiastic you are on learning about the importance of a marketing plan, it is not a cakewalk to build out a marketing plan all by yourself. It is an extensively documented outline that includes every aspect, from strategies and activities to resources needed to promote and sell your products.
-            </p>
-            <p>
-              Though, it might not work at all. This is a lesson we have learned after many years of working across these fields.
-            </p>
-            <p className="font-bold">
-              Relax! We can save your bacon and rescue you from the aftermath of bad marketing by curating a robust marketing plan.
-            </p>
-            <p>
-              With that in mind, let us get you started with the what, how, why, and when of our marketing plan services that fit your business problems and why we are the experts at it.
-            </p>
-          </div>
-        </div>
+        <div className="flex flex-col lg:flex-row gap-10 bg-blue-50 p-6 space-y-6 lg:space-y-0 justify-start items-center">
+  {/* Image Section */}
+  <div className="w-full lg:w-2/4">
+    <Image
+      src={IMG2}
+      alt="Marketing Plan Image"
+      className="w-full h-auto rounded-lg shadow-lg"
+    />
+  </div>
 
-        <div className="flex flex-col mb-10 bg-blue-50 p-2 space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">What Is A Marketing Plan?</h1>
-          <div className="space-y-6">
-            <p>
-              A marketing plan is a premeditated roadmap that helps your business organize, execute, and track marketing efficiency over a given period. This planning process is a systematic approach to realize marketing goals and implement/alter tactics.
-            </p>
-            <p>
-              It is a continuously evolving process that befits every business process from launching to routine planning. Apparently, each business has a different business-marketing plan, but all of them work similarly to achieve goals.
-            </p>
-            <p>
-              Most of the business’ marketing plans are required to be updated to take a cursory glance at the bigger picture, retooling the strategy to evaluate performance and adjust tactics.
-            </p>
-            <p>
-              A marketing plan consists of one or more marketing strategies that help you connect each strategy back to a more substantial marketing operation and business goal from the framework.
-            </p>
-            <p>
-              With Prime Marketing Experts, for any business, product selling, or service selling and any size, big or small, we can compile a marketing plan. It’s a global service with proven results for each of them.
-            </p>
-          </div>
-        </div>
+  {/* Text Content Section */}
+  <div className="w-full lg:w-1/2 space-y-6">
+    <h1 className="font-bold text-4xl">Why Create a Marketing Plan?</h1>
+    <div className="space-y-6">
+      <p>
+        Fortunately, <span className="font-bold">a marketing plan</span> would help you curate a plan, which is rooted in data and proven to generate real results.
+      </p>
+      <p>
+        No matter how enthusiastic you are on learning about the importance of a marketing plan, it is not a cakewalk to build out a marketing plan all by yourself. It is an extensively documented outline that includes every aspect, from strategies and activities to resources needed to promote and sell your products.
+      </p>
+      <p>
+        Though, it might not work at all. This is a lesson we have learned after many years of working across these fields.
+      </p>
+      <p className="font-bold">
+        Relax! We can save your bacon and rescue you from the aftermath of bad marketing by curating a robust marketing plan.
+      </p>
+      <p>
+        With that in mind, let us get you started with the what, how, why, and when of our marketing plan services that fit your business problems and why we are the experts at it.
+      </p>
+    </div>
+  </div>
+</div>
 
-        <div className="flex flex-col mb-10 space-y-6 justify-start">
+
+<div className="flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 gap-10 space-y-6 lg:space-y-0 justify-start items-center">
+  {/* Text Content Section */}
+  <div className="w-full lg:w-1/2 space-y-6">
+    <h1 className="font-bold text-4xl">What Is A Marketing Plan?</h1>
+    <div className="space-y-6">
+      <p>
+        A marketing plan is a premeditated roadmap that helps your business organize, execute, and track marketing efficiency over a given period. This planning process is a systematic approach to realize marketing goals and implement/alter tactics.
+      </p>
+      <p>
+        It is a continuously evolving process that befits every business process from launching to routine planning. Apparently, each business has a different business-marketing plan, but all of them work similarly to achieve goals.
+      </p>
+      <p>
+        Most of the business’ marketing plans are required to be updated to take a cursory glance at the bigger picture, retooling the strategy to evaluate performance and adjust tactics.
+      </p>
+      <p>
+        A marketing plan consists of one or more marketing strategies that help you connect each strategy back to a more substantial marketing operation and business goal from the framework.
+      </p>
+      <p>
+        With Prime Marketing Experts, for any business, product selling, or service selling and any size, big or small, we can compile a marketing plan. It’s a global service with proven results for each of them.
+      </p>
+    </div>
+  </div>
+
+  {/* Image Section */}
+  <div className="w-full lg:w-1/2">
+    <Image
+      src={IMG3}
+      alt="Marketing Plan"
+      className="w-full h-auto rounded-lg shadow-lg"
+    />
+  </div>
+</div>
+
+
+        <div className="flex flex-col  bg-blue-50 p-6 space-y-6 justify-start">
           <h1 className="font-bold text-4xl">Our Marketing Plan Services</h1>
           <div className="space-y-6">
             <p>
@@ -137,7 +165,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10 bg-blue-50 p-2 space-y-6 justify-start">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6  space-y-6 justify-start">
           <h1 className="font-bold text-4xl">Benefits of Our Marketing Plan Services</h1>
           <div className="space-y-6">
             <p>
@@ -164,7 +192,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10 space-y-6 justify-start">
+        <div className="flex flex-col bg-blue-50 p-6 space-y-6 justify-start">
           <h1 className="font-bold text-4xl">How We Curate a Marketing Plan</h1>
           <div className="space-y-6">
             <p>
@@ -191,7 +219,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10 bg-blue-50 p-2 space-y-6 justify-start">
+        <div className="flex flex-col mb-10  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6 justify-start">
           <h1 className="font-bold text-4xl">Wait! One more thing about marketing plans!</h1>
           <div className="space-y-6">
             <p>

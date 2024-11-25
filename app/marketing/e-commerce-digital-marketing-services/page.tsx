@@ -7,7 +7,7 @@ import Image from 'next/image';
 const Page = () => {
   return (
     <section className='container'>
-      <div className="flex flex-col items-center justify-center w-full h-52 text-center">
+      <div className="flex flex-col items-center justify-center  w-full h-52 text-center">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
           E-Commerce Digital Marketing Services
         </h1>
@@ -21,8 +21,8 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='gap-20 mt-10'>
-        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
+      <div className='space-y-10 mt-10'>
+        <div className="flex flex-col  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
           <h1 className="font-bold text-4xl">
             Driving ROI Through Comprehensive E-Commerce Marketing Services
           </h1>
@@ -44,15 +44,16 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6">
-          <h1 className="font-bold text-4xl">
-            E-Commerce SEO Solutions
-          </h1>
+        <div className="flex flex-col bg-blue-50 p-6 space-y-6">
+         
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="w-full mt-10 h-full">
+            <div className="w-full mt-14 h-full">
               <Image src={IMG2} alt="Market Research" layout="responsive" width={1200} height={1000} />
             </div>
             <div className="space-y-8 w-full lg:w-11/12 mt-14">
+            <h1 className="font-bold text-4xl text-start">
+            E-Commerce SEO Solutions
+          </h1>
               <p>
                 We’re experts in ranking our clients beyond large online stores like Amazon by defining user intent comprehensively. Our team combines in-depth research with years of experience to surpass your sales growth goals through moving your business up in search results.
               </p>
@@ -66,7 +67,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10 space-y-6 bg-blue-50 p-2 justify-start">
+        <div className="flex flex-col mb-10 space-y-6  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 justify-start">
           <h1 className="font-bold text-4xl">Why Our E-Commerce Marketing Service?</h1>
           <div className="space-y-6">
             <p>Our clients experience tremendous success with our e-commerce marketing services because we are very different from what other usual marketing agencies:</p>
@@ -79,12 +80,12 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto bg-orange-500 h-auto lg:h-32 mt-8 mb-8 items-center justify-center lg:justify-around px-4'>
+        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto  bg-orange-500 h-auto lg:h-32 items-center justify-center lg:justify-around'>
           <h1 className='font-bold text-white text-center lg:text-left text-2xl lg:text-4xl'>
             Attract, Convert, and Retain More Customers Today
           </h1>
           <Link href="/contact">
-            <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 flex justify-center items-center text-white hover:text-black'>
+            <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 my-6 md:my-auto flex justify-center items-center text-white hover:text-black'>
               CONTACT NOW
             </button>
           </Link>

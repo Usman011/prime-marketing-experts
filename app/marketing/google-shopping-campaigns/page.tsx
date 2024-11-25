@@ -20,78 +20,93 @@ const Page = () => {
       </div>
 
 
-      <div className='gap-20 mt-10  mb-6'>
-        <div className="flex flex-col  space-y-6">
-          <h1 className="font-bold justify-start text-start text-4xl">
-          Google Shopping Campaign Services That Increases Sales
-          </h1>
-            <div className="space-y-8 w-full lg:w-11/12 mt-14">
-              
-              <p>
-              Are you invisible to your target audience?
-              </p>
-              <p>
-              Are you seeking help for your product-based e-commerce marketing campaigns?
-              </p>
-              <p>
-              Is your marketing campaign achieving results?
-              </p>
-              <p>
-              You need to fix your marketing strategy then.
-              </p>
-              <p>
-              Well, your search ends on this page here. PERIOD
-              </p>
-              <p>
-              Increase your revenue growth by 127%. Drive results for e-commerce business with our Google Shopping. Get started today!
-              </p>
-              <p>
-              Did that just catch your eye? Indeed, it did!
-              </p>
-              <p>
-              We can read your mind that you want to know all about this incredible solution that could make you a global brand with a large scale and outreach.
-              </p>
-              <p>
-              We unveil the new-fangled player in the marketing town,<span className='font-bold'>Google Shopping Ads!</span> 
-              </p>
-              <p>
-              Google Shopping ads are just not simple ads. They are efficient at global outreach in carrying rich product information from product images, price, reviews, and your brand name. You, too, would have come across such ads when you are already searching for products of a similar kind.
-              </p>
-              <p className='font-bold'>
-              Customizing Google Shopping Ads Campaigns
-              </p>
-              <p>
-              The Google Shopping Campaigns are a fully customizable picture of your brand and product that is to be advertised. You can manage, organize, and optimize your ads through this shopping campaign. It also comes with robust analysis and benchmarking tools to monitor and measure the impact of your campaign’s performance.
-              </p>
-              <p>
-              All you need to do is create campaigns for your shopping adverts in Google Ads, and your product gets going. Easy, right?
-              </p>
-              <p>
-              Google shopping ads can drive the right traffic for your brand for better conversions & revenue. Let’s get you more gen about how does Google Shopping Ads Campaign works for your business.
-              </p>
-              <p className='font-bold'>Step 1: Search and show up!</p>
-              <p>Every and any time a person, who is a potential customer, makes a relevant query for the product you sell, then Google displays an image and price of your product, which is linked and ready to be taken on board.</p>
-              <p className='font-bold'> Step 2: That’s it!</p>
-              <p>
-              That is what Google Shopping Ads do for your commerce. It gets your products in front of online customers faster than any other method – and FYI, your competitors are already doing this.
-              </p>
-              <p>
-              Apparently, Google shopping marketing campaigns are more accessible than any other tool. The reality is that managing these shopping ads campaigns for any size business can be confusing and time-consuming. This buys rigorous time that you would have invested in your business otherwise.
-              </p>
-              <p>
-              So this is where you need a Google shopping management agency, just like us.
-              </p>
-              <p>
-              Our team has often heard that people do not get the results they intended out of their current marketing campaigns. At Prime Marketing Experts, we create, organize, and optimize Google Shopping ads, while customizing a strategy to increase your return on investment and augment your revenue. We market your marketing campaigns, the right way!
-              </p>
-            </div>
+      <div className='gap-20 mb-6'>
+        <div className="flex flex-col space-y-6">
+         
+        <div className="space-y-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 w-full">
+  {/* Title */}
+  <h1 className="font-bold text-4xl text-start">
+    Google Shopping Campaign Services That Increase Sales
+  </h1>
+  
+  {/* Introduction Section */}
+  <div className="space-y-4">
+    <p>Are you invisible to your target audience?</p>
+    <p>Are you seeking help for your product-based e-commerce marketing campaigns?</p>
+    <p>Is your marketing campaign achieving results?</p>
+    <p>You need to fix your marketing strategy then.</p>
+    <p>Well, your search ends on this page here. PERIOD.</p>
+  </div>
+
+  {/* Key Benefits Section */}
+  <div className="space-y-4">
+    <p>
+      Increase your revenue growth by <span className="font-bold">127%</span>. Drive results for your e-commerce business with our Google Shopping services. Get started today!
+    </p>
+    <p>Did that just catch your eye? Indeed, it did!</p>
+    <p>
+      We can read your mind – you want to know all about this incredible solution that could make you a global brand with large-scale outreach.
+    </p>
+    <p>
+      We unveil the new-fangled player in the marketing town, <span className="font-bold">Google Shopping Ads!</span>
+    </p>
+  </div>
+
+  {/* Explanation Section */}
+  <div className="space-y-4">
+    <p>
+      Google Shopping ads are not just simple ads. They are efficient at global outreach, carrying rich product information like product images, price, reviews, and your brand name. You, too, would have come across such ads when searching for similar products.
+    </p>
+    <p className="font-bold">Customizing Google Shopping Ads Campaigns</p>
+    <p>
+      The Google Shopping Campaigns are a fully customizable representation of your brand and product. You can manage, organize, and optimize your ads through this shopping campaign. It also comes with robust analysis and benchmarking tools to monitor and measure your campaign’s performance.
+    </p>
+    <p>All you need to do is create campaigns for your shopping ads in Google Ads, and your product gets going. Easy, right?</p>
+    <p>
+      Google shopping ads can drive the right traffic for your brand for better conversions & revenue. Let’s dive deeper into how Google Shopping Ads Campaign works for your business.
+    </p>
+  </div>
+
+  {/* Steps Section */}
+  <div className="space-y-4">
+    <p className="font-bold">Step 1: Search and show up!</p>
+    <p>
+      Every time a potential customer makes a relevant query for the product you sell, Google displays an image and price of your product, which is linked and ready to convert.
+    </p>
+    <p className="font-bold">Step 2: That’s it!</p>
+    <p>
+      That’s what Google Shopping Ads do for your business. They get your products in front of online customers faster than any other method – and FYI, your competitors are already doing this.
+    </p>
+  </div>
+
+  {/* Challenges Section */}
+  <div className="space-y-4">
+    <p>
+      Managing Google shopping campaigns can be confusing and time-consuming, taking away precious time you could spend on other aspects of your business.
+    </p>
+    <p>
+      This is where a Google shopping management agency like us comes in.
+    </p>
+  </div>
+
+  {/* Our Expertise Section */}
+  <div className="space-y-4">
+    <p>
+      At <span className="font-bold">Prime Marketing Experts</span>, we create, organize, and optimize Google Shopping ads, while customizing a strategy to increase your return on investment and augment your revenue.
+    </p>
+    <p>
+      Our team understands that people often do not get the intended results from their current marketing campaigns. We ensure your marketing campaigns work the right way, giving you the results you deserve.
+    </p>
+  </div>
+</div>
 
 
-          <div className="flex flex-col bg-blue-50 p-2 space-y-6">
+
+          <div className="flex flex-col bg-blue-50 p-6 space-y-6">
           <h1 className="font-bold justify-start text-start text-4xl">
           About Our Google Shopping Management Agency Services
           </h1>
-            <div className="space-y-8 w-full lg:w-11/12 mt-14">
+            <div className="space-y-8 ">
               
               <p>
               Prime Google Shopping campaigns is a subset of Prime Marketing Experts services. We are a seasoned e-Commerce digital marketing agency with expertise in building customized, scalable Google Shopping campaigns for any size e-commerce businesses, small to large!
@@ -113,11 +128,11 @@ const Page = () => {
           </div>
 
           <div className="flex flex-col  space-y-6">
-          <h1 className="font-bold justify-start text-start text-4xl">
+         
+            <div className="space-y-8 w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
+            <h1 className="font-bold justify-start text-start text-4xl">
           Expert Team. Big Ideas. Exceptional Results.
           </h1>
-            <div className="space-y-8 w-full lg:w-11/12 mt-14">
-              
               <p>
               We provide Google Shopping campaign management for business owners or marketing personnel. We have countless years of experience providing marketing solutions that deliver a high rate of success.
               </p>
@@ -140,7 +155,7 @@ const Page = () => {
             </div>
 
 
-          <div className="flex flex-col bg-blue-50 p-2 space-y-6">
+          <div className="flex flex-col bg-blue-50 p-6 space-y-6">
           <h1 className="font-bold justify-start text-start text-4xl">
           Why You Should Choose Us?
           </h1>
@@ -169,7 +184,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
           <h1 className="font-bold justify-start text-start text-4xl">
           Achieving the Best Results With Google Shopping
           </h1>

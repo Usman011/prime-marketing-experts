@@ -28,18 +28,21 @@ export default function CleaningCompanies() {
         {/* Hero Section */}
         <div className="flex flex-col lg:flex-row items-center justify-between mb-16">
           {/* Left Side - Content */}
-          <div className="w-full lg:w-1/2 text-center lg:text-left lg:pr-12 transform transition-all duration-500 hover:scale-105">
+          <div className="w-full lg:w-1/2 text-center lg:text-left lg:pr-12 transform transition-all space-y-8 duration-500 hover:scale-105">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
               Unlock Your Cleaning Company’s Potential with Prime Marketing
             </h1>
             <p className="mt-6 text-lg text-gray-600">
               Revolutionize your cleaning business with our cutting-edge marketing strategies. From brand awareness to client retention, our custom campaigns will drive growth, boost visibility, and generate high-quality leads.
             </p>
-            <Link href="/free-strategy-session" className="my-6 "> 
+            <div>
+            <Link href="/free-strategy-session" className="my-6"> 
             <button className="px-8 py-3 bg-gradient-main text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 transition">
               Get Started
             </button>
             </Link>
+            </div>
+            
           </div>
 
           {/* Right Side - Image */}
@@ -185,12 +188,12 @@ export default function CleaningCompanies() {
        
 
        {/* Tourism Call-to-Action Section */}
-<div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center justify-evenly px-6 lg:px-12">
+<div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 pt-4 mb-6 lg:flex-row items-center justify-evenly px-6 lg:px-12">
   <h1 className="font-bold text-white text-2xl md:text-4xl text-center leading-tight">
   Ready to Grow Your Cleaning Business?
   </h1>
   <Link href="/contact">
-    <button className="bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 mt-4 lg:mt-0 flex justify-center items-center hover:text-black text-white rounded-lg">
+    <button className="bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 my-6 md:my-auto flex justify-center items-center hover:text-black text-white rounded-lg">
       CONTACT NOW
     </button>
   </Link>

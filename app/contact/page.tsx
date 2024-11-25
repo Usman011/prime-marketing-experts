@@ -49,7 +49,7 @@ export default function Contact() {
 
 	return (
 		<section className="container py-16 bg-gradient-to-br from-blue-50 to-purple-50">
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<motion.h2
 					className="text-4xl  font-bold text-center pb-2"
 					initial={{ opacity: 0, y: -20 }}

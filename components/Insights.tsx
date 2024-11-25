@@ -18,7 +18,7 @@ const carouselItemsData = [
 		description: [
 			"We envision a world where every brand has the opportunity to thrive. We do not care if you are a small ecommerce store or a medium-sized real estate firm. Our solutions are based on your needs and requirements. Nor on anyone else's. By harnessing the power and range of digital marketing, we aim to bridge the gap between businesses and their customers, fostering lasting relationships built on trust and engagement.",
 		],
-		linkText: 'Learn More About Prime Marketing Experts',
+		linkText: 'Learn More',
 		linkHref: '/about',
 		imageUrl: Image2,
 	},
@@ -30,7 +30,7 @@ const carouselItemsData = [
 			'Innovation: We continuously seek new ideas and approaches to stay ahead in the ever-evolving marketing landscape.',
       'Collaboration: We work closely with our clients, valuing their input and insights to achieve common goals.'
 		],
-		linkText: 'Learn More About Prime Marketing Experts',
+		linkText: 'Learn More ',
 		linkHref: '/about',
 		imageUrl: Image1,
 	},
@@ -40,7 +40,7 @@ const carouselItemsData = [
 		description: [
 			'Our team is composed of passionate professionals with diverse backgrounds in marketing, design, and technology. Each member brings unique skills and perspectives, allowing us to craft comprehensive strategies that cater to our clients’ specific needs.',
 		],
-		linkText: 'Learn More About Prime Marketing Experts',
+		linkText: 'Learn More ',
 		linkHref: '/about',
 		imageUrl: Image4,
 	},
@@ -50,7 +50,7 @@ const carouselItemsData = [
 		description: [
 			'Our digital marketing agency is made up of elite marketers, designers, developers, and data analysts. For us, it is not just a job — it is a driving passion. And that passion has led to some of the best work on the web.',
 		],
-		linkText: 'Learn More About Prime Marketing Experts',
+		linkText: 'Learn More',
 		linkHref: '/about',
 		imageUrl: Image3,
 	},
@@ -115,7 +115,7 @@ export default function Insight() {
 												))}
 												<Button
 													asChild
-													className={`mt-4 ${selectedIndex === index ? 'bg-gradient-main hover:bg-[#ff962c]' : ''}`}
+													className={`mt-4  justify-center items-center ${selectedIndex === index ? 'bg-gradient-main hover:bg-[#ff962c]' : ''}`}
 												>
 													<a href={item.linkHref}>{item.linkText}</a>
 												</Button>

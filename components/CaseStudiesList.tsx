@@ -77,15 +77,15 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 										</p>
 									</CardContent>
 									<CardFooter className="border-t p-6 bg-gray-50">
-										<div className="flex items-center justify-between w-full">
-											<div className="flex items-center space-x-2">
+										<div className="flex items-center justify-center w-full">
+											{/* <div className="flex items-center space-x-2">
 												<Avatar>
 													<AvatarImage src="/placeholder.svg" alt={caseStudy.authorName} />
 													<AvatarFallback>{caseStudy.authorName.charAt(0)}</AvatarFallback>
 												</Avatar>
 												<span className="text-sm font-medium">{caseStudy.authorName || ''}</span>
-											</div>
-											<AnimatePresence>
+											</div> */}
+											{/* <AnimatePresence>
 												{hoveredId === caseStudy.documentId && (
 													<motion.div
 														initial={{ opacity: 0, x: -20 }}
@@ -95,13 +95,20 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 													>
 														<Link href={`/case-studies/${caseStudy.documentId}`}>
 															<Button variant="ghost" size="sm" className="text-primary">
-																Read More
+															<span className="absolute inset-0 w-full h-full border-b-2 border-orange-600 transform scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
+															<span className="relative">Read More</span>
 																<ChevronRight className="ml-2 h-4 w-4" />
 															</Button>
 														</Link>
 													</motion.div>
 												)}
-											</AnimatePresence>
+											</AnimatePresence> */}
+											<Link href={`/case-studies/${caseStudy.documentId}`}>
+											<button className="relative inline-flex items-center justify-center px-4 py-2 text-orange-600 font-medium group">
+						                    <span className="absolute inset-0 w-full h-full border-b-2 border-orange-600 transform scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
+						                    <span className="relative">Read More</span>
+					                        </button>
+											</Link>
 										</div>
 									</CardFooter>
 								</Card>

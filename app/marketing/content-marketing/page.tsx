@@ -34,12 +34,13 @@ const Page = () => {
       </div>
 
       <div className='gap-20 mt-10'>
-        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
-          <h1 className="font-bold justify-center text-center text-4xl">
-            Our Content Marketing Services Boosts Brands
-          </h1>
+        <div className="flex flex-col rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
+        
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="space-y-8 w-full lg:w-11/12 mt-14">
+            <h1 className="font-bold justify-center text-start text-4xl">
+            Our Content Marketing Services Boosts Brands
+          </h1>
               <h1 className='font-bold text-2xl italic'>Let Us Give Voice to Your Untold & Undersold Stories</h1>
               <p>
                 Did you know content is one of the most important factors that make your website rank? Well, a study shows that the conversion rate is nearly 6 times higher for companies that utilize content marketing best practices versus non-adopters.
@@ -61,15 +62,16 @@ const Page = () => {
           <p>All we care about is your passion and dedication towards building your brand! So, are you ready to stand out and leave your competitors behind? Give us a call right away!</p>
         </div>
 
-        <div className="flex flex-col space-y-6">
-          <h1 className="font-bold text-center justify-center text-4xl">
-            Our Content Marketing Services Boosts Brands
-          </h1>
+        <div className="flex flex-col bg-blue-50 p-6 space-y-6">
+        
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="w-full mt-10 h-full">
               <Image src={IMG2} alt="Market Research" layout="responsive" width={1200} height={1000} />
             </div>
             <div className="space-y-8 w-full lg:w-11/12 mt-14">
+            <h1 className="font-bold text-start justify-center text-4xl">
+            Our Content Marketing Services Boosts Brands
+          </h1>
               <p>
                 Content marketing tells a story itself. And, as humans, we give out attention to those who tell great and compelling stories. This is why; we follow a strategic marketing approach by creating and distributing relevant and unique content among your target audience.
               </p>
@@ -83,7 +85,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mt-10 bg-blue-50 space-y-6">
+        <div className="flex flex-col rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
           <h1 className="font-bold text-center justify-center text-4xl">
             Excellent Quality Content Tailored To Your Needs
           </h1>
@@ -94,7 +96,7 @@ const Page = () => {
               </div>
               <h1 className='text-1xl font-bold'>BLOGS</h1>
               <p>We write niche-specific, SEO-optimized blogs to drive conversions</p>
-              <Link href="/">
+              <Link href="/blog">
                 <button className="relative text-white bg-orange-600 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-orange-900 w-32 h-12 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
                   Read More
                 </button>
@@ -107,7 +109,7 @@ const Page = () => {
               </div>
               <h1 className='text-1xl font-bold'>INFO GRAPHICS</h1>
               <p>We produce captivating info graphics that engage your audience</p>
-              <Link href="/">
+              <Link href="/about">
                 <button className="relative text-white bg-orange-600 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-orange-900 w-32 h-12 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
                   Read More
                 </button>
@@ -120,7 +122,7 @@ const Page = () => {
               </div>
               <h1 className='text-1xl font-bold'>WEBSITE CONTENT</h1>
               <p>We write SEO friendly and 100% original website content</p>
-              <Link href="/">
+              <Link href="/Technology/web-development">
                 <button className="relative text-white bg-orange-600 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-orange-900 w-32 h-12 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
                   Read More
                 </button>
@@ -133,7 +135,7 @@ const Page = () => {
               </div>
               <h1 className='text-1xl font-bold'>EMAIL MARKETING</h1>
               <p>Personalized email newsletters to grow your subscribers</p>
-              <Link href="/">
+              <Link href="/marketing/email-marketing">
                 <button className="relative text-white bg-orange-600 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-orange-900 w-32 h-12 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
                   Read More
                 </button>
@@ -146,7 +148,7 @@ const Page = () => {
               </div>
               <h1 className='text-1xl font-bold'>EBOOKS</h1>
               <p>Excellent stories to increase your email list</p>
-              <Link href="/">
+              <Link href="/business/market-research">
                 <button className="relative text-white bg-orange-600 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-orange-900 w-32 h-12 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
                   Read More
                 </button>
@@ -159,20 +161,20 @@ const Page = () => {
               </div>
               <h1 className='text-1xl font-bold'>SOCIAL MEDIA CONTENT</h1>
               <p>Engaging one-liners for all your social media posts</p>
-              <Link href="/">
+              <Link href="/marketing/social-media-marketing">
                 <button className="relative text-white bg-orange-600 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-orange-900 w-32 h-12 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
                   Read More
                 </button>
               </Link>
             </div>
 
-            <div className='flex flex-col w-full bg-blue-50 p-2 items-center text-center gap-4'>
+            <div className='flex flex-col w-full  items-center text-center gap-4'>
               <div className='text-white bg-violet-600 w-20 h-20 justify-center items-center rounded-full font-bold'>
                 <Image src={IconIMG7} alt='IconIMG1' className='w-10 h-10 justify-center items-center m-5' />
               </div>
               <h1 className='text-1xl font-bold'>CASE STUDIES</h1>
               <p>In-depth and well-researched case studies</p>
-              <Link href="/">
+              <Link href="/case-studies">
                 <button className="relative text-white bg-orange-600 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-orange-900 w-32 h-12 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
                   Read More
                 </button>
@@ -185,7 +187,7 @@ const Page = () => {
               </div>
               <h1 className='text-1xl font-bold'>VIDEO CONTENT</h1>
               <p>Magnetic and result-oriented video content</p>
-              <Link href="/">
+              <Link href="/marketing/video-seo">
                 <button className="relative text-white bg-orange-600 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-orange-900 w-32 h-12 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
                   Read More
                 </button>
@@ -213,7 +215,7 @@ const Page = () => {
                 <li>Worldwide market accessibility</li>
               </ul>
             </div>
-            <div className="w-full bg-blue-900 h-[90vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-blue-900 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG1} alt="Market Research" />
                 <h1 className='font-bold text-black text-3xl'>BLOGS</h1>
@@ -222,9 +224,9 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
+        <div className="flex flex-col bg-blue-50 p-6 space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="w-full bg-orange-600 h-[90vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-orange-600 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG2} alt="Market Research" className='w-70 h-70' />
                 <h1 className='font-bold text-3xl text-black'>Infographic</h1>
@@ -263,7 +265,7 @@ const Page = () => {
                 Website content is a passive nurturing, too, since you cannot be available around the clock to hold all prospects and queries through the sale process.
               </p>
             </div>
-            <div className="w-full bg-blue-900 h-[90vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-blue-900 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG3} alt="Market Research" className='w-70 h-70' />
                 <h1 className='font-bold text-black text-3xl'>Website Content</h1>
@@ -274,7 +276,7 @@ const Page = () => {
 
         <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="w-full bg-orange-600 h-[90vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-orange-600 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG4} alt="Market Research" className='w-70 h-70' />
                 <h1 className='font-bold text-3xl text-black'>Email Marketing</h1>
@@ -304,7 +306,7 @@ const Page = () => {
                 Ebooks offer you the chance to showcase higher authority and ability on a subject with greater depth when compared to what blog posts offer. Therefore, it is rightly said that this service will play a vital role in content marketing and bring more traffic.
               </p>
             </div>
-            <div className="w-full bg-blue-900 h-[90vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-blue-900 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG5} alt="Market Research" className='w-70 h-70' />
                 <h1 className='font-bold text-black text-3xl'>EBooks</h1>
@@ -315,7 +317,7 @@ const Page = () => {
 
         <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="w-full bg-orange-600 h-[90vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-orange-600 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG6} alt="Market Research" className='w-70 h-70' />
                 <h1 className='font-bold text-3xl text-black'>Case Studies</h1>
@@ -355,7 +357,7 @@ const Page = () => {
                 <li>It helps in improving the search engine rankings.</li>
               </ul>
             </div>
-            <div className="w-full bg-blue-900 h-[90vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-blue-900 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG7} alt="Market Research" className='w-70 h-70' />
                 <h1 className='font-bold text-black text-3xl'>Video Content</h1>
@@ -366,7 +368,7 @@ const Page = () => {
 
         <div className="flex flex-col bg-blue-50 p-2 space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="w-full bg-orange-600 h-[90vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-orange-600 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG8} alt="Market Research" className='w-70 h-70' />
                 <h1 className='font-bold text-3xl text-black'>Social Media Content</h1>
@@ -391,8 +393,8 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='gap-20 mt-10'>
-          <div className="flex flex-col space-y-6">
+        <div className='gap-20  mt-10'>
+          <div className="flex flex-col rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6  space-y-6">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
               <div className="space-y-8 w-full lg:w-11/12 mt-14">
                 <h1 className="font-bold text-4xl">
@@ -411,7 +413,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-blue-50 p-2 space-y-6">
+          <div className="flex flex-col bg-blue-50 p-6 space-y-6">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
               <div className="w-full mt-10 h-full">
                 <Image src={IMG4} alt="Market Research" layout="responsive" width={1200} height={1000} />
@@ -428,8 +430,8 @@ const Page = () => {
           </div>
         </div>
 
-        <h1 className='text-3xl flex justify-center items-center mt-10 font-bold'>For this, we will do:</h1>
-        <div className="grid pt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 mt-8 gap-10 sm:gap-16 lg:gap-20">
+        <h1 className='text-3xl flex justify-center items-center mt-10 rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6  font-bold'>For this, we will do:</h1>
+        <div className="grid pt-10 grid-cols-1 sm:grid-cols-2 bg-blue-50 p-6 md:grid-cols-1 lg:grid-cols-3 mt-8 gap-10 sm:gap-16 lg:gap-20">
           <div className='flex flex-col w-full items-center text-center gap-4'>
             <h1 className='text-1xl font-bold'>Competitor Analysis</h1>
             <p>By researching and analyzing your competitor’s content strategy, we make sure you are always ahead of your competitors.</p>
@@ -454,7 +456,7 @@ const Page = () => {
             Learn More on How Content Marketing Can Grow Your Business!
           </h1>
           <Link href="/contact">
-            <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 flex justify-center items-center text-white hover:text-black'>
+            <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 my-6 md:my-auto flex justify-center items-center text-white hover:text-black'>
               CONTACT NOW
             </button>
           </Link>

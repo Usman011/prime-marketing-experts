@@ -203,7 +203,7 @@ const Page = () => {
           Plan The Future Growth Of Your Business
         </h1>
         <Link href="/contact">
-          <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 justify-center hover:text-black text-white items-center text-center'>CONTACT NOW</button>
+          <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 my-6 md:py-auto md:w-40 h-12 md:h-14 justify-center hover:text-black text-white items-center text-center'>CONTACT NOW</button>
         </Link>
       </div>
 

@@ -20,7 +20,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="flex flex-col bg-blue-50 p-2 gap-10 my-10">
+      <div className="flex flex-col bg-blue-50 p-6 gap-10 my-10">
         <div className="flex flex-col ">
         <h1 className="font-bold text-4xl">
           Video SEO

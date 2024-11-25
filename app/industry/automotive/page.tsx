@@ -169,7 +169,7 @@ At Prime Marketing Experts, we provide actionable insights that empower you to f
  Ensuring Safety and Success Through Expertise
   </h1>
   <Link href="/contact">
-    <button className="bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 mt-4 lg:mt-0 flex justify-center items-center hover:text-black text-white rounded-lg">
+    <button className="bg-black hover:bg-white transition-transform transform hover:scale-105 my-6 md:my-auto w-32 md:w-40 h-12 md:h-14  flex justify-center items-center hover:text-black text-white rounded-lg">
       CONTACT NOW
     </button>
   </Link>

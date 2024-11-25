@@ -20,7 +20,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='mb-10 bg-blue-50 p-2 mt-10'>
+      <div className='mb-10 bg-blue-50 p-6 mt-10'>
         <div className="flex flex-col ">
           <h1 className="font-bold  text-4xl">
           Web Design That Strengthens Search Engine Ranking

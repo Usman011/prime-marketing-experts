@@ -172,7 +172,7 @@ This structured layout ensures a visually engaging and user-friendly design whil
     Plan Your Next Adventure Today! <br /> Get a Free Quote for Your Dream Vacation
   </h1>
   <Link href="/contact">
-    <button className="bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 mt-4 lg:mt-0 flex justify-center items-center hover:text-black text-white rounded-lg">
+    <button className="bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 my-6 md:my-auto md:w-40 h-12 md:h-14  flex justify-center items-center hover:text-black text-white rounded-lg">
       CONTACT NOW
     </button>
   </Link>

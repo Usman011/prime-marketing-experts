@@ -26,8 +26,8 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="flex flex-col mx-2 gap-10 mt-10">
-        <div className="flex flex-col space-y-6">
+      <div className="flex flex-col gap-10 mt-10">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
           <h1 className="font-bold text-4xl">
             Improve Online Presence With Social Media Marketing
           </h1>
@@ -49,7 +49,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
+        <div className="flex flex-col bg-blue-50 p-6 space-y-6">
           <h1 className="font-bold text-4xl">
             Surpassing Your Social Media Goals
           </h1>
@@ -68,7 +68,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
           <h1 className="font-bold text-4xl">
             Social Media Posting That Builds Brands
           </h1>
@@ -90,7 +90,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
+        <div className="flex flex-col bg-blue-50 p-6 space-y-6">
           <h1 className="font-bold text-4xl">
             Social Media Advertising That Generates Results
           </h1>
@@ -115,7 +115,7 @@ const Page = () => {
           </p>
         </div>
 
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
           <h1 className="font-bold text-4xl">
             Comprehensive Monitoring & Reporting Solutions
           </h1>
@@ -137,7 +137,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
+        <div className="flex flex-col bg-blue-50 p-6 space-y-6">
           <h1 className="font-bold text-4xl">
             Relationship Building Social Media Marketing Services
           </h1>
@@ -156,7 +156,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
           <h1 className="font-bold text-4xl">
             Social Media Platforms Serviced
           </h1>
@@ -184,7 +184,7 @@ const Page = () => {
         Get a Free Quote & Learn About Our Social Media <br /> Marketing Plans Today
         </h1>
         <Link href="/contact">
-          <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 justify-center hover:text-black text-white items-center text-center'>CONTACT NOW</button>
+          <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 my-6 md:my-auto justify-center hover:text-black text-white items-center text-center'>CONTACT NOW</button>
         </Link>
       </div>
       </div>
