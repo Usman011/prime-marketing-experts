@@ -103,7 +103,7 @@ export default function Insight() {
 					<div className="flex">
 						{carouselItemsData.map((item, index) => (
 							<div className="flex-[0_0_100%] min-w-0 md:px-5" key={index}>
-								<Card className="border-none shadow-lg bg-white rounded-2xl overflow-hidden">
+								<Card className="border-none shadow-lg p-4 bg-white rounded-2xl overflow-hidden">
 									<CardContent className="p-0">
 										<div className="flex flex-col lg:flex-row">
 											<div className="lg:w-1/2 p-8 lg:p-12">

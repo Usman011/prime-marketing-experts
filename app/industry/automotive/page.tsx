@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const AutomotivePage = () => {
   return (
-    <section className="automotive-page container gap-20 py-16 bg-gradient-to-b from-gray-50 to-gray-100">
+    <section className="automotive-page container gap-20 py-16 ">
 
       <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
@@ -24,20 +24,18 @@ const AutomotivePage = () => {
         </div>
       </div>
       {/* Hero Section */}
-      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div className="container mx-auto grid grid-cols-1 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6  lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="text-content">
           <h1 className="text-3xl font-extrabold -600 mb-6 leading-tight">
-            Accelerate Growth with Expert <span className="text-gray-800">Automotive Marketing</span>
+          Our Automotive Marketing Services 
           </h1>
-          <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-            Elevate Your Brand with Prime Marketing Experts
-          </h2>
+         
           <p className="text-gray-700 mb-4 leading-relaxed">
-          Just as the automotive industry embraces cutting-edge technology, your business needs forward-thinking strategies to stay ahead of the competition. At Prime Marketing Experts, we offer specialized marketing services designed to drive success for automotive brands.
+          At Prime Marketing Experts, we understand the unique challenges and opportunities within the automotive industry. Whether you’re a dealership, a parts manufacturer, or a service provider, our marketing solutions are designed to drive results and help your automotive brand stand out in a competitive market. 
           </p>
           <p className="text-gray-700 mb-6 leading-relaxed">
-          At Prime Marketing Experts, we bring the same spirit of innovation and precision to marketing as the automotive industry brings to its vehicles. Whether you`re a dealership, parts manufacturer, or service provider, our cutting-edge solutions will help you stand out in a competitive market.
+          Our data-driven strategies and industry-specific expertise ensure that your marketing efforts will connect you with the right customers, increase sales, and build long-term brand loyalty. From increasing foot traffic to boosting online engagement, we offer comprehensive services that fuel your growth. 
           </p>
           <div className="flex items-center gap-4">
           <Link href="/contact"> 
@@ -57,14 +55,12 @@ const AutomotivePage = () => {
             height={400}
             className="rounded-lg shadow-xl transform hover:scale-105 transition"
           />
-          <div className="absolute top-10 left-10 bg-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-lg">
-            Driving Innovation in Automotive Marketing
-          </div>
+        
         </div>
       </div>
 
 
-      <div className="container mx-auto px-4 grid grid-cols-1 pt-10 bg-white lg:grid-cols-2 gap-10 items-center">
+      <div className="container  px-10 my-10 grid grid-cols-1 pt-10 bg-blue-50 p-6 lg:grid-cols-2  items-center">
 
         {/* Right Image */}
         <div className="relative">
@@ -80,41 +76,40 @@ const AutomotivePage = () => {
         {/* Left Content */}
         <div className="text-content">
           <h1 className="text-3xl font-extrabold -600 mb-6 leading-tight">
-          Driving Results with Precision
+          Dealership Marketing 
           </h1>
          
           <p className="text-gray-700 mb-4 leading-relaxed">
-          In the automotive industry, precision isn’t just a standard—it’s a necessity. To ensure end-user safety, security, and compliance, rigorous tests and inspections are conducted at various stages of the value chain. These measures help prevent costly product recalls, which can have a significant financial and reputational impact.
+          As an automotive dealership, your goal is to attract more qualified leads and convert them into customers. We help you do this by leveraging targeted campaigns that highlight your inventory, promotions, and dealership services. Our marketing strategies will increase foot traffic to your showroom and drive online leads.
           </p>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-          At Prime Marketing Experts, we apply this same level of precision to your marketing campaigns. By using data-driven strategies, we help your brand connect with the right audience, ensuring every effort translates into measurable results.
-          </p>
+          <ul className="list-disc pl-5 text-gray-700">
+        <li className="mb-2">Targeted online advertising for specific vehicle models  </li>
+        <li className="mb-2">Lead generation strategies </li>
+        <li>Special offers and promotions marketing  </li>
+      </ul>
         </div>
       </div>
 
     
 
-  <div className="container mx-auto px-4 grid grid-cols-1 pt-10 bg-gradient-to-b from-gray-50 to-gray-100 lg:grid-cols-2 gap-10 items-center">
+  <div className="container mx-auto px-4 grid grid-cols-1 pt-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 lg:grid-cols-2 gap-10 items-center">
 
 
 {/* Left Content */}
 <div className="text-content">
   <h1 className="text-3xl font-extrabold -600 mb-6 leading-tight">
-  Drive Smarter Decisions with Actionable Insights
+  Local SEO for Automotive Businesses 
   </h1>
  
   <p className="text-gray-700 mb-4 leading-relaxed">
-  In automotive production, water-intensive processes such as surface treatment, painting, coating, and cooling require precision and resource management to maintain efficiency. Similarly, marketing strategies in the automotive sector demand careful analysis and optimization to achieve the best results.
-
-At Prime Marketing Experts, we provide actionable insights that empower you to fine-tune your campaigns, ensuring every effort contributes to your bottom line.
-
+  Local search optimization is crucial for automotive businesses to ensure that customers can easily find your dealership, service center, or parts store when searching online. We optimize your website and listings on platforms like Google My Business to improve your rankings in local search results, helping you capture nearby leads and customers. 
 
   </p>
-  <p className="text-gray-700 mb-6 leading-relaxed">
-  Just as water is essential for crucial automotive processes, data is the lifeblood of effective marketing. With our actionable insights, you can identify opportunities, address inefficiencies, and maximize your ROI.
-
-
-  </p>
+  <ul className="list-disc pl-5 text-gray-700">
+        <li className="mb-2">Local SEO strategies to enhance visibility  </li>
+        <li className="mb-2">Optimizing online maps and directories </li>
+        <li>Creating location-specific landing pages </li>
+      </ul>
 </div>
 
 {/* Right Image */}
@@ -131,7 +126,7 @@ At Prime Marketing Experts, we provide actionable insights that empower you to f
 </div>
 
 
-<div className="container mx-auto px-4 pt-20 grid grid-cols-1 bg-white lg:grid-cols-2 gap-10 items-center">
+<div className="container mx-auto px-4 pt-20 grid grid-cols-1 bg-blue-50 lg:grid-cols-2 gap-10 items-center">
 
         {/* Right Image */}
         <div className="relative">
@@ -147,15 +142,15 @@ At Prime Marketing Experts, we provide actionable insights that empower you to f
         {/* Left Content */}
         <div className="text-content">
           <h1 className="text-3xl font-extrabold -600 mb-6 leading-tight">
-          Ensuring Safety and Success Through Expertise
+          Paid Advertising Campaigns 
           </h1>
          
           <p className="text-gray-700 mb-4 leading-relaxed">
-          In the automotive industry, safety is paramount—protecting users, operators, and manufacturers from potential hazards while ensuring vehicles are safeguarded against damage. Similarly, your marketing strategies require the same level of precision and care to protect your brand, enhance visibility, and drive growth.
+          Paid advertising is an effective way to reach potential customers who are actively searching for automotive products or services. We design and manage paid campaigns across Google Ads, Facebook Ads, and display networks to ensure your messages reach qualified leads and drive sales. 
           </p>
           <p className="text-gray-700 mb-6 leading-relaxed">
           
-          Just as safety ensures protection against physical risks in the automotive world, our marketing expertise safeguards your brand’s reputation and growth. With a deep understanding of industry challenges, we deliver campaigns that connect with your audience and inspire trust.
+          Stay connected with your customers by sending personalized email campaigns that provide valuable content, exclusive offers, and updates on new arrivals. Whether it’s reminding customers about vehicle maintenance or promoting special events, email marketing ensures your customers stay engaged and loyal. 
           </p>
         </div>
       </div>

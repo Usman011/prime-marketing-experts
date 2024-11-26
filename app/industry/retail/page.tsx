@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function RetailIndustry() {
   return (
-    <section className="min-h-screen container bg-gray-50 py-16">
+    <section className="min-h-screen container">
          <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
         Retail
@@ -23,17 +23,17 @@ export default function RetailIndustry() {
       </div>
       <div className="mx-auto ">
         {/* Hero Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-between mb-16">
+        <div className="flex flex-col lg:flex-row items-center  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 py-10 justify-between mb-16">
           {/* Left Side - Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left lg:pr-12 transform transition-all duration-500 hover:scale-105">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
-              Unlock the Power of Retail Marketing with Prime Experts
+            Retail Marketing Services by Prime Marketing Experts 
             </h1>
-            <p className="mt-6 text-lg text-gray-600">
-              Explore our innovative marketing strategies designed to enhance your retail brand’s presence, drive sales, and engage customers. From data-driven advertising to personalized shopping experiences, we provide holistic solutions for retail businesses.
+            <p className="mt-6  text-gray-600">
+            At Prime Marketing Experts, we understand that the retail industry is fast-paced and ever-changing. Whether you own a brick-and-mortar store, run an e-commerce shop, or manage a multi-location retail chain, we provide customized marketing strategies to help you stand out from the competition, boost sales, and build lasting customer relationships. 
             </p>
-            <Link href="/free-strategy-session" className="my-6 "> 
-            <button className="px-8 py-3 bg-gradient-main text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 transition">
+            <Link href="/free-strategy-session"> 
+            <button className="px-8 py-3 my-8 bg-gradient-main text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 transition">
               Get Started
             </button>
             </Link>
@@ -52,10 +52,10 @@ export default function RetailIndustry() {
         </div>
 
         {/* Retail Marketing Strategies Section */}
-        <div className="bg-white py-16 rounded-lg shadow-lg mb-16">
+        <div className="bg-blue-50 py-16 p-6 rounded-lg shadow-lg">
           <h2 className="text-3xl font-semibold text-center text-gray-800">Our Retail Marketing Strategies</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
+            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md  transition-all">
               <Image
                 src={IMG1}
                 alt="Social Media Marketing"
@@ -65,7 +65,7 @@ export default function RetailIndustry() {
               />
               <h3 className="text-xl font-semibold mt-4 text-gray-800">Social Media Engagement</h3>
               <p className="mt-2 text-gray-600 text-center">
-                Engage with customers across multiple platforms like Instagram, Facebook, and Twitter to drive foot traffic and brand loyalty.
+              Social media is an essential tool for connecting with your customers and promoting your retail products. We create dynamic social media strategies that highlight your products, seasonal promotions, and events while engaging your audience with compelling content. From Instagram shopping to Facebook campaigns, we ensure your retail brand is visible and appealing across the platforms your customers use most. 
               </p>
             </div>
             <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
@@ -78,7 +78,7 @@ export default function RetailIndustry() {
               />
               <h3 className="text-xl font-semibold mt-4 text-gray-800">SEO Optimization</h3>
               <p className="mt-2 text-gray-600 text-center">
-                Improve your online visibility and attract local customers with powerful SEO strategies tailored for retail businesses.
+              Search engine optimization (SEO) is key to ensuring that your retail business ranks highly on search engines and gets discovered by potential customers. Our SEO strategies are designed to increase organic traffic, improve product visibility, and drive sales both online and in-store. We optimize your website and product listings, ensuring that you appear in the right search results. 
               </p>
             </div>
             <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
@@ -91,31 +91,31 @@ export default function RetailIndustry() {
               />
               <h3 className="text-xl font-semibold mt-4 text-gray-800">Targeted Advertising</h3>
               <p className="mt-2 text-gray-600 text-center">
-                Run targeted ad campaigns that drive conversions and increase ROI by reaching the right customers at the right time.
+              Paid advertising allows you to target your ideal customers and drive instant results. We design and manage targeted advertising campaigns on platforms like Google Ads, Facebook, Instagram, and more to increase visibility, boost product sales, and drive traffic to your store or website. With our data-driven approach, we ensure that every dollar you spend on advertising delivers measurable results. 
               </p>
             </div>
           </div>
         </div>
 
         {/* Customer Testimonials Section */}
-        <div className="py-16 bg-blue-50">
+        <div className="py-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
           <h2 className="text-3xl font-semibold text-center text-gray-800">What Our Clients Say</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-blue-50 p-6 rounded-lg shadow-lg">
               <p className="text-gray-600 italic">
                 Prime Marketing Experts helped us increase our sales by 40% through their tailored digital marketing strategies. Highly recommend!
               </p>
               <p className="mt-4 font-semibold text-gray-800">John D.</p>
               <p className="text-gray-500">Retail Business Owner</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-blue-50 p-6 rounded-lg shadow-lg">
               <p className="text-gray-600 italic">
                 Their SEO and social media strategies have taken our online presence to new heights. We couldn`t have done it without them!
               </p>
               <p className="mt-4 font-semibold text-gray-800">Jane S.</p>
               <p className="text-gray-500">E-Commerce Store Manager</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-blue-50 p-6 rounded-lg shadow-lg">
               <p className="text-gray-600 italic">
                 Thanks to Prime Marketing Experts, our brand visibility has soared, and we`re seeing incredible foot traffic in our stores!
               </p>
@@ -126,25 +126,25 @@ export default function RetailIndustry() {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="py-16">
+        <div className="py-16 bg-blue-50 p-6 my-10">
           <h2 className="text-3xl font-semibold text-center text-gray-800">Why Choose Prime Marketing Experts?</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
               <h3 className="text-xl font-semibold text-gray-800">Proven Results</h3>
               <p className="mt-2 text-gray-600">
-                We have a track record of driving measurable results for retail businesses through targeted marketing and data-driven insights.
+              We have a strong track record of driving measurable results for retail businesses by using data-driven marketing strategies. 
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
               <h3 className="text-xl font-semibold text-gray-800">Tailored Strategies</h3>
               <p className="mt-2 text-gray-600">
-                Every retail business is unique, and we create marketing solutions tailored specifically to your brand`s needs and goals.
+              We don’t believe in one-size-fits-all solutions. Every retail business is unique, and we create custom marketing plans that align with your goals. 
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
               <h3 className="text-xl font-semibold text-gray-800">Expert Team</h3>
               <p className="mt-2 text-gray-600">
-                Our team consists of experienced professionals with deep expertise in retail marketing and industry best practices.
+              Our team of marketing professionals has extensive experience in the retail industry, ensuring that we understand the challenges you face and know how to overcome them. 
               </p>
             </div>
           </div>

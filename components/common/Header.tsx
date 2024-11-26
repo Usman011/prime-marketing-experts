@@ -31,6 +31,7 @@ import { FacebookIcon, Instagram, Linkedin, Menu, TwitterIcon } from "lucide-rea
 import { mobileMenu } from "@/constants"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
 import { Button } from "../ui/button"
+import { FaCircleChevronDown, FaCircleChevronUp } from "react-icons/fa6"
 
 const components: { title: string; href: string; }[] = [
   {
@@ -247,10 +248,10 @@ export function Header() {
 						<Menu className="h-10 w-10" color="#000" />
 					</SheetTrigger>
 					<SheetContent
-						side="left"
-						className="w-[300px] sm:w-[400px] h-screen overflow-scroll bg-[#040c5e]"
+						side="right"
+						className="w-[500px] sm:w-[400px] h-screen overflow-scroll bg-[#040c5e]"
 					>
-						<nav className="flex flex-col space-y-4 mt-10 pb-20">
+						<nav className="flex flex-col space-y-4 ml-20 mt-10 pb-20">
 							{mobileMenu.map((item) => (
 								<div key={item.title} className="  text-white">
 									{item.children ? (
@@ -258,15 +259,19 @@ export function Header() {
 											open={openItems[item.title]}
 											onOpenChange={() => toggleItem(item.title)}
 										>
-											<CollapsibleTrigger asChild>
-												<Button
-													variant="link"
-													className="w-full justify-between text-base hover:no-underline outline-none text-white gap-3"
-												>
-													{item.title}
-													<span className="text-base">{openItems[item.title] ? '▲' : '▼'}</span>
-												</Button>
-											</CollapsibleTrigger>
+										<CollapsibleTrigger asChild>
+    <Button
+        variant="link"
+        className="w-full justify-between  text-base hover:no-underline outline-none text-white  gap-6"
+    >
+        {item.title}
+        {openItems[item.title] ? (
+            <FaCircleChevronUp className="text-base" />
+        ) : (
+            <FaCircleChevronDown className="text-base" />
+        )}
+    </Button>
+</CollapsibleTrigger>
 											<CollapsibleContent className="mt-2 space-y-4 pb-3">
 												{item.children.map((child) => (
 													<Link

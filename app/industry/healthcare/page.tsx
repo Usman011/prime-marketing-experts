@@ -14,28 +14,28 @@ export default function HealthcarePage() {
   const services = [
     {
       id: 1,
-      name: "Health & Wellness Programs",
-      description: "Our Health & Wellness programs are designed to guide you towards a healthier lifestyle, focusing on preventive care, nutrition, and mental well-being. These programs are customized to meet individual health goals and ensure long-term results.",
+      name: "Social Media Marketing & Engagement ",
+      description: "Social media is an effective way to reach and engage with current and potential patients. We create tailored social media campaigns that showcase your services, share helpful health tips, and promote patient success stories. Our goal is to build an online community that trusts and follows your brand. ",
       image: IMG3,
     },
     {
       id: 2,
-      name: "Medical Consultations",
-      description: "Receive personalized consultations with certified healthcare professionals who specialize in various medical fields. Whether you need advice on treatment plans, diagnoses, or health management, our experts are here to provide the support you need.",
+      name: " Content Marketing & Patient Education",
+      description: "We believe in the power of education. Our content marketing strategies are designed to inform, educate, and engage your audience through blogs, video content, patient guides, and webinars. We position your practice as a trusted resource for health information. er you need advice on treatment plans, diagnoses, or health management, our experts are here to provide the support you need.",
       
       image: IMG4,
     },
     {
       id: 3,
-      name: "Fitness & Rehabilitation",
-      description: "Our fitness and rehabilitation services are tailored to help you recover from injury or surgery, improve mobility, and maintain your physical well-being. With individualized plans designed by certified trainers and physiotherapists, we support your journey back to full health.",
+      name: "Video Marketing ",
+      description: "Showcase your healthcare services, patient testimonials, and the unique culture of your practice through professional video marketing. We create high-quality video content to promote your services and build trust with your audience. ",
      
       image: IMG5,
     },
   ];
 
   return (
-    <section className="font-sans container text-gray-800">
+    <section className="container text-gray-800">
       {/* Header */}
       <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
@@ -51,15 +51,18 @@ export default function HealthcarePage() {
         </div>
       </div>
 
-      <div className="relative py-10 flex items-center bg-gray-100">
+      <div className="relative py-10 flex items-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
         <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
           {/* Left: Text */}
           <div className="md:w-3/5 text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
-            Comprehensive Healthcare Solutions for You
+            <h1 className="text-4xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+            Healthcare Marketing 
             </h1>
-            <p className="text-lg md:text-2xl text-gray-600 mb-6">
-            At Prime Marketing Experts, we understand that your health is the most important thing. That`s why we offer a wide range of healthcare marketing services designed to help you provide the best care to your patients. From digital marketing strategies to brand visibility, we’re here to make sure your healthcare services are reaching the right people and making an impact.
+            <p className="text-gray-700 mb-6">
+            We understand the unique challenges and opportunities within healthcare marketing, and we focus on creating results-driven strategies that help you achieve your goals. 
+            </p>
+            <p className="text-gray-700 mb-6">
+            We specialize in providing comprehensive and effective marketing solutions tailored for the healthcare industry. Whether you are a healthcare provider, medical practice, wellness center, or rehabilitation service, our strategic services help you connect with your target audience, build trust, and ultimately grow your business.
             </p>
             <div className="flex gap-4 justify-center md:justify-start">
               <Link href="/contact" className="my-6">
@@ -83,7 +86,7 @@ export default function HealthcarePage() {
       </div>
 
       {/* History Section */}
-      <div className="py-16 bg-gray-50">
+      <div className="py-16 bg-blue-50 my-10 ">
         <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row gap-12">
           {/* Left: Image */}
           <div className="md:w-1/2">
@@ -97,30 +100,35 @@ export default function HealthcarePage() {
           </div>
           {/* Right: Text */}
           <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Building Trust Through Online Presence</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Website Design & Optimization </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-            We help you build an online presence that establishes trust. By optimizing your website, improving your search engine ranking, and creating engaging social media content, we help your healthcare brand stand out.
+            Your website is often the first impression potential patients will have of your practice. We design user-friendly, mobile-optimized websites that are both informative and engaging. Our team ensures that your website is optimized for search engines to increase your visibility and attract more patients. 
             </p>
+            <ul className="list-disc pl-5 text-gray-700">
+        <li className="mb-2">User-friendly interface </li>
+        <li className="mb-2">SEO optimized for higher rankings</li>
+        <li>Mobile responsiveness </li>
+      </ul>
           </div>
         </div>
       </div>
 
       {/* Services Section */}
-      <div className="py-16 bg-white">
+      <div className="py-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 my-10">
         <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
           {/* Left: Text */}
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-            Patient Education and Engagement
+            Local SEO for Healthcare Providers
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-            Our healthcare marketing services include strategies to educate and engage patients. Whether it’s through informative blog posts, webinars, or patient resources, we make sure your patients are empowered to make informed health decisions.
+            Local SEO is crucial for healthcare businesses to ensure they show up when patients in your area search for medical services. We optimize your online presence to ensure your practice ranks highly in local search results, making it easier for patients to find and contact you. 
 
             </p>
             <ul className="list-disc pl-5 text-gray-700">
-              <li className="mb-2">Personalized health assessments</li>
-              <li className="mb-2">Consultations with healthcare professionals</li>
-              <li>Rehabilitation programs and fitness guidance</li>
+              <li className="mb-2">Google My Business optimization </li>
+              <li className="mb-2">Local keyword targeting </li>
+              <li>Location-based search results </li>
             </ul>
           </div>
 
@@ -138,9 +146,9 @@ export default function HealthcarePage() {
       </div>
 
       {/* Service Plans Section */}
-      <div className="py-16 bg-gray-100">
+      <div className="py-16 bg-blue-50">
         <div className="container mx-auto px-6 md:px-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Healthcare Packages</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Addressing negative reviews professionally </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service) => (
               <div
@@ -166,12 +174,12 @@ export default function HealthcarePage() {
       </div>
 
       {/* Healthcare Call-to-Action Section */}
-      <div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center pt-6 justify-evenly px-6 lg:px-auto">
+      <div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center pt-6 md:pt-auto lg:pt-auto justify-evenly px-6 lg:px-auto">
         <h1 className="font-bold text-white text-2xl md:text-4xl text-center leading-tight">
           Take Control of Your Health Today!  Get a Free Consultation Now
         </h1>
         <Link href="/contact">
-          <button className="bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 my-6 md:my-auto flex justify-center items-center hover:text-black text-white rounded-lg">
+          <button className="bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 my-6  flex justify-center items-center hover:text-black text-white rounded-lg">
             CONTACT NOW
           </button>
         </Link>

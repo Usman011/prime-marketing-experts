@@ -10,7 +10,7 @@ import IMG5 from '../../../public/images/section_01.jpg'
 
 export default function CleaningCompanies() {
   return (
-    <section className="container  min-h-screen bg-gray-50 py-16">
+    <section className="container">
         <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
         Cleaning Company
@@ -26,14 +26,17 @@ export default function CleaningCompanies() {
       </div>
       <div className="mx-auto ">
         {/* Hero Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-between mb-16">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 lg:flex-row items-center justify-between mb-16">
           {/* Left Side - Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left lg:pr-12 transform transition-all space-y-8 duration-500 hover:scale-105">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
-              Unlock Your Cleaning Company’s Potential with Prime Marketing
+            Our Cleaning Company Marketing Services 
             </h1>
-            <p className="mt-6 text-lg text-gray-600">
-              Revolutionize your cleaning business with our cutting-edge marketing strategies. From brand awareness to client retention, our custom campaigns will drive growth, boost visibility, and generate high-quality leads.
+            <p className="mt-6  text-gray-600">
+            We leverage a combination of digital marketing strategies and industry-specific expertise to help you stand out, connect with the right customers, and grow your brand. 
+            </p>
+            <p className="mt-6  text-gray-600">
+            At Prime Marketing Experts, we understand that the cleaning industry is highly competitive and that your business needs a strong, effective marketing strategy to attract new customers and retain loyal clients. Whether you offer residential, commercial, or specialized cleaning services, we provide tailored marketing solutions designed to boost visibility, build trust, and drive high-quality leads for your cleaning business. 
             </p>
             <div>
             <Link href="/free-strategy-session" className="my-6"> 
@@ -58,7 +61,7 @@ export default function CleaningCompanies() {
         </div>
 
         {/* Cleaning Services Section */}
-        <div className="bg-white py-16 rounded-lg shadow-lg mb-16">
+        <div className="bg-blue-50 my-10 p-10">
           <h2 className="text-3xl font-semibold text-center text-gray-800">Our Tailored Cleaning Marketing Services</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
@@ -71,7 +74,7 @@ export default function CleaningCompanies() {
               />
               <h3 className="text-xl font-semibold mt-4 text-gray-800">Local SEO for Cleaning Companies</h3>
               <p className="mt-2 text-gray-600 text-center">
-                Boost your visibility in local search results, making it easier for nearby customers to find and book your cleaning services.
+              Local SEO is crucial for cleaning businesses, as most clients are searching for services near them. We optimize your website to ensure it ranks highly in local search results, making it easier for customers to find your cleaning services. By improving your local visibility, we help drive more foot traffic, phone calls, and online inquiries. 
               </p>
             </div>
             <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
@@ -84,7 +87,7 @@ export default function CleaningCompanies() {
               />
               <h3 className="text-xl font-semibold mt-4 text-gray-800">Social Media Strategy & Management</h3>
               <p className="mt-2 text-gray-600 text-center">
-                Engage with your target audience on platforms like Instagram, Facebook, and LinkedIn, showcasing your services, tips, and client testimonials.
+              Social media is a great tool for showcasing your cleaning services and building trust with potential clients. We create engaging social media campaigns that highlight your services, share cleaning tips, promote seasonal offers, and share customer testimonials. Platforms like Facebook, Instagram, and LinkedIn help you engage with your community and attract more clients. 
               </p>
             </div>
             <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
@@ -97,7 +100,7 @@ export default function CleaningCompanies() {
               />
               <h3 className="text-xl font-semibold mt-4 text-gray-800">Targeted Paid Ads Campaigns</h3>
               <p className="mt-2 text-gray-600 text-center">
-                Run paid search and display ads to directly reach potential clients actively searching for cleaning services in your area.
+              Paid advertising can drive quick, measurable results for your cleaning business. We help you run targeted Google Ads and Facebook Ads campaigns that attract customers actively searching for cleaning services. Our approach ensures that your ad spend is maximized to bring in qualified leads and boost conversions. 
               </p>
             </div>
             <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
@@ -110,7 +113,7 @@ export default function CleaningCompanies() {
               />
               <h3 className="text-xl font-semibold mt-4 text-gray-800">Reputation Management</h3>
               <p className="mt-2 text-gray-600 text-center">
-                Build and maintain a positive online reputation by managing customer reviews and feedback effectively to enhance trust in your services.
+              Your online reputation is critical to your cleaning business’s success. We help you monitor and manage your customer reviews across platforms like Google, Yelp, and Facebook. By responding to reviews, encouraging satisfied customers to leave feedback, and addressing negative reviews professionally, we help you build a trustworthy and positive online presence. 
               </p>
             </div>
             <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
@@ -123,7 +126,7 @@ export default function CleaningCompanies() {
               />
               <h3 className="text-xl font-semibold mt-4 text-gray-800">Content Marketing for Cleaning Services</h3>
               <p className="mt-2 text-gray-600 text-center">
-                Craft high-quality content such as blog posts, cleaning tips, and video tutorials that resonate with your audience and boost SEO.
+              Content marketing helps position your cleaning business as an expert in the field and attracts customers looking for valuable information. We create SEO-optimized blog posts, cleaning tips, and video tutorials that resonate with your target audience. By educating potential customers, we increase your visibility and drive traffic to your website. 
               </p>
             </div>
             <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
@@ -136,47 +139,47 @@ export default function CleaningCompanies() {
               />
               <h3 className="text-xl font-semibold mt-4 text-gray-800">Email Marketing Campaigns</h3>
               <p className="mt-2 text-gray-600 text-center">
-                Keep your customers engaged with regular email newsletters, seasonal promotions, and special offers to increase repeat bookings.
+              Email marketing allows you to stay connected with your clients and encourage repeat business. We create email campaigns to keep customers engaged, offer seasonal promotions, and remind them of your cleaning services. Whether it`s a special discount or helpful cleaning tips, our email marketing strategies are designed to keep your customers coming back. 
               </p>
             </div>
           </div>
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="bg-gray-100 py-16">
+        <div className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 py-16">
           <h2 className="text-3xl font-semibold text-center text-gray-800">Why Cleaning Businesses Choose Prime Marketing Experts</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+            <div className="bg-blue-50 p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
               <h3 className="text-xl font-semibold text-gray-800">Industry Expertise</h3>
               <p className="mt-2 text-gray-600">
                 Our team specializes in the cleaning industry, understanding its unique needs and challenges, and delivering results-driven marketing solutions.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+            <div className="bg-blue-50 p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
               <h3 className="text-xl font-semibold text-gray-800">Custom-Tailored Strategies</h3>
               <p className="mt-2 text-gray-600">
                 We create marketing plans that are specifically designed for your business, helping you target the right customers with the right message.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+            <div className="bg-blue-50 p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
               <h3 className="text-xl font-semibold text-gray-800">Proven Results</h3>
               <p className="mt-2 text-gray-600">
                 Our strategies deliver measurable results, from increased online visibility to higher lead generation and conversion rates.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+            <div className="bg-blue-50 p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
               <h3 className="text-xl font-semibold text-gray-800">24/7 Support</h3>
               <p className="mt-2 text-gray-600">
                 We offer around-the-clock support, ensuring that your marketing campaigns run smoothly and any questions are addressed promptly.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+            <div className="bg-blue-50 p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
               <h3 className="text-xl font-semibold text-gray-800">Full Transparency</h3>
               <p className="mt-2 text-gray-600">
                 We provide full transparency in our marketing efforts, sharing regular reports and performance metrics to ensure you’re always in the loop.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+            <div className="bg-blue-50 p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
               <h3 className="text-xl font-semibold text-gray-800">Affordable Packages</h3>
               <p className="mt-2 text-gray-600">
                 Our marketing solutions are affordable, scalable, and tailored to meet the needs of cleaning businesses of all sizes.

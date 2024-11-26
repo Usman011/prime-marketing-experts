@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function GymIndustryPage() {
   return (
-    <section className="container py-16 lg:py-32 bg-gray-100 text-black">
+    <section className="container">
 
 <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
@@ -22,14 +22,14 @@ export default function GymIndustryPage() {
       </div>
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Container */}
-        <div className="flex flex-col lg:flex-row items-center justify-between">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 lg:flex-row items-center justify-between">
           {/* Left Side - Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left lg:pr-12">
-            <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
-              Transform Your Gym with Cutting-Edge Marketing Strategies
+            <h1 className="text-4xl lg:text-4xl font-extrabold leading-tight mb-6">
+            Gym Marketing Services 
             </h1>
             <p className="text-lg text-gray-800 mb-8">
-              As a gym owner, you know how competitive the fitness industry is. Let us help you stand out with tailored marketing services that drive leads, increase membership, and build a loyal community.
+            We understand the competitive nature of the fitness industry and the need for gym owners to stand out. Whether you run a small local gym, a large fitness center, or a boutique studio, we offer tailored marketing solutions designed to drive membership growth, increase client engagement, and build a loyal fitness community. 
             </p>
             <p className="text-lg text-gray-800 mb-8">
               Our holistic approach combines digital marketing strategies and real-world engagement tactics to grow your membership base and retain clients long-term.
@@ -54,7 +54,7 @@ export default function GymIndustryPage() {
         </div>
 
         {/* Additional Information Section */}
-<div className="mt-16 flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left">
+<div className="mt-16 flex flex-col lg:flex-row bg-blue-50 p-6 items-center lg:items-start text-center lg:text-left">
   {/* Content Section */}
   <div className="w-full lg:w-2/3">
     <h2 className="text-3xl font-semibold mb-6 text-black">Why Choose Us to Market Your Gym?</h2>
@@ -92,7 +92,7 @@ export default function GymIndustryPage() {
 </div>
 
         {/* Success Stories Section */}
-<div className="my-16 text-center">
+<div className="my-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 text-center">
   <h2 className="text-3xl font-semibold mb-6 text-black">Our Success Stories</h2>
   <p className="text-lg text-gray-800 max-w-7xl mx-auto mb-8">
     Don’t just take our word for it. Hear from gym owners who have experienced growth and success with our marketing strategies:
@@ -118,7 +118,7 @@ export default function GymIndustryPage() {
     ].map((story, index) => (
       <div
         key={index}
-        className="w-full  p-6  text-gray-800 rounded-lg shadow-lg"
+        className="w-full  p-6 bg-blue-50  text-gray-800 rounded-lg shadow-lg"
       >
         <h3 className="text-xl font-semibold mb-4">{story.name}</h3>
         <p className="text-gray-400 mb-4">{story.quote}</p>

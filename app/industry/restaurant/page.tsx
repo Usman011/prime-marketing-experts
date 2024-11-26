@@ -25,20 +25,23 @@ export default function RestaurantIndustry() {
         </div>
       </div>
 
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen ">
         {/* Hero Section */}
-        <div className="mx-auto px-6 lg:px-20 py-16">
-          <div className="flex flex-col lg:flex-row items-center">
+        <div className="mx-auto  px-6 lg:px-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 py-16">
+          <div className="flex flex-col gap-6 lg:flex-row items-center">
             {/* Left Side - Content */}
-            <div className="w-full lg:w-1/2 text-center lg:text-left">
+            <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
-              Delicious Marketing Solutions, Served Fresh
+              Our Restaurant Marketing Services 
               </h1>
-              <p className="mt-4 text-gray-600 text-lg">
-              Discover tailored marketing strategies that help your restaurant attract more customers, build loyalty, and enhance online visibility. At Prime Marketing Experts, we specialize in crafting campaigns that bring more diners through your doors while keeping them coming back for more.
+              <p className="mt-4 text-gray-600 ">
+              At Prime Marketing Experts, we understand that the restaurant industry is competitive and constantly evolving. Whether you run a casual eatery, a fine dining restaurant, or a fast-casual chain, we offer specialized marketing solutions designed to attract more customers, build brand loyalty, and increase your online visibility. 
               </p>
-              <Link href="/free-strategy-session" className="my-6 "> 
-            <button className="px-8 py-3 bg-gradient-main text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 transition">
+              <p className="text-gray-600">
+              Our comprehensive marketing strategies are crafted to highlight your unique offerings and connect with the right audience. From social media campaigns to local SEO optimization and reputation management, we’ll help you grow your restaurant’s presence both online and offline, ensuring you stand out in the crowded marketplace. 
+              </p>
+              <Link href="/free-strategy-session"> 
+            <button className="px-8 py-3 mt-8 bg-gradient-main text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 transition">
               Get Started
             </button>
             </Link>
@@ -58,8 +61,8 @@ export default function RestaurantIndustry() {
         </div>
 
         {/* Marketing Strategies Section */}
-        <div className="container mx-auto px-6 lg:px-20 py-16">
-          <h2 className="text-3xl font-bold text-center text-gray-800">How We Elevate Your Restaurant Brand</h2>
+        <div className="container mx-auto px-6 bg-blue-50 my-10 lg:px-20 py-16">
+          <h2 className="text-3xl font-bold text-center text-gray-800">Our Services</h2>
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
               <Image
@@ -69,9 +72,9 @@ export default function RestaurantIndustry() {
                 height={350}  // Specify the height
                 className="w-full h-56 object-cover rounded-lg"
               />
-              <h3 className="text-xl font-semibold mt-6">Social Media Engagement</h3>
+              <h3 className="text-xl font-semibold mt-6">Social Media Marketing</h3>
               <p className="mt-2 text-gray-600">
-              Capture your audience’s attention with eye-catching content. We create social media campaigns that showcase your menu, highlight special events, and build a loyal online community.
+              Social media is a powerful tool for building relationships with your customers and increasing brand awareness. We create engaging social media campaigns that showcase your menu, promote special events, and build a loyal online community. From mouthwatering food photography to behind-the-scenes content, we’ll craft a strategy.
               </p>
             </div>
             <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
@@ -82,20 +85,20 @@ export default function RestaurantIndustry() {
                 height={350}  // Specify the height
                 className="w-full h-56 object-cover rounded-lg"
               />
-              <h3 className="text-xl font-semibold mt-6">Local SEO Optimization</h3>
+              <h3 className="text-xl font-semibold mt-6">Local SEO Optimization </h3>
               <p className="mt-2 text-gray-600">
-              Partner with Prime Marketing Experts to align your restaurant with the latest industry trends, from digital transformation to sustainable dining. We help you connect with modern diners and make a lasting impact.
+              Local SEO is essential for restaurant success. When potential customers search for dining options in your area, you need to be visible. We’ll optimize your restaurant’s website and online listings to ensure you appear in local search results, on Google Maps, and in local directories. This drives more organic traffic and helps you capture nearby customers. 
               </p>
             </div>
           </div>
         </div>
 
         {/* Industry Trends Section */}
-        <div className="bg-gray-100 py-16">
+        <div className=" py-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
           <div className="container mx-auto px-6 lg:px-20">
             <h2 className="text-3xl font-bold text-center text-gray-800">Convenience is Key</h2>
             <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+              <div className="flex flex-col items-center bg-blue-50 p-6 rounded-lg shadow-lg">
                 <Image
                   src={IMG3}
                   alt="Online Ordering"
@@ -103,12 +106,12 @@ export default function RestaurantIndustry() {
                   height={350}  // Specify the height
                   className="w-full h-56 object-cover rounded-lg"
                 />
-                <h3 className="text-xl font-semibold mt-6">Eco-Friendly Practices for a Greener Future</h3>
+                <h3 className="text-xl font-semibold mt-6">Ready to Take Your Restaurant to the Next Level? </h3>
                 <p className="mt-2 text-gray-600">
-                Eco-conscious dining is on the rise as more restaurants adopt sustainable sourcing, reduce food waste, and support local farmers. Customers are increasingly drawn to businesses that prioritize ethical practices and environmental stewardship.
+                Let Prime Marketing Experts help your restaurant grow by increasing online visibility, attracting more customers, and building brand loyalty. From social media engagement to reputation management, we offer a complete suite of marketing services tailored for the restaurant industry. 
                 </p>
               </div>
-              <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+              <div className="flex flex-col items-center bg-blue-50 p-6 rounded-lg shadow-lg">
                 <Image
                   src={IMG4}
                   alt="Sustainability"
@@ -116,9 +119,9 @@ export default function RestaurantIndustry() {
                   height={350}  // Specify the height
                   className="w-full h-56 object-cover rounded-lg"
                 />
-                <h3 className="text-xl font-semibold mt-6">Eco-Friendly Practices for a Greener Future</h3>
+                <h3 className="text-xl font-semibold mt-6">Industry Expertise</h3>
                 <p className="mt-2 text-gray-600">
-                  Eco-conscious dining practices are on the rise. Restaurants are adopting sustainable sourcing, reducing food waste, and supporting local farmers.
+                We have years of experience in the restaurant industry and understand the unique challenges you face. Our team knows how to create marketing strategies that drive results. 
                 </p>
               </div>
             </div>
@@ -126,19 +129,19 @@ export default function RestaurantIndustry() {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="container mx-auto px-6 lg:px-20 py-16">
+        <div className="container mx-auto bg-blue-50 my-10 px-6 lg:px-20 py-16">
           <h2 className="text-3xl font-bold text-center text-gray-800">Why Choose Prime Marketing Experts?</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold">Experienced Marketing Team</h3>
+              <h3 className="text-xl font-semibold">Tailored Solutions</h3>
               <p className="mt-2 text-gray-600">
                 Our team has years of experience in the restaurant industry, helping clients achieve their marketing goals with proven strategies.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold">Tailored Solutions</h3>
+              <h3 className="text-xl font-semibold">Affordable Packages</h3>
               <p className="mt-2 text-gray-600">
-                We don’t use a one-size-fits-all approach. We create customized marketing strategies that align with your restaurant’s unique goals and target audience.
+              Our services are designed to be scalable and cost-effective, making them accessible to restaurants of all sizes. 
               </p>
             </div>
           </div>

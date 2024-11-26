@@ -39,23 +39,18 @@ export const marketingData = [
 	
 	
 
+	
 	{
-		title: 'SEO',
-		url: 'undefined',
-		children: [
-			{
-				title: 'Local SEO',
-				url: '/marketing/local-seo',
-			},
-			{
-				title: 'SEO Web Design',
-				url: '/marketing/seo-web-design',
-			},
-			{
-				title: 'Video SEO',
-				url: '/marketing/video-seo',
-			},
-		],
+		title: 'Local SEO',
+		url: '/marketing/local-seo',
+	},
+	{
+		title: 'SEO Web Design',
+		url: '/marketing/seo-web-design',
+	},
+	{
+		title: 'Video SEO',
+		url: '/marketing/video-seo',
 	},
 	{
 		title: 'Social Media Marketing',
@@ -66,18 +61,12 @@ export const marketingData = [
 		url: '/marketing/content-marketing',
 	},
 	{
-		title: 'Search Engine Advertising',
-		url: 'undefined',
-		children: [
-			{
-				title: 'Google Shopping Campaigns',
-				url: '/marketing/google-shopping-campaigns',
-			},
-			{
-				title: 'Google Grant Management',
-				url: '/marketing/google-grant-management',
-			},
-		],
+		title: 'Google Shopping Campaigns',
+		url: '/marketing/google-shopping-campaigns',
+	},
+	{
+		title: 'Google Grant Management',
+		url: '/marketing/google-grant-management',
 	},
 	{
 		title: 'Email Marketing',
@@ -139,14 +128,58 @@ export const mobileMenu = [
 		title:'Home',
 		url:'/',
 		},
-		{
-			title:'Who We Serve',
-			url:'/weserve',
-			},	
+		
 			{
 				title:'About',
 				url:'/about',
-				},		
+				},	
+				
+				{
+					title:'Who We Serve',
+					url:'/weserve',
+					children:[
+						{
+							title: 'Tourism',
+							url: '/industry/tourism',
+						},
+						{
+							title: 'Automotive',
+							url: '/industry/automotive',
+						},
+						{
+							title: 'Restaurant',
+							url: '/industry/restaurant',
+						},
+						{
+							title: 'Retail',
+							url: '/industry/retail',
+						},
+						{
+							title: 'Cleaning Companies',
+							url: '/industry/cleaning-companies',
+						},
+						{
+							title: 'Gyms',
+							url: '/industry/gyms',
+						},
+						{
+							title: 'Construction',
+							url: '/industry/construction',
+						},
+						{
+							title: 'Real Estate',
+							url: '/industry/real-estate',
+						},
+						{
+							title: 'Healthcare',
+							url: '/industry/healthcare',
+						},
+						{
+							title: 'Event Management',
+							url: '/business/event-management/',
+						},
+					]
+				},	
       
 		{
 			title:'Business',
@@ -174,80 +207,79 @@ export const mobileMenu = [
 				},
 			]
 		},
-	
-	{
-		title: 'SEO',
-		url: 'undefined',
-		children: [
-			{
-				title: 'Local SEO',
-				url: '/marketing/local-seo/',
-			},
-			{
-				title: 'SEO Web Design',
-				url: '/marketing/seo-web-design/',
-			},
-			{
-				title: 'Video SEO',
-				url: '/marketing/video-seo/',
-			},
-		],
-	},
-	{
-		title: 'Social Media Marketing',
-		url: 'https://www.primemarketingexperts.com/social-media-marketing/',
-	},
-	{
-		title: 'Content Marketing',
-		url: '/marketing/content-marketing/',
-	},
-	{
-		title: 'Search Engine Advertising',
-		url: 'undefined',
-		children: [
-			{
-				title: 'Google Shopping Campaigns',
-				url: '/marketing/google-shopping-campaigns/',
-			},
-			{
-				title: 'Google Grant Management',
-				url: '/marketing/google-grant-management/',
-			},
-		],
-	},
-	{
-		title: 'Email Marketing',
-		url: '/marketing/email-marketing/',
-	},
-	{
-		title: 'Branding',
-		url: '/marketing/branding/',
-	},
-	{
-		title: 'Social Media Marketing',
-		url: '/marketing/social-media-marketing/',
-	},
-	{
-		title: 'Text Message Marketing',
-		url: '/marketing/text-message-marketing/',
-	},
-	{
-		title: 'Marketing Automation',
-		url: '/marketing/marketing-automation/',
-	},
-	{
-		title: 'Marketing Plans',
-		url: '/marketing/marketing-plans/',
-	},
-	{
-		title: 'Inbound Marketing',
-		url: '/marketing/inbound-marketing-services/',
-	},
-	{
-		title: 'E-Commerce Services',
-		url: '/marketing/e-commerce-digital-marketing-services/',
-	},
 
+
+		{
+			title:'Marketing',
+			url:'undefined',
+			children:[
+             
+				{
+					title: 'Social Media Marketing',
+					url: '/marketing/social-media-marketing',
+				},
+				{
+					title: 'Content Marketing',
+					url: '/marketing/content-marketing/',
+				},
+				{
+					title: 'Local SEO',
+					url: '/marketing/local-seo/',
+				},
+				{
+					title: 'SEO Web Design',
+					url: '/marketing/seo-web-design/',
+				},
+				{
+					title: 'Video SEO',
+					url: '/marketing/video-seo/',
+				},
+				{
+					title: 'Google Shopping Campaigns',
+					url: '/marketing/google-shopping-campaigns/',
+				},
+				{
+					title: 'Google Grant Management',
+					url: '/marketing/google-grant-management/',
+				},
+				{
+					title: 'Email Marketing',
+					url: '/marketing/email-marketing/',
+				},
+				{
+					title: 'Branding',
+					url: '/marketing/branding/',
+				},
+				{
+					title: 'Social Media Marketing',
+					url: '/marketing/social-media-marketing/',
+				},
+				{
+					title: 'Text Message Marketing',
+					url: '/marketing/text-message-marketing/',
+				},
+				{
+					title: 'Marketing Automation',
+					url: '/marketing/marketing-automation/',
+				},
+				{
+					title: 'Marketing Plans',
+					url: '/marketing/marketing-plans/',
+				},
+				{
+					title: 'Inbound Marketing',
+					url: '/marketing/inbound-marketing-services/',
+				},
+				{
+					title: 'E-Commerce Services',
+					url: '/marketing/e-commerce-digital-marketing-services/',
+				},
+			
+			]
+		},
+	
+	
+	
 	{
 		title:'Technology',
 		url:'undefined',
