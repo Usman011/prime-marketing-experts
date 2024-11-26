@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link" // Importing a specific icon from react-icons
-import NaveLogo from '../../public/logo.png'
+import NaveLogo from '../../public/images/Untitled design.png'
 
 import { cn } from "@/lib/utils"
 
@@ -124,7 +124,7 @@ export function Header() {
 
     <div className="flex items-center">
   <Link href="/" className="text-2xl font-bold text-primary">
-    <Image src={NaveLogo} alt="logo" width={200} height={160} />
+    <Image src={NaveLogo} alt="logo" width={400} height={180} />
   </Link>
 </div>
 
@@ -240,7 +240,7 @@ export function Header() {
   <div className="flex justify-between items-center md:hidden container">
 				<div>
 					<Link href="/" className="text-2xl font-bold text-primary">
-						<Image src={NaveLogo} alt="logo" width={200} height={160} />
+						<Image src={NaveLogo} alt="logo" width={400} height={180} />
 					</Link>
 				</div>
 				<Sheet>
@@ -249,7 +249,7 @@ export function Header() {
 					</SheetTrigger>
 					<SheetContent
 						side="right"
-						className="w-[500px] sm:w-[400px] h-screen overflow-scroll bg-[#040c5e]"
+						className="w-[450px] sm:w-[400px] h-screen overflow-scroll bg-[#040c5e]"
 					>
 						<nav className="flex flex-col space-y-4 ml-20 mt-10 pb-20">
 							{mobileMenu.map((item) => (
@@ -262,7 +262,7 @@ export function Header() {
 										<CollapsibleTrigger asChild>
     <Button
         variant="link"
-        className="w-full justify-between  text-base hover:no-underline outline-none text-white  gap-6"
+        className="w-full justify-between pr-10 text-base hover:no-underline outline-none text-white gap-6"
     >
         {item.title}
         {openItems[item.title] ? (

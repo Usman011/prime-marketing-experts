@@ -27,7 +27,7 @@ export const Footer = () => {
 			<div className='flex flex-col lg:flex-row w-full gap-6 lg:gap-40 pt-10 px-4 lg:px-10'>
 
 				<div className='flex w-full lg:w-80 flex-col gap-4 lg:gap-10'>
-					<Image src={FooterLogo} alt="logo" className="w-24 md:w-32 lg:w-40"/>
+					<Image src={FooterLogo} alt="logo" className="w-40 md:w-32 lg:w-40"/>
 					<p className='text-xs md:text-sm lg:text-base'>Prime Marketing Experts is a full-service marketing and website development agency that offers customized services that help you more effectively attract, convert, and retain customers. We scale our services to help independent consultants, small businesses, or augment an existing enterprise marketing team.</p>
 				</div>
 
