@@ -31,9 +31,9 @@ export default function TourismPage() {
   ];
 
   return (
-    <section className="font-sans container text-gray-800">
+    <section className="font-sans container text-gray-800 px-6 md:px-12 lg:px-24">
       {/* Header */}
-      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52  flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
           Tourism
         </h1>
@@ -49,7 +49,7 @@ export default function TourismPage() {
 
       {/* Services Section */}
       <div className="relative py-10 flex items-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
-        <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
+        <div className="container mx-auto px-0 md:px-12 flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-3/5 text-center md:text-left">
             <h1 className="text-4xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">
               Our Tourism Marketing Services
@@ -106,7 +106,7 @@ export default function TourismPage() {
 
       {/* Social Media Marketing Section */}
       <div className="py-16 text-lg text-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
-        <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
+        <div className="container mx-auto px-0 md:px-12 flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
               Social Media Marketing for Tourism
@@ -134,7 +134,7 @@ export default function TourismPage() {
 
       {/* Destinations Section */}
       <div className="py-16 bg-blue-50">
-        <div className="container mx-auto px-6 md:px-12">
+        <div className="container mx-auto px-0 md:px-12">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Tourism Marketing Services by Prime Marketing Experts</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {destinations.map((destination) => (
@@ -149,7 +149,7 @@ export default function TourismPage() {
                   height={300}
                   className="w-full h-48 object-cover"
                 />
-                <div className="p-6">
+                <div className="p-1 md:p-6">
                   <h3 className="text-xl font-bold">{destination.name}</h3>
                   <p className="text-gray-600 mt-2">{destination.description}</p>
                 </div>
@@ -160,7 +160,7 @@ export default function TourismPage() {
       </div>
 
       {/* Call-to-Action Section */}
-      <div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center justify-evenly px-6 lg:px-12">
+      <div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center justify-evenly px-2 md:px-12 lg:px-12">
         <h1 className="font-bold text-white text-2xl md:text-4xl text-center leading-tight">
           For a free consultation and discover how we can help you achieve your tourism business goals
         </h1>

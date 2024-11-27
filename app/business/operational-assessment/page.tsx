@@ -8,7 +8,7 @@ import IMG3 from '../../../public/images/operational-assessment/image3.png'
 const Page = () => {
     return (
         <>
-      <section className='container p-4'>
+      <section className='container px-2 md:px-12 lg:px-24'>
         <div className='flex justify-center items-center w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
         Operational Assessment
@@ -24,7 +24,7 @@ const Page = () => {
       </div>
       
       <div className='mx-2'>
-      <div className='flex flex-col mx-2 justify-start'>
+      <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6  lg:grid-cols-2 gap-10 items-center justify-start'>
         <h1 className='font-bold pb-4 text-4xl'>
         Operational Assessment Services That Drive Growth
         </h1>
@@ -80,9 +80,10 @@ const Page = () => {
 
 
 
-        <div className='space-y-6'>
-          <div>
-            <h1 className='pt-14 font-bold pb-4 text-4xl'>
+        <div className='space-y-6 '>
+          <div className='rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6  lg:grid-cols-2 gap-10 items-center'>
+          <div >
+            <h1 className='pt-14 font-bold pb-4  text-4xl'>
             Prepare For Future Growth with Prime Marketing Experts
             </h1>
             <p>
@@ -108,6 +109,7 @@ const Page = () => {
             <li>Organizational structure</li>
             <li>Communication and reporting</li>
           </ul>
+          </div>
           
 
       <div className='flex flex-col bg-blue-50 p-6 lg:flex-row gap-8 '>
@@ -129,7 +131,7 @@ const Page = () => {
 
 
           
-
+      <div className='rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6  lg:grid-cols-2 gap-10 items-center'>
           <div>
             <h1 className='pt-14 pb-4 font-bold text-4xl'>
             Motivate Employees With Operational Assessments
@@ -146,7 +148,7 @@ const Page = () => {
             <li> <span className='font-bold'>Train Employees:</span>If you know your employees’ strengths and performance, you can train them accordingly to perform better.</li>
             <li> <span className='font-bold'>Reward Their Success:</span> With the key performance indicators, you can raise the bar for your employees and reward their success if they do better than their previous work.</li>
             <li> <span className='font-bold'>Manager Training:</span> Train your managers, so they can train the staff under them to improve performance metrics.</li>
-          </ul>
+          </ul> </div>
 
 
           <div className='bg-blue-50 p-8 rounded-lg shadow-md'>
@@ -225,18 +227,19 @@ const Page = () => {
   </div>
 
   <div className='mt-8'>
-    <h1 className='pt-14 pb-4 font-bold text-4xl text-center text-blue-700'>
+    <h1 className='pt-14 pb-4 font-bold text-4xl text-start black'>
       Support Your Company’s Continual Growth with Prime Marketing Experts
     </h1>
-    <p className='text-gray-700 text-center'>
+    <p className='text-gray-700 text-start'>
       We understand all organizations are different and face unique challenges. This is why we emphasize customized solutions tailored specifically for you and your organization’s needs.
     </p>
   </div>
 
 
-          </div>
+          </div >
+          
           <p>We know your operational processes should be aligned with the latest technology to survive in this competitive world. If you hire us, all these things are taken care of. With our services, you will rest assured that your enterprise will be greatly benefited.</p>
-          <p className='font-bold'>Get ready to scale your company by giving us a call right away to arrange a meeting! </p>
+          <p className='font-bold pb-10'>Get ready to scale your company by giving us a call right away to arrange a meeting! </p>
 
          </div>
          </div>

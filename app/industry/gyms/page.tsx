@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function GymIndustryPage() {
   return (
-    <section className="container">
+    <section className="container px-2 md:px-12 lg:px-24">
 
 <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
@@ -20,9 +20,9 @@ export default function GymIndustryPage() {
           </ul>
         </div>
       </div>
-      <div className="container mx-auto px-6 lg:px-12">
+      <div className="container mx-auto px-2 lg:px-12">
         {/* Section Container */}
-        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 lg:flex-row items-center justify-between">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 lg:flex-row items-center justify-between">
           {/* Left Side - Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left lg:pr-12">
             <h1 className="text-4xl lg:text-4xl font-extrabold leading-tight mb-6">
@@ -54,7 +54,7 @@ export default function GymIndustryPage() {
         </div>
 
         {/* Additional Information Section */}
-<div className="mt-16 flex flex-col lg:flex-row bg-blue-50 p-6 items-center lg:items-start text-center lg:text-left">
+<div className="mt-16 flex flex-col lg:flex-row bg-blue-50 p-2 md:p-6 items-center lg:items-start text-center lg:text-left">
   {/* Content Section */}
   <div className="w-full lg:w-2/3">
     <h2 className="text-3xl font-semibold mb-6 text-black">Why Choose Us to Market Your Gym?</h2>
@@ -92,7 +92,7 @@ export default function GymIndustryPage() {
 </div>
 
         {/* Success Stories Section */}
-<div className="my-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 text-center">
+<div className="my-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 text-center">
   <h2 className="text-3xl font-semibold mb-6 text-black">Our Success Stories</h2>
   <p className="text-lg text-gray-800 max-w-7xl mx-auto mb-8">
     Don’t just take our word for it. Hear from gym owners who have experienced growth and success with our marketing strategies:

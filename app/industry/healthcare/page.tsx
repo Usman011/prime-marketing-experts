@@ -35,7 +35,7 @@ export default function HealthcarePage() {
   ];
 
   return (
-    <section className="container text-gray-800">
+    <section className="container text-gray-800 px-2 md:px-12 lg:px-24">
       {/* Header */}
       <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
@@ -51,8 +51,8 @@ export default function HealthcarePage() {
         </div>
       </div>
 
-      <div className="relative py-10 flex items-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
-        <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
+      <div className="relative py-10 flex items-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-0 md:p-6">
+        <div className="container mx-auto px-2 md:px-12 flex flex-col md:flex-row items-center gap-12">
           {/* Left: Text */}
           <div className="md:w-3/5 text-center md:text-left">
             <h1 className="text-4xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">
@@ -88,7 +88,7 @@ export default function HealthcarePage() {
       {/* History Section */}
       <div className="py-16 bg-blue-50 my-10 ">
         <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row gap-12">
-          {/* Left: Image */}
+          
           <div className="md:w-1/2">
             <Image
               src={IMG1}
@@ -104,7 +104,7 @@ export default function HealthcarePage() {
             <p className="text-lg text-gray-700 leading-relaxed">
             Your website is often the first impression potential patients will have of your practice. We design user-friendly, mobile-optimized websites that are both informative and engaging. Our team ensures that your website is optimized for search engines to increase your visibility and attract more patients. 
             </p>
-            <ul className="list-disc pl-5 text-gray-700">
+            <ul className="list-disc pl-5 text-start text-gray-700 mt-6">
         <li className="mb-2">User-friendly interface </li>
         <li className="mb-2">SEO optimized for higher rankings</li>
         <li>Mobile responsiveness </li>
@@ -114,9 +114,9 @@ export default function HealthcarePage() {
       </div>
 
       {/* Services Section */}
-      <div className="py-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 my-10">
-        <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
-          {/* Left: Text */}
+      <div className="py-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 my-10">
+        <div className="container mx-auto px-2 md:px-12 flex flex-col md:flex-row items-center gap-12">
+          
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Local SEO for Healthcare Providers
@@ -147,7 +147,7 @@ export default function HealthcarePage() {
 
       {/* Service Plans Section */}
       <div className="py-16 bg-blue-50">
-        <div className="container mx-auto px-6 md:px-12">
+        <div className="container mx-auto px-2 md:px-12">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Addressing negative reviews professionally </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service) => (
@@ -174,7 +174,7 @@ export default function HealthcarePage() {
       </div>
 
       {/* Healthcare Call-to-Action Section */}
-      <div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center pt-6 md:pt-auto lg:pt-auto justify-evenly px-6 lg:px-auto">
+      <div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center pt-6 md:pt-auto lg:pt-auto justify-evenly px-2 lg:px-auto">
         <h1 className="font-bold text-white text-2xl md:text-4xl text-center leading-tight">
           Take Control of Your Health Today!  Get a Free Consultation Now
         </h1>

@@ -5,7 +5,7 @@ import IMG1 from "../../../public/industry/construction/image2.png";
 
 export default function CleaningCompanies() {
   return (
-    <section className="container">
+    <section className="container px-2 md:px-12 lg:px-24">
         <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
         Construction
@@ -21,7 +21,7 @@ export default function CleaningCompanies() {
       </div>
       <div className="mx-auto ">
         {/* Hero Section */}
-        <div className="flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 items-center justify-between mb-10">
+        <div className="flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 items-center justify-between mb-10">
           {/* Left Side - Content */}
           
           <div className="w-full lg:w-1/2 lg:pr-12">
@@ -51,7 +51,7 @@ export default function CleaningCompanies() {
 
 
 
-       <div className="flex flex-col lg:flex-row bg-blue-50 p-6 items-center justify-between mb-10">
+       <div className="flex flex-col lg:flex-row bg-blue-50 p-2 md:p-6 items-center justify-between mb-10">
 
 
        <div className="w-full lg:w-1/2 mt-12 lg:mt-0  transform transition-all duration-500 hover:scale-105">
@@ -89,40 +89,40 @@ export default function CleaningCompanies() {
         </div>
  
         {/* Why Choose Us Section */}
-<div className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 py-10">
+<div className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 py-10">
   <h2 className="text-3xl font-semibold text-center text-gray-800">Why Construction Businesses Choose Prime Marketing Experts</h2>
   <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    <div className="bg-blue-50 p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+    <div className="bg-blue-50p-2 md:p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
       <h3 className="text-xl font-semibold text-gray-800">Industry Expertise</h3>
       <p className="mt-2 text-gray-600">
       Our team specializes in marketing for the construction industry and understands its unique challenges and opportunities. 
       </p>
     </div>
-    <div className="bg-blue-50 p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+    <div className="bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
       <h3 className="text-xl font-semibold text-gray-800">Tailored Marketing Strategies</h3>
       <p className="mt-2 text-gray-600">
       We create marketing plans that are specifically designed for your construction business, focusing on your goals and target market. 
       </p>
     </div>
-    <div className="bg-blue-50 p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+    <div className="bg-blue-50p-2 md:p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
       <h3 className="text-xl font-semibold text-gray-800">Proven Track Record</h3>
       <p className="mt-2 text-gray-600">
       Our strategies have helped construction companies increase their project inquiries, enhance brand visibility, and improve client acquisition. 
       </p>
     </div>
-    <div className="bg-blue-50 p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+    <div className="bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
       <h3 className="text-xl font-semibold text-gray-800">Comprehensive Campaigns</h3>
       <p className="mt-2 text-gray-600">
       From SEO and PPC to reputation management and content creation, we offer a full range of services to grow your construction business.
       </p>
     </div>
-    <div className="bg-blue-50 p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+    <div className="bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
       <h3 className="text-xl font-semibold text-gray-800">Transparent Reporting</h3>
       <p className="mt-2 text-gray-600">
       We provide regular reports on campaign performance, allowing you to track the effectiveness of your marketing efforts. 
       </p>
     </div>
-    <div className="bg-blue-50 p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+    <div className="bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
       <h3 className="text-xl font-semibold text-gray-800">Cost-Effective Solutions</h3>
       <p className="mt-2 text-gray-600">
       Our services are designed to meet the needs of construction businesses of all sizes, offering scalable and affordable solutions. 

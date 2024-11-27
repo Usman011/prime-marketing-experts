@@ -6,7 +6,7 @@ import IMG2 from '../../../public/images/eventmangement/image.png';
 
 const Page = () => {
   return (
-    <section className='container'>
+    <section className='container px-2 md:px-12 lg:px-24'>
       <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
           Event Management Services
@@ -100,7 +100,7 @@ const Page = () => {
 
           <div className='bg-white p-8 space-y-12 rounded-lg shadow-lg'>
   {/* Main Title */}
-  <h1 className='text-center text-4xl font-bold text-blue-700 mt-10'>
+  <h1 className='text-center text-4xl font-bold text-black mt-10'>
     Prime Event Management Features:
   </h1>
   

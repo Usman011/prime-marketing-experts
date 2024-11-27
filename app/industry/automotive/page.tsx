@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const AutomotivePage = () => {
   return (
-    <section className="automotive-page container gap-20 py-16 ">
+    <section className="automotive-page container gap-20 py-16 px-2 md:px-12 lg:px-24">
 
       <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
@@ -60,7 +60,7 @@ const AutomotivePage = () => {
       </div>
 
 
-      <div className="container  px-10 my-10 grid grid-cols-1 pt-10 bg-blue-50 p-6 lg:grid-cols-2  items-center">
+      <div className="container my-10 grid grid-cols-1 pt-10 bg-blue-50 p-6 lg:grid-cols-2 gap-8  items-center">
 
         {/* Right Image */}
         <div className="relative">

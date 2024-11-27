@@ -45,38 +45,39 @@ const Page = () => {
        
 
        
-<div className='space-y-6 bg-blue-50 p-4'>
-  <div className='flex  gap-8'>
+        <div className="space-y-6 bg-blue-50 p-4 lg:p-8">
+  <div className="md:flex md:gap-8">
     {/* Image Section */}
-    <div className='w-1/2 pt-16'>
+    <div className="w-full md:w-1/2 pt-8 md:pt-16">
       <Image 
         src={IMG2} 
         alt="Business Model Transformation" 
-        className='w-full h-[350px] object-cover' 
+        className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] object-cover rounded-md" 
       />
     </div>
 
     {/* Text Content Section */}
-    <div className='w-1/2'>
-      <h1 className='mt-14 font-bold text-4xl'>
+    <div className="w-full md:w-1/2">
+      <h1 className="mt-4 md:mt-10 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 leading-snug">
         What is Business Model Transformation?
       </h1>
-      <p>
+      <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
         A business model is a recipe that helps you create, deliver, and take value for your company. It is essential to winning in today’s exponentially disrupted business era.
       </p>
-      <p>
+      <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
         While you desire to unlock hidden opportunities, reap benefits of transformation, and generate higher revenues, you as an entrepreneur need to think BIG and BOLD.
       </p>
-      <p>
+      <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
         The business environment is continuously evolving. That said, it is crucial to have an operating business model, which is progressively transformed to resonate with the progressive changes in the business world.
       </p>
-      <p>
+      <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
         To emphasize more on those mentioned above, a recent Forbes Insights/KPMG Report indicates that a significant proportion, 93% of corporations are planning, executing, or have recently completed transforming their business model. This report means they are regularly evolving.
       </p>
-
-      
     </div>
   </div>
+</div>
+
+
   <h1 className='mt-14 font-bold text-4xl'>
         Better Transformation = Better Business
       </h1>
@@ -126,7 +127,7 @@ const Page = () => {
          
 
          
-        <div className='bg-blue-50 space-y-10 p-8 rounded-lg shadow-md'>
+        <div className='bg-blue-50 space-y-10 p-2 mt-6 md:mt-auto md:p-8 rounded-lg shadow-md'>
   {/* Main Heading */}
   <h1 className='text-center text-4xl font-bold text-black'>
     Why do you need a Business Model Transformation?
@@ -260,7 +261,7 @@ const Page = () => {
   </p>
 </div>
 
-      </div>
+      
     </section>
   );
 }

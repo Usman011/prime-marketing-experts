@@ -84,7 +84,7 @@ export default function Insight() {
 
 	return (
 		
-		<div className="container py-12 bg-gray-50">
+		<div className="container py-12 bg-gray-50 px-6 md:px-12 lg:px-24">
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<h2 className=" text-3xl md:text-3xl font-extrabold text-center mb-12 text-gray-900">
 					Explore Prime Marketing Experts
@@ -104,11 +104,11 @@ export default function Insight() {
 				<div className="overflow-hidden" ref={emblaRef}>
 					<div className="flex">
 						{carouselItemsData.map((item, index) => (
-							<div className="flex-[0_0_100%] min-w-0 md:px-5" key={index}>
+							<div className="flex-[0_0_100%] min-w-0 px-auto  md:px-5" key={index}>
 								<Card className="border-none shadow-lg p-auto md:p-4 bg-white rounded-2xl overflow-hidden">
 									<CardContent className="p-0">
 										<div className="flex flex-col lg:flex-row">
-											<div className="lg:w-1/2 p-8 lg:p-12">
+											<div className="lg:w-1/2 p-2 lg:p-12">
 												<h3 className="text-3xl font-bold mb-4 text-gray-900">{item.title}</h3>
 												{item.description.map((paragraph, idx) => (
 													<p key={idx} className="text-gray-600 mb-4">
@@ -117,7 +117,7 @@ export default function Insight() {
 												))}
 												<Button
 													asChild
-													className={`mt-4  justify-center items-center ${selectedIndex === index ? 'bg-gradient-main hover:bg-[#ff962c]' : ''}`}
+													className={`my-4  justify-center items-center ${selectedIndex === index ? 'bg-gradient-main hover:bg-[#ff962c]' : ''}`}
 												>
 													<a href={item.linkHref}>{item.linkText}</a>
 												</Button>

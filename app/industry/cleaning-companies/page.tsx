@@ -10,7 +10,7 @@ import IMG5 from '../../../public/images/section_01.jpg'
 
 export default function CleaningCompanies() {
   return (
-    <section className="container">
+    <section className="container px-2 md:px-12 lg:px-24">
         <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
         Cleaning Company
@@ -26,7 +26,7 @@ export default function CleaningCompanies() {
       </div>
       <div className="mx-auto ">
         {/* Hero Section */}
-        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 lg:flex-row items-center justify-between mb-16">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl p-6 md:p-6 transition-shadow duration-300  lg:flex-row items-center justify-between mb-16">
           {/* Left Side - Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left lg:pr-12 transform transition-all space-y-8 duration-500 hover:scale-105">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
@@ -61,10 +61,10 @@ export default function CleaningCompanies() {
         </div>
 
         {/* Cleaning Services Section */}
-        <div className="bg-blue-50 my-10 p-10">
+        <div className="bg-blue-50 my-10 p-4 md:p-10">
           <h2 className="text-3xl font-semibold text-center text-gray-800">Our Tailored Cleaning Marketing Services</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
+            <div className="flex flex-col items-center p-2 md:p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
               <Image
                 src={IMG1}
                 alt="Local SEO"
@@ -77,7 +77,7 @@ export default function CleaningCompanies() {
               Local SEO is crucial for cleaning businesses, as most clients are searching for services near them. We optimize your website to ensure it ranks highly in local search results, making it easier for customers to find your cleaning services. By improving your local visibility, we help drive more foot traffic, phone calls, and online inquiries. 
               </p>
             </div>
-            <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
+            <div className="flex flex-col items-center p-2 md:p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
               <Image
                 src={IMG3}
                 alt="Social Media Marketing"
@@ -90,7 +90,7 @@ export default function CleaningCompanies() {
               Social media is a great tool for showcasing your cleaning services and building trust with potential clients. We create engaging social media campaigns that highlight your services, share cleaning tips, promote seasonal offers, and share customer testimonials. Platforms like Facebook, Instagram, and LinkedIn help you engage with your community and attract more clients. 
               </p>
             </div>
-            <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
+            <div className="flex flex-col items-center p-2 md:p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
               <Image
                 src={IMG4}
                 alt="Paid Advertising"
@@ -103,7 +103,7 @@ export default function CleaningCompanies() {
               Paid advertising can drive quick, measurable results for your cleaning business. We help you run targeted Google Ads and Facebook Ads campaigns that attract customers actively searching for cleaning services. Our approach ensures that your ad spend is maximized to bring in qualified leads and boost conversions. 
               </p>
             </div>
-            <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
+            <div className="flex flex-col items-center p-2 md:p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
               <Image
                 src={IMG5}
                 alt="Reputation Management"
@@ -116,7 +116,7 @@ export default function CleaningCompanies() {
               Your online reputation is critical to your cleaning business’s success. We help you monitor and manage your customer reviews across platforms like Google, Yelp, and Facebook. By responding to reviews, encouraging satisfied customers to leave feedback, and addressing negative reviews professionally, we help you build a trustworthy and positive online presence. 
               </p>
             </div>
-            <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
+            <div className="flex flex-col items-center p-2 md:p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
               <Image
                 src={IMG2}
                 alt="Content Marketing"
@@ -129,7 +129,7 @@ export default function CleaningCompanies() {
               Content marketing helps position your cleaning business as an expert in the field and attracts customers looking for valuable information. We create SEO-optimized blog posts, cleaning tips, and video tutorials that resonate with your target audience. By educating potential customers, we increase your visibility and drive traffic to your website. 
               </p>
             </div>
-            <div className="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
+            <div className="flex flex-col items-center p-2 md:p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
               <Image
                 src={IMG}
                 alt="Email Marketing"
@@ -146,7 +146,7 @@ export default function CleaningCompanies() {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 py-16">
+        <div className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 py-16">
           <h2 className="text-3xl font-semibold text-center text-gray-800">Why Cleaning Businesses Choose Prime Marketing Experts</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-blue-50 p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">

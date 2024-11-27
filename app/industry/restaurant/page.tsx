@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function RestaurantIndustry() {
   return (
-    <section className="container">
+    <section className="container  px-2 md:px-12 lg:px-24">
 
      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
@@ -95,10 +95,10 @@ export default function RestaurantIndustry() {
 
         {/* Industry Trends Section */}
         <div className=" py-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
-          <div className="container mx-auto px-6 lg:px-20">
+          <div className="container mx-auto px-0 lg:px-20">
             <h2 className="text-3xl font-bold text-center text-gray-800">Convenience is Key</h2>
             <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div className="flex flex-col items-center bg-blue-50 p-6 rounded-lg shadow-lg">
+              <div className="flex flex-col items-center bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg">
                 <Image
                   src={IMG3}
                   alt="Online Ordering"
@@ -111,7 +111,7 @@ export default function RestaurantIndustry() {
                 Let Prime Marketing Experts help your restaurant grow by increasing online visibility, attracting more customers, and building brand loyalty. From social media engagement to reputation management, we offer a complete suite of marketing services tailored for the restaurant industry. 
                 </p>
               </div>
-              <div className="flex flex-col items-center bg-blue-50 p-6 rounded-lg shadow-lg">
+              <div className="flex flex-col items-center bg-blue-50 p-2 rounded-lg shadow-lg">
                 <Image
                   src={IMG4}
                   alt="Sustainability"
@@ -129,16 +129,16 @@ export default function RestaurantIndustry() {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="container mx-auto bg-blue-50 my-10 px-6 lg:px-20 py-16">
+        <div className="container mx-auto bg-blue-50 my-10 px-2 lg:px-20 py-16">
           <h2 className="text-3xl font-bold text-center text-gray-800">Why Choose Prime Marketing Experts?</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-white p-2 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold">Tailored Solutions</h3>
               <p className="mt-2 text-gray-600">
                 Our team has years of experience in the restaurant industry, helping clients achieve their marketing goals with proven strategies.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-white p-2 md:p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold">Affordable Packages</h3>
               <p className="mt-2 text-gray-600">
               Our services are designed to be scalable and cost-effective, making them accessible to restaurants of all sizes. 

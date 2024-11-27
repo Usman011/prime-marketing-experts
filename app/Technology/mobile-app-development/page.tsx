@@ -6,7 +6,7 @@ import IMG8 from '../../../public/images/image8.png';
 
 const Page = () => {
   return (
-    <section className="container mx-auto">
+    <section className="container px-2 md:px-12 lg:px-24">
       <div className="flex flex-col items-center justify-center text-center w-full h-52">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
           Mobile App Development
@@ -77,7 +77,7 @@ const Page = () => {
         </div>
 
 
-        <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 justify-center items-center bg-blue-50 p-6 lg:p-6">
+        <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 justify-center items-center bg-blue-50 p-0 md:p-6 lg:p-6">
   {/* Left Side - Image */}
   <div className="lg:w-1/3 flex-shrink-0">
     <Image

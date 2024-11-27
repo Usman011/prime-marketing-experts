@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function RetailIndustry() {
   return (
-    <section className="min-h-screen container">
+    <section className="min-h-screen container px-6 md:px-12 lg:px-24">
          <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
         <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
         Retail
@@ -21,9 +21,9 @@ export default function RetailIndustry() {
           </ul>
         </div>
       </div>
-      <div className="mx-auto ">
+      <div className="mx-auto">
         {/* Hero Section */}
-        <div className="flex flex-col lg:flex-row items-center  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 py-10 justify-between mb-16">
+        <div className="flex flex-col lg:flex-row items-center  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 py-10 justify-between mb-16">
           {/* Left Side - Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left lg:pr-12 transform transition-all duration-500 hover:scale-105">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
@@ -52,7 +52,7 @@ export default function RetailIndustry() {
         </div>
 
         {/* Retail Marketing Strategies Section */}
-        <div className="bg-blue-50 py-16 p-6 rounded-lg shadow-lg">
+        <div className="bg-blue-50 py-16 p-0 md:p-6 rounded-lg shadow-lg">
           <h2 className="text-3xl font-semibold text-center text-gray-800">Our Retail Marketing Strategies</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md  transition-all">
@@ -101,21 +101,21 @@ export default function RetailIndustry() {
         <div className="py-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
           <h2 className="text-3xl font-semibold text-center text-gray-800">What Our Clients Say</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-blue-50 p-6 rounded-lg shadow-lg">
+            <div className="bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg">
               <p className="text-gray-600 italic">
                 Prime Marketing Experts helped us increase our sales by 40% through their tailored digital marketing strategies. Highly recommend!
               </p>
               <p className="mt-4 font-semibold text-gray-800">John D.</p>
               <p className="text-gray-500">Retail Business Owner</p>
             </div>
-            <div className="bg-blue-50 p-6 rounded-lg shadow-lg">
+            <div className="bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg">
               <p className="text-gray-600 italic">
                 Their SEO and social media strategies have taken our online presence to new heights. We couldn`t have done it without them!
               </p>
               <p className="mt-4 font-semibold text-gray-800">Jane S.</p>
               <p className="text-gray-500">E-Commerce Store Manager</p>
             </div>
-            <div className="bg-blue-50 p-6 rounded-lg shadow-lg">
+            <div className="bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg">
               <p className="text-gray-600 italic">
                 Thanks to Prime Marketing Experts, our brand visibility has soared, and we`re seeing incredible foot traffic in our stores!
               </p>
@@ -126,10 +126,10 @@ export default function RetailIndustry() {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="py-16 bg-blue-50 p-6 my-10">
+        <div className="py-16 bg-blue-50p-2 md:p-6 my-10">
           <h2 className="text-3xl font-semibold text-center text-gray-800">Why Choose Prime Marketing Experts?</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+            <div className="bg-white p-2 md:p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
               <h3 className="text-xl font-semibold text-gray-800">Proven Results</h3>
               <p className="mt-2 text-gray-600">
               We have a strong track record of driving measurable results for retail businesses by using data-driven marketing strategies. 
