@@ -10,6 +10,7 @@ import Image1 from '../public/images/carousel/image02.png'
 import Image2 from '../public/images/eventmangement/image.png'
 import Image4 from '../public/images/section02.jpg'
 import Image3 from '../public/images/section_04.webp'
+import { AnimateLeft } from './common/animate'
 
 const carouselItemsData = [
 	{
@@ -82,8 +83,9 @@ export default function Insight() {
 	}, [emblaApi, onSelect])
 
 	return (
+		<AnimateLeft>
 		<div className="container py-12 bg-gray-50">
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<h2 className=" text-3xl md:text-3xl font-extrabold text-center mb-12 text-gray-900">
 					Explore Prime Marketing Experts
 				</h2>
@@ -103,7 +105,7 @@ export default function Insight() {
 					<div className="flex">
 						{carouselItemsData.map((item, index) => (
 							<div className="flex-[0_0_100%] min-w-0 md:px-5" key={index}>
-								<Card className="border-none shadow-lg p-4 bg-white rounded-2xl overflow-hidden">
+								<Card className="border-none shadow-lg p-auto md:p-4 bg-white rounded-2xl overflow-hidden">
 									<CardContent className="p-0">
 										<div className="flex flex-col lg:flex-row">
 											<div className="lg:w-1/2 p-8 lg:p-12">
@@ -146,5 +148,6 @@ export default function Insight() {
 				</div>
 			</div>
 		</div>
+		</AnimateLeft>
 	)
 }

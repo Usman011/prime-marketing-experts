@@ -11,6 +11,7 @@ import firebaseService from '@/utils/firebase.utils'
 import { DocumentData } from 'firebase/firestore'
 import Link from 'next/link'
 import Image from 'next/image'
+import { AnimateLeft } from './common/animate'
 
 export default function BlogList({ showAll }: { showAll?: boolean }) {
 	const [hoveredId, setHoveredId] = useState<string | null>(null)
@@ -29,6 +30,7 @@ export default function BlogList({ showAll }: { showAll?: boolean }) {
 	}, [])
 
 	return (
+		<AnimateLeft>
 		<div className="container py-16 bg-[#FAFAFA]">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<motion.h2 className="text-4xl font-extrabold text-center text-gray-900 pb-10 md:pb-14">
@@ -51,7 +53,7 @@ export default function BlogList({ showAll }: { showAll?: boolean }) {
 								onHoverEnd={() => setHoveredId(null)}
 								className=" cursor-pointer"
 							>
-								<Card className="overflow-hidden h-full flex p-4 flex-col bg-white/80 backdrop-blur-sm border-none shadow-lg">
+								<Card className="overflow-hidden h-full flex  flex-col bg-white/80 backdrop-blur-sm border-none shadow-lg">
 									<div className="relative">
 										{blog.imageUrl ? (
 											<Image
@@ -124,5 +126,6 @@ export default function BlogList({ showAll }: { showAll?: boolean }) {
 				)}
 			</div>
 		</div>
+		</AnimateLeft>
 	)
 }

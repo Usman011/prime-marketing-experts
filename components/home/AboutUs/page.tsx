@@ -1,10 +1,12 @@
 import Image from 'next/image'; 
+import { AnimateBottom, AnimateRight } from '../../common/animate';
 import { FaHandshake, FaUserCircle, FaHeart, FaGem, FaUsers, FaThumbsUp, FaChartLine, FaCoins, FaStar } from "react-icons/fa";
 
 import FounderPhoto from '../../../public/images/section6.jpg'; // Replace with the actual path to your image
 
 const AboutUs = () => {
   return (
+    <AnimateRight>
     <section className="bg-gray-100 container py-16 px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto">
         {/* Section Heading */}
@@ -62,6 +64,7 @@ const AboutUs = () => {
 
     </div>
     </section>
+    </AnimateRight>
   );
 };
 

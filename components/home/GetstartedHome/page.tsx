@@ -9,6 +9,8 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from '@/components/ui/accordion'
+import { AnimateRight } from '@/components/common/animate'
+
 
 interface AccordionItem {
 	question: string
@@ -51,6 +53,7 @@ const InfoSection: React.FC = () => {
 		setOpenIndex(openIndex === index ? null : index)
 	}
 	return (
+		<AnimateRight>
 		<div className="mt-10">
 			<div className="container mx-auto px-4 py-8 mt-5">
 				<h1 className="text-3xl font-extrabold text-center mb-3">FAQ</h1>
@@ -82,6 +85,7 @@ const InfoSection: React.FC = () => {
 				</div>
 			</div>
 		</div>
+		</AnimateRight>
 			)
 }
 

@@ -11,6 +11,7 @@ import firebaseService from '@/utils/firebase.utils'
 import Link from 'next/link'
 import Image from 'next/image'
 import { CaseStudyType } from '@/types'
+import { AnimateRight } from './common/animate'
 
 export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 	const [hoveredId, setHoveredId] = useState<string | null>(null)
@@ -29,6 +30,7 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 	}, [])
 
 	return (
+		<AnimateRight>
 		<div className="container py-16 bg-blue-50">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<motion.h2 className="text-4xl font-extrabold text-center text-gray-900 pb-10 md:pb-14">
@@ -51,7 +53,7 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 								onHoverEnd={() => setHoveredId(null)}
 								className=" cursor-pointer"
 							>
-								<Card className="overflow-hidden h-full p-4 flex flex-col bg-white/80 backdrop-blur-sm border-none shadow-lg">
+								<Card className="overflow-hidden h-full  flex flex-col bg-white/80 backdrop-blur-sm border-none shadow-lg">
 									<div className="relative">
 										{caseStudy.imageUrl ? (
 											<Image
@@ -70,8 +72,8 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 											{caseStudy.category || 'Category'}
 										</Badge>
 									</div>
-									<CardContent className="flex-grow p-4">
-										<h3 className="text-xl font-bold mb-2 line-clamp-2">{caseStudy.title || ''}</h3>
+									<CardContent className="flex-grow w-full">
+										<h3 className="text-xl font-bold mb-2 mt-2 line-clamp-2">{caseStudy.title || ''}</h3>
 										<p className="text-muted-foreground mb-4 line-clamp-3">
 											{caseStudy.description || ''}
 										</p>
@@ -125,5 +127,6 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 				)}
 			</div>
 		</div>
+		</AnimateRight>
 	)
 }

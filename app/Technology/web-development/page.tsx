@@ -113,12 +113,12 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto bg-orange-500 h-auto lg:h-32 mt-8 mb-8 items-center justify-center lg:justify-around px-4'>
+        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto bg-orange-500 h-auto lg:h-32 mt-8 mb-8 items-center justify-center py-6 lg:justify-around px-4'>
   <h1 className='font-bold text-white text-center lg:text-left text-2xl lg:text-4xl'>
     Contact Us Today To Start Making The Best Statement With a New Website!
   </h1>
   <Link href="/contact">
-    <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 flex justify-center items-center text-white hover:text-black'>
+    <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 my-6 md:my-auto h-12 md:h-14 flex justify-center items-center text-white hover:text-black'>
       CONTACT NOW
     </button>
   </Link>
