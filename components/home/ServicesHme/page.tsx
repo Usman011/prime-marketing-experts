@@ -9,7 +9,6 @@ import { MdBrandingWatermark } from "react-icons/md";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { BsGraphUp } from "react-icons/bs";
 import { PiTrainBold } from "react-icons/pi";
-import { AnimateLeft } from '@/components/common/animate'
 
 type ServiceCardProps = {
 	icon: React.ReactNode
@@ -102,10 +101,8 @@ export default function HomeServicesPage() {
 
 	return (
 		<>
-		<AnimateLeft>
 			<section className="py-auto md:py-16 py-10 px-6  text-gray-900">
 				<div className="max-w-7xl mx-auto">
-					
 					<h2 className="text-3xl font-bold text-center mb-2">Our Services</h2>
 					<p className="text-base text-gray-500 text-start max-w-96 md:max-w-4xl w-[100%] mx-auto mb-8">
 						Prime Marketing Experts is a digital marketing and website services company focused on
@@ -138,14 +135,12 @@ export default function HomeServicesPage() {
 					)}
 				</div>
 			</section>
-			</AnimateLeft>
 		</>
 	)
 }
 
 function ServiceCard({ icon, title, description, link }: ServiceCardProps) {
 	return (
-		
 		<div className="bg-white hover:bg-orange-100  hover:text-black p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transform transition duration-500 hover:scale-105 ">
 			<div className="flex items-center justify-center mb-4">{icon}</div>
 			<h4 className="text-xl font-semibold mb-2 text-center">{title}</h4>

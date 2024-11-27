@@ -24,7 +24,7 @@ const Service = [
 export const Footer = () => {
 	return (
 		<footer className="flex flex-col text-white bg-blue-950 border-t">
-			<div className='flex flex-col lg:flex-row w-full gap-6 lg:gap-40 pt-10 px-4 lg:px-10'>
+			<div className='flex flex-col lg:flex-row container  w-full gap-6 lg:gap-40 pt-10 px-4 lg:px-10'>
 
 				<div className='flex w-full lg:w-80 flex-col gap-4 lg:gap-10'>
 					<Image src={FooterLogo} alt="logo" className="w-40 md:w-32 lg:w-40"/>

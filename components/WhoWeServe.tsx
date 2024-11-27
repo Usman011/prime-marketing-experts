@@ -3,12 +3,10 @@ import Link from "next/link";
 import { BrickWall, ChevronRight, Dumbbell, Eraser, Hospital, MapPinHouse, Pyramid, Salad, ScanBarcode, Workflow } from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
 import { FaBroom, FaCar, FaDumbbell, FaHardHat, FaHome, FaHospital, FaPlane, FaShoppingBag, FaUtensils } from "react-icons/fa";
-import { AnimateRight } from "./common/animate";
 
 
 export function WhoWeServeSection() {
 	return (
-    <AnimateRight>
 	  <section className="bg-blue-50 container w-auto md:w-auto py-16 ">
 		<div className="max-w-7xl mx-auto text-start md:text-center">
 		  <div className='md:mx-auto'>
@@ -100,6 +98,5 @@ export function WhoWeServeSection() {
   </div>
 		</div>
 	  </section>
-    </AnimateRight>
 	);
   }
