@@ -86,10 +86,10 @@ export const opacity = {
 
 export const AnimateLeft: React.FC<AnimateProps> = ({
   children,
-  delay = 0.5,
-  viewThres = 0.5,
+  delay = 0.3,
+  viewThres = 0.3,
   once = true,
-  duration = 0.5,
+  duration = 0.3,
   transition = TransitionType.SPRING
 }) => {
   const ref = useRef(null);
@@ -112,10 +112,10 @@ export const AnimateLeft: React.FC<AnimateProps> = ({
 
 export const AnimateRight: React.FC<AnimateProps> = ({
   children,
-  delay = 0.5,
-  viewThres = 0.5,
+  delay = 0.3,
+  viewThres = 0.3,
   once = true,
-  duration = 0.5,
+  duration = 0.3,
   transition = TransitionType.SPRING,
   animateOnView = true
 }) => {
