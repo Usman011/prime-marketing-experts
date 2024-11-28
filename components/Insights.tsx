@@ -83,6 +83,7 @@ export default function Insight() {
 	}, [emblaApi, onSelect])
 
 	return (
+		<AnimateLeft>
 		
 		<div className="container py-12 bg-gray-50 px-6 md:px-12 lg:px-24">
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
@@ -148,6 +149,7 @@ export default function Insight() {
 				</div>
 			</div>
 		</div>
+		</AnimateLeft>
 		
 	)
 }

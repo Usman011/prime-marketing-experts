@@ -44,11 +44,7 @@ const components: { title: string; href: string; }[] = [
     href: "/marketing/social-media-marketing",
    
   },
-  // {
-  //   title: "Search Engine Advertising",
-  //   href: "/marketing/search-engine-advertising",
-    
-  // },
+  
   {
     title: "Google Grant Management",
     href: "/marketing/google-grant-management",
@@ -58,11 +54,7 @@ const components: { title: string; href: string; }[] = [
     title: "Google Shopping Campaigns",
     href: "/marketing/google-shopping-campaigns",
       },
-  // {
-  //   title: "SEO",
-  //   href: "/marketing/seo",
-   
-  // },
+  
   {
     title: "SEO Web Design",
     href: "/marketing/seo-web-design",
@@ -257,13 +249,13 @@ export function Header() {
           >
             <nav className="flex flex-col space-y-4 ml-20 mt-10 pb-20">
               {mobileMenu.map((item) => (
-                <div key={item.title} className="text-white mr-10">
+                <div key={item.title} className="font-normal text-white mr-10">
                   {item.children ? (
                     <Collapsible open={openMenu === item.title} onOpenChange={() => toggleItem(item.title)}>
                       <CollapsibleTrigger asChild>
                         <Button
                           variant="link"
-                          className="w-full justify-between px-0 text-base hover:no-underline outline-none text-white gap-6"
+                          className="w-full justify-between px-0 text-base hover:no-underline outline-none font-normal text-white gap-6"
                         >
                           {item.title}
                           {openMenu === item.title ? (

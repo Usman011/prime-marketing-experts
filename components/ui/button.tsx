@@ -10,7 +10,7 @@ const buttonVariants = cva(
 		variants: {
 			variant: {
 				iconPrimary:
-					'flex gap-3 bg-primary text-primary-foreground hover:bg-primary/90 text-base outline-none font-bold',
+					'flex gap-3 bg-primary text-primary-foreground hover:bg-primary/90 text-base outline-none ',
 				filled: 'bg-[--main] text-primary-foreground hover:bg-primary/90 text-sm outline-none',
 				filledCircle: 'border border-[--main] text-[--main] text-sm outline-none rounded-full ',
 

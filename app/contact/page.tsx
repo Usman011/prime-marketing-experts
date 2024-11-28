@@ -12,6 +12,7 @@ import { InputField } from '@/components/common/InputFeild'
 import { useForm } from 'react-hook-form'
 import { Form } from '../../components/ui/form'
 import { INPUT_TYPES } from '@/constants'
+import { AnimateLeft } from '@/components/common/animate'
 
 export default function Contact() {
 	const [isHovered, setIsHovered] = useState(false)
@@ -48,6 +49,7 @@ export default function Contact() {
 	}
 
 	return (
+		<AnimateLeft>
 		<section className="container py-16 bg-gradient-to-br from-blue-50 to-purple-50">
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<motion.h2
@@ -169,5 +171,6 @@ export default function Contact() {
 				</div>
 			</div>
 		</section>
+		</AnimateLeft>
 	)
 }

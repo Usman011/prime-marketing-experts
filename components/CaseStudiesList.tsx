@@ -11,6 +11,7 @@ import firebaseService from '@/utils/firebase.utils'
 import Link from 'next/link'
 import Image from 'next/image'
 import { CaseStudyType } from '@/types'
+import { AnimateRight } from './common/animate'
 
 
 export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
@@ -30,7 +31,7 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 	}, [])
 
 	return (
-		
+		< AnimateRight>
 		<div className="container py-16 bg-blue-50 px-6 md:px-12 lg:px-24">
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<motion.h2 className="text-4xl font-extrabold text-center text-gray-900 pb-10 md:pb-14">
@@ -127,6 +128,6 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 				)}
 			</div>
 		</div>
-		
+		</AnimateRight>
 	)
 }

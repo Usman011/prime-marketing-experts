@@ -9,6 +9,7 @@ import { MdBrandingWatermark } from "react-icons/md";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { BsGraphUp } from "react-icons/bs";
 import { PiTrainBold } from "react-icons/pi";
+import { AnimateLeft } from '@/components/common/animate'
 
 type ServiceCardProps = {
 	icon: React.ReactNode
@@ -101,6 +102,7 @@ export default function HomeServicesPage() {
 
 	return (
 		<>
+		<AnimateLeft>
 			<section className="py-auto md:py-16 py-10 px-6  text-gray-900">
 				<div className="max-w-7xl mx-auto">
 					<h2 className="text-3xl font-bold text-center mb-2">Our Services</h2>
@@ -135,6 +137,7 @@ export default function HomeServicesPage() {
 					)}
 				</div>
 			</section>
+			</AnimateLeft>
 		</>
 	)
 }
@@ -154,5 +157,6 @@ function ServiceCard({ icon, title, description, link }: ServiceCardProps) {
 				</Link>
 			</div>
 		</div>
+		
 	)
 }
