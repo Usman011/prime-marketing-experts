@@ -31,7 +31,7 @@ import { FacebookIcon, Instagram, Linkedin, Menu, TwitterIcon } from "lucide-rea
 import { mobileMenu } from "@/constants"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
 import { Button } from "../ui/button"
-import { FaCircleChevronDown, FaCircleChevronUp } from "react-icons/fa6"
+import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 
 const components: { title: string; href: string; }[] = [
   {
@@ -111,11 +111,14 @@ const components: { title: string; href: string; }[] = [
 
 export function Header() {
 
-  const [openItems, setOpenItems] = React.useState<Record<string, boolean>>({})
+  const [isSheetOpen, setIsSheetOpen] = React.useState(false);
+  const closeSheet = () => setIsSheetOpen(false);
 
-	const toggleItem = (title: string) => {
-		setOpenItems((prev) => ({ ...prev, [title]: !prev[title] }))
-	}
+  const [openMenu, setOpenMenu] = React.useState<string | null>(null); // Tracks the currently open collapsible menu
+
+  const toggleItem = (title: string) => {
+    setOpenMenu((prev) => (prev === title ? null : title)); // Toggle open/close or switch between menus
+  };
   return (
 	<nav className="bg-background bg-gray-100 w-full  h-auto  shadow-lg">
 
@@ -237,69 +240,72 @@ export function Header() {
 
 	</div>
 
-  <div className="flex justify-between items-center md:hidden container">
-				<div>
-					<Link href="/" className="text-2xl font-bold text-primary">
-						<Image src={NaveLogo} alt="logo" width={400} height={180} />
-					</Link>
-				</div>
-				<Sheet>
-					<SheetTrigger asChild>
-						<Menu className="h-10 w-10" color="#000" />
-					</SheetTrigger>
-					<SheetContent
-						side="right"
-						className="w-[450px] sm:w-[400px] h-screen overflow-scroll bg-[#040c5e]"
-					>
-						<nav className="flex flex-col space-y-4 ml-20 mt-10 pb-20">
-							{mobileMenu.map((item) => (
-								<div key={item.title} className="  text-white">
-									{item.children ? (
-										<Collapsible
-											open={openItems[item.title]}
-											onOpenChange={() => toggleItem(item.title)}
-										>
-										<CollapsibleTrigger asChild>
-    <Button
-        variant="link"
-        className="w-full justify-between pr-10 text-base hover:no-underline outline-none text-white gap-6"
-    >
-        {item.title}
-        {openItems[item.title] ? (
-            <FaCircleChevronUp className="text-base" />
-        ) : (
-            <FaCircleChevronDown className="text-base" />
-        )}
-    </Button>
-</CollapsibleTrigger>
-											<CollapsibleContent className="mt-2 space-y-4 pb-3">
-												{item.children.map((child) => (
-													<Link
-														key={child.title}
-														href={child.url}
-														className="block pl-4 text-sm text-gray-200"
-													>
-														{child.title}
-													</Link>
-												))}
-											</CollapsibleContent>
-										</Collapsible>
-									) : (
-										<Link href={item.url} className="text-base text-gray-200">
-											{item.title}
-										</Link>
-									)}
-								</div>
-							))}
-							<Link href="/free-strategy-session">
-								<button className="bg-orange-500 mb-10 mt-5 text-white font-semibold py-2 px-4 w-full rounded-md hover:bg-orange-600 hover:shadow-lg transition duration-300 ease-in-out">
-									Free Strategy Session
-								</button>
-							</Link>
-						</nav>
-					</SheetContent>
-				</Sheet>
-			</div>
+   {/* Mobile Menu */}
+   <div className="flex justify-between items-center md:hidden lg:hidden container">
+        <div>
+          <Link href="/" className="text-2xl font-bold text-primary">
+            <Image src={NaveLogo} alt="logo" width={400} height={180} />
+          </Link>
+        </div>
+        <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+          <SheetTrigger asChild>
+            <Menu className="h-10 w-10" color="#000" />
+          </SheetTrigger>
+          <SheetContent
+            side="right"
+            className="w-[450px] sm:w-[400px] h-screen overflow-scroll bg-[#040c5e]"
+          >
+            <nav className="flex flex-col space-y-4 ml-20 mt-10 pb-20">
+              {mobileMenu.map((item) => (
+                <div key={item.title} className="text-white mr-10">
+                  {item.children ? (
+                    <Collapsible open={openMenu === item.title} onOpenChange={() => toggleItem(item.title)}>
+                      <CollapsibleTrigger asChild>
+                        <Button
+                          variant="link"
+                          className="w-full justify-between px-0 text-base hover:no-underline outline-none text-white gap-6"
+                        >
+                          {item.title}
+                          {openMenu === item.title ? (
+                            <FaChevronUp className="text-base" />
+                          ) : (
+                            <FaChevronDown className="text-base" />
+                          )}
+                        </Button>
+                      </CollapsibleTrigger>
+                      <CollapsibleContent className="mt-2 space-y-4 pb-3">
+                        {item.children.map((child) => (
+                          <Link
+                            key={child.title}
+                            href={child.url}
+                            onClick={closeSheet}
+                            className="block pl-4 text-sm text-gray-200"
+                          >
+                            {child.title}
+                          </Link>
+                        ))}
+                      </CollapsibleContent>
+                    </Collapsible>
+                  ) : (
+                    <Link
+                      href={item.url}
+                      onClick={closeSheet}
+                      className="text-base text-gray-200"
+                    >
+                      {item.title}
+                    </Link>
+                  )}
+                </div>
+              ))}
+              <Link href="/free-strategy-session" onClick={closeSheet}>
+                <button className="bg-orange-500 mb-10 mt-5 text-white font-semibold py-2 px-4 w-full rounded-md hover:bg-orange-600 hover:shadow-lg transition duration-300 ease-in-out">
+                  Free Strategy Session
+                </button>
+              </Link>
+            </nav>
+          </SheetContent>
+        </Sheet>
+      </div>
 
  
 

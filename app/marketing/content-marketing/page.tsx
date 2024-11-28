@@ -18,7 +18,7 @@ import IconIMG8 from '../../../public/images/Maketing/content-marketing/icons/im
 
 const Page = () => {
   return (
-    <section className='container'>
+    <section className='container px-2 md:px-12 lg:px-24'>
       <div className="flex flex-col items-center justify-center w-full h-52 text-center">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
           Content Marketing Services
@@ -89,7 +89,7 @@ const Page = () => {
           <h1 className="font-bold text-center justify-center text-4xl">
             Excellent Quality Content Tailored To Your Needs
           </h1>
-          <div className="grid pt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-4 mt-8 gap-10 sm:gap-40 lg:gap-20">
+          <div className="grid pt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-4 mt-8 gap-20 sm:gap-40 lg:gap-20">
             <div className='flex flex-col w-full items-center text-center gap-4'>
               <div className='text-white bg-red-600 w-20 h-20 justify-center items-center rounded-full font-bold'>
                 <Image src={IconIMG1} alt='IconIMG1' className='w-10 h-10 justify-center items-center m-5' />

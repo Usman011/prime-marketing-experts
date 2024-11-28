@@ -13,7 +13,7 @@ import {
 
 const Page = () => {
   return (
-    <section className='container'>
+    <section className='container px-2 md:px-12 lg:px-24'>
       <div className="flex flex-col items-center justify-center w-full h-52 text-center">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
           Marketing Plan Services

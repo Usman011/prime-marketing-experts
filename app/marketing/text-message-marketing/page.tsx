@@ -6,7 +6,7 @@ import { RiMessage2Line } from 'react-icons/ri';
 
 const Page = () => {
     return (
-        <section className='container'>
+        <section className='container px-2 md:px-12 lg:px-24'>
             <div className="flex flex-col items-center justify-center text-center w-full h-52">
                 <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
                     Text Message Marketing
@@ -21,8 +21,8 @@ const Page = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col mx-2 gap-10 mt-10">
-                <div className="flex flex-col bg-blue-50 p-2 space-y-6">
+            <div className="flex flex-col  gap-10 mt-4">
+                <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
                     <h1 className="font-bold text-4xl">
                         Give Your Emails The Right Service, Strategy, And Execution
                     </h1>
@@ -50,7 +50,7 @@ const Page = () => {
                     </div>
                 </div>
 
-                <div className='flex flex-col space-y-6 justify-start'>
+                <div className='flex flex-col bg-blue-50 p-2 md:p-6 space-y-6 justify-start'>
                     <h1 className='font-bold text-4xl'>
                         Since we caught your interest, let us get you more information.
                     </h1>
@@ -74,7 +74,7 @@ const Page = () => {
                     </div>
                 </div>
 
-                <div className='flex flex-col bg-blue-50 p-2 mt-10 mb-4 gap-10'>
+                <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 mb-4 gap-10'>
                     <h2 className='text-4xl'>Providing The Best Text Message Marketing</h2>
                     <p>Here is an explanation of what you should expect from our effective and world-class service. Our prime aim is to make the text messaging service affordable, user-friendly, and customizable.</p>
                     <div className='space-y-6'>

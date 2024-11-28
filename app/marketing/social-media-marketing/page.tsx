@@ -11,7 +11,7 @@ import IMG7 from '../../../public/images/Maketing/Social Media Marketing/image7.
 
 const Page = () => {
   return (
-    <section className='container'>
+    <section className='container px-2 md:px-12 lg:px-12'>
       <div className="flex flex-col items-center justify-center text-center w-full h-52">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
           Social Media Marketing

@@ -74,7 +74,7 @@ export default function Contact() {
 						className="h-full flex items-center"
 					>
 						<Card className=" bg-transparent  border-none">
-							<CardContent className="p-6">
+							<CardContent className="p-auto md:p-6">
 								<h3 className="text-2xl font-bold mb-6 text-gray-800">Contact Information</h3>
 								<ul className="space-y-4">
 									<motion.li className="flex items-start" whileHover={{ scale: 1.05 }}>
@@ -94,7 +94,7 @@ export default function Contact() {
 												href="mailto:hello@primemarketingexperts.com"
 												className=" text-[--main] hover:underline"
 											>
-												hello@primemarketingexperts.com
+												 hello@primemarketingexperts.com  
 											</a>
 										</div>
 									</motion.li>
@@ -116,7 +116,7 @@ export default function Contact() {
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.5, delay: 0.6 }}
 					>
-						<Card className="bg-white/80 backdrop-blur-sm shadow-xl border-none">
+						<Card className="bg-white backdrop-blur-sm shadow-xl border-none">
 							<CardContent className="p-6">
 								<div className="md:px-5 pt-5">
 									<h3 className="text-2xl font-bold mb-2 text-gray-800">Send Us a Message</h3>
@@ -162,35 +162,7 @@ export default function Contact() {
 										</Form>
 									</div>
 								</div>
-								{/* <form className="space-y-4">
-									<div>
-										<Label htmlFor="name">Name</Label>
-										<Input id="name" placeholder="Your Name" />
-									</div>
-									<div>
-										<Label htmlFor="email">Email</Label>
-										<Input id="email" type="email" placeholder="your@email.com" />
-									</div>
-									<div>
-										<Label htmlFor="message">Message</Label>
-										<Textarea id="message" placeholder="How can we help you?" rows={4} />
-									</div>
-									<Button
-										type="submit"
-										className="w-full"
-										onMouseEnter={() => setIsHovered(true)}
-										onMouseLeave={() => setIsHovered(false)}
-									>
-										Send Message
-										<motion.div
-											className="inline-block ml-2"
-											animate={{ x: isHovered ? 5 : 0 }}
-											transition={{ type: 'spring', stiffness: 300, damping: 10 }}
-										>
-											<Send className="h-4 w-4" />
-										</motion.div>
-									</Button>
-								</form> */}
+								
 							</CardContent>
 						</Card>
 					</motion.div>

@@ -5,7 +5,7 @@ import IMG1 from '../../../public/images/Maketing/automation services/image.png'
 
 const Page = () => {
   return (
-    <section className="container">
+    <section className="container px-2 md:px-12 lg:px-24">
       <div className="flex flex-col items-center justify-center w-full h-52 text-center">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
           Marketing Automation
@@ -20,9 +20,9 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="flex flex-col  gap-10 mt-10">
+      <div className="flex flex-col  gap-10 mt-2 md:mt-auto">
         <div className="flex rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex-col space-y-6">
-          <h1 className="font-bold mt-10 text-4xl">
+          <h1 className="font-bold mt-2 md:mt-10 text-center md:text-auto text-4xl">
             Marketing Automation Increases Conversion
           </h1>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
@@ -105,7 +105,7 @@ const Page = () => {
 
 
 <div className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 ">
-  <h1 className="font-bold text-4xl text-gray-800 mb-6">
+  <h1 className="font-bold text-4xl text-center md:text-auto text-gray-800 mb-6">
     Benefits Of Marketing Automation Software
   </h1>
 
@@ -199,7 +199,7 @@ const Page = () => {
 
 
         <div className="flex flex-col mb-10 bg-blue-50 p-6 space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">
+          <h1 className="font-bold text-center md:text-auto text-4xl">
             Implementing Marketing Automation
           </h1>
           <div className="space-y-6">

@@ -7,7 +7,7 @@ import IMG3 from '../../../public/images/Maketing/inbound marketing/image3.png'
 
 const Page = () => {
     return (
-       <section className='container'>
+       <section className='container px-2 md:px-12 lg:px-24'>
          <div className="flex flex-col items-center justify-center w-full h-52 text-center">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
         Inbound Marketing Services
@@ -22,7 +22,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="flex flex-col mx-2 gap-10 mt-10">
+      <div className="flex flex-col  gap-10 mt-10">
 
         <div className="flex flex-col  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
           <h1 className="font-bold text-4xl">
@@ -82,7 +82,7 @@ const Page = () => {
         </div>
 
         
-        <div className="flex flex-col md:flex-row  bg-blue-50 p-6 space-x-6 space-y-6 justify-start">
+        <div className="flex flex-col md:flex-row  bg-blue-50 p-2 md:p-6 space-x-6 space-y-6 justify-start">
   <div className="flex-1 mt-8">
     <Image src={IMG3} alt="Marketing Experts" className="w-full h-auto object-cover rounded-lg shadow-md"/>
   </div>

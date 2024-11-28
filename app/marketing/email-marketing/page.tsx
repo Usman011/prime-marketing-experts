@@ -7,7 +7,7 @@ import IMG3 from '../../../public/images/Maketing/email marketing/image3.png';
 
 const Page = () => {
   return (
-    <section className='container'>
+    <section className='container p-2 md:p-6'>
       <div className="flex flex-col items-center justify-center text-center w-full h-52">
         <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
           Email Marketing Services
@@ -157,8 +157,8 @@ const Page = () => {
 </div>
 
 
-<div className="bg-white p-10 rounded-xl shadow-lg">
-  <h1 className="text-5xl font-extrabold text-center text-gray-800 mb-10">
+<div className="bg-white p-2 md:p-10 rounded-xl mb-10 shadow-lg">
+  <h1 className="font-extrabold text-4xl text-center text-primary mb-8">
     Using The Best Email Marketing Strategies & Technology
   </h1>
   <div className="space-y-10">
@@ -166,7 +166,7 @@ const Page = () => {
       <p className="text-lg text-gray-700">
         Accessibility of a particular website depends on many factors. All these workings of accessibility run in tandem consisting of web techniques, web browsers, and other agents. One must select the best software that may provide technical specifications, guidelines, procedures, and supporting resources that illustrate accessibility solutions.
       </p>
-      <h2 className="text-3xl font-bold text-gray-900">
+      <h2 className="text-3xl font-bold text-gray-800">
         Essential Benefits of Website Accessibility Software
       </h2>
     </div>
@@ -179,20 +179,20 @@ const Page = () => {
           <span className="bg-black text-white rounded-full h-10 w-10 flex items-center justify-center mr-4">
             1
           </span>
-          Email Marketing List Development
+          Email Marketing <br />List Development
         </h3>
         <p className="text-black">
           The quality of the email marketing list determines the success of your email. We create a high-quality list tailored to your brand and audience.
         </p>
       </div>
-
+     
       {/* Step 2 */}
       <div className="bg-blue-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
         <h3 className="flex items-center text-xl font-semibold text-black mb-4">
           <span className="bg-black text-white rounded-full h-10 w-10 flex items-center justify-center mr-4">
             2
           </span>
-          List Segmentation And Strategy
+          List Segmentation And <br /> Strategy
         </h3>
         <p className="text-black">
           We segment and keep your list updated, ensuring better targeting. An effective email strategy boosts ROI.
@@ -205,7 +205,7 @@ const Page = () => {
           <span className="bg-black text-white rounded-full h-10 w-10 flex items-center justify-center mr-4">
             3
           </span>
-          Email Template Design And Development
+          Email Template Design <br /> And  Development
         </h3>
         <p className="text-black">
           We create responsive and visually appealing email templates that stand out and communicate your message effectively.
@@ -218,7 +218,7 @@ const Page = () => {
           <span className="bg-black text-white rounded-full h-10 w-10 flex items-center justify-center mr-4">
             4
           </span>
-          Email Content Creation And Automation
+          Email Content Creation <br />And Automation
         </h3>
         <p className="text-black">
           We craft unique, relevant email content and automate campaigns using advanced tools like marketing automation software.
