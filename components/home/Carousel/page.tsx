@@ -15,7 +15,7 @@ import {
 
 export function CarouselSection() {
     return (
-      <section className="container py-10 bg-blue-50 flex flex-col justify-center items-center md:mt-auto my-10 w-full h-auto">
+      <section className="container py-10  flex flex-col justify-center items-center md:mt-auto my-10 w-full h-auto">
          <h2 className="text-4xl font-bold text-center mb-10 ">Solving your Digital Marketing and E-commerce Bottlenecks </h2>
 
 
