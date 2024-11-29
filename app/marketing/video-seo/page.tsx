@@ -31,7 +31,7 @@ const Page = () => {
               Video is one of the most powerful marketing mediums to improve your online presence, but you can’t just upload one into Youtube or your website expect it to be shown to many people. To achieve the best results, videos require their own genuine strategy separate from your main SEO strategy. Video SEO optimizes the rankings of video content within Google, Bing, Yahoo, and video search results. We strategically can help you ultimately drive more website traffic, as opposed to driving it to your video hosting provider.
               </p>
               <p>
-              We implement video schema to get videos indexed and improve visibility within search engines. Our team then integrates keyword-rich metadata, which includes titles, descriptions, cards, custom thumbnails, transcripts, tags, and captions, to attract a relevant audience over time. We also then integrate the same link building strategies that we use with blog articles, infographics, and white papers to further improve the ranking of your video content.
+              We implement video schema to get videos indexed and improve visibility within search engines. Our team then integrates keyword-rich metadata, which includes titles, descriptions, cards, custom thumbnails, transcripts, tags, and captions, to attract a relevant audience over time. We also then integrate the same link building strategies that we use with blog articles, info-graphics, and white papers to further improve the ranking of your video content.
               </p>
             </div>
             <div className="mt-12">

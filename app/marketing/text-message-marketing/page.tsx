@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import IMG1 from '../../../public/images/Maketing/text message marketing/image.png'
+import IMG1 from '../../../public/images/Marketing/text message marketing/image.png'
 import { RiMessage2Line } from 'react-icons/ri';
 
 const Page = () => {
@@ -86,7 +86,7 @@ const Page = () => {
                                 1. Analytical Reports
                             </h1>
                         </div>
-                        <p className='pl-14'>It is crucial to evaluate any marketing tool to learn if that campaign works for you or needs any improvement. And with our tool, comprehensive analytics is the key feature through which we serve you useful insights and real-time data like user activity, opt-ins, opt-outs, statistics, location of users, infographics, performance meter. You name it; we got it.</p> 
+                        <p className='pl-14'>It is crucial to evaluate any marketing tool to learn if that campaign works for you or needs any improvement. And with our tool, comprehensive analytics is the key feature through which we serve you useful insights and real-time data like user activity, opt-ins, opt-outs, statistics, location of users, info-graphics, performance meter. You name it; we got it.</p> 
                     </div>
 
                     <div className='space-y-6'>
@@ -98,7 +98,7 @@ const Page = () => {
                                 2. Automated & Drip Campaigns
                             </h1>
                         </div>
-                        <p className='pl-14'>Prime Marketing Experts offers the best-managed text message service because we make it an easy task for you to stay in touch with customers. Each message is always a touchpoint and impressive. Automated responders allow you to preschedule the journey of the text message or replies to your subscribers. This tool can be personalized as per your need by preparing triggers like welcome, gratitude, recurring reminders, or any action/ condition orientated using drip campaign features.</p> 
+                        <p className='pl-14'>Prime Marketing Experts offers the best-managed text message service because we make it an easy task for you to stay in touch with customers. Each message is always a touch-point and impressive. Automated responders allow you to pre-schedule the journey of the text message or replies to your subscribers. This tool can be personalized as per your need by preparing triggers like welcome, gratitude, recurring reminders, or any action/ condition orientated using drip campaign features.</p> 
                     </div>
 
                     <div className='space-y-6'>
@@ -187,7 +187,7 @@ const Page = () => {
                                 10. Advance Scheduling
                             </h1>
                         </div>
-                        <p className='pl-14'>Did you just think of sending festive wishes? That said, as your genie and marketing expert, we schedule text messages in advance using an in-built calendar feature, which allows you to preschedule single or group text messages to be sent any time you want.</p> <p>You can schedule your campaigns in advance using an intuitive calendar feature; the calendar can schedule a single text message or a group of messages to be sent out at any time.</p> 
+                        <p className='pl-14'>Did you just think of sending festive wishes? That said, as your genie and marketing expert, we schedule text messages in advance using an in-built calendar feature, which allows you to pre-schedule single or group text messages to be sent any time you want.</p> <p>You can schedule your campaigns in advance using an intuitive calendar feature; the calendar can schedule a single text message or a group of messages to be sent out at any time.</p> 
                     </div>
                     <div className='space-y-6'>
                         <div className='flex flex-col gap-6'>

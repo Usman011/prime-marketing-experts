@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import IMG1 from '../../../public/images/Maketing/branding/image1.png'
-import IMG2 from '../../../public/images/Maketing/branding/image2.png'
-import IMG3 from '../../../public/images/Maketing/branding/image3.png'
+import IMG1 from '../../../public/images/Marketing/branding/image1.png'
+import IMG2 from '../../../public/images/Marketing/branding/image2.png'
+import IMG3 from '../../../public/images/Marketing/branding/image3.png'
 
 const Page = () => {
     return (

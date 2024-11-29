@@ -2,19 +2,19 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import IMG1 from '../../../public/images/Maketing/content-marketing/image1.png';
-import IMG2 from '../../../public/images/Maketing/content-marketing/image2.png';
-import IMG3 from '../../../public/images/Maketing/content-marketing/image3.png';
-import IMG4 from '../../../public/images/Maketing/content-marketing/image4.png';
+import IMG1 from '../../../public/images/Marketing/content-marketing/image1.png';
+import IMG2 from '../../../public/images/Marketing/content-marketing/image2.png';
+import IMG3 from '../../../public/images/Marketing/content-marketing/image3.png';
+import IMG4 from '../../../public/images/Marketing/content-marketing/image4.png';
 
-import IconIMG1 from '../../../public/images/Maketing/content-marketing/icons/image1.png';
-import IconIMG2 from '../../../public/images/Maketing/content-marketing/icons/image2.png';
-import IconIMG3 from '../../../public/images/Maketing/content-marketing/icons/image3.png';
-import IconIMG4 from '../../../public/images/Maketing/content-marketing/icons/image4.png';
-import IconIMG5 from '../../../public/images/Maketing/content-marketing/icons/image5.png';
-import IconIMG6 from '../../../public/images/Maketing/content-marketing/icons/image6.png';
-import IconIMG7 from '../../../public/images/Maketing/content-marketing/icons/image7.png';
-import IconIMG8 from '../../../public/images/Maketing/content-marketing/icons/image8.png';
+import IconIMG1 from '../../../public/images/Marketing/content-marketing/icons/image1.png';
+import IconIMG2 from '../../../public/images/Marketing/content-marketing/icons/image2.png';
+import IconIMG3 from '../../../public/images/Marketing/content-marketing/icons/image3.png';
+import IconIMG4 from '../../../public/images/Marketing/content-marketing/icons/image4.png';
+import IconIMG5 from '../../../public/images/Marketing/content-marketing/icons/image5.png';
+import IconIMG6 from '../../../public/images/Marketing/content-marketing/icons/image6.png';
+import IconIMG7 from '../../../public/images/Marketing/content-marketing/icons/image7.png';
+import IconIMG8 from '../../../public/images/Marketing/content-marketing/icons/image8.png';
 
 const Page = () => {
   return (
@@ -300,7 +300,7 @@ const Page = () => {
                 Nowadays, brand trust is important in the commercial battlefield.
               </p>
               <p>
-                Ebooks have an upper edge over other services like blog posts and YouTube videos that the former are downloadable, which offers it more real value. So it is no brainer that Neil Patel- the digital marketing expert planned ebooks on the second slot in his list to create lead-generating content.
+                Ebooks have an upper edge over other services like blog posts and YouTube videos that the former are downloadable, which offers it more real value. So it is no-brainer that Neil Patel- the digital marketing expert planned ebooks on the second slot in his list to create lead-generating content.
               </p>
               <p>
                 Ebooks offer you the chance to showcase higher authority and ability on a subject with greater depth when compared to what blog posts offer. Therefore, it is rightly said that this service will play a vital role in content marketing and bring more traffic.

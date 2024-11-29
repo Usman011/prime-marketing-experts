@@ -35,7 +35,7 @@ const Page = () => {
                 Our results-driven, engaging website development services portray businesses in the best light! Our highly-experienced team of web developers will build your new website to serve as a foundation for search engine optimization initiatives and build your company’s brand. We also ensure functions with mainstream logic, and evoke a high level of creativity.
               </p>
               <p>
-                We use proven and practical website development technologies, and utilize all major CMS platforms, including WordPress, Drupal, Woocommerce, Shopify, Magento, and Joomla.
+                We use proven and practical website development technologies, and utilize all major CMS platforms, including WordPress, Drupal, Woo-commerce, Shopify, Magento and Joomla.
               </p>
             </div>
             <div className='w-full h-auto'>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import IMG1 from '../../../public/images/Maketing/automation services/image.png';
+import IMG1 from '../../../public/images/Marketing/automation services/image.png';
 
 const Page = () => {
   return (

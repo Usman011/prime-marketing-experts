@@ -38,17 +38,17 @@ export default function HomeServicesPage() {
 		},
 		{
 			icon: <FaCogs className="text-orange-600 text-4xl" />,
-			title: 'Search Engine Advertising',
+			title: 'Google Shopping Campaign Services',
 			description:
 				'We deploy ROI-maximizing processes to strategically implement and manage your Search Engine Advertising Campaigns.',
-			link: '/marketing/search-engine-advertising',
+			link: '/marketing/google-shopping-campaigns',
 		},
 		{
 			icon: <FaChartLine className="text-orange-600 text-4xl" />,
 			title: 'SEO Services',
 			description:
 				'We deploy an integrated, comprehensive strategy to help you raise your search engine rankings for your targeted keywords.',
-			link: '/marketing/vedio-seo',
+			link: '/marketing/video-seo',
 		},
 		{
 			icon: <FaBullhorn className="text-orange-600 text-4xl" />,
@@ -92,7 +92,7 @@ export default function HomeServicesPage() {
 			icon: <PiTrainBold className="text-orange-600 text-4xl" />,
 			title: 'Inbound Marketing',
 			description: ' While outbound marketing interrupts your audience with unwanted content, inbound marketing forms the connections with visitors and solves the problems.',
-			link: '/marketing/inbound-marketing',
+			link: '/marketing/inbound-marketing-services',
 		},
 	]
 

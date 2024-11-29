@@ -48,7 +48,7 @@ const Page = () => {
       We can read your mind – you want to know all about this incredible solution that could make you a global brand with large-scale outreach.
     </p>
     <p>
-      We unveil the new-fangled player in the marketing town, <span className="font-bold">Google Shopping Ads!</span>
+      We unveil the  newfangled player in the marketing town, <span className="font-bold">Google Shopping Ads!</span>
     </p>
   </div>
 
@@ -143,7 +143,7 @@ const Page = () => {
              
               <ul className='list-decimal pl-5 space-y-2'>
               <li className='font-bold'>Gather information:</li>
-              <p>First, we connect with you to discover the vertical of products you trade, its completive landscape, your goals, and loopholes in your current google shopping structure.</p>
+              <p>First, we connect with you to discover the vertical of products you trade, its competitive landscape, your goals, and loopholes in your current google shopping structure.</p>
               <li className='font-bold'>. Strategize:</li>
               <p>We then formulate customized Google shopping campaigns that will cater to your needs. One size does not fit all! Our team creates a campaign in Google Merchant Centre and then use specialized retail-centric tools to manage it. This brings us to the next step, feed management.</p>
               <li className='font-bold'>Manage feed:</li>
@@ -179,7 +179,7 @@ const Page = () => {
               <li className='font-bold'>Prime performers:</li>
               <p>We promise to amplify the engagements, nearly tenfold, than what other regular ad agencies and format serve. We help to attract the targeted audience to your blogs, website, apps, and much more.</p> 
               <li className='font-bold'>Amplify brand rapport:</li>
-              <p>Our service helps you reach out to a potentially suitable audience across the globe by increasing brand awareness, leads, and sales. Reach your best customers and be “Globified”.</p>
+              <p>Our service helps you reach out to a potentially suitable audience across the globe by increasing brand awareness, leads, and sales. Reach your best customers and be globalized.</p>
               </ul>
             </div>
           </div>
@@ -223,7 +223,7 @@ const Page = () => {
               <li className='font-bold'>Prime performers:</li>
               <p>We promise to amplify the engagements, nearly tenfold, than what other regular ad agencies and format serve. We help to attract the targeted audience to your blogs, website, apps, and much more.</p> 
               <li className='font-bold'>Amplify brand rapport:</li>
-              <p>Our service helps you reach out to a potentially suitable audience across the globe by increasing brand awareness, leads, and sales. Reach your best customers and be “Globified”.</p>
+              <p>Our service helps you reach out to a potentially suitable audience across the globe by increasing brand awareness, leads, and sales. Reach your best customers and be globalized.</p>
               </ul>
             </div>
           </div>

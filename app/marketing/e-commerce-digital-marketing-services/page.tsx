@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
-import IMG1 from '../../../public/images/Maketing/E-Commerce Digital Marketing Services/image1.png';
-import IMG2 from '../../../public/images/Maketing/E-Commerce Digital Marketing Services/image2.png';
+import IMG1 from '../../../public/images/Marketing/E-Commerce Digital Marketing Services/image1.png';
+import IMG2 from '../../../public/images/Marketing/E-Commerce Digital Marketing Services/image2.png';
 import Image from 'next/image';
 
 const Page = () => {
@@ -58,7 +58,7 @@ const Page = () => {
                 We’re experts in ranking our clients beyond large online stores like Amazon by defining user intent comprehensively. Our team combines in-depth research with years of experience to surpass your sales growth goals through moving your business up in search results.
               </p>
               <p>
-                Our thorough process infuses SEO-optimized content creation strategies to help you achieve maximum outreach. This includes optimizing product descriptions and images, in addition to writing blog articles. We also promote that content through influencers and backlink creation.
+                Our thorough process infuses SEO-optimized content creation strategies to help you achieve maximum outreach. This includes optimizing product descriptions and images, in addition to writing blog articles. We also promote that content through Influencers and Backlink creation.
               </p>
               <p>
                 Whether your online store is based on BigCommerce, Woo commerce, or any major platform, we can help you increase your search rankings.

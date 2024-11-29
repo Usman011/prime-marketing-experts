@@ -28,7 +28,7 @@ export function CarouselSection() {
 					<CarouselItem>
           <div className="flex flex-col md:flex-row items-center justify-center max-w-auto md:max-w-5xl mx-auto gap-7  md:gap-10">
       {/* Left Side: Text */}
-    <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[50vh] gap-20 bg-gray-100 rounded-2xl">
+    <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh] gap-20 bg-gray-100 rounded-2xl">
 
        <div className='flex flex-col gap-6 m-4'>
         <h2 className="text-2xl md:text-2xl font-bold pt-4 ">How can we generate more sales-qualified leads and revenue?</h2>
@@ -71,7 +71,7 @@ export function CarouselSection() {
       </div>
 
       {/* Right Side */}
-      <div className="w-full hidden md:block md:w-2/4 h-auto md:h-[50-vh] lg:h-[50vh] gap-20  bg-gray-100  rounded-2xl">
+      <div className="w-full hidden md:block md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh] gap-20  bg-gray-100  rounded-2xl">
     
        <div className='flex flex-col gap-6 m-4'>
         <h2 className="text-2xl md:text-2xl font-bold pt-4 ">Why is my website not attracting enough potential customers?</h2>
@@ -118,7 +118,7 @@ export function CarouselSection() {
 					<CarouselItem>
           <div className="flex flex-col md:flex-row items-center justify-center max-w-auto md:max-w-5xl mx-auto gap-7  md:gap-10">
       {/* Left Side: Text */}
-    <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[50vh]  gap-20 bg-gray-100 rounded-2xl">
+    <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh]  gap-20 bg-gray-100 rounded-2xl">
     {/* <button className="bg-gradient-main text-black  border-2  rounded-tl-2xl rounded-br-2xl px-14 py-2 hover:bg-orange-600">
      Our Culture
      </button> */}
@@ -161,7 +161,7 @@ export function CarouselSection() {
       </div>
 
       {/* Right Side */}
-      <div className="w-full hidden md:block md:w-2/4 h-auto md:h-[50-vh] lg:h-[50vh] gap-20  bg-gray-100 rounded-2xl">
+      <div className="w-full hidden md:block md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh] gap-20  bg-gray-100 rounded-2xl">
     
        <div className='flex flex-col gap-6 m-4'>
         <h2 className="text-2xl md:text-2xl font-bold pt-4 ">Why is our marketing and sales data not interconnected?</h2>
@@ -207,7 +207,7 @@ export function CarouselSection() {
 					<CarouselItem>
           <div className="flex flex-col md:flex-row items-center justify-center max-w-auto md:max-w-5xl mx-auto gap-7  md:gap-10">
       {/* Left Side: Text */}
-    <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[50vh] gap-20 bg-gray-100 rounded-2xl">
+    <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh] gap-20 bg-gray-100 rounded-2xl">
     {/* <button className="bg-gradient-main text-black  border-2  rounded-tl-2xl rounded-br-2xl px-14 py-2 hover:bg-orange-600">
      Our Culture
      </button> */}
@@ -250,7 +250,7 @@ export function CarouselSection() {
       </div>
 
       {/* Right Side */}
-      <div className="w-full hidden md:block md:w-2/4 h-auto md:h-[50-vh] lg:h-[50vh] gap-20  bg-gray-100 rounded-2xl">
+      <div className="w-full hidden md:block md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh] gap-20  bg-gray-100 rounded-2xl">
     
        <div className='flex flex-col gap-6 m-4'>
         <h2 className="text-2xl md:text-2xl font-bold pt-4 ">Why does our website get very little traffic?</h2>
@@ -297,7 +297,7 @@ export function CarouselSection() {
     <CarouselItem>
     <div className="flex flex-col md:flex-row items-center justify-center max-w-auto md:max-w-5xl mx-auto gap-7  md:gap-10">
      
-    <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[50vh] gap-20 bg-gray-100 rounded-2xl">
+    <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh] gap-20 bg-gray-100 rounded-2xl">
     <div className='flex flex-col gap-6 m-4'>
         <h2 className="text-2xl md:text-2xl font-bold pt-4 ">Why does our website get very little traffic?</h2>
         <p className="text-gray-700">
@@ -340,7 +340,7 @@ export function CarouselSection() {
       </div>
 
       {/* Right Side */}
-      <div className="w-full hidden md:block md:w-2/4 h-auto md:h-[50-vh] lg:h-[50vh] gap-20  bg-gray-100 rounded-2xl">
+      <div className="w-full hidden md:block md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh] gap-20  bg-gray-100 rounded-2xl">
       <div className='flex flex-col gap-6 m-4'>
         <h2 className="text-2xl md:text-2xl font-bold pt-4 ">Why does managing digital campaigns take so much time?</h2>
         <p className="text-gray-700">
@@ -388,7 +388,7 @@ export function CarouselSection() {
     <CarouselItem>
     <div className="flex flex-col md:flex-row items-center justify-center max-w-auto md:max-w-5xl mx-auto gap-7  md:gap-10">
       {/* Left Side: Text */}
-    <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[50vh] gap-20 bg-gray-100 rounded-2xl">
+    <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh] gap-20 bg-gray-100 rounded-2xl">
     <div className='flex flex-col gap-6 m-4'>
         <h2 className="text-2xl md:text-2xl font-bold pt-4 ">Why does managing digital campaigns take so much time?</h2>
         <p className="text-gray-700">
@@ -426,7 +426,7 @@ export function CarouselSection() {
       </div>
 
       {/* Right Side */}
-      <div className="w-full hidden md:block md:w-2/4 h-auto md:h-[50-vh] lg:h-[50vh] gap-20  bg-gray-100 rounded-2xl">
+      <div className="w-full hidden md:block md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh] gap-20  bg-gray-100 rounded-2xl">
     
       <div className='flex flex-col gap-6 m-4'>
         <h2 className="text-2xl md:text-2xl font-bold pt-4 ">Why are we not receiving enough online store orders, and how can we improve the efficiency of processing the ones we do receive?</h2>
@@ -471,7 +471,7 @@ export function CarouselSection() {
     <CarouselItem>
     <div className="flex flex-col md:flex-row items-center justify-center max-w-auto md:max-w-5xl mx-auto gap-7  md:gap-10">
       {/* Left Side: Text */}
-    <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[50vh] gap-20 bg-gray-100 rounded-2xl">
+    <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh] gap-20 bg-gray-100 rounded-2xl">
     <div className='flex flex-col gap-6 m-4'>
         <h2 className="text-2xl md:text-2xl font-bold pt-4 ">Why does managing digital campaigns take so much time?</h2>
         <p className="text-gray-700">
@@ -509,7 +509,7 @@ export function CarouselSection() {
       </div>
 
       {/* Right Side */}
-      <div className="w-full hidden md:block md:w-2/4 h-auto md:h-[50-vh] lg:h-[50vh] gap-20  bg-gray-100 rounded-2xl">
+      <div className="w-full hidden md:block md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh] gap-20  bg-gray-100 rounded-2xl">
     
       <div className='flex flex-col gap-6 m-4'>
         <h2 className="text-2xl md:text-2xl font-bold pt-4 ">Why we are spending too much money to acquire each customer using advertising?</h2>

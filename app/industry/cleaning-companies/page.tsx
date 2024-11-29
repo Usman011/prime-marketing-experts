@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import IMG from '../../../public/industry/cleaning/image.png'
 import IMG1 from '../../../public/images/vedio-seo/image.png'
-import IMG2 from '../../../public/images/Maketing/content-marketing/image1.png'
-import IMG3 from '../../../public/images/Maketing/Social Media Marketing/image2.png'
-import IMG4 from '../../../public/images/Maketing/email marketing/image3.png'
+import IMG2 from '../../../public/images/Marketing/content-marketing/image1.png'
+import IMG3 from '../../../public/images/Marketing/Social Media Marketing/image2.png'
+import IMG4 from '../../../public/images/Marketing/email marketing/image3.png'
 import IMG5 from '../../../public/images/section_01.jpg'
 
 

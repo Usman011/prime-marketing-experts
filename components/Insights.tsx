@@ -17,7 +17,7 @@ const carouselItemsData = [
 		buttonText: 'Our Philosophy',
 		title: 'Our Philosophy',
 		description: [
-			"We envision a world where every brand has the opportunity to thrive. We do not care if you are a small ecommerce store or a medium-sized real estate firm. Our solutions are based on your needs and requirements. Nor on anyone else's. By harnessing the power and range of digital marketing, we aim to bridge the gap between businesses and their customers, fostering lasting relationships built on trust and engagement.",
+			"We envision a world where every brand has the opportunity to thrive. We do not care if you are a small e-commerce store or a medium-sized real estate firm. Our solutions are based on your needs and requirements. Nor on anyone else's. By harnessing the power and range of digital marketing, we aim to bridge the gap between businesses and their customers, fostering lasting relationships built on trust and engagement.",
 		],
 		linkText: 'Learn More',
 		linkHref: '/about',

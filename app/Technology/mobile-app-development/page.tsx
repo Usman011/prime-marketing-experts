@@ -166,7 +166,7 @@ const Page = () => {
         After defining a strategy, we begin to create a structure for your app. This includes the features and screen flow – it’s the map for your app!
       </p>
       <p className="text-lg text-gray-700">
-        After testing wireframes and prototypes, we finalize the user journey through the app.
+        After testing wire-frames and prototypes, we finalize the user journey through the app.
       </p>
     </div>
 

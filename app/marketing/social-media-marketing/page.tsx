@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import IMG1 from '../../../public/images/Maketing/Social Media Marketing/image1.png';
-import IMG2 from '../../../public/images/Maketing/Social Media Marketing/image2.png';
-import IMG3 from '../../../public/images/Maketing/Social Media Marketing/image3.png';
-import IMG4 from '../../../public/images/Maketing/Social Media Marketing/image4.png';
-import IMG5 from '../../../public/images/Maketing/Social Media Marketing/image5.png';
-import IMG6 from '../../../public/images/Maketing/Social Media Marketing/image6.png';
-import IMG7 from '../../../public/images/Maketing/Social Media Marketing/image7.png';
+import IMG1 from '../../../public/images/Marketing/Social Media Marketing/image1.png';
+import IMG2 from '../../../public/images/Marketing/Social Media Marketing/image2.png';
+import IMG3 from '../../../public/images/Marketing/Social Media Marketing/image3.png';
+import IMG4 from '../../../public/images/Marketing/Social Media Marketing/image4.png';
+import IMG5 from '../../../public/images/Marketing/Social Media Marketing/image5.png';
+import IMG6 from '../../../public/images/Marketing/Social Media Marketing/image6.png';
+import IMG7 from '../../../public/images/Marketing/Social Media Marketing/image7.png';
 
 const Page = () => {
   return (
@@ -111,7 +111,7 @@ const Page = () => {
             We can also track the intent of each user that submitted a form through the <Link href="/marketing/marketing-automation" className="text-blue-600">use of an advanced marketing automation platform.</Link>
           </p>
           <p>
-            We deploy retargeting ads to strategically to strengthen social media campaigns and stay in front of visitors and increase conversions. It assists in achieving the 7 impressions it takes the average customer to make a purchase.
+            We deploy re-targeting ads to strategically to strengthen social media campaigns and stay in front of visitors and increase conversions. It assists in achieving the 7 impressions it takes the average customer to make a purchase.
           </p>
         </div>
 

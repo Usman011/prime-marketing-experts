@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import IMG1 from '../../../public/images/Maketing/google-grant/image1.png'
-import IMG2 from '../../../public/images/Maketing/google-grant/image2.png'
-import IMG3 from '../../../public/images/Maketing/google-grant/image3.png'
+import IMG1 from '../../../public/images/Marketing/google-grant/image1.png'
+import IMG2 from '../../../public/images/Marketing/google-grant/image2.png'
+import IMG3 from '../../../public/images/Marketing/google-grant/image3.png'
 import React from 'react';
 
 const Page = () => {

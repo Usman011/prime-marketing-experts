@@ -255,7 +255,7 @@ export function Header() {
                       <CollapsibleTrigger asChild>
                         <Button
                           variant="link"
-                          className="w-full justify-between px-0 text-base hover:no-underline outline-none font-normal text-white gap-6"
+                          className="w-full justify-between px-0 py-2 text-base hover:no-underline outline-none font-normal text-white gap-2 all-none  transition-colors focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-ring focus-visible:ring-offset-0 "
                         >
                           {item.title}
                           {openMenu === item.title ? (

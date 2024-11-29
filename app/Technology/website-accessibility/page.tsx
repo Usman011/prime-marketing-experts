@@ -155,7 +155,7 @@ const Page = () => {
 
     <div className='bg-blue-50 p-4 rounded-lg shadow-lg'>
       <h3 className='font-bold text-lg'>Keyboard Navigation Optimization</h3>
-      <p>Some websites do not go along with the regulations of Keyboard navigation. Many people are not able to use the computers or any other tool through a touchpad or keyboard due to one or the other disablements. So to maintain the accessibility of your website this is also the necessary tool through which everybody can access through the website and collect information they want.</p>
+      <p>Some websites do not go along with the regulations of Keyboard navigation. Many people are not able to use the computers or any other tool through a touchpad or keyboard due to one or the other disabilities. So to maintain the accessibility of your website this is also the necessary tool through which everybody can access through the website and collect information they want.</p>
     </div>
   </div>
 </div>

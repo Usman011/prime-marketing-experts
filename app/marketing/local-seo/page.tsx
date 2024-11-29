@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import IMG1 from '../../../public/images/Maketing/localSeo/image1.png'
-import IMG2 from '../../../public/images/Maketing/localSeo/image2.png'
-import IMG3 from '../../../public/images/Maketing/localSeo/image3.png'
+import IMG1 from '../../../public/images/Marketing/localSeo/image1.png'
+import IMG2 from '../../../public/images/Marketing/localSeo/image2.png'
+import IMG3 from '../../../public/images/Marketing/localSeo/image3.png'
 
 const Page = () => {
     return (
@@ -128,7 +128,7 @@ const Page = () => {
         We keep track of your campaign’s performance with a robust analytics tool and keep you in the loop about ranking and leads.
       </p>
       <p className="font-bold">
-        Be it tracking your citations, optimizing the keywords, creating backlinks, or optimizing citations – we do it all!
+        Be it tracking your citations, optimizing the keywords, creating back links, or optimizing citations – we do it all!
       </p>
 
       {/* Competitive Edge */}
