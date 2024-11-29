@@ -3,8 +3,13 @@
 import * as React from "react"
 import Link from "next/link" // Importing a specific icon from react-icons
 import NaveLogo from '../../public/images/Untitled design.png'
-
+import FooterLogo from '../../public/logo.png'
 import { cn } from "@/lib/utils"
+import { FaFacebookF } from "react-icons/fa";
+import { CiTwitter } from "react-icons/ci";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaPinterestP } from "react-icons/fa6";
 
 import {
   Sheet,
@@ -294,6 +299,29 @@ export function Header() {
                   Free Strategy Session
                 </button>
               </Link>
+              <div className='flex w-full lg:w-80 flex-col gap-6'>
+					<Image src={FooterLogo} alt="logo" className="w-40 md:w-32 lg:w-40"/>
+        <p className='text-xs text-white md:text-sm lg:text-lg'>74 Northeastern Blvd #12a Ste 101 Nashua, NH 03062</p>
+					<p className='text-xs text-white md:text-sm lg:text-lg'> hello@primemarketingexperts.com</p>
+					<p className='text-xs text-white md:text-sm lg:text-lg'> 617-651-1457</p>
+          <ul className='flex items-center justify-start gap-3 lg:gap-5'>
+						<li className='w-8 md:w-10 rounded-full p-2 border hover:bg-blue-600 hover:text-white bg-white text-blue-950'>
+							<Link href="https://www.facebook.com/primemarketingexperts"><FaFacebookF/></Link>
+						</li>
+						<li className='w-8 md:w-10 rounded-full p-2 border hover:bg-cyan-400 hover:text-white bg-white text-blue-950'>
+							<Link href="https://twitter.com/primeexperts"><CiTwitter/></Link>
+						</li>
+						<li className='w-8 md:w-10 rounded-full p-2 border hover:bg-cyan-400 hover:text-white bg-white text-blue-950'>
+							<Link href="https://www.linkedin.com/company/prime-marketing-experts"><FaLinkedinIn/></Link>
+						</li>
+						<li className='w-8 md:w-10 rounded-full p-2 border hover:bg-red-500 hover:text-white bg-white text-blue-950'>
+							<Link href="https://www.instagram.com/primemarketingexperts/"><FaInstagram/></Link>
+						</li>
+						<li className='w-8 md:w-10 rounded-full p-2 border hover:bg-red-500 hover:text-white bg-white text-blue-950'>
+							<Link href="https://www.pinterest.com/primemarketingexperts"><FaPinterestP/></Link>
+						</li>
+					</ul>
+          </div>
             </nav>
           </SheetContent>
         </Sheet>
