@@ -16,7 +16,7 @@ import { AnimateLeft } from "@/components/common/animate";
 
 export function CarouselSection() {
     return (
-      <AnimateLeft>
+      // <AnimateLeft>
       <section className="container py-10  flex flex-col justify-center items-center md:mt-auto my-10 w-full h-auto">
          <h2 className="text-4xl font-bold text-center mb-10 ">Solving your Digital Marketing and E-commerce Bottlenecks </h2>
 
@@ -176,7 +176,7 @@ export function CarouselSection() {
     <span className="mr-3 text-orange-400">
       <FaSyncAlt size={20} />
     </span>
-    <span className="font-semibold">Synergizing sales and marketing data to improve efficiency.</span>
+    <span className="font-semibold">Syncretizing sales and marketing data to improve efficiency.</span>
   </li>
 
   {/* Using real-time data to prioritize leads */}
@@ -224,7 +224,7 @@ export function CarouselSection() {
     <span className="mr-3 text-orange-400">
       <FaSyncAlt size={20} />
     </span>
-    <span className="font-semibold">Synergizing sales and marketing data to improve efficiency.</span>
+    <span className="font-semibold">Syncretizing sales and marketing data to improve efficiency.</span>
   </li>
 
   {/* Using real-time data to prioritize leads */}
@@ -557,7 +557,7 @@ export function CarouselSection() {
  
                    
       </section>
-      </AnimateLeft>
+      // </AnimateLeft>
     );
   }
 

@@ -4,13 +4,13 @@ import Image from 'next/image'
 import backgroundImage from '../../../public/images/section05.jpg' // Replace with your background image
 import backgroundImage1 from '../../../public/images/section02.jpg' // Replace with your background image
 import backgroundImage2 from '../../../public/images/section6.jpg' // Replace with your background image
-
+import { motion } from 'framer-motion'
 
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 
 import React from 'react'
 import Link from 'next/link'
-
+import { AnimateLeft } from '@/components/common/animate'
 
 const HomeBanner = () => {
 	return (

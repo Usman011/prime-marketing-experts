@@ -156,21 +156,15 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
-          <h1 className="font-bold text-4xl">
-            Social Media Platforms Serviced
-          </h1>
+       {/* Social Media Platforms */}
+       <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
+          <h1 className="font-bold text-4xl">Social Media Platforms Serviced</h1>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="space-y-8 w-full lg:w-11/12 mt-14">
               <ul className="list-disc pl-5 space-y-6">
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>LinkedIn</li>
-                <li>Instagram</li>
-                <li>Pinterest</li>
-                <li>Aligable</li>
-                <li>Snapchat</li>
-                <li>TikTok</li>
+                {['Facebook', 'Twitter', 'LinkedIn', 'Instagram', 'Pinterest', 'Aligable', 'Snapchat', 'TikTok'].map((platform, index) => (
+                  <li key={`${platform}-${index}`}>{platform}</li>
+                ))}
               </ul>
             </div>
             <div className="w-full h-full">
@@ -178,6 +172,7 @@ const Page = () => {
             </div>
           </div>
         </div>
+      </div>
 
         <div className='w-full flex flex-col  lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 mr-8 lg:flex-row items-center justify-evenly'>
         <h1 className='font-bold text-white text-4xl text-center'>
@@ -187,7 +182,7 @@ const Page = () => {
           <button className='bg-black hover:bg-white transition-transform transform hover:scale-105 w-32 md:w-40 h-12 md:h-14 my-6 md:my-auto justify-center hover:text-black text-white items-center text-center'>CONTACT NOW</button>
         </Link>
       </div>
-      </div>
+      
     </section>
   );
 };
