@@ -12,7 +12,7 @@ import AboutUs from './AboutUs/page'
 export const Home = () => {
 	return (
 		<>
-			<HomeBanner />
+		    <HomeBanner />
 			<CarouselSection/>
 			<AboutUs/>
 			<HomeServicesPage />
@@ -22,6 +22,7 @@ export const Home = () => {
 			<BlogList />
 			<InfoSection />
 			<Contact />
+			
 		</>
 	)
 }

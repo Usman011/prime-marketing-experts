@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 const Page = () => {
   return (
-    <section className='container mx-auto px-4 flex flex-col'>
-      <div className='mt-10 flex flex-col bg-sky-300 gap-10 md:flex-col lg:flex-row'>
+    <section className='container mx-auto my-10 px-4 flex flex-col'>
+      <div className='mt-10 flex flex-col bg-blue-100 gap-10 md:flex-col lg:flex-row'>
         <div className='lg:w-1/2 gap-12 p-4'>
           <h2 className='text-3xl font-bold mb-4'>Ready For Better Digital Marketing Results?</h2>
           <p className='mb-8 text-2xl italic font-bold'>Grow Your Sales Profitably With Prime Marketing Experts!</p>

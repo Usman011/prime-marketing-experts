@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import IMG1 from '../../../public/images/eventmangement/image1.png';
-import IMG2 from '../../../public/images/eventmangement/image.png';
+import IMG1 from '../../../public/images/eventmanagement/image1.png';
+import IMG2 from '../../../public/images/eventmanagement/image.png';
 
 const Page = () => {
   return (
@@ -182,7 +182,7 @@ const Page = () => {
     <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
       <h3 className='font-bold text-xl text-black mb-4'>Reduce Stress</h3>
       <p className='text-gray-700'>
-        Leave the pressure of event planning to us. We handle the logistics, so you can focus on enjoying the event. <span className='font-bold'>Hakuna Matata!</span>
+        Leave the pressure of event planning to us. We handle the logistics, so you can focus on enjoying the event. <span className='font-bold'>Hakuna Matata</span>
       </p>
     </div>
   </div>

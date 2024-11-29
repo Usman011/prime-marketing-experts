@@ -53,14 +53,15 @@ const InfoSection: React.FC = () => {
 		setOpenIndex(openIndex === index ? null : index)
 	}
 	return (
-		<AnimateRight>
+		
 		<div className="mt-10">
-			<div className="container mx-auto px-4 py-8 mt-5">
+			<div className="container mx-auto px-4 py-8 mt-5 border-gray-200 rounded-lg shadow-lg">
+			<AnimateRight>
 				<h1 className="text-3xl font-extrabold text-center mb-3">FAQ</h1>
 				<p className="text-base text-center mb-12 text-gray-600">
 					Prime Marketing Experts solves your digital marketing and website bottlenecks.
 				</p>
-				<div className="flex flex-col lg:flex-row h-full gap-8 border p-5  md:p-10 border-gray-200 rounded-lg shadow-lg">
+				<div className="flex flex-col lg:flex-row h-full gap-8 border p-5  md:p-10 ">
 					<div className="lg:w-1/2">
 						<Image
 							src={sampleImage}
@@ -83,9 +84,10 @@ const InfoSection: React.FC = () => {
 						</Accordion>
 					</div>
 				</div>
+				</AnimateRight>
 			</div>
 		</div>
-		</AnimateRight>
+		
 			)
 }
 

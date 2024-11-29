@@ -6,8 +6,9 @@ import { AnimateRight } from '@/components/common/animate';
 
 const AboutUs = () => {
   return (
-    <AnimateRight>
+   
     <section className="bg-gray-100 container py-16 px-6 md:px-12 lg:px-24">
+       <AnimateRight>
       <div className="max-w-7xl mx-auto">
         {/* Section Heading */}
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
@@ -63,8 +64,9 @@ const AboutUs = () => {
         </div>
 
     </div>
-    </section>
     </AnimateRight>
+    </section>
+   
   );
 };
 

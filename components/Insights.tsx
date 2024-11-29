@@ -7,7 +7,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import useEmblaCarousel from 'embla-carousel-react'
 import Image from 'next/image'
 import Image1 from '../public/images/carousel/image02.png'
-import Image2 from '../public/images/eventmangement/image.png'
+import Image2 from '../public/images/eventmanagement/image.png'
 import Image4 from '../public/images/section02.jpg'
 import Image3 from '../public/images/section_04.webp'
 import { AnimateLeft } from './common/animate'
@@ -83,9 +83,10 @@ export default function Insight() {
 	}, [emblaApi, onSelect])
 
 	return (
-		<AnimateLeft>
+		
 		
 		<div className="container py-12 bg-gray-50 px-6 md:px-12 lg:px-24">
+			<AnimateLeft>
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<h2 className=" text-3xl md:text-3xl font-extrabold text-center mb-12 text-gray-900">
 					Explore Prime Marketing Experts
@@ -148,8 +149,9 @@ export default function Insight() {
 					</Button>
 				</div>
 			</div>
+			</AnimateLeft>
 		</div>
-		</AnimateLeft>
+		
 		
 	)
 }

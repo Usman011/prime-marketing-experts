@@ -49,8 +49,9 @@ export default function Contact() {
 	}
 
 	return (
-		<AnimateLeft>
+		
 		<section className="container py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+			<AnimateLeft>
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<motion.h2
 					className="text-4xl  font-bold text-center pb-2"
@@ -170,7 +171,8 @@ export default function Contact() {
 					</motion.div>
 				</div>
 			</div>
+			</AnimateLeft>
 		</section>
-		</AnimateLeft>
+		
 	)
 }
