@@ -49,9 +49,9 @@ export default function Contact() {
 	}
 
 	return (
-		<div className='container overflow-hidden'>
+		<div className='w-full overflow-hidden'>
 		<AnimateLeft>
-		<section className="container py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+		<section className="py-16 container bg-gradient-to-br from-blue-50 to-purple-50">
 		
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<motion.h2

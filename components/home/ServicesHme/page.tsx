@@ -102,11 +102,11 @@ export default function HomeServicesPage() {
 
 	return (
 		<>
-		    <div className='container overflow-hidden'>
+		    <div className='w-full overflow-hidden'>
               <AnimateLeft>		
-			<section className="py-auto md:py-16 py-10 px-6  text-gray-900">
+			<section className="py-auto container  md:py-16 py-10 px-6  text-gray-900">
 				<div className="max-w-7xl mx-auto">
-					<h2 className="text-3xl font-bold text-center mb-2">Our Services</h2>
+					<h2 className="text-3xl font-bold text-start md:text-center mb-2">Our Services</h2>
 					<p className="text-base text-gray-500 text-start max-w-96 md:max-w-4xl w-[100%] mx-auto mb-8">
 						Prime Marketing Experts is a digital marketing and website services company focused on
 						helping small and medium-sized businesses in the Boston area prosper. Since 2017, we’ve

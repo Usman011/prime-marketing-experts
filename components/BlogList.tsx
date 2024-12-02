@@ -33,11 +33,11 @@ export default function BlogList({ showAll }: { showAll?: boolean }) {
 
 	return (
      
-    <div className='container overflow-hidden'>
+    <div className='overflow-hidden'>
     <AnimateLeft>
-		<div className="container py-16 bg-[#FAFAFA] px-6 md:px-12 lg:px-24">
+		<div className="py-16 container bg-[#FAFAFA] px-6 md:px-12 lg:px-24">
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
-				<motion.h2 className="text-4xl font-extrabold text-center text-gray-900 pb-10 md:pb-14">
+				<motion.h2 className="text-4xl font-extrabold text-start md:text-center text-gray-900 pb-10 md:pb-14">
 					{showAll ? 'All blogs' : 'Trending Articles'}
 				</motion.h2>
 				<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

@@ -84,12 +84,12 @@ export default function Insight() {
 
 	return (
 		
-		<div className='container overflow-hidden'>
+		<div className='w-full overflow-hidden'>
 		<AnimateLeft>
 		<div className="container py-12 bg-gray-50 px-6 md:px-12 lg:px-24">
 			
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
-				<h2 className=" text-3xl md:text-3xl font-extrabold text-center mb-12 text-gray-900">
+				<h2 className=" text-3xl md:text-3xl font-extrabold text-start md:text-center mb-12 text-gray-900">
 					Explore Prime Marketing Experts
 				</h2>
 				<div className=" hidden md:flex items-center justify-center mb-8 flex-wrap">

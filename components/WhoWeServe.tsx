@@ -9,12 +9,12 @@ import { AnimateRight } from "./common/animate";
 export function WhoWeServeSection() {
 	return (
    
-    <div className="container overflow-hidden">
+    <div className="w-full overflow-hidden">
     <AnimateRight>
 	  <section className="bg-blue-50 container w-auto md:w-auto py-16 ">
 		<div className="max-w-7xl mx-auto text-start md:text-center">
 		  <div className='md:mx-auto'>
-		  <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-4">Who We Serve</h2>
+		  <h2 className="text-3xl font-extrabold text:start md:text-center text-gray-800 mb-4">Who We Serve</h2>
 		  <p className="text-xl text-gray-600 mb-10">
 		  In today`s competitive business landscape, a one-size-fits-all approach to marketing is no longer sufficient. Successful marketing strategies must be tailored to the specific needs, challenges, and goals of each industry. That is why we empower diverse industries with customized, results-driven marketing solutions tailored to their unique needs and goals.
 		  </p> 
