@@ -10,7 +10,7 @@ import Image from 'next/image';
 const Service = [
 	{ name: 'Marketing Automation', href: '/marketing/marketing-automation' },
 	{ name: 'Search Engine Optimization – SEO', href: '/marketing/local-seo' },
-	{ name: 'Search Engine Advertising', href: '/marketing/search-engine-advertising' },
+	{ name: 'Search Engine Advertising', href: '/marketing/google-shopping-campaigns' },
 	{ name: 'Inbound Marketing Services', href: '/marketing/inbound-marketing-services' },
 	{ name: 'Marketing Plan Services', href: '/marketing/marketing-plans' },
 	{ name: 'Social Media Marketing', href: '/marketing/social-media-marketing' },

@@ -86,7 +86,7 @@ export const opacity = {
 
 export const AnimateLeft: React.FC<AnimateProps> = ({
   children,
-  delay = 0.3,
+  delay = 0.0,
   viewThres = 0.3,
   once = true,
   duration = 0.3,
@@ -112,7 +112,7 @@ export const AnimateLeft: React.FC<AnimateProps> = ({
 
 export const AnimateRight: React.FC<AnimateProps> = ({
   children,
-  delay = 0.3,
+  delay = 0.0,
   viewThres = 0.3,
   once = true,
   duration = 0.3,

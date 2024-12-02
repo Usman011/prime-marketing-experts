@@ -54,10 +54,10 @@ const InfoSection: React.FC = () => {
 	}
 	return (
 		
-		<div className="container overflow-hidden">
-			<AnimateRight>
-			<div className="mx-auto p-auto md:px-4 py-8 mt-5  rounded-lg ">
+	
 			
+			<div className="mx-auto container overflow-hidden p-auto md:px-4 py-8 mt-5  rounded-lg ">
+			 <AnimateRight>
 				<h1 className="text-3xl font-extrabold text-center mb-3">FAQ</h1>
 				<p className="text-base text-center mb-12 text-gray-600">
 					Prime Marketing Experts solves your digital marketing and website bottlenecks.
@@ -85,11 +85,10 @@ const InfoSection: React.FC = () => {
 						</Accordion>
 					</div>
 				</div>
-				
+				</AnimateRight>
 			</div>
-			</AnimateRight>
-		</div>
-		
+			
+
 			)
 }
 

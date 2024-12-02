@@ -172,7 +172,7 @@ const Page = () => {
 
 {/* Importance of Market Research Services */}
 <div className="space-y-8 mt-12 px-6 lg:px-6 py-10  shadow-lg rounded-xl">
-  <h1 className="font-bold text-4xl text-gray-900 text-center mb-8">
+  <h1 className="font-bold text-4xl text-gray-900 text-start md:text-center mb-4">
     Importance of Market Research Services
   </h1>
 
@@ -238,8 +238,8 @@ const Page = () => {
 
       {/* Call to Action Section */}
       <div className='bg-orange-400 text-white text-center my-6 py-6'>
-        <h2 className='font-bold text-2xl'>Do you want to understand your demographics better through market research services?</h2>
-        <p className='text-lg mt-4'>
+        <h2 className='font-bold text-start md:text-auto p-3 md:p-auto text-2xl'>Do you want to understand your demographics better through market research services?</h2>
+        <p className='text-lg mt-4 text-start p-3'>
           Call us at <span className='font-bold'>617-651-1457</span> to schedule a free initial consultation!
         </p>
       </div>

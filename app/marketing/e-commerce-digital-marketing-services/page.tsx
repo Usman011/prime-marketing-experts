@@ -80,7 +80,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto  bg-orange-500 h-auto lg:h-32 items-center justify-center lg:justify-around'>
+        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto my-10  bg-orange-500 h-auto lg:h-32 items-center justify-center lg:justify-around'>
           <h1 className='font-bold text-white text-center lg:text-left text-2xl lg:text-4xl'>
             Attract, Convert, and Retain More Customers Today
           </h1>

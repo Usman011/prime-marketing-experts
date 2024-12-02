@@ -9,9 +9,10 @@ import { AnimateRight } from "./common/animate";
 export function WhoWeServeSection() {
 	return (
    
-    <div className="w-full overflow-hidden">
-    <AnimateRight>
-	  <section className="bg-blue-50 container w-auto md:w-auto py-16 ">
+    
+   
+	  <section className="bg-blue-50 overflow-hidden container w-auto md:w-auto py-16 ">
+       <AnimateRight>
 		<div className="max-w-7xl mx-auto text-start md:text-center">
 		  <div className='md:mx-auto'>
 		  <h2 className="text-3xl font-extrabold text:start md:text-center text-gray-800 mb-4">Who We Serve</h2>
@@ -101,10 +102,10 @@ export function WhoWeServeSection() {
   
   </div>
 		</div>
-    
-	  </section>
     </AnimateRight>
-    </div>
+	  </section>
+   
+   
     
 	);
   }

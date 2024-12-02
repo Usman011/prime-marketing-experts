@@ -23,9 +23,9 @@ const Page = () => {
       </div>
 
       <div className="flex flex-col  gap-10">
-  <div className="flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 justify-center items-center space-y-6 lg:space-y-0">
+  <div className="flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 justify-center items-center space-y-6 lg:space-y-0">
     {/* Left Side (Text) */}
-    <div className="flex-1 p-6 space-y-6">
+    <div className="flex-1 p-2 md:p-6 space-y-6">
       <h1 className="font-bold text-4xl">
         Welcoming All Website Visitors
       </h1>
@@ -251,9 +251,9 @@ const Page = () => {
 </div>
 
 
-<div className='flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6 lg:space-x-6 justify-start'>
+<div className='flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6 lg:space-x-6 justify-start'>
   {/* Content Section */}
-  <div className='flex-1 p-6'>
+  <div className='flex-1 p-2 md:p-6'>
     <h1 className='font-bold text-4xl'>
       Evaluating Website Accessibility Solutions
     </h1>

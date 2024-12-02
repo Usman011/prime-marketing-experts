@@ -90,28 +90,36 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="bg-blue-50 p-8 mt-12 rounded-lg shadow-md flex items-center space-x-8">
-  <div className="flex-1">
-    <h2 className="font-bold text-3xl text-gray-800">Why is a Business Plan Vital?</h2>
-    <p className="text-lg text-gray-700 mt-4">
-      A business plan is essential for organizing your business and setting clear goals to ensure your company’s success.
-    </p>
-    <ul className="list-disc pl-6 space-y-4 mt-6">
-      <li className="text-lg text-gray-700">
+
+        <div className="flex bg-blue-50 mt-10 p-6 flex-col lg:flex-row gap-8">
+          <div className="space-y-6">
+            <h2 className="font-bold text-3xl md:text-4xl text-gray-800">
+            Why is a Business Plan Vital?
+            </h2>
+            <p className="text-lg text-gray-700">
+            A business plan is essential for organizing your business and setting clear goals to ensure your company’s success.            </p>
+            <ul className="list-disc pl-6 space-y-4 mt-6">
+      <li className="text-lg md:text-base sm:text-sm text-gray-700">
         <strong>An Organized Business:</strong> We help you organize your business and avoid costly mistakes.
       </li>
-      <li className="text-lg text-gray-700">
+      <li className="text-lg md:text-base sm:text-sm text-gray-700">
         <strong>Crystal Clear Goals:</strong> Our business plans clarify your mission and vision for investors.
       </li>
-      <li className="text-lg text-gray-700">
+      <li className="text-lg md:text-base sm:text-sm text-gray-700">
         <strong>A Future-Ready Business:</strong> Our research helps you plan for future demands and maintain success.
       </li>
     </ul>
-  </div>
-  <div className="flex-shrink-0 w-1/3">
-  <Image src={IMG1} alt="Business Strategy" width={400} height={400} className="rounded-lg shadow-lg" />
-  </div>
-</div>
+          </div>
+          <Image
+      src={IMG1}
+      alt="Business Strategy"
+      width={400}
+      height={400}
+      className="rounded-lg shadow-lg mx-auto"
+    />
+        </div>
+
+
 
 
 <div className="mt-12 px-6 lg:px-16 py-10 bg-white shadow-lg rounded-xl">

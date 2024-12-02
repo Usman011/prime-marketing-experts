@@ -125,7 +125,7 @@ export default function HealthcarePage() {
             Local SEO is crucial for healthcare businesses to ensure they show up when patients in your area search for medical services. We optimize your online presence to ensure your practice ranks highly in local search results, making it easier for patients to find and contact you. 
 
             </p>
-            <ul className="list-disc pl-5 text-gray-700">
+            <ul className="list-disc pl-5 text-gray-700 text-start">
               <li className="mb-2">Google My Business optimization </li>
               <li className="mb-2">Local keyword targeting </li>
               <li>Location-based search results </li>
@@ -175,7 +175,7 @@ export default function HealthcarePage() {
 
       {/* Healthcare Call-to-Action Section */}
       <div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center pt-6 md:pt-auto lg:pt-auto justify-evenly px-2 lg:px-auto">
-        <h1 className="font-bold text-white text-2xl md:text-4xl text-center leading-tight">
+        <h1 className="font-bold text-white text-2xl md:text-4xl text-start leading-tight">
           Take Control of Your Health Today!  Get a Free Consultation Now
         </h1>
         <Link href="/contact">

@@ -31,9 +31,10 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 	}, [])
 
 	return (
-		<div className='w-full overflow-hidden'>
+		
+		
+		<div className="py-16 container w-full overflow-hidden bg-blue-50 px-6 md:px-12 lg:px-24">	
 		< AnimateRight>
-		<div className="py-16 container bg-blue-50 px-6 md:px-12 lg:px-24">	
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<motion.h2 className="text-4xl font-extrabold text-start md:text-center text-gray-900 pb-10 md:pb-14">
 					{showAll ? 'All Case Studies' : 'Our Case Studies'}
@@ -82,31 +83,7 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 									</CardContent>
 									<CardFooter className="border-t p-6 bg-gray-50">
 										<div className="flex items-center justify-center w-full">
-											{/* <div className="flex items-center space-x-2">
-												<Avatar>
-													<AvatarImage src="/placeholder.svg" alt={caseStudy.authorName} />
-													<AvatarFallback>{caseStudy.authorName.charAt(0)}</AvatarFallback>
-												</Avatar>
-												<span className="text-sm font-medium">{caseStudy.authorName || ''}</span>
-											</div> */}
-											{/* <AnimatePresence>
-												{hoveredId === caseStudy.documentId && (
-													<motion.div
-														initial={{ opacity: 0, x: -20 }}
-														animate={{ opacity: 1, x: 0 }}
-														exit={{ opacity: 0, x: -20 }}
-														transition={{ duration: 0.2 }}
-													>
-														<Link href={`/case-studies/${caseStudy.documentId}`}>
-															<Button variant="ghost" size="sm" className="text-primary">
-															<span className="absolute inset-0 w-full h-full border-b-2 border-orange-600 transform scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
-															<span className="relative">Read More</span>
-																<ChevronRight className="ml-2 h-4 w-4" />
-															</Button>
-														</Link>
-													</motion.div>
-												)}
-											</AnimatePresence> */}
+											
 											<Link href={`/case-studies/${caseStudy.documentId}`}>
 											<button className="relative inline-flex items-center justify-center px-4 py-2 text-orange-600 font-medium group">
 						                    <span className="absolute inset-0 w-full h-full border-b-2 border-orange-600 transform scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
@@ -128,9 +105,9 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 					</Link>
 				)}
 			</div>
-			
+			</AnimateRight>
 		</div>
-		</AnimateRight>
-		</div>
+		
+		
 	)
 }

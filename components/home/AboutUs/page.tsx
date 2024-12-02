@@ -8,9 +8,10 @@ const AboutUs = () => {
   return (
 
     <div className="w-full overflow-hidden">
-      <AnimateRight>
+     
     
     <section className="bg-gray-100 container  py-16 px-6 md:px-12 lg:px-24">
+    <AnimateRight>
        
       <div className="max-w-7xl mx-auto">
         {/* Section Heading */}
@@ -67,8 +68,9 @@ const AboutUs = () => {
         </div>
 
     </div>
+    </AnimateRight>
     </section>
-      </AnimateRight>
+     
       </div>
    
   );

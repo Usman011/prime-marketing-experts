@@ -25,7 +25,7 @@ const Page = () => {
       
       <div className='mx-2'>
       <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6  lg:grid-cols-2 gap-10 items-center justify-start'>
-        <h1 className='font-bold pb-4 text-4xl'>
+        <h1 className='font-bold pb-4 text-start md:text-auto text-4xl'>
         Operational Assessment Services That Drive Growth
         </h1>
         <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
@@ -152,7 +152,7 @@ const Page = () => {
 
 
           <div className='bg-blue-50 p-8 rounded-lg shadow-md'>
-  <h1 className='pt-14 pb-4 font-bold text-4xl text-center text-black'>
+  <h1 className='pt-14 pb-4 font-bold text-4xl text-start md:text-center text-black'>
     Operational Assessment Benefits
   </h1>
   
