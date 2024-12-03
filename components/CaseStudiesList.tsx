@@ -33,7 +33,7 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 	return (
 		
 		
-		<div className="py-16 container w-full overflow-hidden bg-blue-50 px-6 md:px-12 lg:px-24">	
+		<div className="py-16 container w-full overflow-hidden bg-blue-50 px-2 md:px-12 lg:px-24">	
 		
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<motion.h2 className="text-4xl font-extrabold text-start md:text-center text-gray-900 pb-10 md:pb-14">
@@ -81,7 +81,7 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 											{caseStudy.description || ''}
 										</p>
 									</CardContent>
-									<CardFooter className="border-t p-6 bg-gray-50">
+									<CardFooter className="border-t p-2 md:p-6 bg-gray-50">
 										<div className="flex items-center justify-center w-full">
 											
 											<Link href={`/case-studies/${caseStudy.documentId}`}>

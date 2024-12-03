@@ -35,7 +35,7 @@ export default function BlogList({ showAll }: { showAll?: boolean }) {
      
   
     
-		<div className="py-16 container overflow-hidden bg-[#FAFAFA] px-6 md:px-12 lg:px-24">
+		<div className="py-16 container overflow-hidden bg-[#FAFAFA] px-2 md:px-12 lg:px-24">
     
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<motion.h2 className="text-4xl font-extrabold text-start md:text-center text-gray-900 pb-10 md:pb-14">
@@ -77,7 +77,7 @@ export default function BlogList({ showAll }: { showAll?: boolean }) {
               {blog.category || 'Category'}
             </Badge>
           </div>
-          <CardContent className="flex-grow p-4">
+          <CardContent className="flex-grow p-2 md:p-4">
             <h3 className="text-xl font-bold mb-2 line-clamp-2">{blog.title || ''}</h3>
             <p className="text-muted-foreground mb-4 line-clamp-3">{blog.description || ''}</p>
           </CardContent>

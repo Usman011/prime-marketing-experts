@@ -20,7 +20,7 @@ const HomeBanner = () => {
 				<div className="container">
 					<div className="max-w-[700px]">
 					
-						<div className="font-bold text-5xl leading-[60px] uppercase text-white">
+						<div className="font-bold text-4xl md:text-5xl leading-[45px] md:leading-[60px] uppercase text-white">
 						Driving Excellence With Superior Marketing Solutions
 
 						</div>
