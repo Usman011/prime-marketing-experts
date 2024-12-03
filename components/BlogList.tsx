@@ -38,7 +38,7 @@ export default function BlogList({ showAll }: { showAll?: boolean }) {
 		<div className="py-16 container overflow-hidden bg-[#FAFAFA] px-2 md:px-12 lg:px-24">
     
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
-				<motion.h2 className="text-4xl font-extrabold text-start md:text-center text-gray-900 pb-10 md:pb-14">
+				<motion.h2 className="text-3xl md:text-4xl font-bold text-start md:text-center text-gray-900 pb-10 md:pb-14">
 					{showAll ? 'All blogs' : 'Trending Articles'}
 				</motion.h2>
 				<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

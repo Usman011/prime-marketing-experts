@@ -86,10 +86,10 @@ export default function Insight() {
 		
 		
 		
-		<div className="container w-full overflow-hidden py-12 bg-gray-50 px-6 md:px-12 lg:px-24">
+		<div className="container w-full overflow-hidden py-12 bg-gray-50 px-2 md:px-12 lg:px-24">
 		
-			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
-				<h2 className=" text-3xl md:text-3xl font-extrabold text-start md:text-center mb-12 text-gray-900">
+			<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+				<h2 className=" text-3xl md:text-4xl font-bold text-start md:text-center mb-8 text-gray-900">
 					Explore Prime Marketing Experts
 				</h2>
 				<div className=" hidden md:flex items-center justify-center mb-8 flex-wrap">
@@ -112,7 +112,7 @@ export default function Insight() {
 					>
 					<div className="flex">
 						{carouselItemsData.map((item, index) => (
-							<div className="flex-[0_0_100%] min-w-0 px-auto  md:px-5" key={index}>
+							<div className="flex-[0_0_100%] min-w-0 px-0  md:px-5" key={index}>
 								<Card className="border-none shadow-lg p-auto md:p-4 bg-white rounded-2xl overflow-hidden">
 									<CardContent className="p-0">
 										<div className="flex flex-col lg:flex-row">

@@ -53,7 +53,7 @@ export default function Contact() {
 		
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<motion.h2
-					className="text-4xl  font-bold text-center pb-2"
+					className="md:text-4xl text-3xl font-bold text-start md:text-center pb-2"
 					initial={{ opacity: 0, y: -20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5 }}
@@ -61,7 +61,7 @@ export default function Contact() {
 					Get in Touch
 				</motion.h2>
 				<motion.p
-					className="text-base text-center text-gray-600 mb-12"
+					className="text-start md:text-center text-gray-600 mb-12"
 					initial={{ opacity: 0, y: -10 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5, delay: 0.2 }}
@@ -76,7 +76,7 @@ export default function Contact() {
 						className="h-full flex items-center"
 					>
 						<Card className=" bg-transparent  border-none">
-							<CardContent className="p-auto md:p-6">
+							<CardContent className="p-2 md:p-6">
 								<h3 className="text-2xl font-bold mb-6 text-gray-800">Contact Information</h3>
 								<ul className="space-y-4">
 									<motion.li className="flex items-start" whileHover={{ scale: 1.05 }}>
@@ -101,7 +101,7 @@ export default function Contact() {
 										</div>
 									</motion.li>
 									<motion.li className="flex items-start" whileHover={{ scale: 1.05 }}>
-										<Phone className="w-6 h-6 text-[--main] mr-4 mt-1 flex-shrink-0" />
+										<Phone className="w-6 h-6 text-[--main]  mt-1 flex-shrink-0" />
 										<div>
 											<p className="font-semibold text-gray-700">Phone Us:</p>
 											<a href="tel:+16176511457" className=" text-[--main] hover:underline">
@@ -118,9 +118,9 @@ export default function Contact() {
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.5, delay: 0.6 }}
 					>
-						<Card className="bg-white backdrop-blur-sm shadow-xl border-none">
-							<CardContent className="p-6">
-								<div className="md:px-5 pt-5">
+						<Card className="bg-white backdrop-blur-sm p-0 md:p-6 shadow-xl border-none">
+							<CardContent className="p-1 md:p-6">
+								<div className="md:px-5 mx-2 pt-5">
 									<h3 className="text-2xl font-bold mb-2 text-gray-800">Send Us a Message</h3>
 									<div className="text-gray-500 text-sm">
 										Fill in the details for your new blog post. Click submit when you are done.
