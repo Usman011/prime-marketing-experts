@@ -7,29 +7,24 @@ import IMG3 from '../../../public/images/Marketing/email marketing/image3.png';
 
 const Page = () => {
   return (
-    <section className='container p-2 md:p-6'>
-      <div className="flex flex-col items-center justify-center text-center w-full h-52">
-        <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-          Email Marketing Services
-        </h1>
-        <div className="flex gap-6 justify-center mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Email Marketing Services</li>
-          </ul>
-        </div>
+    <section className='container  px-2 md:px-6 lg:px-12'>
+      
+             {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Email Marketing Services
+        </h1> 
       </div>
+     
 
-      <div className="flex flex-col  gap-10 mt-10">
+      <div className="flex flex-col gap-10">
 
-        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
-          <h1 className="font-bold text-4xl">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
+          <h1 className="font-bold text-3xl md:text-4xl">
             Give Your Emails The Right Service, Strategy, And Execution
           </h1>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="space-y-8 w-full lg:w-7/12 mt-14">
+            <div className="space-y-8 w-full lg:w-7/12 ">
               <p>
                 Did you know for every $1, email marketing generates $42, which results in an ROI of 4200%? Therefore, 81% of SMBs still use email marketing for their main customer acquisition channel.
               </p>
@@ -47,15 +42,15 @@ const Page = () => {
           <p className='font-bold'>By creating and personalizing your email campaigns, we help make it easy for your company to get more leads for your company.</p>
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-6 space-y-6">
-          <h1 className="font-bold text-4xl">
+        <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-6">
+          <h1 className="font-bold text-3xl md:text-4xl">
             Full-Service Email Marketing That Makes Every Email Count
           </h1>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="w-full h-full">
               <Image src={IMG2} alt="Market Research" layout="responsive" width={1200} height={1000} />
             </div>
-            <div className="space-y-8 w-full lg:w-11/12 mt-14">
+            <div className="space-y-8 w-full lg:w-11/12 ">
               <p>
                 We follow a flexible and results-oriented approach to make sure that we produce the optimal mix of engaging content for your customers and profitable results for your company.
               </p>
@@ -66,11 +61,11 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
           
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="space-y-8 w-full lg:w-7/12 mt-14">
-            <h1 className="font-bold text-4xl">
+            <div className="space-y-8 w-full lg:w-7/12">
+            <h1 className="font-bold text-3xl md:text-4xl">
             Give Your Emails The Right Service, Strategy, And Execution
            </h1>
               <p>
@@ -89,12 +84,12 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="bg-blue-50 p-6 rounded-lg shadow-xl">
-  <h1 className="font-extrabold text-4xl text-center text-primary mb-8">
+        <div className="bg-blue-50 p-2 md:p-6 rounded-lg shadow-xl">
+  <h1 className="font-extrabold text-3xl md:text-4xl text-start text-primary mb-8">
     Our Email Marketing Process
   </h1>
   <div className="space-y-8">
-    <div className="bg-white p-6 rounded-xl shadow-md">
+    <div className="bg-white p-2 md:p-6 rounded-xl shadow-md">
       <h3 className="flex items-center text-2xl font-semibold text-primary mb-4">
         <span className="mr-4 text-4xl text-primary">⏰</span>
         <span>Timing</span>
@@ -157,8 +152,8 @@ const Page = () => {
 </div>
 
 
-<div className="bg-white p-2 md:p-10 rounded-xl mb-10 shadow-lg">
-  <h1 className="font-extrabold text-4xl text-center text-primary mb-8">
+<div className="bg-white p-2 md:p-6 rounded-xl mb-10 shadow-lg">
+  <h1 className="font-extrabold text-3xl md:text-4xl text-start text-primary mb-8">
     Using The Best Email Marketing Strategies & Technology
   </h1>
   <div className="space-y-10">
@@ -174,7 +169,7 @@ const Page = () => {
     {/* Steps Section */}
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {/* Step 1 */}
-      <div className="bg-blue-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+      <div className="bg-blue-50 rounded-lg p-2 md:p-6 hover:shadow-lg transition-shadow">
         <h3 className="flex items-center text-xl font-semibold text-black mb-4">
           <span className="bg-black text-white rounded-full h-10 w-10 flex items-center justify-center mr-4">
             1
@@ -187,7 +182,7 @@ const Page = () => {
       </div>
      
       {/* Step 2 */}
-      <div className="bg-blue-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+      <div className="bg-blue-50 rounded-lg p-2 md:p-6 hover:shadow-lg transition-shadow">
         <h3 className="flex items-center text-xl font-semibold text-black mb-4">
           <span className="bg-black text-white rounded-full h-10 w-10 flex items-center justify-center mr-4">
             2

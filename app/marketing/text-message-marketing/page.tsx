@@ -7,27 +7,22 @@ import { RiMessage2Line } from 'react-icons/ri';
 const Page = () => {
     return (
         <section className='container px-2 md:px-12 lg:px-24'>
-            <div className="flex flex-col items-center justify-center text-center w-full h-52">
-                <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-                    Text Message Marketing
-                </h1>
-                <div className="flex gap-6 justify-center mt-4">
-                    <Link href="/">
-                        <p className="text-gray-500 hover:text-gray-800">Home</p>
-                    </Link>
-                    <ul className="list-disc">
-                        <li>Text Message Marketing</li>
-                    </ul>
-                </div>
+           
+                   {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Text Message Marketing
+        </h1> 
+      
             </div>
 
             <div className="flex flex-col  gap-10 mt-4">
                 <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
-                    <h1 className="font-bold text-4xl">
+                    <h1 className="font-bold text-3xl md:text-4xl">
                         Give Your Emails The Right Service, Strategy, And Execution
                     </h1>
                     <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-                        <div className="space-y-8 w-full lg:w-7/12 mt-14">
+                        <div className="space-y-8 w-full lg:w-7/12 mt-6">
                             <p>
                                 Do you wish for a response in 90 seconds?
                             </p>
@@ -51,7 +46,7 @@ const Page = () => {
                 </div>
 
                 <div className='flex flex-col bg-blue-50 p-2 md:p-6 space-y-6 justify-start'>
-                    <h1 className='font-bold text-4xl'>
+                    <h1 className='font-bold text-3xl md:text-4xl'>
                         Since we caught your interest, let us get you more information.
                     </h1>
                     <div className='space-y-6'>
@@ -75,7 +70,7 @@ const Page = () => {
                 </div>
 
                 <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 mb-4 gap-10'>
-                    <h2 className='text-4xl'>Providing The Best Text Message Marketing</h2>
+                    <h2 className='text-3xl md:text-4xl'>Providing The Best Text Message Marketing</h2>
                     <p>Here is an explanation of what you should expect from our effective and world-class service. Our prime aim is to make the text messaging service affordable, user-friendly, and customizable.</p>
                     <div className='space-y-6'>
                         <div className='flex flex-col gap-6'>

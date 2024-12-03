@@ -9,24 +9,19 @@ import IMG4 from '../../../public/images/website-mobile-app-development/image4.p
 
 const Page = () => {
   return (
-    <section className='container'>
-      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
-        <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
-          Web Development
-        </h1>
-        <div className='flex gap-6 justify-center mt-4'>
-          <Link href="/">
-            <p className='text-gray-500 hover:text-gray-800'>Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Web Development</li>
-          </ul>
-        </div>
+    <section className='container px-2 md:px-6 lg:px-12'>
+      
+        {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Web Development
+        </h1> 
       </div>
+     
 
-      <div className='gap-20  mt-10'>
-        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-8 justify-start'>
-          <h1 className='font-bold pb-6 text-4xl'>
+      <div className='gap-10'>
+        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-8 justify-start'>
+          <h1 className='font-bold text-3xl md:text-4xl'>
             Website Development
           </h1>
           <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
@@ -56,8 +51,8 @@ const Page = () => {
           </p>
         </div>
 
-        <div className='flex flex-col bg-blue-50 p-4 space-y-8 justify-start'>
-          <h1 className='font-bold text-4xl'>
+        <div className='flex flex-col bg-blue-50 p-2 md:p-6 space-y-8 justify-start'>
+          <h1 className='font-bold text-3xl md:text-4xl'>
             Creative & Engaging Website Design
           </h1>
           <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
@@ -75,8 +70,8 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-8 justify-start'>
-          <h1 className='font-bold text-4xl'>
+        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl mt-10 transition-shadow duration-300 p-2 md:p-6 space-y-8 justify-start'>
+          <h1 className='font-bold text-3xl md:text-4xl'>
             E-Commerce Website Development
           </h1>
           <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>

@@ -9,23 +9,18 @@ const Page = () => {
     return (
         <>
       <section className='container px-2 md:px-12 lg:px-24'>
-        <div className='flex justify-center items-center w-full h-52 flex-col text-center'>
-        <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
-        Operational Assessment
-        </h1>
-        <div className='flex gap-6 justify-center mt-4'>
-          <Link href="/">
-            <p className='text-gray-500 hover:text-gray-800'>Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Operational Assessment</li>
-          </ul>
-        </div>  
+       
+          {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Operational Assessment
+        </h1> 
       </div>
+     
       
-      <div className='mx-2'>
-      <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6  lg:grid-cols-2 gap-10 items-center justify-start'>
-        <h1 className='font-bold pb-4 text-start md:text-auto text-4xl'>
+      
+      <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6  lg:grid-cols-2 gap-10 items-center justify-start'>
+        <h1 className='font-bold text-start text-3xl md:text-4xl'>
         Operational Assessment Services That Drive Growth
         </h1>
         <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
@@ -52,14 +47,14 @@ const Page = () => {
         <p>You don’t have to worry about any of the above situations if you hire PRIME MARKETING EXPERTS! Yes, we can assist you with complex problems and offer you actionable solutions with an operational assessment.</p>
         </div>
 
-        <div className='flex flex-col bg-blue-50 lg:flex-row gap-8 mt-10 lg:gap-20'>
+        <div className='flex flex-col bg-blue-50 p-2 md:p-6 lg:flex-row gap-8 mt-10 lg:gap-20'>
 
         <div className='w-full h-auto'>
             <Image src={IMG2} alt="Market Research" className='w-full h-auto object-cover' />
           </div>
 
           <div className='space-y-6'>
-          <h1 className='font-bold text-4xl'>What is an Operational Assessment? </h1>
+          <h1 className='font-bold text-3xl md:text-4xl'>What is an Operational Assessment? </h1>
             <p>
             An operational assessment is an efficient and effective method to discover what is the most optimal processes your company could deploy through a comprehensive analysis.
             </p>
@@ -81,9 +76,9 @@ const Page = () => {
 
 
         <div className='space-y-6 '>
-          <div className='rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6  lg:grid-cols-2 gap-10 items-center'>
+          <div className='rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 lg:grid-cols-2 gap-10 items-center'>
           <div >
-            <h1 className='pt-14 font-bold pb-4  text-4xl'>
+            <h1 className='pt-10 font-bold pb-4  text-3xl md:text-4xl'>
             Prepare For Future Growth with Prime Marketing Experts
             </h1>
             <p>
@@ -112,9 +107,9 @@ const Page = () => {
           </div>
           
 
-      <div className='flex flex-col bg-blue-50 p-6 lg:flex-row gap-8 '>
+      <div className='flex flex-col bg-blue-50 p-2 md:p-6 lg:flex-row gap-8 '>
   <div className='lg:w-1/2'>
-    <h1 className='pt-4 pb-4 font-bold text-4xl'>
+    <h1 className='pt-4 pb-4 font-bold text-3xl md:text-4xl'>
       Why Are Operational Assessments Important?
     </h1>
     <p className='mb-4'>
@@ -131,9 +126,9 @@ const Page = () => {
 
 
           
-      <div className='rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6  lg:grid-cols-2 gap-10 items-center'>
+      <div className='rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 lg:grid-cols-2 gap-10 items-center'>
           <div>
-            <h1 className='pt-14 pb-4 font-bold text-4xl'>
+            <h1 className='py-8 font-bold text-3xl md:text-4xl'>
             Motivate Employees With Operational Assessments
             </h1>
             <p>
@@ -151,13 +146,13 @@ const Page = () => {
           </ul> </div>
 
 
-          <div className='bg-blue-50 p-8 rounded-lg shadow-md'>
-  <h1 className='pt-14 pb-4 font-bold text-4xl text-start md:text-center text-black'>
+          <div className='bg-blue-50 p-2 md:p-6 rounded-lg shadow-md'>
+  <h1 className='py-10 font-bold text-3xl md:text-4xl text-start  text-black'>
     Operational Assessment Benefits
   </h1>
   
   <div className='space-y-8'>
-    <div className='bg-white p-6 rounded-lg shadow-lg'>
+    <div className='bg-white p-2 md:p-6 rounded-lg shadow-lg'>
       <h2 className='font-bold text-2xl text-black'>
         Helping Organizations Gain Efficiency
       </h2>
@@ -169,7 +164,7 @@ const Page = () => {
       </p>
     </div>
 
-    <div className='bg-white p-6 rounded-lg shadow-lg'>
+    <div className='bg-white p-2 md:p-6 rounded-lg shadow-lg'>
       <h2 className='font-bold text-2xl text-black'>
         It Helps Organizations Prepare For Growth
       </h2>
@@ -178,7 +173,7 @@ const Page = () => {
       </p>
     </div>
 
-    <div className='bg-white p-6 rounded-lg shadow-lg'>
+    <div className='bg-white p-2 md:p-6 rounded-lg shadow-lg'>
       <h2 className='font-bold text-2xl text-black'>
         It Helps Identify & Prioritize Essential Enhancements
       </h2>
@@ -187,7 +182,7 @@ const Page = () => {
       </p>
     </div>
 
-    <div className='bg-white p-6 rounded-lg shadow-lg'>
+    <div className='bg-white p-2 md:p-6 rounded-lg shadow-lg'>
       <h2 className='font-bold text-2xl text-black'>
         Reducing Employee Turnover
       </h2>
@@ -213,7 +208,7 @@ const Page = () => {
       </p>
     </div>
 
-    <div className='bg-white p-6 rounded-lg shadow-lg'>
+    <div className='bg-white p-2 md:p-6 rounded-lg shadow-lg'>
       <h2 className='font-bold text-2xl text-black'>
         Automating Processes
       </h2>
@@ -227,22 +222,20 @@ const Page = () => {
   </div>
 
   <div className='mt-8'>
-    <h1 className='pt-14 pb-4 font-bold text-4xl text-start black'>
+    <h1 className='pt-14 pb-4 font-bold text-3xl md:text-4xl text-start black'>
       Support Your Company’s Continual Growth with Prime Marketing Experts
     </h1>
     <p className='text-gray-700 text-start'>
       We understand all organizations are different and face unique challenges. This is why we emphasize customized solutions tailored specifically for you and your organization’s needs.
     </p>
   </div>
-
-
           </div >
           
           <p>We know your operational processes should be aligned with the latest technology to survive in this competitive world. If you hire us, all these things are taken care of. With our services, you will rest assured that your enterprise will be greatly benefited.</p>
           <p className='font-bold pb-10'>Get ready to scale your company by giving us a call right away to arrange a meeting! </p>
 
          </div>
-         </div>
+       
         </section>
         </>
     );

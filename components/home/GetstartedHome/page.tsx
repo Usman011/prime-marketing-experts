@@ -10,6 +10,7 @@ import {
 	AccordionTrigger,
 } from '@/components/ui/accordion'
 import { AnimateRight } from '@/components/common/animate'
+import { motion } from 'framer-motion'
 
 
 interface AccordionItem {
@@ -57,11 +58,16 @@ const InfoSection: React.FC = () => {
 	
 			
 			<div className="mx-auto container overflow-hidden p-auto md:px-4 py-8 mt-5  rounded-lg ">
-			 <AnimateRight>
+			
 				<h1 className="text-3xl font-extrabold text-center mb-3">FAQ</h1>
 				<p className="text-base text-center mb-12 text-gray-600">
 					Prime Marketing Experts solves your digital marketing and website bottlenecks.
 				</p>
+				<motion.div
+						initial={{ opacity: 0, x: 50 }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ duration: 0.5, delay: 0.6 }}
+					>
 				<div className="flex flex-col lg:flex-row h-full gap-8 border p-5  md:p-10 ">
 					<div className="lg:w-1/2">
 						<Image
@@ -85,7 +91,8 @@ const InfoSection: React.FC = () => {
 						</Accordion>
 					</div>
 				</div>
-				</AnimateRight>
+				</motion.div>
+				
 			</div>
 			
 

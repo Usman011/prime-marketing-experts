@@ -9,7 +9,8 @@ import { MdBrandingWatermark } from "react-icons/md";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { BsGraphUp } from "react-icons/bs";
 import { PiTrainBold } from "react-icons/pi";
-import { AnimateLeft } from '@/components/common/animate'
+import { motion } from 'framer-motion'
+
 
 type ServiceCardProps = {
 	icon: React.ReactNode
@@ -104,7 +105,7 @@ export default function HomeServicesPage() {
 		<>
 		     	
 			<section className="py-auto w-full overflow-hidden container  md:py-16 py-10 px-6  text-gray-900">
-			<AnimateLeft>	
+		\
 				<div className="max-w-7xl mx-auto">
 					<h2 className="text-3xl font-bold text-start md:text-center mb-2">Our Services</h2>
 					<p className="text-base text-gray-500 text-start max-w-96 md:max-w-4xl w-[100%] mx-auto mb-8">
@@ -113,7 +114,12 @@ export default function HomeServicesPage() {
 						served hundreds of companies and thousands of clients, offering a wide range of
 						marketing, branding, and advertising solutions.
 					</p>
-
+                     
+					<motion.div
+						initial={{ opacity: 0, x: 50 }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ duration: 0.3, delay: 0.2 }}
+					>
 					<div className=" pt-5 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8">
 						{displayedServices.map((service, index) => (
 							<ServiceCard
@@ -136,8 +142,9 @@ export default function HomeServicesPage() {
 							</button>
 						</div>
 					)}
+					</motion.div>
 				</div>
-				</AnimateLeft>
+				
 			</section>
 			
 			

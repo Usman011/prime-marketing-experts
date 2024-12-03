@@ -8,26 +8,19 @@ import Link from "next/link";
 
 const AutomotivePage = () => {
   return (
-    <section className="automotive-page container gap-20 py-16 px-2 md:px-12 lg:px-24">
+    <section className="automotive-page container gap-20 pb-10 px-2 md:px-12 lg:px-24">
 
-      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
-        <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
-        Automotive
-        </h1>
-        <div className='flex gap-6 justify-center mt-4'>
-          <Link href="/">
-            <p className='text-gray-500 hover:text-gray-800'>Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Automotive</li>
-          </ul>
-        </div>
+<div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
+          Automotive
+        </h1> 
+       
       </div>
       {/* Hero Section */}
-      <div className="container mx-auto grid grid-cols-1 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6  lg:grid-cols-2 gap-10 items-center">
+      <div className="container mx-auto grid grid-cols-1 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6  lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="text-content">
-          <h1 className="text-3xl font-extrabold -600 mb-6 leading-tight">
+          <h1 className="text-3xl md:text-4xl font-extrabold -600 mb-6 leading-tight">
           Our Automotive Marketing Services 
           </h1>
          
@@ -60,7 +53,7 @@ const AutomotivePage = () => {
       </div>
 
 
-      <div className="container my-10 grid grid-cols-1 pt-10 bg-blue-50 p-6 lg:grid-cols-2 gap-8  items-center">
+      <div className="container my-10 grid grid-cols-1  bg-blue-50 p-2 md:p-6 lg:grid-cols-2 gap-8  items-center">
 
         {/* Right Image */}
         <div className="relative">
@@ -75,7 +68,7 @@ const AutomotivePage = () => {
         </div>
         {/* Left Content */}
         <div className="text-content">
-          <h1 className="text-3xl font-extrabold -600 mb-6 leading-tight">
+          <h1 className="text-3xl md:text-4xl font-extrabold -600 mb-6 leading-tight">
           Dealership Marketing 
           </h1>
          
@@ -92,12 +85,12 @@ const AutomotivePage = () => {
 
     
 
-  <div className="container mx-auto px-4 grid grid-cols-1 pt-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 lg:grid-cols-2 gap-10 items-center">
+  <div className="container mx-auto px-0 md:px-4 grid grid-cols-1 pt-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 lg:grid-cols-2 gap-10 items-center">
 
 
 {/* Left Content */}
 <div className="text-content">
-  <h1 className="text-3xl font-extrabold -600 mb-6 leading-tight">
+  <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
   Local SEO for Automotive Businesses 
   </h1>
  
@@ -126,7 +119,7 @@ const AutomotivePage = () => {
 </div>
 
 
-<div className="container mx-auto px-4 pt-20 grid grid-cols-1 bg-blue-50 lg:grid-cols-2 gap-10 items-center">
+<div className="container mx-auto px-0 md:px-4 pt-20 grid grid-cols-1 bg-blue-50 lg:grid-cols-2 gap-10 items-center">
 
         {/* Right Image */}
         <div className="relative">
@@ -141,7 +134,7 @@ const AutomotivePage = () => {
         </div>
         {/* Left Content */}
         <div className="text-content">
-          <h1 className="text-3xl font-extrabold -600 mb-6 leading-tight">
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
           Paid Advertising Campaigns 
           </h1>
          
@@ -159,8 +152,8 @@ const AutomotivePage = () => {
 
 
       {/* Tourism Call-to-Action Section */}
-<div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center justify-evenly px-6 lg:px-12">
-  <h1 className="font-bold text-white text-2xl md:text-4xl text-center leading-tight">
+<div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center justify-evenly px-0 md:px-6 lg:px-12">
+  <h1 className="font-bold text-white text-3xl md:text-4xl text-center leading-tight">
  Ensuring Safety and Success Through Expertise
   </h1>
   <Link href="/contact">

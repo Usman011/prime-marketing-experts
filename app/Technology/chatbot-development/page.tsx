@@ -7,28 +7,22 @@ import { RiMessage2Line } from "react-icons/ri";
 
 const Page = () => {
   return (
-    <section className='container'>
-      <div className='flex flex-col items-center justify-center text-center  w-full h-52'>
-        <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
-          Chatbot Development
-        </h1>
-        <div className='flex gap-6 justify-center mt-4'>
-          <Link href="/">
-            <p className='text-gray-500 hover:text-gray-800'>Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Chatbot Development</li>
-          </ul>
-        </div>
+    <section className='container px-2 md:px-6 lg:px-12'>
+     
+         {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Web Development
+        </h1> 
       </div>
-
-      <div className='flex flex-col gap-10 mt-10'>
-        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 item-center space-y-6'>
+     
+      <div className='flex flex-col gap-10 '>
+        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 item-center space-y-6'>
           
           <div className='flex flex-col lg:flex-row items-center gap-8 lg:gap-20'>
             
             <div className='space-y-8 '>
-            <h1 className='font-bold text-4xl'>
+            <h1 className='font-bold text-3xl md:text-4xl'>
             Revolutionize Customer Experiences with Chatbot
           </h1>
               <p>“67% of consumers globally used a chatbot for customer support in the past year.”</p>
@@ -41,12 +35,12 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row bg-blue-50 p-6 space-y-6 lg:space-y-0 lg:space-x-6 items-center">
+        <div className="flex flex-col lg:flex-row bg-blue-50 p-2 md:p-6 space-y-6 lg:space-y-0 lg:space-x-6 items-center">
  
 
   {/* Text Section */}
   <div className="lg:w-2/3 space-y-6">
-    <h1 className="font-bold text-4xl">
+    <h1 className="font-bold text-3xl md:text-4xl">
       Now, you must be intrigued about chatbot, and what exactly are these?
     </h1>
     <div className="space-y-6">
@@ -79,16 +73,16 @@ const Page = () => {
 
 
        {/* How We Use Market Research Section */}
-<div className="space-y-6 rounded-lg shadow-lg p-6 ">
-  <h1 className="font-bold text-4xl text-black">How We Use Marketing Research In Customer-Centric Marketing</h1>
+<div className="space-y-6 rounded-lg shadow-lg p-2 md:p-6 ">
+  <h1 className="font-bold text-3xl md:text-4xl text-black">How We Use Marketing Research In Customer-Centric Marketing</h1>
   <p>
     We can utilize your market research to develop customized content and messaging to make sure your customers are getting exactly what they are looking for. For prioritizing your needs first, we put the needs of your clients first. We give them the special treatment they expect, which will, in turn, convert your leads into sales.
   </p>
 </div>
 
 {/* Types of Market Research Section */}
-<div className="space-y-6 rounded-lg shadow-lg p-6  bg-blue-50">
-  <h1 className="font-bold text-4xl text-black">Types of Market Research</h1>
+<div className="space-y-6 rounded-lg shadow-lg p-2 md:p-6  bg-blue-50">
+  <h1 className="font-bold text-3xl md:text-4xl text-black">Types of Market Research</h1>
 
   {/* Qualitative Research */}
   <div>
@@ -114,8 +108,8 @@ const Page = () => {
 </div>
 
 {/* Importance of Market Research Services */}
-<div className="space-y-8  px-6 lg:px-16 py-10 shadow-lg rounded-xl">
-  <h1 className="font-bold text-4xl text-gray-900 text-center mb-8">
+<div className="space-y-8  lg:px-16 py-10 shadow-lg rounded-xl">
+  <h1 className="font-bold text-3xl md:text-4xl text-gray-900 text-center mb-8">
     Importance of Market Research Services
   </h1>
 
@@ -123,7 +117,7 @@ const Page = () => {
   <div className="space-y-8">
     
     {/* Identifying Budding Problems */}
-    <div className="p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="md:p-6 p-2 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h2 className="font-semibold text-2xl text-gray-800 mb-4">Identifying Budding Problems</h2>
       <p className="text-lg text-gray-700 mb-4">
         If you own a start-up, you must be evident to the issues that have hindered your growth. If you don’t address those problems at an early stage, they are likely to become a big issue.
@@ -134,7 +128,7 @@ const Page = () => {
     </div>
 
     {/* Reaching Your Target Audience at the Optimal Time */}
-    <div className="p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="md:p-6 p-2 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h2 className="font-semibold text-2xl text-gray-800 mb-4">Reaching Your Target Audience at the Optimal Time</h2>
       <p className="text-lg text-gray-700 mb-4">
         Market research allows your company to reach a better target audience. The tools used in market research, such as questionnaires, face-to-face interviews, discussions, and meetings, have a major hand in getting to know the target audience.
@@ -142,7 +136,7 @@ const Page = () => {
     </div>
 
     {/* Tracking Competitors */}
-    <div className="p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="md:p-6 p-2 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h2 className="font-semibold text-2xl text-gray-800 mb-4">Tracking Competitors</h2>
       <p className="text-lg text-gray-700 mb-4">
         Even if your business idea is unique, there are many other companies, just like yours, focusing on the same products and services as you. It means they are vying for the same clients.
@@ -153,7 +147,7 @@ const Page = () => {
     </div>
 
     {/* Accelerating Sales Growth */}
-    <div className="p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="md:p-6 p-2 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h2 className="font-semibold text-2xl text-gray-800 mb-4">Accelerating Sales Growth</h2>
       <p className="text-lg text-gray-700 mb-4">
         Market research, when embraced, gives significant knowledge to your organization about how effective its products or services are probably going to be, the typical cost to be set for the service, and categories that consumers will buy. All these data help with forecasting sales growth.
@@ -161,7 +155,7 @@ const Page = () => {
     </div>
 
     {/* Research for Financing Solutions */}
-    <div className="p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="md:p-6 p-2 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h2 className="font-semibold text-2xl text-gray-800 mb-4">Research for Financing Solutions</h2>
       <p className="text-lg text-gray-700 mb-4">
         Affordable finance is essential for the success of startup companies. Financing is required for various purposes, such as the expansion and development of new products. Even though there are numerous lenders in the market, most of them do not lend to private startups due to the risk they are willing to take.
@@ -169,7 +163,7 @@ const Page = () => {
     </div>
 
     {/* Evaluating New Market Opportunities */}
-    <div className="p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="md:p-6 p-2 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h2 className="font-semibold text-2xl text-gray-800 mb-4">Evaluating New Market Opportunities</h2>
       <p className="text-lg text-gray-700 mb-4">
         The market consistently has new opportunities for companies to embrace. Some of them are not very obvious, and one needs to perform research to identify and evaluate them.
@@ -178,8 +172,8 @@ const Page = () => {
   </div>
 </div>
 
-        <div className='flex flex-col bg-blue-50 p-6  gap-14'>
-          <h2 className='text-4xl'>Types of Chat bots</h2>
+        <div className='flex flex-col bg-blue-50 p-2 md:p-6  gap-14'>
+          <h2 className='text-3xl md:text-4xl'>Types of Chat bots</h2>
 
           <div className='space-y-6'>
             <div className='flex flex-col gap-6'>
@@ -223,8 +217,8 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6'>
-          <h1 className='font-bold text-4xl'>
+        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6'>
+          <h1 className='font-bold text-3xl md:text-4xl'>
             Our Chatbot Development Process
           </h1>
           <div className='space-y-6'>
@@ -238,8 +232,8 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col bg-blue-50 p-6 mb-8 gap-10'>
-          <h1 className='font-bold text-4xl'>Why Have Us Develop Your Chatbot?</h1>
+        <div className='flex flex-col bg-blue-50 p-2 md:p-6 mb-8 gap-10'>
+          <h1 className='font-bold text-3xl md:text-4xl'>Why Have Us Develop Your Chatbot?</h1>
           <ul className='list-disc pl-5 space-y-2'>
             <li>We deliver a flawless user experience using user-friendly interactions.</li>
             <li>We are fully capable of designing an effective and eye-catchy user interface on the front end, which can even connect to various social media platforms.</li>

@@ -1,4 +1,5 @@
 import Image from 'next/image'; 
+import { motion } from 'framer-motion'
 import { FaHandshake, FaUserCircle, FaHeart, FaGem, FaUsers, FaThumbsUp, FaChartLine, FaCoins, FaStar } from "react-icons/fa";
 
 import FounderPhoto from '../../../public/images/section6.jpg'; // Replace with the actual path to your image
@@ -7,19 +8,19 @@ import { AnimateRight } from '@/components/common/animate';
 const AboutUs = () => {
   return (
 
-    <div className="w-full overflow-hidden">
-     
+   
     
     <section className="bg-gray-100 container  py-16 px-6 md:px-12 lg:px-24">
-    <AnimateRight>
-       
+   
       <div className="max-w-7xl mx-auto">
+        
         {/* Section Heading */}
         <h2 className="text-3xl font-bold text-gray-800 text-start md:text-center mb-10">
           About Us
         </h2>
 
         {/* Introduction */}
+        
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="flex-shrink-0">
             <div className="relative w-full h-72 md:w-80 lg:w-96 overflow-hidden rounded-lg shadow-lg transition-all duration-500 transform hover:scale-105">
@@ -68,10 +69,9 @@ const AboutUs = () => {
         </div>
 
     </div>
-    </AnimateRight>
+  
     </section>
-     
-      </div>
+   
    
   );
 };

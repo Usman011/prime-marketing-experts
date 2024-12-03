@@ -8,27 +8,23 @@ import IMG3 from '../../../public/images/Marketing/localSeo/image3.png'
 const Page = () => {
     return (
         <section className='container px-2 md:px-12 lg:px-24'>
-             <div className="flex flex-col items-center justify-center text-center w-full h-52">
-        <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-        Local SEO
-        </h1>
-        <div className="flex gap-6 justify-center mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Local SEO</li>
-          </ul>
-        </div>
+             
+            
+        {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Local SEO
+        </h1> 
       </div>
+     
 
-      <div className='my-10 gap-10'>
-        <div className="flex rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6 flex-col ">
-          <h1 className="text-4xl">
+      <div className='gap-10'>
+        <div className="flex rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 flex-col ">
+          <h1 className="text-3xl md:text-4xl">
           Local SEO Helps People Find Your Neighborhood Business
           </h1>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="space-y-8 w-full lg:w-11/12 mt-14">
+            <div className="space-y-8 w-full lg:w-11/12 mt-8">
               <p>
               Do you own a local business? Are people finding your local store? Are you struggling with scaling your business? Well, if you are not getting a lot of leads from the search engine, you are not alone.
               </p>
@@ -59,7 +55,7 @@ const Page = () => {
 
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-6 space-y-6 justify-start">
+        <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-6 justify-start">
   
   {/* Content Section */}
   <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-14">
@@ -76,7 +72,7 @@ const Page = () => {
     
     <div className="space-y-6 lg:w-2/3">
     {/* Title */}
-  <h1 className="text-4xl font-bold">What Is Local SEO?</h1>
+  <h1 className="text-3xl md:text-4xl font-bold">What Is Local SEO?</h1>
 
       <p>
         Local SEO is a process of optimizing your online presence to make sure that local searchers can find you easily. With this, you will get more leads from relevant local searches. The local SEO pack is referred to as the three businesses that appear immediately under a map within the search results on a locally relevant keyword.
@@ -105,9 +101,9 @@ const Page = () => {
         
 
           
-<div className="flex flex-col rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6 mt-8 space-y-8">
+<div className="flex flex-col rounded-lg shadow-lg  hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 mt-8 space-y-8">
   {/* Title */}
-  <h1 className="text-4xl font-bold">Local SEO That Sells</h1>
+  <h1 className="text-3xl md:text-4xl font-bold">Local SEO That Sells</h1>
 
   {/* Content Section */}
   <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
@@ -171,14 +167,14 @@ const Page = () => {
 </div>
 
 
-<div className="flex flex-col mt-8 bg-blue-50 p-6 space-y-8">
+<div className="flex flex-col mt-8 bg-blue-50 p-2 md:p-6 space-y-8">
   {/* Title */}
-  <h1 className="text-4xl font-bold text-center">Benefits of Local SEO</h1>
+  <h1 className="text-3xl md:text-4xl font-bold text-start">Benefits of Local SEO</h1>
 
   {/* Cards Section */}
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {/* Card 1 */}
-    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+    <div className="bg-white shadow-lg rounded-lg p-2 md:p-6 hover:shadow-xl transition-shadow">
       <h2 className="text-xl font-bold mb-4">Local SEO Boosts Traffic and Sales</h2>
       <p>
         Along with website traffic, local searches result in foot traffic as well. In fact, 78% of these searches result in offline purchases.
@@ -192,7 +188,7 @@ const Page = () => {
     </div>
 
     {/* Card 2 */}
-    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+    <div className="bg-white shadow-lg rounded-lg p-2 md:p-6 hover:shadow-xl transition-shadow">
       <h2 className="text-xl font-bold mb-4">Improves Relevant Search Engine Traffic</h2>
       <p>
         Local SEO ensures your audience gets accurate and relevant content, leading to better search rankings and brand trust.
@@ -203,7 +199,7 @@ const Page = () => {
     </div>
 
     {/* Card 3 */}
-    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+    <div className="bg-white shadow-lg rounded-lg p-2 md:p-6 hover:shadow-xl transition-shadow">
       <h2 className="text-xl font-bold mb-4">Local SEO is Free</h2>
       <p>
         Local SEO is cost-effective and can be done using free or inexpensive tools. However, as competition grows, managing local SEO effectively has become complex.
@@ -214,7 +210,7 @@ const Page = () => {
     </div>
 
     {/* Card 4 */}
-    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+    <div className="bg-white shadow-lg rounded-lg p-2 md:p-6 hover:shadow-xl transition-shadow">
       <h2 className="text-xl font-bold mb-4">Outpace Your Competitors</h2>
       <p>
         Surprisingly, 56% of local businesses have not claimed their Google My Business listing. Leverage this opportunity to get ahead of your competition.
@@ -223,7 +219,7 @@ const Page = () => {
     </div>
 
     {/* Card 5 */}
-    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+    <div className="bg-white shadow-lg rounded-lg p-2 md:p-6 hover:shadow-xl transition-shadow">
       <h2 className="text-xl font-bold mb-4">Reach Every Customer</h2>
       <p>
         More people are using local SEO over maps to find businesses. Mobile users rely on local searches to find the best options nearby, right when they need them.
@@ -231,7 +227,7 @@ const Page = () => {
     </div>
 
     {/* Card 6 */}
-    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+    <div className="bg-white shadow-lg rounded-lg p-2 md:p-6 hover:shadow-xl transition-shadow">
       <h2 className="text-xl font-bold mb-4">Result-Driven & Long-Term</h2>
       <p>
         Local SEO offers long-term benefits by enhancing organic visibility. People prefer organic results over paid ads, making it a wise investment.
@@ -242,7 +238,7 @@ const Page = () => {
     </div>
 
     {/* Card 7 */}
-    <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow">
+    <div className="bg-white shadow-lg rounded-lg p-2 md:p-6 hover:shadow-xl transition-shadow">
       <h2 className="text-xl font-bold mb-4">Builds Trust with Reviews</h2>
       <p>
         Reviews significantly influence traffic and conversions. We ensure you receive enough reviews to boost your visibility in local search results.
@@ -254,8 +250,8 @@ const Page = () => {
   </div>
 </div>
 
-          <div className='flex flex-col mt-8 rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6 space-y-6 justify-start'>
-          <h1 className='text-4xl'>
+          <div className='flex flex-col mt-8 rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6 justify-start'>
+          <h1 className='text-3xl md:text-4xl'>
           Be Found and Chosen with Prime Marketing Experts
           </h1>
           <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
@@ -274,8 +270,8 @@ const Page = () => {
             </div>
           </div>
 
-          <div className='flex flex-col mt-8 bg-blue-50 p-6 space-y-6 justify-start'>
-          <h1 className='text-4xl'>
+          <div className='flex flex-col mt-8 bg-blue-50 p-2 md:p-6 space-y-6 justify-start'>
+          <h1 className='text-3xl md:text-4xl'>
           Here Is How We Can Help
           </h1>
           <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
@@ -291,7 +287,7 @@ const Page = () => {
           </div>
          
           <div className='w-full flex flex-col gap-4 lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center  justify-around'>
-        <h1 className='font-bold text-white text-4xl text-center'>
+        <h1 className='font-bold text-white text-3xl md:text-4xl text-center'>
           Plan The Future Growth Of Your Business
         </h1>
         <Link href="/contact">

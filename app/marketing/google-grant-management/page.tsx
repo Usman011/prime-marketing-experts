@@ -7,27 +7,22 @@ import React from 'react';
 
 const Page = () => {
     return (
-       <section className='container px-2 md:px-12 lg:px-12'>
-         <div className="flex flex-col items-center justify-center w-full h-52 text-center">
-        <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-        Google Grant Management
-        </h1>
-        <div className="flex gap-6 justify-center mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Google Grant Management</li>
-          </ul>
-        </div>
+       <section className='container px-2 md:px-6 lg:px-12'>
+         
+         {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Google Grant Management
+        </h1> 
       </div>
+     
 
       <div className="flex flex-col  gap-10 mt-10">
 
-      <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
+      <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6">
   {/* Text Content */}
   <div className="flex flex-col space-y-6 justify-start">
-    <h1 className="font-bold text-4xl">Google Ad Grant Management That Grows Nonprofits</h1>
+    <h1 className="font-bold text-3xl md:text-4xl">Google Ad Grant Management That Grows Nonprofits</h1>
     <div className="space-y-6">
       <p>
         Do you manage a nonprofit organization but want to make the most of your
@@ -59,7 +54,7 @@ const Page = () => {
 
 
 
-<div className="flex flex-col lg:flex-row bg-blue-50 p-6 space-y-6 lg:space-y-0 lg:space-x-6 items-start">
+<div className="flex flex-col lg:flex-row bg-blue-50 p-2 md:p-6 space-y-6 lg:space-y-0 lg:space-x-6 items-start">
   {/* Image Content */}
   <div className="flex-shrink-0 w-full lg:w-2/4">
     <Image
@@ -71,7 +66,7 @@ const Page = () => {
 
   {/* Text Content */}
   <div className="flex flex-col space-y-6 justify-start">
-    <h1 className="font-bold text-4xl">
+    <h1 className="font-bold text-3xl md:text-4xl">
       Don’t have a Google grant yet? Don’t worry; Prime Marketing Experts can help you out!
     </h1>
     <div className="space-y-6">
@@ -88,8 +83,8 @@ const Page = () => {
 
 
 
-        <div className="flex flex-col  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">What is Google Grant Management?
+        <div className="flex flex-col  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">What is Google Grant Management?
           </h1>
           <div className="space-y-6">
             <p>
@@ -110,10 +105,10 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row bg-blue-50 p-6 space-y-6 lg:space-y-0 lg:space-x-6 items-start">
+     <div className="flex flex-col lg:flex-row bg-blue-50 p-2 md:p-6 space-y-6 lg:space-y-0 lg:space-x-6 items-start">
   {/* Text Content */}
   <div className="flex flex-col space-y-6 justify-start lg:w-2/3">
-    <h1 className="font-bold text-4xl">
+    <h1 className="font-bold text-3xl md:text-4xl">
       Hire Prime Marketing Experts for Effective Google Grant Management
     </h1>
     <div className="space-y-6">
@@ -144,8 +139,8 @@ const Page = () => {
 </div>
 
 
-        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">Qualify For Google Ad Grants With Us!
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">Qualify For Google Ad Grants With Us!
 
           </h1>
           <div className="space-y-6">
@@ -156,7 +151,7 @@ const Page = () => {
             <p>
             What is included in Google Grant Management? Here is the list! 
             </p>
-                 <ul className='list-decimal pl-5 space-y-2'>
+                 <ul className='list-decimal pl-4 space-y-2'>
                             <li>Your nonprofit organization must hold a valid 501c3 charity status.</li>
                             <li> You must acknowledge and be in agreement with the necessary certifications concerning nondiscrimination and donation receipt and use of Google.</li>
                             <li>You must have a high-quality and engaging website that meets the Google Ad Grant website policy.</li>
@@ -168,12 +163,12 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10 bg-blue-50 p-6 space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">Why Prime Marketing Experts?
+        <div className="flex flex-col mb-10 bg-blue-50 p-2 md:p-6 space-y-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">Why Prime Marketing Experts?
           </h1>
           <div className="space-y-6">
            
-            <ul className='list-disc pl-5 space-y-2'>
+            <ul className='list-disc pl-4 space-y-2'>
             <li className='font-bold'>Google Certified</li> 
             <p>Need we say more? Yes, we are Google certified, and we can offer the best and help your nonprofit organization keep up with the good work.</p>                                 
 
@@ -202,8 +197,8 @@ const Page = () => {
 
 
 
-        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">Our KPIs Measure The Performance Of Your Google Ad Grant</h1>
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">Our KPIs Measure The Performance Of Your Google Ad Grant</h1>
           <div className="space-y-6">
             <p>
               Before you kick start devising a marketing plan, our experts gather the crucial info about your business and follow the following procedure:

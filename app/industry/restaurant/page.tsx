@@ -9,29 +9,22 @@ import Link from "next/link";
 
 export default function RestaurantIndustry() {
   return (
-    <section className="container  px-2 md:px-12 lg:px-24">
+    <section className="container px-2 md:px-12 lg:px-24">
 
-     <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
-        <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
+     <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+        <h1 className='font-semibold-600 text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
         Restaurant
         </h1>
-        <div className='flex gap-6 justify-center mt-4'>
-          <Link href="/">
-            <p className='text-gray-500 hover:text-gray-800'>Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Restaurant</li>
-          </ul>
-        </div>
+       
       </div>
 
       <div className="min-h-screen ">
         {/* Hero Section */}
-        <div className="mx-auto  px-6 lg:px-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 py-16">
+        <div className="mx-auto px-0 md:px-6 lg:px-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 pb-10">
           <div className="flex flex-col gap-6 lg:flex-row items-center">
             {/* Left Side - Content */}
-            <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
+            <div className="w-full lg:w-1/2 space-y-6 text-start md:text-center lg:text-left">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
               Our Restaurant Marketing Services 
               </h1>
               <p className="mt-4 text-gray-600 ">
@@ -61,10 +54,10 @@ export default function RestaurantIndustry() {
         </div>
 
         {/* Marketing Strategies Section */}
-        <div className="container mx-auto px-6 bg-blue-50 my-10 lg:px-20 py-16">
-          <h2 className="text-3xl font-bold text-center text-gray-800">Our Services</h2>
+        <div className="container mx-auto px-0 md:px-6 bg-blue-50 my-10 lg:px-20 py-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-start md:text-center text-gray-800">Our Services</h2>
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+            <div className="flex flex-col items-center bg-white p-2 md:p-6 rounded-lg shadow-lg">
               <Image
                 src={IMG1}
                 alt="Social Media Marketing"
@@ -72,12 +65,12 @@ export default function RestaurantIndustry() {
                 height={350}  // Specify the height
                 className="w-full h-56 object-cover rounded-lg"
               />
-              <h3 className="text-xl font-semibold mt-6">Social Media Marketing</h3>
+              <h3 className="text-xl font-semibold text-start md:text-auto mt-6">Social Media Marketing</h3>
               <p className="mt-2 text-gray-600">
               Social media is a powerful tool for building relationships with your customers and increasing brand awareness. We create engaging social media campaigns that showcase your menu, promote special events, and build a loyal online community. From mouthwatering food photography to behind-the-scenes content, we’ll craft a strategy.
               </p>
             </div>
-            <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+            <div className="flex flex-col items-center bg-white p-2 md:p-6 rounded-lg shadow-lg">
               <Image
                 src={IMG2}
                 alt="SEO Marketing"
@@ -94,9 +87,9 @@ export default function RestaurantIndustry() {
         </div>
 
         {/* Industry Trends Section */}
-        <div className=" py-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
+        <div className=" py-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6">
           <div className="container mx-auto px-0 lg:px-20">
-            <h2 className="text-3xl font-bold text-center text-gray-800">Convenience is Key</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-start md:text-center text-gray-800">Convenience is Key</h2>
             <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="flex flex-col items-center bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg">
                 <Image
@@ -119,7 +112,7 @@ export default function RestaurantIndustry() {
                   height={350}  // Specify the height
                   className="w-full h-56 object-cover rounded-lg"
                 />
-                <h3 className="text-xl font-semibold mt-6">Industry Expertise</h3>
+                <h3 className="text-xl text-start md:text-center font-semibold mt-6">Industry Expertise</h3>
                 <p className="mt-2 text-gray-600">
                 We have years of experience in the restaurant industry and understand the unique challenges you face. Our team knows how to create marketing strategies that drive results. 
                 </p>
@@ -130,7 +123,7 @@ export default function RestaurantIndustry() {
 
         {/* Why Choose Us Section */}
         <div className="container mx-auto bg-blue-50 my-10 px-2 lg:px-20 py-16">
-          <h2 className="text-3xl font-bold text-center text-gray-800">Why Choose Prime Marketing Experts?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-start md:text-center text-gray-800">Why Choose Prime Marketing Experts?</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-2 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold">Tailored Solutions</h3>

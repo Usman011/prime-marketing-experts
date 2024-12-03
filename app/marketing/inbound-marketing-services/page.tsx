@@ -8,28 +8,23 @@ import IMG3 from '../../../public/images/Marketing/inbound marketing/image3.png'
 const Page = () => {
     return (
        <section className='container px-2 md:px-12 lg:px-24'>
-         <div className="flex flex-col items-center justify-center w-full h-52 text-center">
-        <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-        Inbound Marketing Services
-        </h1>
-        <div className="flex gap-6 justify-center mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li> Inbound Marketing Services</li>
-          </ul>
-        </div>
+         
+        {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Inbound Marketing Services
+        </h1> 
       </div>
+     
 
-      <div className="flex flex-col  gap-10 mt-10">
+      <div className="flex flex-col gap-10">
 
-        <div className="flex flex-col  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
-          <h1 className="font-bold text-4xl">
+        <div className="flex flex-col  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
+          <h1 className="font-bold text-3xl md:text-4xl">
           Inbound Marketing That Reaches Your Growth Goals Faster!
           </h1>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="space-y-8 w-full lg:w-7/12 mt-14">
+            <div className="space-y-8 w-full lg:w-7/12">
               <p>
               Tired of spending countless hours selling your brand to customers? 
               </p>
@@ -64,9 +59,9 @@ const Page = () => {
 
         <div className="flex flex-col space-y-6">
         
-          <div className="flex flex-col lg:flex-row bg-blue-50 p-6 gap-8 lg:gap-10">
+          <div className="flex flex-col lg:flex-row bg-blue-50 p-2 md:p-6 gap-8 lg:gap-10">
             <div className="space-y-8 w-full ">
-            <h1 className="font-bold text-4xl">
+            <h1 className="font-bold text-3xl md:text-4xl">
           Inbound Marketing That Reaches Your Growth Goals Faster!
           </h1>
               <p>
@@ -82,12 +77,12 @@ const Page = () => {
         </div>
 
         
-        <div className="flex flex-col md:flex-row  bg-blue-50 p-2 md:p-6 space-x-6 space-y-6 justify-start">
+        <div className="flex flex-col md:flex-row  bg-blue-50 p-2 md:p-6  space-y-6 justify-start">
   <div className="flex-1 mt-8">
     <Image src={IMG3} alt="Marketing Experts" className="w-full h-auto object-cover rounded-lg shadow-md"/>
   </div>
   <div className="flex-1 space-y-6">
-    <h1 className="font-bold text-4xl text-gray-800">
+    <h1 className="font-bold text-3xl md:text-4xl text-gray-800">
       Why Prime Marketing Experts?
     </h1>
     <p className="text-gray-700 text-lg leading-relaxed">
@@ -100,8 +95,8 @@ const Page = () => {
 </div>
 
 
-        <div className="flex flex-col  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">We Help Businesses:</h1>
+        <div className="flex flex-col  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">We Help Businesses:</h1>
           <div className="space-y-6">
           <ul className='list-disc pl-5 space-y-2'>
             <li>Develop a marketing funnel that effectively builds relationships with prospects</li>
@@ -118,13 +113,13 @@ const Page = () => {
 
 
         
-        <div className="flex flex-col bg-blue-50 p-8 space-y-8 rounded-lg shadow-lg">
-  <h1 className="font-bold text-4xl text-center text-gray-800">Our Inbound Services</h1>
+        <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-8 rounded-lg shadow-lg">
+  <h1 className="font-bold text-3xl md:text-4xl text-start text-gray-800">Our Inbound Services</h1>
   <div className="space-y-8">
     <ul className='space-y-6'>
       {/* Content Marketing Section */}
       <li>
-        <h2 className="font-bold text-2xl text-gray-800">Content Marketing</h2>
+        <h2 className="font-bold text-2xl text-gray-800 pb-2">Content Marketing</h2>
         <p className="text-lg text-gray-700">Did you know 55% of marketers state that blog content creation is their top inbound marketing priority?</p>
         <p className="text-lg text-gray-700">Undeniably, we get attracted to appealing and engaging stories. How can you expect your customers to settle for any less? Yes, <Link href="/" className="text-blue-600 hover:underline">content quality matters</Link> the most if you want to promote your brand.</p>
         <p className="text-lg text-gray-700">To make an impression, your website would need an impactful and lasting story that will make your audience read it. The best story wins!</p>
@@ -135,7 +130,7 @@ const Page = () => {
 
       {/* Email & Social Media Marketing Section */}
       <li>
-        <h2 className="font-bold text-2xl text-gray-800">Email & Social Media Marketing</h2>
+        <h2 className="font-bold text-2xl text-gray-800 pb-2">Email & Social Media Marketing</h2>
         <p className="text-lg text-gray-700">No one is oblivious to the fact that email and social media marketing deliver a significant return on investment. In fact, 42% of the global population uses social media.</p>
         <p className="text-lg text-gray-700">With such a massive reach, you can effectively promote your brand. But, it’s not easy to make people open your email and click on that CTA unless you possess exceptional marketing skills. Worry not—we’ve got you covered.</p>
         <p className="text-lg text-gray-700"><span className="font-bold">We have the experience and competence needed for email marketing!</span> From <Link href="/marketing/email-marketing" className="text-blue-600 hover:underline">personalizing your campaigns to creating engaging emails</Link>, we’ll ensure your campaigns boost sales and conversions.</p>
@@ -145,7 +140,7 @@ const Page = () => {
 
       {/* Lead Generation Section */}
       <li>
-        <h2 className="font-bold text-2xl text-gray-800">Lead Generation</h2>
+        <h2 className="font-bold text-2xl text-gray-800 pb-2">Lead Generation</h2>
         <p className="text-lg text-gray-700">Lead generation is crucial for driving traffic, increasing sales, and improving conversion rates. With great lead gen strategies, we help you create target personas that attract high-quality leads.</p>
         <p className="text-lg text-gray-700">Did you know 61% of marketers consider generating quality leads one of their biggest challenges? But with our expertise, we turn challenges into opportunities.</p>
         <p className="text-lg text-gray-700">We combine machine learning, human intelligence, and industry experience to generate leads that are likely to convert. Our experts target high-level decision-makers to ensure your sales team is equipped with prospects that matter.</p>
@@ -173,8 +168,8 @@ const Page = () => {
 
 
 
-        <div className="flex flex-col mb-10  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6  space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">Customized Inbound Marketing Strategy</h1>
+        <div className="flex flex-col mb-10  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6  space-y-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">Customized Inbound Marketing Strategy</h1>
           <div className="space-y-6">
          
             <p>

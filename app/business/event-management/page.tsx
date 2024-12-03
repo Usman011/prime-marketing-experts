@@ -7,24 +7,19 @@ import IMG2 from '../../../public/images/eventmanagement/image.png';
 const Page = () => {
   return (
     <section className='container px-2 md:px-12 lg:px-24'>
-      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
-        <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
-          Event Management Services
-        </h1>
-        <div className='flex gap-6 justify-center mt-4'>
-          <Link href="/">
-            <p className='text-gray-500 hover:text-gray-800'>Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Event Management Services</li>
-          </ul>
-        </div>
+      
+         {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Event Management Services
+        </h1> 
       </div>
+      
 
-      <div className='flex flex-col  gap-10 mt-10'>
-      <div className='flex flex-col space-y-10 justify-start p-6 lg:px-16  rounded-lg shadow-lg'>
+      <div className='flex flex-col gap-10'>
+      <div className='flex flex-col space-y-4 justify-start p-2 md:p-6 lg:px-16  rounded-lg shadow-lg'>
   {/* Main Title */}
-  <h1 className='font-extrabold text-4xl text-center text-black mb-8'>
+  <h1 className='font-extrabold text-3xl md:text-4xl text-start text-black mb-8'>
     Run The Best Event With Us!
   </h1>
 
@@ -79,11 +74,11 @@ const Page = () => {
 </div>
 
 
-        <div className='flex flex-col bg-blue-50 p-6 space-y-6 justify-start'>
-          <h1 className='font-bold text-4xl'>
+        <div className='flex flex-col bg-blue-50 p-2 md:p-6 space-y-6 justify-start'>
+          <h1 className='font-bold text-3xl md:text-4xl'>
             Know Your Event Planners
           </h1>
-          <div className='flex flex-col  p-2 lg:flex-row gap-8 lg:gap-20'>
+          <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
             <div className='space-y-6'>
               <p>Prime Marketing Experts is not just yet another company, but THE best event management company. Our team of experts who ace their game makes us the finest firm across the globe.</p>
               <p className='font-bold'>We create and put life in your ideas, while you save your time to dream more about your event.</p>
@@ -98,9 +93,9 @@ const Page = () => {
           <p>We are passionate event managers, which made us won praises and awards for delivering a well-organized and flawless event. The mantra for our service is to deliver outstanding client satisfaction, so we are at your service to cater to all your needs.</p>
           </div>
 
-          <div className='bg-white p-8 space-y-12 rounded-lg shadow-lg'>
+          <div className='bg-white p-2 md:p-6 space-y-6 rounded-lg shadow-lg'>
   {/* Main Title */}
-  <h1 className='text-center text-4xl font-bold text-black mt-10'>
+  <h1 className='text-start text-3xl md:text-4xl font-bold text-black mt-10'>
     Prime Event Management Features:
   </h1>
   
@@ -116,70 +111,70 @@ const Page = () => {
   {/* Features List with Cards */}
   <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
     {/* Feature Cards */}
-    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+    <div className='bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
       <h3 className='font-bold text-xl text-black mb-4'>Experienced Planners</h3>
       <p className='text-gray-700'>
         Event management is not everyone’s cup of tea, but for us, it’s a cakewalk. From the planning to the final execution, we ensure everything flows smoothly.
       </p>
     </div>
 
-    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+    <div className='bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
       <h3 className='font-bold text-xl text-black mb-4'>Bucketing Approvals</h3>
       <p className='text-gray-700'>
         We handle all the contracts and permissions, saving you time and effort while ensuring legal compliance for your event.
       </p>
     </div>
 
-    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+    <div className='bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
       <h3 className='font-bold text-xl text-black mb-4'>Stay On The Budget</h3>
       <p className='text-gray-700'>
         We help you establish and stick to your budget, ensuring that every expense is accounted for and that you get the best rates in the market.
       </p>
     </div>
 
-    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+    <div className='bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
       <h3 className='font-bold text-xl text-black mb-4'>Pick Location And Date</h3>
       <p className='text-gray-700'>
         We help choose the right venue and timing for your event, considering holidays, availability, and audience needs.
       </p>
     </div>
 
-    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+    <div className='bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
       <h3 className='font-bold text-xl text-black-800 mb-4'>Effective Marketing Strategy</h3>
       <p className='text-gray-700'>
         We ensure your event is part of a larger strategy to build your brand and create a successful product launch or promotional event.
       </p>
     </div>
 
-    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+    <div className='bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
       <h3 className='font-bold text-xl text-black mb-4'>Take Ownership & Responsibility</h3>
       <p className='text-gray-700'>
         You can rest easy while we take full ownership of your event and ensure everything goes off without a hitch.
       </p>
     </div>
 
-    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+    <div className='bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
       <h3 className='font-bold text-xl text-black mb-4'>Creative Professionals</h3>
       <p className='text-gray-700'>
         Our team of creative professionals handles everything from lights to decorations, ensuring the right vibe for your event.
       </p>
     </div>
 
-    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+    <div className='bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
       <h3 className='font-bold text-xl text-black mb-4'>Driving Event Traffic</h3>
       <p className='text-gray-700'>
         We help you market your event to bring in the right audience, increasing engagement and brand visibility.
       </p>
     </div>
 
-    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+    <div className='bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
       <h3 className='font-bold text-xl text-black mb-4'>One-Stop Event Shop</h3>
       <p className='text-gray-700'>
         From equipment to catering, photography to sound, we cover every detail, making us your one-stop shop for all event needs.
       </p>
     </div>
 
-    <div className='bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
+    <div className='bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow'>
       <h3 className='font-bold text-xl text-black mb-4'>Reduce Stress</h3>
       <p className='text-gray-700'>
         Leave the pressure of event planning to us. We handle the logistics, so you can focus on enjoying the event. <span className='font-bold'>Hakuna Matata</span>
@@ -188,8 +183,8 @@ const Page = () => {
   </div>
 
   {/* Additional Services Section */}
-  <div className='bg-blue-100 p-8 rounded-lg shadow-lg'>
-    <h2 className='text-3xl font-bold text-black mb-6'>
+  <div className='bg-blue-100 p-2 md:p-6 py-6 rounded-lg shadow-lg'>
+    <h2 className='text-3xl md:text-4xl font-bold text-black mb-6'>
       Prime Event Management Services
     </h2>
 
@@ -209,7 +204,7 @@ const Page = () => {
   </div>
 
   {/* Closing Statement */}
-  <div className='text-center'>
+  <div className='text-start space-y-4'>
     <h3 className='text-2xl font-bold text-black mt-8'>
       Host a Glorified Event With Prime Marketing Experts
     </h3>

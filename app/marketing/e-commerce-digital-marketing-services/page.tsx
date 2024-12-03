@@ -6,28 +6,22 @@ import Image from 'next/image';
 
 const Page = () => {
   return (
-    <section className='container  px-2 md:px-12 lg:px-24'>
-      <div className="flex flex-col items-center justify-center  w-full h-52 text-center">
-        <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-          E-Commerce Digital Marketing Services
-        </h1>
-        <div className="flex gap-6 justify-center mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>E-Commerce Digital Marketing Services</li>
-          </ul>
-        </div>
+    <section className='container mb-10 px-2 md:px-12 lg:px-24'>
+      
+       {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         E-Commerce Digital Marketing Services
+        </h1> 
       </div>
 
-      <div className='space-y-10 mt-10'>
-        <div className="flex flex-col  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
-          <h1 className="font-bold text-4xl">
+      <div className='space-y-10 '>
+        <div className="flex flex-col  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
+          <h1 className="font-bold text-3xl md:text-4xl">
             Driving ROI Through Comprehensive E-Commerce Marketing Services
           </h1>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="space-y-8 w-full lg:w-11/12 mt-14">
+            <div className="space-y-8 w-full lg:w-11/12">
               <p>
                 More than ever, consumers are shifting their shopping habits to online stores. As your bricks and mortar store has a certain amount of customers, you have an opportunity to find many more customers online by not being constrained by geography and offering a 24/7, convenient digital shopping experience.
               </p>
@@ -44,14 +38,14 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-6 space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-6">
          
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="w-full mt-14 h-full">
               <Image src={IMG2} alt="Market Research" layout="responsive" width={1200} height={1000} />
             </div>
-            <div className="space-y-8 w-full lg:w-11/12 mt-14">
-            <h1 className="font-bold text-4xl text-start">
+            <div className="space-y-8 w-full lg:w-11/12">
+            <h1 className="font-bold text-3xl md:text-4xl text-start">
             E-Commerce SEO Solutions
           </h1>
               <p>
@@ -67,8 +61,8 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10 space-y-6  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 justify-start">
-          <h1 className="font-bold text-4xl">Why Our E-Commerce Marketing Service?</h1>
+        <div className="flex flex-col mb-10 space-y-6  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">Why Our E-Commerce Marketing Service?</h1>
           <div className="space-y-6">
             <p>Our clients experience tremendous success with our e-commerce marketing services because we are very different from what other usual marketing agencies:</p>
             <ul className='list-disc pl-5 space-y-2'>
@@ -80,8 +74,8 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto my-10  bg-orange-500 h-auto lg:h-32 items-center justify-center lg:justify-around'>
-          <h1 className='font-bold text-white text-center lg:text-left text-2xl lg:text-4xl'>
+        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto   bg-orange-500 h-auto lg:h-32 items-center justify-center lg:justify-around'>
+          <h1 className='font-bold text-white text-center lg:text-left text-3xl md:text-4xl'>
             Attract, Convert, and Retain More Customers Today
           </h1>
           <Link href="/contact">

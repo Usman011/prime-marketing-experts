@@ -5,22 +5,17 @@ import IMG1 from '../../../public/images/Marketing/seo web design/image.png'
 
 const Page = () => {
     return (
-        <section className='container px-2 md:px-12 lg:px-12'>
-             <div className="flex flex-col  items-center justify-center text-center w-full h-52">
-        <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-        SEO Web Design
-        </h1>
-        <div className="flex gap-6 justify-center mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>SEO Web Design</li>
-          </ul>
-        </div>
+        <section className='container mb-10 px-2 md:px-6 lg:px-12'>
+            
+        {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         SEO Web Design
+        </h1> 
       </div>
+      
 
-      <div className='mb-10 bg-blue-50 p-6 mt-10'>
+      <div className='mb-10 bg-blue-50 p-2 md:p-6'>
         <div className="flex flex-col ">
           <h1 className="font-bold  text-4xl">
           Web Design That Strengthens Search Engine Ranking

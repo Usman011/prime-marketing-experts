@@ -5,26 +5,20 @@ import Link from "next/link";
 
 const RealEstatePage = () => {
   return (
-    <section className="container py-10 px-0 md:px-12 lg:px-24">
+    <section className="container px-0 md:px-12 lg:px-24">
 
-<div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
-        <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
+
+        <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+        <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
         Real Estate
         </h1>
-        <div className='flex gap-6 justify-center mt-4'>
-          <Link href="/">
-            <p className='text-gray-500 hover:text-gray-800'>Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Real Estate</li>
-          </ul>
-        </div>
       </div>
+      
 
-      <div className="container mx-auto md:px-4 grid rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 py-10 my-10 p-1 md:p-6 grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div className="mx-auto md:px-4 grid rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 pb-10 mb-10 p-2 md:p-6 grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="text-content">
-          <h1 className="text-4xl font-extrabold text-black mb-6">
+          <h1 className="md:text-4xl text-3xl font-bold text-start  text-black mb-6">
           Real Estate Marketing Services by Prime Marketing Experts 
           </h1>
          
@@ -61,7 +55,7 @@ const RealEstatePage = () => {
       </div>
 
       <div className='flex flex-col space-y-6 bg-blue-50 py-10 my-10 p-1 md:p-6 '>
-  <h1 className='font-bold text-center text-4xl'>
+  <h1 className='md:text-4xl text-3xl font-bold text:start '>
   Our Real Estate Marketing Services  
   </h1>
 
@@ -120,8 +114,8 @@ const RealEstatePage = () => {
 
 
       {/* Features Section */}
-      <div className="features-section mt-10 rounded-lg shadow-lg hover:shadow-xl  transition-shadow duration-300 p-6 justify-start  py-10 ">
-        <h3 className="text-center text-3xl font-bold text-gray-800 mb-10">
+      <div className="features-section rounded-lg shadow-lg hover:shadow-xl  transition-shadow duration-300 p-2 md:p-6 justify-start pb-10 ">
+        <h3 className="text-start md:text-4xl text-3xl font-bold text-black mb-10">
           Why Choose Prime Marketing Experts?
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -129,8 +123,8 @@ const RealEstatePage = () => {
             <i className="text-orange-600 text-4xl mb-4">
               <i className="ri-search-eye-line"></i>
             </i>
-            <h4 className="text-xl font-bold text-gray-800 mb-2">Market Insights</h4>
-            <p className="text-gray-600">
+            <h4 className="text-xl text-start md:text-center font-bold text-gray-800 mb-2">Market Insights</h4>
+            <p className="text-gray-600 text-start md:text-center">
               Leverage real-time market data to position your listings 
               effectively and stay ahead of the competition.
             </p>
@@ -139,13 +133,13 @@ const RealEstatePage = () => {
             <i className="text-orange-600 text-4xl mb-4">
               <i className="ri-bill-line"></i>
             </i>
-            <h4 className="text-xl font-bold text-gray-800 mb-2">Customized Strategies</h4>
-            <p className="text-gray-600">
+            <h4 className="text-xl font-bold text-start md:text-center text-gray-800 mb-2">Customized Strategies</h4>
+            <p className="text-gray-600 text-start md:text-center">
               Every property is unique, and so is our approach. We create 
               personalized campaigns to meet your specific goals.
             </p>
           </div>
-          <div className="feature-card bg-white shadow-md rounded-lg p-2 md:p-6 text-center transition-all hover:shadow-xl hover:scale-105">
+          <div className="feature-card bg-white text-start md:text-center shadow-md rounded-lg p-2 md:p-6  transition-all hover:shadow-xl hover:scale-105">
             <i className="text-orange-600 text-4xl mb-4">
               <i className="ri-global-line"></i>
             </i>

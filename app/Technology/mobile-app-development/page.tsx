@@ -6,26 +6,21 @@ import IMG8 from '../../../public/images/image8.png';
 
 const Page = () => {
   return (
-    <section className="container px-2 md:px-12 lg:px-24">
-      <div className="flex flex-col items-center justify-center text-center w-full h-52">
-        <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-          Mobile App Development
-        </h1>
-        <div className="flex gap-6 justify-center mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li> Mobile App Development</li>
-          </ul>
-        </div>
+    <section className="container px-2 md:px-6 lg:px-12">
+     
+         {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Mobile App Development
+        </h1> 
       </div>
+     
 
-      <div className="flex flex-col  p-6 gap-10 mt-10">
-        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
+      <div className="flex flex-col p-2 md:p-6 gap-10 ">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="space-y-8 ">
-            <h1 className="font-bold text-4xl">
+            <h1 className="font-bold text-3xl md:text-4xl">
           Mobile App Development that Builds Brands
           </h1>
               <p>
@@ -43,7 +38,7 @@ const Page = () => {
           </div>
 
           <div className="flex flex-col  p-2 space-y-6 justify-start">
-            <h1 className="font-bold text-4xl">
+            <h1 className="font-bold text-3xl md:text-4xl">
               Wondering what it can do to your business?
             </h1>
             <div className="space-y-6">
@@ -52,8 +47,8 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6 bg-blue-50 p-6 justify-start">
-          <h1 className="font-bold text-4xl">
+        <div className="flex flex-col space-y-6 bg-blue-50 p-2 md:p-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">
             Killing Two Birds With One Stone Produces Increases Profitability!
           </h1>
           <div className="space-y-6">
@@ -66,9 +61,9 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 justify-start">
-          <h1 className="font-bold text-4xl">
-            Why choose iOS App Development Services for your business?
+        <div className="flex flex-col space-y-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">
+          Why choose Android App Development Services for your business?
           </h1>
           <div className="space-y-6">
             <p>IOS apps generate the highest revenue. No wonder entrepreneurs are opting for the development of personalized iOS apps on all Apple devices. As a trusted iPhone app development company, we boldly turn your idea into reality, prepare it to profitably generate revenue, and present it by assimilating technologies beyond your imagination. Be it iPhone, iWatch, or iPad; we develop applications for all these devices, with unique user experience. Our team can adapt iOS solutions to focus on specific business needs. How do we do it? By defying the standard to make your mobile application stands out.</p>
@@ -77,19 +72,19 @@ const Page = () => {
         </div>
 
 
-        <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 justify-center items-center bg-blue-50 p-0 md:p-6 lg:p-6">
+        <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 justify-center items-center bg-blue-50 p-2 md:p-6 lg:p-6">
   {/* Left Side - Image */}
   <div className="lg:w-1/3 flex-shrink-0">
     <Image
       src={IMG8} // Replace with the actual image path
       alt="iOS App Development"
-      className="w-full h-96 rounded-lg shadow-lg"
+      className="w-full h-auto md:h-96 rounded-lg shadow-lg"
     />
   </div>
 
   {/* Right Side - Content */}
-  <div className="lg:w-2/3 p-10 space-y-6">
-    <h1 className="font-bold text-4xl text-gray-800">
+  <div className="lg:w-2/3 p-2 space-y-6">
+    <h1 className="font-bold text-3xl md:text-4xl text-gray-800">
       Why Choose iOS App Development Services for Your Business?
     </h1>
     <div className="space-y-6">
@@ -104,12 +99,12 @@ const Page = () => {
 </div>
 
 
-        <div className="flex flex-col space-y-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 justify-start">
-          <h1 className="font-bold text-4xl">
+        <div className="flex flex-col space-y-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">
             How Prime Mobile Apps Help Your Company?
           </h1>
           <div className="space-y-6">
-            <ul className="list-disc pl-5 space-y-2">
+            <ul className="list-disc pl-4 space-y-2">
               <li className="font-bold">Scaled up efficiency:</li>
               <p>With augmented employee productivity that drives ROI, smartphone apps can perform a diverse function for your business. Each custom app that we build have parameters customized to your business needs and can be scaled up easily with few clicks!</p>
 
@@ -129,8 +124,8 @@ const Page = () => {
         </div>
 
        
-  <div className="flex flex-col space-y-6 bg-blue-50 p-6 justify-start">
-  <h1 className="font-bold text-4xl text-gray-800">
+  <div className="flex flex-col space-y-6 bg-blue-50 p-2 md:p-6 justify-start">
+  <h1 className="font-bold text-3xl md:text-4xl text-gray-800">
     Our Prime Mobile App Development Process
   </h1>
 
@@ -141,7 +136,7 @@ const Page = () => {
   {/* Card Layout */}
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {/* Card 1: Ideation */}
-    <div className="bg-white p-6 shadow-lg rounded-lg">
+    <div className="bg-white p-2 md:p-6 shadow-lg rounded-lg">
       <p className="font-bold text-xl text-gray-800">Ideation:</p>
       <p className="text-lg text-gray-700 mb-4">
         Everything begins with one idea! Once the application idea has crystallized fully in your mind, we strategize to make it happen. That`s where you need Prime Experts.
@@ -152,7 +147,7 @@ const Page = () => {
     </div>
 
     {/* Card 2: Requirements */}
-    <div className="bg-white p-6 shadow-lg rounded-lg">
+    <div className="bg-white p-2 md:p-6 shadow-lg rounded-lg">
       <p className="font-bold text-xl text-gray-800">Requirements:</p>
       <p className="text-lg text-gray-700 mb-4">
         We gather requirements to curate a list of features critical to making your app attain its business goals and functionality. We also perform competitive analysis to give you an edge over your competitors.
@@ -160,7 +155,7 @@ const Page = () => {
     </div>
 
     {/* Card 3: Designing */}
-    <div className="bg-white p-6 shadow-lg rounded-lg">
+    <div className="bg-white p-2 md:p-6 shadow-lg rounded-lg">
       <p className="font-bold text-xl text-gray-800">Designing:</p>
       <p className="text-lg text-gray-700 mb-4">
         After defining a strategy, we begin to create a structure for your app. This includes the features and screen flow – it’s the map for your app!
@@ -171,7 +166,7 @@ const Page = () => {
     </div>
 
     {/* Card 4: Develop-Test-Develop */}
-    <div className="bg-white p-6 shadow-lg rounded-lg">
+    <div className="bg-white p-2 md:p-6 shadow-lg rounded-lg">
       <p className="font-bold text-xl text-gray-800">Develop-Test-Develop:</p>
       <p className="text-lg text-gray-700 mb-4">
         After designing the app, our teams test the code through an iterative process, ensuring everything works as expected before moving forward.
@@ -179,7 +174,7 @@ const Page = () => {
     </div>
 
     {/* Card 5: We Make Your Dream Idea Come to Life */}
-    <div className="bg-white p-6 shadow-lg rounded-lg">
+    <div className="bg-white p-2 md:p-6 shadow-lg rounded-lg">
       <p className="font-bold text-xl text-gray-800">We Make Your Dream Idea Come to Life:</p>
       <p className="text-lg text-gray-700 mb-4">
         We develop custom mobile applications, implementing styles and elements, while our QA team ensures quality through rigorous testing.
@@ -190,7 +185,7 @@ const Page = () => {
     </div>
 
     {/* Card 6: Deploy & Maintain */}
-    <div className="bg-white p-6 shadow-lg rounded-lg">
+    <div className="bg-white p-2 md:p-6 shadow-lg rounded-lg">
       <p className="font-bold text-xl text-gray-800">Deploy & Maintain:</p>
       <p className="text-lg text-gray-700 mb-4">
         Once your app is ready, we launch it on the iOS App Store or Google Play. But our service doesn’t end there; we constantly monitor and update the app to maintain peak performance.
@@ -201,7 +196,7 @@ const Page = () => {
     </div>
 
     {/* Final Call to Action Card */}
-    <div className="bg-white p-6 shadow-lg rounded-lg col-span-1 md:col-span-2 lg:col-span-3">
+    <div className="bg-white p-2 md:p-6 shadow-lg rounded-lg col-span-1 md:col-span-2 lg:col-span-3">
       <p className="text-lg text-gray-700 mb-4">
         Get in touch with us for your custom-built mobile apps! With millions of apps in the store, mobile apps are expected to generate significant revenue. Let us help you build an app that converts browsers into customers!
       </p>

@@ -6,26 +6,20 @@ import IMG1 from "../../../public/industry/construction/image2.png";
 export default function CleaningCompanies() {
   return (
     <section className="container px-2 md:px-12 lg:px-24">
-        <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
-        <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
+        
+        <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+        <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
         Construction
         </h1>
-        <div className='flex gap-6 justify-center mt-4'>
-          <Link href="/">
-            <p className='text-gray-500 hover:text-gray-800'>Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Construction</li>
-          </ul>
-        </div>
       </div>
+      
       <div className="mx-auto ">
         {/* Hero Section */}
         <div className="flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 items-center justify-between mb-10">
           {/* Left Side - Content */}
           
           <div className="w-full lg:w-1/2 lg:pr-12">
-          <h1 className=" font-bold text-4xl text-gray-700 leading-tight mb-6">
+          <h1 className=" md:text-4xl text-3xl font-bold text-black leading-tight mb-6">
               Build a Stronger Future with Strategic Marketing for Construction
             </h1>
             <p className="text-lg text-gray-800 mb-6">
@@ -66,7 +60,7 @@ export default function CleaningCompanies() {
           {/* Left Side - Content */}
           
           <div className="w-full lg:w-1/2 lg:pr-12">
-          <h2 className="text-3xl font-semibold black mt-8 mb-4">
+          <h2 className="md:text-4xl text-3xl font-bold black mt-8 mb-4">
               Our Services for Construction Businesses
             </h2>
             <p className="text-lg text-gray-800 mb-6">
@@ -90,7 +84,7 @@ export default function CleaningCompanies() {
  
         {/* Why Choose Us Section */}
 <div className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 py-10">
-  <h2 className="text-3xl font-semibold text-center text-gray-800">Why Construction Businesses Choose Prime Marketing Experts</h2>
+  <h2 className="md:text-4xl text-3xl font-bold text-start text-gray-800">Why Construction Businesses Choose Prime Marketing Experts</h2>
   <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     <div className="bg-blue-50p-2 md:p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
       <h3 className="text-xl font-semibold text-gray-800">Industry Expertise</h3>

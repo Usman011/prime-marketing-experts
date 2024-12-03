@@ -10,19 +10,16 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import { AnimateLeft } from "@/components/common/animate";
+
 
 
 
 export function CarouselSection() {
     return (
       <div className=" overflow-hidden">
-      <AnimateLeft>
+      
       <section className="container flex flex-col justify-center items-center md:mt-auto py-8 w-full h-auto">
          <h2 className="text-4xl font-bold text-start md:text-center mb-10 ">Solving your Digital Marketing and E-commerce Bottlenecks </h2>
-
-
-
 
         <Carousel plugins={[Autoplay({ delay: 5000 })]} className="w-full h-full">
 				<CarouselContent>
@@ -105,9 +102,7 @@ export function CarouselSection() {
     </span>
     <span className="font-semibold">Increase conversation</span>
   </li>
-</ul>
-
-         
+</ul>   
         </ul>
         </div>
       </div>
@@ -558,7 +553,7 @@ export function CarouselSection() {
  
                    
       </section>
-      </AnimateLeft>
+   
       </div>
     );
   }

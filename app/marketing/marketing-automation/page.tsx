@@ -6,27 +6,21 @@ import IMG1 from '../../../public/images/Marketing/automation services/image.png
 const Page = () => {
   return (
     <section className="container px-2 md:px-12 lg:px-24">
-      <div className="flex flex-col items-center justify-center w-full h-52 text-center">
-        <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-          Marketing Automation
-        </h1>
-        <div className="flex gap-6 justify-center mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Marketing Automation</li>
-          </ul>
-        </div>
+      
+         {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Marketing Automation
+        </h1> 
       </div>
 
       <div className="flex flex-col  gap-10 mt-2 md:mt-auto">
-        <div className="flex rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex-col space-y-6">
-          <h1 className="font-bold mt-2 md:mt-10 text-center md:text-auto text-4xl">
+        <div className="flex rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 flex-col space-y-6">
+          <h1 className="font-bold mt-2 md:mt-10 text-start md:text-auto text-3xl md:text-4xl">
             Marketing Automation Increases Conversion
           </h1>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="space-y-6 w-full lg:w-7/12 mt-14">
+            <div className="space-y-6 w-full lg:w-7/12">
               <p className="font-bold italic">
                 Let Marketing Automation Help Convert Your Anonymous Website Visitors Into A List Of Prioritized Highly Converting Leads!
               </p>
@@ -56,8 +50,8 @@ const Page = () => {
           </p>
         </div>
 
-        <div className="bg-blue-50 p-6">
-  <h1 className="text-4xl font-bold text-gray-800 mb-6">
+        <div className="bg-blue-50 p-2 md:p-6">
+  <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
     What Is Marketing Automation?
   </h1>
   
@@ -104,13 +98,13 @@ const Page = () => {
 </div>
 
 
-<div className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 ">
-  <h1 className="font-bold text-4xl text-center md:text-auto text-gray-800 mb-6">
+<div className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 ">
+  <h1 className="font-bold text-3xl md:text-4xl text-start md:text-auto text-gray-800 mb-6">
     Benefits Of Marketing Automation Software
   </h1>
 
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+    <div className="bg-blue-50 p-2 md:p-6  rounded-xl shadow-lg hover:shadow-xl transition duration-300">
       <h2 className="font-bold text-xl text-gray-800 mb-4">It Drives More Leads</h2>
       <p className="text-gray-700 mb-2">
         Automating various business steps gives your staff more time to focus on leads and profits. By implementing effective strategies, employees can focus on nurturing leads, resulting in more prospects converting into clients.
@@ -120,14 +114,14 @@ const Page = () => {
       </p>
     </div>
 
-    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+    <div className="bg-blue-50 p-2 md:p-6  rounded-xl shadow-lg hover:shadow-xl transition duration-300">
       <h2 className="font-bold text-xl text-gray-800 mb-4">It Increases Client LTV</h2>
       <p className="text-gray-700 mb-2">
         Automating cross-selling, upselling, and customer follow-ups increases the lifetime value (LTV) of your customers. Combined with better lead management and prioritization, this improves ROI.
       </p>
     </div>
 
-    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+    <div className="bg-blue-50 p-2 md:p-6  rounded-xl shadow-lg hover:shadow-xl transition duration-300">
       <h2 className="font-bold text-xl text-gray-800 mb-4">It Converts Leads Into Sales</h2>
       <p className="text-gray-700 mb-2">
         Marketing automation simplifies and automates the lead maturation process. Easily gather information from prospects via social media and add them directly to your funnel.
@@ -137,7 +131,7 @@ const Page = () => {
       </p>
     </div>
 
-    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+    <div className="bg-blue-50 p-2 md:p-6  rounded-xl shadow-lg hover:shadow-xl transition duration-300">
       <h2 className="font-bold text-xl text-gray-800 mb-4">It Recovers Lost Revenue</h2>
       <p className="text-gray-700 mb-2">
         Marketing automation lets you send cart abandonment campaigns that incentivize customers to finalize their purchases, recovering revenue that would otherwise be lost.
@@ -147,7 +141,7 @@ const Page = () => {
       </p>
     </div>
 
-    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+    <div className="bg-blue-50 p-2 md:p-6  rounded-xl shadow-lg hover:shadow-xl transition duration-300">
       <h2 className="font-bold text-xl text-gray-800 mb-4">It Boosts Creativity</h2>
       <p className="text-gray-700 mb-2">
         Marketing automation frees your team from repetitive tasks, allowing them to focus on more creative strategies, boosting productivity and creating a positive office environment.
@@ -161,14 +155,14 @@ const Page = () => {
       </p>
     </div>
 
-    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+    <div className="bg-blue-50 p-2 md:p-6  rounded-xl shadow-lg hover:shadow-xl transition duration-300">
       <h2 className="font-bold text-xl text-gray-800 mb-4">It Monitors Various Channels</h2>
       <p className="text-gray-700 mb-2">
         Marketing automation software tracks interactions across multiple channels, from emails to social media, providing detailed reports on customer behavior and preferences.
       </p>
     </div>
 
-    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+    <div className="bg-blue-50 p-2 md:p-6  rounded-xl shadow-lg hover:shadow-xl transition duration-300">
       <h2 className="font-bold text-xl text-gray-800 mb-4">It Empowers Your Team For Better Results</h2>
       <p className="text-gray-700 mb-2">
         The reporting function in marketing automation software holds your team accountable by generating detailed reports. These reports show how well marketing activities support your sales funnel.
@@ -178,7 +172,7 @@ const Page = () => {
       </p>
     </div>
 
-    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+    <div className="bg-blue-50 p-2 md:p-6  rounded-xl shadow-lg hover:shadow-xl transition duration-300">
       <h2 className="font-bold text-xl text-gray-800 mb-4">It Improves the Customer Experience</h2>
       <p className="text-gray-700 mb-2">
         Marketing automation enhances customer experience by delivering relevant, personalized messages based on customer behavior. The software tracks interactions and nurtures prospects with tailored content.
@@ -188,7 +182,7 @@ const Page = () => {
       </p>
     </div>
 
-    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+    <div className="bg-blue-50 p-2 md:p-6  rounded-xl shadow-lg hover:shadow-xl transition duration-300">
       <h2 className="font-bold text-xl text-gray-800 mb-4">It Reduces Operating Costs</h2>
       <p className="text-gray-700 mb-2">
         Marketing automation reduces labor costs by automating lead qualification. It allows the sales team to focus only on the most qualified leads, increasing efficiency and reducing operational expenses.
@@ -198,8 +192,8 @@ const Page = () => {
 </div>
 
 
-        <div className="flex flex-col mb-10 bg-blue-50 p-6 space-y-6 justify-start">
-          <h1 className="font-bold text-center md:text-auto text-4xl">
+        <div className="flex flex-col mb-10 bg-blue-50 p-2 md:p-6  space-y-6 justify-start">
+          <h1 className="font-bold text-start text-3xl md:text-4xl">
             Implementing Marketing Automation
           </h1>
           <div className="space-y-6">

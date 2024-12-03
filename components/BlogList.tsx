@@ -36,7 +36,7 @@ export default function BlogList({ showAll }: { showAll?: boolean }) {
   
     
 		<div className="py-16 container overflow-hidden bg-[#FAFAFA] px-6 md:px-12 lg:px-24">
-    <AnimateLeft>
+    
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<motion.h2 className="text-4xl font-extrabold text-start md:text-center text-gray-900 pb-10 md:pb-14">
 					{showAll ? 'All blogs' : 'Trending Articles'}
@@ -105,7 +105,7 @@ export default function BlogList({ showAll }: { showAll?: boolean }) {
 					</Link>
 				)}
 			</div>
-      </AnimateLeft>
+     
 		</div>
     
 	)

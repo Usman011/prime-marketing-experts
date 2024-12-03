@@ -7,31 +7,27 @@ import IMG3 from '../../../public/images/Marketing/branding/image3.png'
 
 const Page = () => {
     return (
-        <section className='container px-2 md:px-12 lg:px-12'>
-        <div className="flex flex-col items-center justify-center text-center w-full h-52">
-        <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-        Branding
-        </h1>
-        <div className="flex gap-6 justify-center mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Branding</li>
-          </ul>
-        </div>
+        <section className='container px-2 md:px-6 lg:px-12'>
+        
+           {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Branding
+        </h1> 
+      
+      
       </div>
 
     
     <div className="flex flex-col gap-10">
 
-  <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 lg:flex-row space-y-6 lg:space-x-6 justify-start">
+  <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 lg:flex-row space-y-8 lg:space-x-6 justify-start">
   {/* Content Section */}
   <div className="flex-1">
-    <h1 className="font-bold text-4xl">
+    <h1 className="font-bold text-3xl md:text-4xl">
       Branding Services That Make Businesses Shine
     </h1>
-    <div className="space-y-6 mt-14">
+    <div className="space-y-6 mt-8">
       <p>Do you want your business to break through the clutter and grab your visitor’s attention?</p>
       <p>Do you want to convert your first-time buyers into lifetime customers?</p>
       <p>Do you want to stand out and race out your competitor’s?</p>
@@ -45,14 +41,14 @@ const Page = () => {
   </div>
 </div>
         
-<div className="flex flex-col bg-blue-50 p-6 lg:flex-row space-y-6 lg:space-x-6 justify-start">
+<div className="flex flex-col bg-blue-50 p-2 md:p-6 lg:flex-row space-y-6 lg:space-x-6 justify-start">
   {/* Image Section */}
   <div className="flex-1 mt-10">
     <Image src={IMG2} alt="Branding" className="w-full h-[500px] rounded-lg shadow-lg" />
   </div>
   {/* Content Section */}
   <div className="flex-1">
-    <h1 className="font-bold text-4xl">
+    <h1 className="font-bold text-3xl pb-6 md:text-4xl">
       We believe in the saying – “Leave A Mark, Wherever You Go!”
     </h1>
     <div className="space-y-6">
@@ -74,8 +70,8 @@ const Page = () => {
 
 
 
-<div className='flex flex-col space-y-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 justify-start'>
-  <h1 className='font-bold text-4xl'>
+<div className='flex flex-col space-y-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 justify-start'>
+  <h1 className='font-bold text-3xl md:text-4xl'>
     What is Branding?
   </h1>
   <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
@@ -98,7 +94,7 @@ const Page = () => {
           
 
 
-<div className='flex flex-col bg-blue-50 p-6 space-y-6 justify-start'>
+<div className='flex flex-col bg-blue-50 p-2 md:p-6 space-y-6 justify-start'>
   <h1 className='font-bold text-4xl'>
     Better Brand = Better Marketing
   </h1>
@@ -133,14 +129,14 @@ const Page = () => {
 </div>
 
 
-<div className='flex flex-col space-y-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 justify-start'>
-  <h1 className='font-bold text-4xl'>
+<div className='flex flex-col space-y-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 justify-start'>
+  <h1 className='font-bold text-3xl md:text-4xl'>
     Importance Of Branding
   </h1>
 
   <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
     {/* Card 1 */}
-    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-4 space-y-4'>
+    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-4 space-y-4'>
       <h2 className='font-bold text-xl'>Branding Helps Increase Your Visibility</h2>
       <p>You must agree that if you want to build a successful brand, you have to be recognizable. This helps you build an individual style that increases visibility within your market.</p>
       <p>Branding helps your business get recognized and known to consumers. Among the various other important aspects, a logo is the most important element of the brand, especially with regard to this factor, since it is essentially the face of the business.</p>
@@ -148,7 +144,7 @@ const Page = () => {
     </div>
 
     {/* Card 2 */}
-    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-4 space-y-4'>
+    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-4 space-y-4'>
       <h2 className='font-bold text-xl'>Branding Brings In New Customers</h2>
       <p>People love to talk. If they love the brand of your business, they will tell others, and the cycle will go on.</p>
       <p>In the present era, people eat brands, wear brands, listen to brands, and they constantly talk to others about the brands they like.</p>
@@ -157,20 +153,20 @@ const Page = () => {
     </div>
 
     {/* Card 3 */}
-    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-4 space-y-4'>
+    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-4 space-y-4'>
       <h2 className='font-bold text-xl'>Branding Differentiates Your Business From Competitors</h2>
       <p>No matter the sort of business you have, the industry you are in, or the type of customer you are looking for – if you are in business, you have serious competition.</p>
       <p>Branding helps you ascertain the ways that you are different, unique, and special. And it shows your customers why they should buy your products rather than go for your competitors.</p>
     </div>
 
     {/* Card 4 */}
-    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-4 space-y-4'>
+    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-4 space-y-4'>
       <h2 className='font-bold text-xl'>Branding Improves Employee Satisfaction And Pride</h2>
       <p>At the point when a representative works for a firmly branded organization and truly remains behind the brand, they will be increasingly happy with their work and will take pride in doing their work.</p>
     </div>
 
     {/* Card 5 */}
-    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-4 space-y-4'>
+    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-4 space-y-4'>
       <h2 className='font-bold text-xl'>Branding Gives Value To Your Business</h2>
       <p>A strong brand will bring value to your organization far beyond your physical assets.</p>
       <p>Not all top brands are worth their equipment, services, or products. These companies are not just known for their physical assets but are worth much more than that. Needless to say, their brand has created a value that far surpasses their tangible value.</p>
@@ -179,7 +175,7 @@ const Page = () => {
    
 
     {/* Card 7 */}
-    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-4 space-y-4'>
+    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-4 space-y-4'>
       <h2 className='font-bold text-xl'>Catchy Logo</h2>
       <p>Your company’s logo and brand go hand in hand, and no one can say which one is more important. However, your logo design should match, enhance, and compliment your brand.</p>
       <p>This is exactly what we do. We will get to know your brand first and then get into creating the perfect logo for you. We understand that an exceptional logo design becomes the chief element of your brand’s identity.</p>
@@ -187,7 +183,7 @@ const Page = () => {
     </div>
 
     {/* Card 8 */}
-    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-4 space-y-4'>
+    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-4 space-y-4'>
       <h2 className='font-bold text-xl'>Are You Ready To Race Out Your Competitors?</h2>
       <p>Well, welcome to the league of winning more clients!</p>
       <p>We have a dedicated and friendly team of branding experts, so don’t hesitate to get in touch with us for your queries. After all, we are amongst the top <Link href="https://www.designrush.com/agency/digital-agencies" className='text-blue-600'>Digital Agencies!</Link></p>
@@ -198,7 +194,7 @@ const Page = () => {
 
 
 
-          <div className='w-full flex flex-col gap-4 lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center justify-around'>
+          <div className='w-full flex flex-col gap-4 lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-12 my-6 lg:flex-row items-center justify-around'>
         <h1 className='font-bold text-white text-4xl text-center'>
           Plan The Future Growth Of Your Business
         </h1>

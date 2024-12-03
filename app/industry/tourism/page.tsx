@@ -31,27 +31,19 @@ export default function TourismPage() {
   ];
 
   return (
-    <section className="font-sans container text-gray-800 px-6 md:px-12 lg:px-24">
+    <section className="font-sans container text-gray-800 px-2 md:px-12 lg:px-24">
       {/* Header */}
-      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52  flex-col text-center'>
-        <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
           Tourism
-        </h1>
-        <div className='flex gap-6 justify-center mt-4'>
-          <Link href="/">
-            <p className='text-gray-500 hover:text-gray-800'>Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Tourism</li>
-          </ul>
-        </div>
+        </h1> 
       </div>
 
       {/* Services Section */}
-      <div className="relative py-10 flex items-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
+      <div className="relative pb-10 pt-4 flex items-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 justify-start md:justify-auto p-2 md:p-6">
         <div className="container mx-auto px-0 md:px-12 flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-3/5 text-center md:text-left">
-            <h1 className="text-4xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+            <h1 className="text-3xl md:text-4xl md:text-auto text-start font-bold text-gray-800 mb-6 leading-tight">
               Our Tourism Marketing Services
             </h1>
             <p className="text-gray-700  text-start md:auto mb-6">
@@ -79,7 +71,7 @@ export default function TourismPage() {
 
       {/* Destination Marketing Section */}
       <div className="py-16 bg-blue-50">
-        <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row gap-12">
+        <div className="container mx-auto px-2 md:px-12 flex flex-col md:flex-row gap-12">
           <div className="md:w-1/2">
             <Image
               src={IMG4}
@@ -89,7 +81,7 @@ export default function TourismPage() {
               className="rounded-lg shadow-lg"
             />
           </div>
-          <div className="md:w-1/2 text-center md:text-left">
+          <div className="md:w-1/2 text-start md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Destination Marketing</h2>
             <p className="text-lg text-gray-700 leading-relaxed text-start md:auto">
               Promote your city, region, or country to travelers worldwide with our strategic campaigns. We spotlight your destination`s unique culture, attractions, and experiences to inspire visitors. Through storytelling and immersive content, we help showcase what makes your destination unforgettable.
@@ -105,9 +97,9 @@ export default function TourismPage() {
       </div>
 
       {/* Social Media Marketing Section */}
-      <div className="py-16 text-lg text-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
+      <div className="py-16 text-lg text-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6">
         <div className="container mx-auto px-0 md:px-12 flex flex-col md:flex-row items-center gap-12">
-          <div className="md:w-1/2 text-center md:text-left">
+          <div className="md:w-1/2 text-start md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
               Social Media Marketing for Tourism
             </h2>
@@ -135,12 +127,12 @@ export default function TourismPage() {
       {/* Destinations Section */}
       <div className="py-16 bg-blue-50">
         <div className="container mx-auto px-0 md:px-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Tourism Marketing Services by Prime Marketing Experts</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-start md:text-center mb-12">Tourism Marketing Services by Prime Marketing Experts</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {destinations.map((destination) => (
               <div
                 key={destination.id}
-                className="bg-white rounded-lg shadow-lg p-4 overflow-hidden transition-transform transform hover:scale-105"
+                className="bg-white rounded-lg shadow-lg p-2 md:p-4 overflow-hidden transition-transform transform hover:scale-105"
               >
                 <Image
                   src={destination.image}

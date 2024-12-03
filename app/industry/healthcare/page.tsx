@@ -37,24 +37,17 @@ export default function HealthcarePage() {
   return (
     <section className="container text-gray-800 px-2 md:px-12 lg:px-24">
       {/* Header */}
-      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
-        <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
-          Healthcare Solutions
+     
+        <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+        <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+        Real Estate
         </h1>
-        <div className='flex gap-6 justify-center mt-4'>
-          <Link href="/">
-            <p className='text-gray-500 hover:text-gray-800'>Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Healthcare</li>
-          </ul>
-        </div>
       </div>
-
-      <div className="relative py-10 flex items-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-0 md:p-6">
+     
+      <div className="relative pb-10 flex items-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-0 md:p-6">
         <div className="container mx-auto px-2 md:px-12 flex flex-col md:flex-row items-center gap-12">
           {/* Left: Text */}
-          <div className="md:w-3/5 text-center md:text-left">
+          <div className="md:w-3/5 text-start">
             <h1 className="text-4xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">
             Healthcare Marketing 
             </h1>
@@ -86,8 +79,8 @@ export default function HealthcarePage() {
       </div>
 
       {/* History Section */}
-      <div className="py-16 bg-blue-50 my-10 ">
-        <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row gap-12">
+      <div className="py-16 bg-blue-50 mb-10 ">
+        <div className="container mx-auto px-2 md:px-12 flex flex-col md:flex-row gap-12">
           
           <div className="md:w-1/2">
             <Image
@@ -99,7 +92,7 @@ export default function HealthcarePage() {
             />
           </div>
           {/* Right: Text */}
-          <div className="md:w-1/2 text-center md:text-left">
+          <div className="md:w-1/2 text-start">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Website Design & Optimization </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
             Your website is often the first impression potential patients will have of your practice. We design user-friendly, mobile-optimized websites that are both informative and engaging. Our team ensures that your website is optimized for search engines to increase your visibility and attract more patients. 
@@ -114,10 +107,10 @@ export default function HealthcarePage() {
       </div>
 
       {/* Services Section */}
-      <div className="py-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 my-10">
+      <div className="py-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 mb-10">
         <div className="container mx-auto px-2 md:px-12 flex flex-col md:flex-row items-center gap-12">
           
-          <div className="md:w-1/2 text-center md:text-left">
+          <div className="md:w-1/2 text-start">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Local SEO for Healthcare Providers
             </h2>
@@ -146,9 +139,9 @@ export default function HealthcarePage() {
       </div>
 
       {/* Service Plans Section */}
-      <div className="py-16 bg-blue-50">
-        <div className="container mx-auto px-2 md:px-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Addressing negative reviews professionally </h2>
+      <div className="py-10 bg-blue-50">
+        <div className="mx-auto px-2 md:px-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-start md:text-center mb-12">Addressing negative reviews professionally </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service) => (
               <div
@@ -162,7 +155,7 @@ export default function HealthcarePage() {
                   height={300}
                   className="w-full h-48 object-cover"
                 />
-                <div className="p-6">
+                <div className="p-2 md:p-6">
                   <h3 className="text-xl font-bold">{service.name}</h3>
                   <p className="text-gray-600 mt-2">{service.description}</p>
                 
@@ -175,7 +168,7 @@ export default function HealthcarePage() {
 
       {/* Healthcare Call-to-Action Section */}
       <div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center pt-6 md:pt-auto lg:pt-auto justify-evenly px-2 lg:px-auto">
-        <h1 className="font-bold text-white text-2xl md:text-4xl text-start leading-tight">
+        <h1 className="text-white md:text-4xl text-3xl font-bold text-start leading-tight">
           Take Control of Your Health Today!  Get a Free Consultation Now
         </h1>
         <Link href="/contact">

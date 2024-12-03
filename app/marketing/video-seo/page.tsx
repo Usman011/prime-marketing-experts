@@ -5,28 +5,23 @@ import React from 'react';
 
 const Page = () => {
     return (
-        <section className='container px-2 md:px-12 lg:px-24'>
-            <div className="flex flex-col items-center justify-center w-full h-52 text-center">
-        <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-        Video SEO
-        </h1>
-        <div className="flex gap-6 justify-center mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Video SEO</li>
-          </ul>
-        </div>
+        <section className='container mb-10 px-2 md:px-6 lg:px-24'>
+            
+           {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Video SEO
+        </h1> 
       </div>
+     
 
-      <div className="flex flex-col bg-blue-50 p-6 gap-10 my-10">
+      <div className="flex flex-col bg-blue-50 p-2 md:p-6 gap-10 ">
         <div className="flex flex-col ">
         <h1 className="font-bold text-4xl">
           Video SEO
           </h1>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="space-y-8 w-full lg:w-7/12 mt-14">
+            <div className="space-y-8 w-full lg:w-7/12 mt-8">
               <p>
               Video is one of the most powerful marketing mediums to improve your online presence, but you can’t just upload one into Youtube or your website expect it to be shown to many people. To achieve the best results, videos require their own genuine strategy separate from your main SEO strategy. Video SEO optimizes the rankings of video content within Google, Bing, Yahoo, and video search results. We strategically can help you ultimately drive more website traffic, as opposed to driving it to your video hosting provider.
               </p>

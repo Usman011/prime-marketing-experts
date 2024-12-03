@@ -5,27 +5,21 @@ const Page = () => {
     return (
        <section className='container px-2 md:px-12 lg:px-12'>
 
-<div className="flex flex-col items-center justify-center w-full h-52 text-center">
-        <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-        Google Shopping Campaign Services
-        </h1>
-        <div className="flex gap-6 justify-center mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Google Shopping Campaign Services</li>
-          </ul>
-        </div>
-      </div>
 
+         {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Google Shopping Campaign Services
+        </h1> 
+      </div>
+     
 
       <div className='gap-20 mb-6'>
         <div className="flex flex-col space-y-6">
          
-        <div className="space-y-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 w-full">
+        <div className="space-y-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 w-full">
   {/* Title */}
-  <h1 className="font-bold text-4xl text-start">
+  <h1 className="font-bold text-3xl md:text-4xl text-start">
     Google Shopping Campaign Services That Increase Sales
   </h1>
   
@@ -102,8 +96,8 @@ const Page = () => {
 
 
 
-          <div className="flex flex-col bg-blue-50 p-6 space-y-6">
-          <h1 className="font-bold justify-start text-start text-4xl">
+          <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-6">
+          <h1 className="font-bold justify-start text-start text-3xl md:text-4xl">
           About Our Google Shopping Management Agency Services
           </h1>
             <div className="space-y-8 ">
@@ -129,8 +123,8 @@ const Page = () => {
 
           <div className="flex flex-col  space-y-6">
          
-            <div className="space-y-8 w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
-            <h1 className="font-bold justify-start text-start text-4xl">
+            <div className="space-y-8 w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6">
+            <h1 className="font-bold justify-start text-start text-3xl md:text-4xl">
           Expert Team. Big Ideas. Exceptional Results.
           </h1>
               <p>
@@ -155,11 +149,11 @@ const Page = () => {
             </div>
 
 
-          <div className="flex flex-col bg-blue-50 p-6 space-y-6">
-          <h1 className="font-bold justify-start text-start text-4xl">
+          <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-6">
+          <h1 className="font-bold justify-start text-start text-3xl md:text-4xl">
           Why You Should Choose Us?
           </h1>
-            <div className="space-y-8 w-full lg:w-11/12 mt-14">
+            <div className="space-y-8 w-full lg:w-11/12 ">
               
               <p>
               Our team of marketing experts has helped many brands or businesses achieve increased visibility for numerous businesses through Google Shopping Ads.
@@ -184,8 +178,8 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
-          <h1 className="font-bold justify-start text-start text-4xl">
+          <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
+          <h1 className="font-bold justify-start text-start text-3xl md:text-4xl">
           Achieving the Best Results With Google Shopping
           </h1>
             <div className="space-y-8 w-full lg:w-11/12 mt-14">

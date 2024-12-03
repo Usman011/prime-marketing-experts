@@ -6,23 +6,18 @@ import IMG2 from '../../../public/images/Business-model-teansformation/image2.pn
 
 const Page = () => {
   return (
-    <section className='container'>
-      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-52 flex-col text-center'>
-        <h1 className='font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
-          Business Model Transformation
-        </h1>
-        <div className='flex gap-6 justify-center mt-4'>
-          <Link href="/">
-            <p className='text-gray-500 hover:text-gray-800'>Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Business Model Transformation</li>
-          </ul>
-        </div>
+    <section className='container mx-auto px-2'>
+     
+         {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Business Model Transformation
+        </h1> 
       </div>
+     
 
-      <div className='flex flex-col space-y-6 mt-10 mx-2 justify-start'>
-        <h1 className='font-bold mb-4 text-4xl'>
+      <div className='flex flex-col space-y-6  mt-10 justify-start'>
+        <h1 className='font-bold mb-4 text-3xl md:text-4xl'>
           Market Research Services That Spark Profitable Growth!
         </h1>
         <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
@@ -45,7 +40,7 @@ const Page = () => {
        
 
        
-        <div className="space-y-6 bg-blue-50 p-4 lg:p-8">
+        <div className="space-y-6 bg-blue-50 p-2 md:p-6 lg:p-8">
   <div className="md:flex md:gap-8">
     {/* Image Section */}
     <div className="w-full md:w-1/2 pt-8 md:pt-16">
@@ -58,7 +53,7 @@ const Page = () => {
 
     {/* Text Content Section */}
     <div className="w-full md:w-1/2">
-      <h1 className="mt-4 md:mt-10 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 leading-snug">
+      <h1 className="mt-4 md:mt-10 font-bold text-3xl md:text-4xl  text-gray-900 leading-snug">
         What is Business Model Transformation?
       </h1>
       <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
@@ -78,7 +73,7 @@ const Page = () => {
 </div>
 
 
-  <h1 className='mt-14 font-bold text-4xl'>
+  <h1 className='mt-10 font-bold text-3xl md:text-4xl'>
         Better Transformation = Better Business
       </h1>
       <p>
@@ -88,7 +83,7 @@ const Page = () => {
 
 
 
-        <h1 className='mt-14 font-bold text-4xl'>
+        <h1 className='mt-10 mb-10 font-bold text-3xl md:text-4xl'>
           Transformations That Help Businesses
         </h1>
         <ul className='list-disc pl-5 space-y-6'>
@@ -127,9 +122,9 @@ const Page = () => {
          
 
          
-        <div className='bg-blue-50 space-y-10 p-2 mt-6 md:mt-auto md:p-8 rounded-lg shadow-md'>
+        <div className='bg-blue-50 space-y-10 p-2 mt-6 md:mt-10 md:p-6 rounded-lg shadow-md'>
   {/* Main Heading */}
-  <h1 className='text-center text-4xl font-bold text-black'>
+  <h1 className='text-start text-3xl md:text-4xl font-bold text-black'>
     Why do you need a Business Model Transformation?
   </h1>
 
@@ -153,7 +148,7 @@ const Page = () => {
   {/* Keys Section with Cards for Each Point */}
   <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
     {/* Strategy-informed ambition */}
-    <div className='bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'>
+    <div className='bg-white p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'>
       <h3 className='font-bold text-xl text-black mb-3'>Strategy-informed ambition</h3>
       <p className='text-gray-700'>
         We define or translate strategic business goals into a bold and realistic ambition through our transformational services.
@@ -201,9 +196,9 @@ const Page = () => {
 
         
         
-<div className='bg-white space-y-10 p-8 rounded-lg shadow-md'>
+<div className='bg-white my-10 space-y-10 p-2 md:p-6 rounded-lg shadow-md'>
   {/* Main Heading */}
-  <h1 className='text-center text-4xl font-bold text-black'>
+  <h1 className='text-start mb-6 text-3xl md:text-4xl font-bold text-black'>
     Critical Elements of Our Business Model Transformation Service
   </h1>
 
@@ -223,7 +218,7 @@ const Page = () => {
     </div>
 
     {/* Customer Value Proposition */}
-    <div className='bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'>
+    <div className='bg-white p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'>
       <h3 className='font-bold text-xl text-black mb-3'>Customer value proposition</h3>
       <p className='text-gray-700'>
         The customer value proposition implies your company’s promise for the value of your products and services. It scales on accounting for a specific problem and how you solve it for a customer segment. In contrast with existing solutions, we ensure that your solution is much better and is offered at a reasonable price.
@@ -231,7 +226,7 @@ const Page = () => {
     </div>
 
     {/* Finance */}
-    <div className='bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'>
+    <div className='bg-white p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'>
       <h3 className='font-bold text-xl text-black mb-3'>Finance</h3>
       <p className='text-gray-700'>
         The profit formula creates a perfect interplay between maximum value for customers and the company to entail profit. The business model transformation highlights the revenue model, cost structure, margin model, and resources in this profit formula. We design a system to create value and make profits, which can be funded in the future of business.
@@ -239,7 +234,7 @@ const Page = () => {
     </div>
 
     {/* Essential Resources & Key Processes */}
-    <div className='bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'>
+    <div className='bg-white p-2 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'>
       <h3 className='font-bold text-xl text-black mb-3'>Essential Resources & Key Processes</h3>
       <p className='text-gray-700'>
         We describe how to improve capabilities or resources in detail as a part of your business model. How to synergize operational and managerial procedures of the most critical assets, like people, products, and brands is explored. These combine to deliver increased perceived value to consumers and describe how companies can reduce costs, and how that affects consumers.

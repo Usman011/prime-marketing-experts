@@ -18,27 +18,22 @@ import IconIMG8 from '../../../public/images/Marketing/content-marketing/icons/i
 
 const Page = () => {
   return (
-    <section className='container px-2 md:px-12 lg:px-24'>
-      <div className="flex flex-col items-center justify-center w-full h-52 text-center">
-        <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-          Content Marketing Services
-        </h1>
-        <div className="flex gap-6 justify-center mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Content Marketing Services</li>
-          </ul>
-        </div>
+    <section className='container px-2 md:px-6 lg:px-12'>
+      
+          {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Content Marketing Services
+        </h1> 
       </div>
+    
 
-      <div className='gap-20 mt-10'>
-        <div className="flex flex-col rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
+      <div className='gap-20'>
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
         
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="space-y-8 w-full lg:w-11/12 mt-14">
-            <h1 className="font-bold justify-center text-start text-4xl">
+            <div className="space-y-8 w-full lg:w-11/12 ">
+            <h1 className="font-bold justify-center text-start text-3xl md:text-4xl">
             Our Content Marketing Services Boosts Brands
           </h1>
               <h1 className='font-bold text-2xl italic'>Let Us Give Voice to Your Untold & Undersold Stories</h1>
@@ -62,14 +57,14 @@ const Page = () => {
           <p>All we care about is your passion and dedication towards building your brand! So, are you ready to stand out and leave your competitors behind? Give us a call right away!</p>
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-6 space-y-6">
+        <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-6">
         
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="w-full mt-10 h-full">
               <Image src={IMG2} alt="Market Research" layout="responsive" width={1200} height={1000} />
             </div>
             <div className="space-y-8 w-full lg:w-11/12 mt-14">
-            <h1 className="font-bold text-start justify-center text-4xl">
+            <h1 className="font-bold text-start justify-center text-3xl md:text-4xl">
             Our Content Marketing Services Boosts Brands
           </h1>
               <p>
@@ -85,8 +80,8 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
-          <h1 className="font-bold text-center justify-center text-4xl">
+        <div className="flex flex-col rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
+          <h1 className="font-bold text-start justify-center text-3xl md:text-4xl">
             Excellent Quality Content Tailored To Your Needs
           </h1>
           <div className="grid pt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-4 mt-8 gap-20 sm:gap-40 lg:gap-20">
@@ -198,7 +193,7 @@ const Page = () => {
 
         <div className="flex flex-col space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="space-y-8 w-full lg:w-11/12 mt-14">
+            <div className="space-y-8 w-full lg:w-11/12 mt-8">
               <p>
                 The words web and log combine to from WebLog! This is an excellent service and a tool for marketing to reach your target audience and potential customers for your home businesses. These are easy to manage, integrate, and accessible with the upcoming blogging platforms.
               </p>
@@ -413,13 +408,13 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-blue-50 p-6 space-y-6">
+          <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-6">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
               <div className="w-full mt-10 h-full">
                 <Image src={IMG4} alt="Market Research" layout="responsive" width={1200} height={1000} />
               </div>
               <div className="space-y-8 w-full lg:w-11/12 mt-14">
-                <h1 className="font-bold text-center justify-center text-4xl">
+                <h1 className="font-bold text-start md:text-center justify-center text-4xl">
                   Content Planning
                 </h1>
                 <p>
@@ -430,7 +425,7 @@ const Page = () => {
           </div>
         </div>
 
-        <h1 className='text-3xl flex justify-center items-center mt-10 rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6  font-bold'>For this, we will do:</h1>
+        <h1 className='text-3xl flex justify-center items-center mt-10 rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-2 md:p-6  font-bold'>For this, we will do:</h1>
         <div className="grid pt-10 grid-cols-1 sm:grid-cols-2 bg-blue-50 p-6 md:grid-cols-1 lg:grid-cols-3 mt-8 gap-10 sm:gap-16 lg:gap-20">
           <div className='flex flex-col w-full items-center text-center gap-4'>
             <h1 className='text-1xl font-bold'>Competitor Analysis</h1>

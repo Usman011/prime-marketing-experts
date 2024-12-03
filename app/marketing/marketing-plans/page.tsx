@@ -14,27 +14,22 @@ import {
 const Page = () => {
   return (
     <section className='container px-2 md:px-12 lg:px-24'>
-      <div className="flex flex-col items-center justify-center w-full h-52 text-center">
-        <h1 className="font-bold text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide">
-          Marketing Plan Services
-        </h1>
-        <div className="flex gap-6 justify-center mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li>Marketing Plan Services</li>
-          </ul>
-        </div>
+      
+        {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Marketing Plan Services
+        </h1> 
       </div>
+     
 
-      <div className="flex flex-col  gap-10 mt-10">
-        <div className="flex flex-col  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6">
-          <h1 className="font-bold text-4xl">
+      <div className="flex flex-col  gap-10">
+        <div className="flex flex-col  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
+          <h1 className="font-bold text-3xl md:text-4xl">
             Give Your Emails The Right Service, Strategy, And Execution
           </h1>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="space-y-8 w-full lg:w-7/12 mt-14">
+            <div className="space-y-8 w-full lg:w-7/12">
               <p className="font-bold">Kudos!</p>
               <p>
                 You have established strong business and have successfully planned to spearhead your organization. Did you focus on setting up the business, but not the road map that your brand needs to follow to achieve marketing goals?
@@ -52,7 +47,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-10 bg-blue-50 p-6 space-y-6 lg:space-y-0 justify-start items-center">
+        <div className="flex flex-col lg:flex-row gap-10 bg-blue-50 p-2 md:p-6 space-y-6 lg:space-y-0 justify-start items-center">
   {/* Image Section */}
   <div className="w-full lg:w-2/4">
     <Image
@@ -64,7 +59,7 @@ const Page = () => {
 
   {/* Text Content Section */}
   <div className="w-full lg:w-1/2 space-y-6">
-    <h1 className="font-bold text-4xl">Why Create a Marketing Plan?</h1>
+    <h1 className="font-bold text-3xl md:text-4xl">Why Create a Marketing Plan?</h1>
     <div className="space-y-6">
       <p>
         Fortunately, <span className="font-bold">a marketing plan</span> would help you curate a plan, which is rooted in data and proven to generate real results.
@@ -86,10 +81,10 @@ const Page = () => {
 </div>
 
 
-<div className="flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 gap-10 space-y-6 lg:space-y-0 justify-start items-center">
+<div className="flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 gap-10 space-y-6 lg:space-y-0 justify-start items-center">
   {/* Text Content Section */}
   <div className="w-full lg:w-1/2 space-y-6">
-    <h1 className="font-bold text-4xl">What Is A Marketing Plan?</h1>
+    <h1 className="font-bold text-3xl md:text-4xl">What Is A Marketing Plan?</h1>
     <div className="space-y-6">
       <p>
         A marketing plan is a premeditated roadmap that helps your business organize, execute, and track marketing efficiency over a given period. This planning process is a systematic approach to realize marketing goals and implement/alter tactics.
@@ -120,8 +115,8 @@ const Page = () => {
 </div>
 
 
-        <div className="flex flex-col  bg-blue-50 p-6 space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">Our Marketing Plan Services</h1>
+        <div className="flex flex-col  bg-blue-50 p-2 md:p-6 space-y-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">Our Marketing Plan Services</h1>
           <div className="space-y-6">
             <p>
               There are a plethora of marketing plan services that we offer. Moreover, depending on the kind of company and business goals, you can leverage a variety of different marketing plans that fit you the best.
@@ -165,8 +160,8 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6  space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">Benefits of Our Marketing Plan Services</h1>
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6  space-y-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">Benefits of Our Marketing Plan Services</h1>
           <div className="space-y-6">
             <p>
               It is a tough challenge for all business firms to make their marketing dollars stretch at the farthest. Designing a marketing plan is a cumbersome process as it is not merely advertising but a mixture of <Link href="/marketing/branding" className="text-blue-600">branding</Link>, customer service, product pricing, and the right promotion.
@@ -192,8 +187,8 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-6 space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">How We Curate a Marketing Plan</h1>
+        <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">How We Curate a Marketing Plan</h1>
           <div className="space-y-6">
             <p>
               Before you kick start devising a marketing plan, our experts gather the crucial info about your business and follow the following procedure:
@@ -219,8 +214,8 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col mb-10  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 space-y-6 justify-start">
-          <h1 className="font-bold text-4xl">Wait! One more thing about marketing plans!</h1>
+        <div className="flex flex-col mb-10  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6 justify-start">
+          <h1 className="font-bold text-3xl md:text-4xl">Wait! One more thing about marketing plans!</h1>
           <div className="space-y-6">
             <p>
               We also have a marketing plan template and checklist that is a pre-requisite for developing a marketing plan for your business. It is mandatory to flow a step-by-step approach to produce a custom-built marketing plan for your business needs. Therefore, you will need to contact us to find out what we put together to make an effective and result-oriented marketing plan that glorifies your business or brand.

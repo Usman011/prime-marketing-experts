@@ -1,5 +1,5 @@
 'use client'
-
+import { motion } from 'framer-motion'
 import { useState, useCallback, useEffect } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -87,7 +87,7 @@ export default function Insight() {
 		
 		
 		<div className="container w-full overflow-hidden py-12 bg-gray-50 px-6 md:px-12 lg:px-24">
-		<AnimateLeft>
+		
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<h2 className=" text-3xl md:text-3xl font-extrabold text-start md:text-center mb-12 text-gray-900">
 					Explore Prime Marketing Experts
@@ -105,6 +105,11 @@ export default function Insight() {
 					))}
 				</div>
 				<div className="overflow-hidden" ref={emblaRef}>
+				<motion.div
+						initial={{ opacity: 0, x: 50 }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ duration: 0.5, delay: 0.6 }}
+					>
 					<div className="flex">
 						{carouselItemsData.map((item, index) => (
 							<div className="flex-[0_0_100%] min-w-0 px-auto  md:px-5" key={index}>
@@ -140,6 +145,7 @@ export default function Insight() {
 							</div>
 						))}
 					</div>
+					</motion.div>
 				</div>
 				<div className="flex justify-center mt-8 gap-4">
 					<Button variant="outline" size="icon" onClick={() => emblaApi?.scrollPrev()}>
@@ -150,7 +156,7 @@ export default function Insight() {
 					</Button>
 				</div>
 			</div>
-			</AnimateLeft>
+			
 		</div>
 	
 		

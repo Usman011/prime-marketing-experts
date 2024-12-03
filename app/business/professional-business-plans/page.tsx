@@ -6,25 +6,20 @@ import IMG1 from '../../../public/images/Professtional-business-plans/image2.png
 
 const Page = () => {
   return (
-    <section className="container mx-auto px-6 py-12">
-      <div className="flex flex-col items-center text-center mt-12">
-        <h1 className="font-bold text-4xl md:text-5xl leading-tight text-gray-800">
-          Professional Business Plans
-        </h1>
-        <div className="flex gap-6 mt-4">
-          <Link href="/">
-            <p className="text-gray-500 hover:text-gray-800">Home</p>
-          </Link>
-          <ul className="list-disc">
-            <li className="text-gray-500">Professional Business Plans</li>
-          </ul>
-        </div>
+    <section className="container mx-auto px-2 py-12">
+      
+        {/* Header */}
+      <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
+         <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+         Professional Business Plans
+        </h1> 
       </div>
+      
 
       <div className="mt-10">
-        <div className="flex shadow-lg rounded-xl p-6 flex-col lg:flex-row gap-8">
+        <div className="flex shadow-lg rounded-xl p-2 md:p-6 flex-col lg:flex-row gap-8">
           <div className="space-y-6">
-            <h2 className="font-bold text-3xl md:text-4xl text-gray-800">
+            <h2 className="font-bold text-3xl text-start md:text-4xl text-gray-800">
               Professional Business Plans That Grow Businesses
             </h2>
             <p className="text-lg text-gray-700">
@@ -45,7 +40,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="bg-blue-50 p-8 mt-12 rounded-lg shadow-md">
+        <div className="bg-blue-50 mt-12 p-2 md:p-6 rounded-lg shadow-md">
           <h2 className="font-bold text-3xl text-gray-800">
             A Business Plan Gives You a Clear Growth Roadmap!
           </h2>
@@ -54,8 +49,8 @@ const Page = () => {
           </p>
         </div>
 
-        <div className="mt-8 shadow-lg rounded-xl p-6">
-          <h2 className="font-bold text-3xl text-gray-800">
+        <div className="mt-8 shadow-lg rounded-xl p-2 md:p-6">
+          <h2 className="font-bold text-3xl md:text-4xl text-gray-800">
             Why Choose Prime Marketing Experts?
           </h2>
           <p className="text-lg text-gray-700 mt-4">
@@ -91,7 +86,7 @@ const Page = () => {
         </div>
 
 
-        <div className="flex bg-blue-50 mt-10 p-6 flex-col lg:flex-row gap-8">
+        <div className="flex bg-blue-50 mt-10 p-2 md:p-6 flex-col lg:flex-row gap-8">
           <div className="space-y-6">
             <h2 className="font-bold text-3xl md:text-4xl text-gray-800">
             Why is a Business Plan Vital?
@@ -122,46 +117,46 @@ const Page = () => {
 
 
 
-<div className="mt-12 px-6 lg:px-16 py-10 bg-white shadow-lg rounded-xl">
+<div className="mt-12 px-2 lg:px-16 py-10 bg-white shadow-lg rounded-xl">
   {/* Main Title */}
-  <h2 className="font-bold text-4xl text-gray-900 text-center mb-6">
+  <h2 className="font-bold text-3xl md:text-4xl text-gray-900 text-start mb-6">
     What Business Plan Services Prime Marketing Experts Offers?
   </h2>
-  <p className="text-lg text-gray-700 text-center mb-8">
+  <p className="text-lg text-gray-700 text-start mb-8">
     Successful CEOs and entrepreneurs trust our business plan writing services. Let us help you take your business to the next level.
   </p>
 
   {/* Services List - Grid Layout */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    <div className="space-y-4 p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="space-y-4 p-2 md:p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h3 className="text-2xl font-semibold text-gray-800">Executive Summary</h3>
       <p className="text-lg text-gray-700">A snapshot of your business and strategy for the future.</p>
     </div>
-    <div className="space-y-4 p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="space-y-4 p-2 md:p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h3 className="text-2xl font-semibold text-gray-800">Business Description</h3>
       <p className="text-lg text-gray-700">A detailed outline of your business operations and goals.</p>
     </div>
-    <div className="space-y-4 p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="space-y-4 p-2 md:p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h3 className="text-2xl font-semibold text-gray-800">Product Offering</h3>
       <p className="text-lg text-gray-700">Describe what products or services you are offering to your customers.</p>
     </div>
-    <div className="space-y-4 p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="space-y-4 p-2 md:p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h3 className="text-2xl font-semibold text-gray-800">Sales, Marketing, and Promotion</h3>
       <p className="text-lg text-gray-700">Effective strategies to attract and retain customers.</p>
     </div>
-    <div className="space-y-4 p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="space-y-4 p-2 md:p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h3 className="text-2xl font-semibold text-gray-800">Operations</h3>
       <p className="text-lg text-gray-700">Optimizing operational efficiency for long-term success.</p>
     </div>
-    <div className="space-y-4 p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="space-y-4 p-2 md:p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h3 className="text-2xl font-semibold text-gray-800">Finance</h3>
       <p className="text-lg text-gray-700">Financial planning and forecasting for profitability.</p>
     </div>
-    <div className="space-y-4 p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="space-y-4 p-2 md:p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h3 className="text-2xl font-semibold text-gray-800">Management Team</h3>
       <p className="text-lg text-gray-700">Details of your leadership team and their roles.</p>
     </div>
-    <div className="space-y-4 p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="space-y-4 p-2 md:p-6 bg-blue-50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <h3 className="text-2xl font-semibold text-gray-800">Projections</h3>
       <p className="text-lg text-gray-700">Future projections and expected financial outcomes.</p>
     </div>

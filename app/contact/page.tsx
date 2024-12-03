@@ -4,15 +4,13 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { MapPin, Mail, Phone, Send } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import { InputField } from '@/components/common/InputFeild'
 import { useForm } from 'react-hook-form'
 import { Form } from '../../components/ui/form'
 import { INPUT_TYPES } from '@/constants'
-import { AnimateLeft } from '@/components/common/animate'
+
 
 export default function Contact() {
 	const [isHovered, setIsHovered] = useState(false)
@@ -49,9 +47,9 @@ export default function Contact() {
 	}
 
 	return (
-		<div className='w-full overflow-hidden'>
-		<AnimateLeft>
-		<section className="py-16 container bg-gradient-to-br from-blue-50 to-purple-50">
+		
+		
+		<section className="py-16 container w-full overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50">
 		
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<motion.h2
@@ -174,8 +172,8 @@ export default function Contact() {
 			</div>
 			
 		</section>
-		</AnimateLeft>
-		</div>
+		
+	
 		
 	)
 }

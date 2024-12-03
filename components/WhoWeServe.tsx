@@ -12,7 +12,7 @@ export function WhoWeServeSection() {
     
    
 	  <section className="bg-blue-50 overflow-hidden container w-auto md:w-auto py-16 ">
-       <AnimateRight>
+       
 		<div className="max-w-7xl mx-auto text-start md:text-center">
 		  <div className='md:mx-auto'>
 		  <h2 className="text-3xl font-extrabold text:start md:text-center text-gray-800 mb-4">Who We Serve</h2>
@@ -35,7 +35,7 @@ export function WhoWeServeSection() {
 		  <h3 className="text-2xl font-bold text-gray-800 text-center  mb-8">Industries We Served</h3>
   
 		  <div className="grid ml:20 md:ml-20 justify-center items-center text-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-
+  
 		  <div className="flex h-20 w-70 md:w-56 justify-start gap-6 text-center items-center p-6 rounded-lg transition-transform duration-300 hover:shadow-sm hover:shadow-orange-500 hover:border-orange-500 bg-white cursor-pointer group transform will-change-transform hover:scale-105" style={{ position: 'relative', overflow: 'hidden' }}> 
   <div className="p-4 rounded-full bg-gray-100 group-hover:bg-orange-100 transition-colors duration-300">
     <FaPlane /> {/* Tourism */}
@@ -102,7 +102,7 @@ export function WhoWeServeSection() {
   
   </div>
 		</div>
-    </AnimateRight>
+   
 	  </section>
    
    
