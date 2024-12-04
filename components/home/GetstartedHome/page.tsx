@@ -57,7 +57,7 @@ const InfoSection: React.FC = () => {
 		
 	
 			
-			<div className="mx-auto container overflow-hidden p-2 md:px-4 py-8 mt-5  rounded-lg ">
+			<div className="mx-auto container overflow-hidden px-2 md:px-12 lg:px-24 py-10 mt-5  rounded-lg ">
 			
 				<h1 className="text-3xl font-bold text-start md:text-center mb-3">FAQ</h1>
 				<p className="text-base text-start md:text-center mb-12 text-gray-600">

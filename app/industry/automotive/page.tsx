@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const AutomotivePage = () => {
   return (
-    <section className="automotive-page container gap-20 pb-10 px-2 md:px-12 lg:px-24">
+    <section className="automotive-page container gap-20 px-2 md:px-12 lg:px-24">
 
 <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
          <h1 className='font-semibold-600 text-4xl md:text-5xl leading-8 md:leading-10 tracking-wide'>
@@ -17,7 +17,7 @@ const AutomotivePage = () => {
        
       </div>
       {/* Hero Section */}
-      <div className="container mx-auto grid grid-cols-1 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6  lg:grid-cols-2 gap-10 items-center">
+      <div className="container my-10 py-10 mx-auto grid grid-cols-1 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6  lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="text-content">
           <h1 className="text-3xl md:text-4xl font-extrabold -600 mb-6 leading-tight">
@@ -53,7 +53,7 @@ const AutomotivePage = () => {
       </div>
 
 
-      <div className="container my-10 grid grid-cols-1  bg-blue-50 p-2 md:p-6 lg:grid-cols-2 gap-8  items-center">
+      <div className="container my-10 py-10 grid grid-cols-1  bg-blue-50 p-2 md:p-6 lg:grid-cols-2 gap-8  items-center">
 
         {/* Right Image */}
         <div className="relative">
@@ -75,7 +75,7 @@ const AutomotivePage = () => {
           <p className="text-gray-700 mb-4 leading-relaxed">
           As an automotive dealership, your goal is to attract more qualified leads and convert them into customers. We help you do this by leveraging targeted campaigns that highlight your inventory, promotions, and dealership services. Our marketing strategies will increase foot traffic to your showroom and drive online leads.
           </p>
-          <ul className="list-disc pl-5 text-gray-700">
+          <ul className="list-disc pl-6 text-gray-700">
         <li className="mb-2">Targeted online advertising for specific vehicle models  </li>
         <li className="mb-2">Lead generation strategies </li>
         <li>Special offers and promotions marketing  </li>
@@ -85,7 +85,7 @@ const AutomotivePage = () => {
 
     
 
-  <div className="container mx-auto px-0 md:px-4 grid grid-cols-1 pt-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 lg:grid-cols-2 gap-10 items-center">
+  <div className="container my-10 py-10 mx-auto px-0 md:px-4 grid grid-cols-1 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 lg:grid-cols-2 gap-10 items-center">
 
 
 {/* Left Content */}
@@ -98,7 +98,7 @@ const AutomotivePage = () => {
   Local search optimization is crucial for automotive businesses to ensure that customers can easily find your dealership, service center, or parts store when searching online. We optimize your website and listings on platforms like Google My Business to improve your rankings in local search results, helping you capture nearby leads and customers. 
 
   </p>
-  <ul className="list-disc pl-5 text-gray-700">
+  <ul className="list-disc pl-6 text-gray-700">
         <li className="mb-2">Local SEO strategies to enhance visibility  </li>
         <li className="mb-2">Optimizing online maps and directories </li>
         <li>Creating location-specific landing pages </li>
@@ -119,7 +119,7 @@ const AutomotivePage = () => {
 </div>
 
 
-<div className="container mx-auto px-0 md:px-4 pt-20 grid grid-cols-1 bg-blue-50 lg:grid-cols-2 gap-10 items-center">
+<div className="container mx-auto px-0 md:px-4 my-10 py-10 grid grid-cols-1 bg-blue-50 lg:grid-cols-2 gap-10 items-center">
 
         {/* Right Image */}
         <div className="relative">
@@ -152,7 +152,7 @@ const AutomotivePage = () => {
 
 
       {/* Tourism Call-to-Action Section */}
-<div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center justify-evenly px-0 md:px-6 lg:px-12">
+<div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto my-10 py-10 lg:flex-row items-center justify-evenly px-0 md:px-6 lg:px-12">
   <h1 className="font-bold text-white text-3xl md:text-4xl text-center leading-tight">
  Ensuring Safety and Success Through Expertise
   </h1>

@@ -114,7 +114,7 @@ const RealEstatePage = () => {
 
 
       {/* Features Section */}
-      <div className="features-section rounded-lg shadow-lg hover:shadow-xl  transition-shadow duration-300 p-2 md:p-6 justify-start pb-10 ">
+      <div className="features-section rounded-lg shadow-lg hover:shadow-xl  transition-shadow duration-300 p-2 md:p-6 justify-start my-10 py-10 ">
         <h3 className="text-start md:text-4xl text-3xl font-bold text-black mb-10">
           Why Choose Prime Marketing Experts?
         </h3>

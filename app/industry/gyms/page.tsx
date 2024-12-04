@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function GymIndustryPage() {
   return (
-    <section className="container px-2 md:px-12 lg:px-24">
+    <section className="container px-0 md:px-12 lg:px-24">
 
 
         
@@ -17,7 +17,7 @@ export default function GymIndustryPage() {
 
       <div className="mx-auto px-2 lg:px-12">
         {/* Section Container */}
-        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 lg:flex-row items-center justify-between">
+        <div className="flex flex-col mb-10 pb-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 lg:flex-row items-center justify-between">
           {/* Left Side - Content */}
           <div className="w-full lg:w-1/2 text-start md:text-center lg:text-left lg:pr-12">
             <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
@@ -49,7 +49,7 @@ export default function GymIndustryPage() {
         </div>
 
         {/* Additional Information Section */}
-<div className="mt-16 flex flex-col lg:flex-row bg-blue-50 p-2 md:p-6 items-center lg:items-start text-start md:text-left">
+<div className="my-10 py-10 flex flex-col lg:flex-row bg-blue-50 p-2 md:p-6 items-center lg:items-start text-start md:text-left">
   {/* Content Section */}
   <div className="w-full lg:w-2/3">
     <h2 className="md:text-4xl text-3xl font-bold mb-6 text-black">Why Choose Us to Market Your Gym?</h2>
@@ -87,9 +87,9 @@ export default function GymIndustryPage() {
 </div>
 
         {/* Success Stories Section */}
-<div className="my-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 text-start md:text-center">
-  <h2 className="md:text-4xl text-3xl font-bold mb-6 text-black">Our Success Stories</h2>
-  <p className="text-lg text-gray-800  text-start md:text-center mx-auto mb-8">
+<div className="my-10 py-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 text-start md:text-center">
+  <h2 className="md:text-4xl text-3xl font-bold text-start mb-6 text-black">Our Success Stories</h2>
+  <p className=" text-black  text-start  mb-8">
     Don’t just take our word for it. Hear from gym owners who have experienced growth and success with our marketing strategies:
   </p>
   <div className="grid grid-cols-1 md:grid-cols-3 text-black flex-wrap justify-center gap-6 ">
@@ -127,7 +127,7 @@ export default function GymIndustryPage() {
        
 
           {/* Tourism Call-to-Action Section */}
-<div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center pt-6 justify-evenly px-6 lg:px-2">
+<div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto my-10 py-10 lg:flex-row items-center  justify-evenly px-6 lg:px-2">
   <h1 className="font-bold text-white text-2xl md:text-4xl text-center leading-tight">
   Don’t wait any longer to take your gym to the next level
   </h1>

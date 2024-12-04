@@ -45,14 +45,15 @@ const Page = () => {
         </div>
 
         <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-6">
-          <h1 className="font-bold text-3xl md:text-4xl">
-            Surpassing Your Social Media Goals
-          </h1>
+          
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="w-full h-full">
               <Image src={IMG2} alt="Market Research" layout="responsive" width={1200} height={1000} />
             </div>
-            <div className="space-y-8 w-full lg:w-11/12 mt-14">
+            <div className="space-y-8 w-full lg:w-11/12 ">
+            <h1 className="font-bold text-3xl md:text-4xl">
+            Surpassing Your Social Media Goals
+          </h1>
               <p>
                 We deploy social media strategies that are customized to your overall digital marketing goals. To develop brand recognition, we deploy strategies that grow followers relevant to your demographics, behaviors, and interests of your typical clients. Increasing the number of followers will improve word of mouth marketing and the volume of referrals. We incorporate strategies that increase engagement to ensure that your campaign builds relationships, which increases the likelihood that people will buy from your company.
               </p>
@@ -64,11 +65,12 @@ const Page = () => {
         </div>
 
         <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
-          <h1 className="font-bold text-3xl md:text-4xl">
-            Social Media Posting That Builds Brands
-          </h1>
+          
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="space-y-8 w-full lg:w-11/12">
+            <h1 className="font-bold text-3xl md:text-4xl">
+            Social Media Posting That Builds Brands
+          </h1>
               <p>
                 We custom design social media posts that powerfully assist in attracting, converting, and retaining your most ideal customers.
               </p>
@@ -86,14 +88,15 @@ const Page = () => {
         </div>
 
         <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-6">
-          <h1 className="font-bold text-3xl md:text-4xl">
-            Social Media Advertising That Generates Results
-          </h1>
+         
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="w-full h-full">
               <Image src={IMG4} alt="Market Research" layout="responsive" width={1200} height={1000} />
             </div>
             <div className="space-y-8 w-full lg:w-11/12">
+            <h1 className="font-bold text-3xl md:text-4xl">
+            Social Media Advertising That Generates Results
+          </h1>
               <p>
                 We create and manage social media advertising campaigns that help you effectively drive website traffic and conversions. We define the most ideal targeting that effectively reaches your target audience. A/B tests are deployed to help us build upon prior success, which helps us best understand what resonates with your audience and optimize how we define your company’s target audience. We implement conversion tracking to evaluate which aspects of our strategy drives results.
               </p>
@@ -111,11 +114,12 @@ const Page = () => {
         </div>
 
         <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
-          <h1 className="font-bold text-3xl md:text-4xl">
-            Comprehensive Monitoring & Reporting Solutions
-          </h1>
+          
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="space-y-8 w-full lg:w-11/12">
+            <h1 className="font-bold text-3xl md:text-4xl">
+            Comprehensive Monitoring & Reporting Solutions
+          </h1>
               <p>
                 Our monitoring measures the level of reach, interactions, shares, and follower growth on each social media profile. We monitor the level of conversions of each social media advertisement variation, and what demographics are associated with the best conversion metrics. Additionally, we monitor the same data and analyze the success of posts from key competitors to adapt our strategy over time.
               </p>
@@ -133,14 +137,16 @@ const Page = () => {
         </div>
 
         <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-6">
-          <h1 className="font-bold text-3xl md:text-4xl">
-            Relationship Building Social Media Marketing Services
-          </h1>
+          
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="w-full h-full">
+              
               <Image src={IMG6} alt="Market Research" layout="responsive" width={1200} height={1000} />
             </div>
             <div className="space-y-8 w-full lg:w-11/12">
+            <h1 className="font-bold text-3xl md:text-4xl">
+            Relationship Building Social Media Marketing Services
+          </h1>
               <p>
                 Our agency has the ability to connect your business with influencers that are complementary to your business using multiple industry-leading platforms. We evaluate them to see how they can build engagement with their followers to determine how successful they will be partnering with your business. In turn, they are key at building trust and thought leadership of your brand on all social media accounts. Our multi-faceted influencer marketing strategy to ensure the relationship that we build with influencers achieves your goals of building your brand throughout your market.
               </p>
@@ -169,7 +175,7 @@ const Page = () => {
         </div>
       </div>
 
-        <div className='w-full flex flex-col  lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 mr-8 p-6 lg:flex-row items-center justify-evenly'>
+        <div className='w-full flex flex-col  lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto pb-10 my-10  mr-8 p-6 lg:flex-row items-center justify-evenly'>
         <h1 className='font-bold text-white text-3xl md:text-4xl text-center'>
         Get a Free Quote & Learn About Our Social Media <br /> Marketing Plans Today
         </h1>

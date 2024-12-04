@@ -16,7 +16,7 @@ const Page = () => {
       
             </div>
 
-            <div className="flex flex-col  gap-10 mt-4">
+            <div className="flex flex-col mb-10 gap-10">
                 <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
                     <h1 className="font-bold text-3xl md:text-4xl">
                         Give Your Emails The Right Service, Strategy, And Execution
@@ -59,7 +59,7 @@ const Page = () => {
                         <p>Text messaging is an ideal component of your company’s marketing plan, which is the foundation for attaining your objectives to support your business. Moreover, you do not need to spend dozens of hours finding the best in text message marketing. You are on the right page. We, as PRIME MARKETING EXPERTS, can help you get through your finish line of marketing goals by providing personalized and genuine text marketing solutions. We’ll be your virtual component of your team that will match go the extra mile to work together to support and grow your business.</p>
                         <p>99% of SMS messages are always read!</p>
                         <p>It is associated with the least fall-out rate ever because people respond more to texts rather than emails and social posts. You can send text messages to market about</p>
-                        <ul className='list-disc pl-5 space-y-2'>
+                        <ul className='list-disc pl-6 space-y-2'>
                             <li>Promotions</li>
                             <li> Branding</li>
                             <li>Event notification</li>

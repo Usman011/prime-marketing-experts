@@ -18,7 +18,7 @@ const Page = () => {
      
 
       {/* Introduction Section */}
-      <div className='flex flex-col rounded-lg shadow-lg p-2 md:p-6 space-y-5'>
+      <div className='flex flex-col mb-10 pb-10 rounded-lg shadow-lg p-2 md:p-6 space-y-5'>
         <h1 className='font-bold text-3xl md:text-4xl text-black'>
           Market Research Services That Spark Profitable Growth!
         </h1>
@@ -50,7 +50,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="bg-blue-50 p-2 md:p-6 rounded-lg shadow-md">
+      <div className="bg-blue-50 my-10 py-10 p-2 md:p-6 rounded-lg shadow-md">
   <div className="flex flex-col lg:flex-row gap-8">
     {/* Image Section */}
     <div className='w-full lg:w-1/2'>
@@ -76,7 +76,7 @@ const Page = () => {
 
 
       {/* Detailed Services Section */}
-      <div className='space-y-6 rounded-lg shadow-lg p-2 md:p-6 mt-10'>
+      <div className='space-y-6 rounded-lg my-10 py-10 shadow-lg p-2 md:p-6 mt-10'>
         <h1 className='font-bold text-3xl md:text-4xl text-black'>Detailed Market Research That Grows Businesses</h1>
         <p>
           We offer renowned market research solutions specializing in quantitative and qualitative market research for small as well as Fortune 500 companies.
@@ -95,7 +95,7 @@ const Page = () => {
           <li>Market opportunity assessments</li>
         </ul>
       </div>
-      <div className='bg-blue-100 p-2 md:p-6 my-10 py-6 rounded-lg shadow-lg'>
+      <div className='bg-blue-100 my-10 py-10 p-2 md:p-6 rounded-lg shadow-lg'>
   <div className="flex flex-col lg:flex-row items-center gap-8">
     {/* Text Section on the Left */}
     <div className='w-full lg:w-1/2'>
@@ -138,7 +138,7 @@ const Page = () => {
 </div>
 
 {/* Types of Market Research Section */}
-<div className="space-y-6 rounded-lg shadow-lg p-2 md:p-6 mt-10 bg-blue-50">
+<div className="space-y-6 my-10 py-10 rounded-lg shadow-lg p-2 md:p-6 mt-10 bg-blue-50">
   <h1 className="font-bold text-3xl md:text-4xl text-black">Types of Market Research</h1>
 
   {/* Qualitative Research */}
@@ -165,7 +165,7 @@ const Page = () => {
 </div>
 
 {/* Importance of Market Research Services */}
-<div className="space-y-8 mt-10 px-1 lg:px-6 pb-10  shadow-lg rounded-xl">
+<div className="space-y-8 my-10 py-10 px-1 lg:px-6 shadow-lg rounded-xl">
   <h1 className="font-bold text-3xl md:text-4xl text-gray-900 text-start md:text-center mb-4">
     Importance of Market Research Services
   </h1>
@@ -231,7 +231,7 @@ const Page = () => {
 
 
       {/* Call to Action Section */}
-      <div className='bg-orange-400 text-white text-center my-6 py-6'>
+      <div className='bg-orange-400 text-white text-center my-10 py-10'>
         <h2 className='font-bold text-start md:text-auto p-3 md:p-auto text-2xl'>Do you want to understand your demographics better through market research services?</h2>
         <p className='text-lg mt-4 text-start p-3'>
           Call us at <span className='font-bold'>617-651-1457</span> to schedule a free initial consultation!

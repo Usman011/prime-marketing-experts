@@ -56,7 +56,7 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 								onHoverEnd={() => setHoveredId(null)}
 								className=" cursor-pointer"
 							>
-								<Card className="overflow-hidden h-full  flex flex-col bg-white/80 backdrop-blur-sm border-none shadow-lg">
+								<Card className="overflow-hidden h-full flex flex-col bg-white/80 backdrop-blur-sm border-none shadow-lg">
 									<div className="relative">
 										{caseStudy.imageUrl ? (
 											<Image

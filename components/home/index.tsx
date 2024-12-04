@@ -13,6 +13,7 @@ export const Home = () => {
 	return (
 		<>
 		    <HomeBanner />
+			<div className='space-y-10 mb-10'>
 			<CarouselSection/>
 			<AboutUs/>
 			<HomeServicesPage />
@@ -22,6 +23,7 @@ export const Home = () => {
 			<BlogList />
 			<InfoSection />
 			<Contact />
+			</div>
 			
 		</>
 	)

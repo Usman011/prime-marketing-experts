@@ -20,7 +20,7 @@ export default function RestaurantIndustry() {
 
       <div className="min-h-screen ">
         {/* Hero Section */}
-        <div className="mx-auto px-0 md:px-6 lg:px-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 pb-10">
+        <div className="mx-auto px-0 md:px-12 mb-10 pb-10 lg:px-12 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 ">
           <div className="flex flex-col gap-6 lg:flex-row items-center">
             {/* Left Side - Content */}
             <div className="w-full lg:w-1/2 space-y-6 text-start md:text-center lg:text-left">
@@ -55,7 +55,7 @@ export default function RestaurantIndustry() {
 
         {/* Marketing Strategies Section */}
         <div className="container mx-auto px-0 md:px-6 bg-blue-50 my-10 lg:px-20 py-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-start md:text-center text-gray-800">Our Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-start text-gray-800">Our Services</h2>
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="flex flex-col items-center bg-white p-2 md:p-6 rounded-lg shadow-lg">
               <Image
@@ -89,7 +89,7 @@ export default function RestaurantIndustry() {
         {/* Industry Trends Section */}
         <div className=" py-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6">
           <div className="container mx-auto px-0 lg:px-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-start md:text-center text-gray-800">Convenience is Key</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-start text-gray-800">Convenience is Key</h2>
             <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="flex flex-col items-center bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg">
                 <Image
@@ -123,7 +123,7 @@ export default function RestaurantIndustry() {
 
         {/* Why Choose Us Section */}
         <div className="container mx-auto bg-blue-50 my-10 px-2 lg:px-20 py-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-start md:text-center text-gray-800">Why Choose Prime Marketing Experts?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-start text-gray-800">Why Choose Prime Marketing Experts?</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-2 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold">Tailored Solutions</h3>

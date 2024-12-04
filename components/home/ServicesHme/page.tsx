@@ -104,10 +104,10 @@ export default function HomeServicesPage() {
 	return (
 		<>
 		     	
-			<section className="py-auto w-full overflow-hidden container  md:py-16 py-10 px-6  text-gray-900">
-		\
+			<section className="py-auto w-full overflow-hidden container  py-10 px-4 md:px-12 lg:px-24  text-gray-900">
+		
 				<div className="max-w-7xl mx-auto">
-					<h2 className="text-3xl font-bold text-start md:text-center mb-2">Our Services</h2>
+					<h2 className="text-3xl md:text-4xl font-bold text-start md:text-center mb-2">Our Services</h2>
 					<p className="text-base text-gray-500 text-start max-w-96 md:max-w-4xl w-[100%] mx-auto mb-8">
 						Prime Marketing Experts is a digital marketing and website services company focused on
 						helping small and medium-sized businesses in the Boston area prosper. Since 2017, we’ve
@@ -115,11 +115,7 @@ export default function HomeServicesPage() {
 						marketing, branding, and advertising solutions.
 					</p>
                      
-					<motion.div
-						initial={{ opacity: 0, x: 50 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.3, delay: 0.2 }}
-					>
+					
 					<div className=" pt-5 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8">
 						{displayedServices.map((service, index) => (
 							<ServiceCard
@@ -142,7 +138,7 @@ export default function HomeServicesPage() {
 							</button>
 						</div>
 					)}
-					</motion.div>
+					
 				</div>
 				
 			</section>

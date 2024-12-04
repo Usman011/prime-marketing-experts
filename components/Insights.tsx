@@ -86,7 +86,7 @@ export default function Insight() {
 		
 		
 		
-		<div className="container w-full overflow-hidden py-12 bg-gray-50 px-2 md:px-12 lg:px-24">
+		<div className="container w-full overflow-hidden py-10 bg-gray-50 px-2 md:px-12 lg:px-24">
 		
 			<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 				<h2 className=" text-3xl md:text-4xl font-bold text-start md:text-center mb-8 text-gray-900">
@@ -105,11 +105,7 @@ export default function Insight() {
 					))}
 				</div>
 				<div className="overflow-hidden" ref={emblaRef}>
-				<motion.div
-						initial={{ opacity: 0, x: 50 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.5, delay: 0.6 }}
-					>
+				
 					<div className="flex">
 						{carouselItemsData.map((item, index) => (
 							<div className="flex-[0_0_100%] min-w-0 px-0  md:px-5" key={index}>
@@ -145,7 +141,7 @@ export default function Insight() {
 							</div>
 						))}
 					</div>
-					</motion.div>
+					
 				</div>
 				<div className="flex justify-center mt-8 gap-4">
 					<Button variant="outline" size="icon" onClick={() => emblaApi?.scrollPrev()}>

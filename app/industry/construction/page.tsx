@@ -15,7 +15,7 @@ export default function CleaningCompanies() {
       
       <div className="mx-auto ">
         {/* Hero Section */}
-        <div className="flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 items-center justify-between mb-10">
+        <div className="flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 items-center justify-between mb-10 pb-10">
           {/* Left Side - Content */}
           
           <div className="w-full lg:w-1/2 lg:pr-12">

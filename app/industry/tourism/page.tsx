@@ -40,7 +40,7 @@ export default function TourismPage() {
       </div>
 
       {/* Services Section */}
-      <div className="relative pb-10 pt-4 flex items-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 justify-start md:justify-auto p-2 md:p-6">
+      <div className="relative pb-10 mb-10  flex items-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 justify-start md:justify-auto p-2 md:p-6">
         <div className="container mx-auto px-0 md:px-12 flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-3/5 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl md:text-auto text-start font-bold text-gray-800 mb-6 leading-tight">
@@ -70,7 +70,7 @@ export default function TourismPage() {
       </div>
 
       {/* Destination Marketing Section */}
-      <div className="py-16 bg-blue-50">
+      <div className="py-10 my-10 bg-blue-50">
         <div className="container mx-auto px-2 md:px-12 flex flex-col md:flex-row gap-12">
           <div className="md:w-1/2">
             <Image
@@ -86,7 +86,7 @@ export default function TourismPage() {
             <p className="text-lg text-gray-700 leading-relaxed text-start md:auto">
               Promote your city, region, or country to travelers worldwide with our strategic campaigns. We spotlight your destination`s unique culture, attractions, and experiences to inspire visitors. Through storytelling and immersive content, we help showcase what makes your destination unforgettable.
             </p>
-            <ul className='list-disc pl-5 space-y-2  text-start md:auto pt-6'>
+            <ul className='list-disc pl-6 space-y-2  text-start md:auto pt-6'>
               <li>Highlighting landmarks and experiences</li>
               <li>Targeted international campaigns</li>
               <li>Establishing a distinct verbal brand identity</li>
@@ -97,7 +97,7 @@ export default function TourismPage() {
       </div>
 
       {/* Social Media Marketing Section */}
-      <div className="py-16 text-lg text-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6">
+      <div className="py-10 my-10 text-lg text-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6">
         <div className="container mx-auto px-0 md:px-12 flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2 text-start md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
@@ -106,7 +106,7 @@ export default function TourismPage() {
             <p className="text-lg text-gray-600 leading-relaxed  text-start md:auto mb-6">
               Social media connects you to travelers in real time. We create inspiring campaigns on platforms like Instagram, Facebook, Twitter, and YouTube to spark wanderlust and grow engagement.
             </p>
-            <ul className="list-disc pl-5 text-gray-700  text-start md:auto">
+            <ul className="list-disc pl-6 text-gray-700  text-start md:auto">
               <li className="mb-2">Beautiful visual content to capture attention</li>
               <li className="mb-2">Community engagement with travel enthusiasts</li>
               <li>Targeted advertising to reach the right audience</li>
@@ -125,9 +125,9 @@ export default function TourismPage() {
       </div>
 
       {/* Destinations Section */}
-      <div className="py-16 bg-blue-50">
+      <div className="py-10 my-10 bg-blue-50">
         <div className="container mx-auto px-0 md:px-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-start md:text-center mb-12">Tourism Marketing Services by Prime Marketing Experts</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-start mb-12">Tourism Marketing Services by Prime Marketing Experts</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {destinations.map((destination) => (
               <div

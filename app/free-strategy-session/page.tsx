@@ -5,9 +5,9 @@ import Image from 'next/image';
 
 const Page = () => {
   return (
-    <section className='container mx-auto my-10 px-4 flex flex-col'>
+    <section className='container mx-auto my-10 px-2 md:px-6 lg:px-12 flex flex-col'>
       <div className='mt-10 flex flex-col bg-blue-100 gap-10 md:flex-col lg:flex-row'>
-        <div className='lg:w-1/2 gap-12 p-4'>
+        <div className='lg:w-1/2 gap-12 p-2 md:p-4'>
           <h2 className='text-3xl font-bold mb-4'>Ready For Better Digital Marketing Results?</h2>
           <p className='mb-8 text-2xl italic font-bold'>Grow Your Sales Profitably With Prime Marketing Experts!</p>
           <p>We offer a full range of digital marketing and website development services to help you achieve the best growth for your business as possible.</p>
@@ -28,7 +28,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='lg:w-1/2 p-4'>
+        <div className='lg:w-1/2 p-2 md:p-4'>
           <h1 className='text-3xl pb-4 font-bold'>
             Sign Up for Your Free Initial 45 Minute Strategy Session Now!
           </h1>

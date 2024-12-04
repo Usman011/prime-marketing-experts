@@ -16,7 +16,7 @@ const Page = () => {
       </div>
      
 
-      <div className='flex flex-col space-y-6  mt-10 justify-start'>
+      <div className='flex flex-col space-y-6 mb-10 pb-10 justify-start'>
         <h1 className='font-bold mb-4 text-3xl md:text-4xl'>
           Market Research Services That Spark Profitable Growth!
         </h1>
@@ -33,14 +33,14 @@ const Page = () => {
         </p>
         
           </div>
-          <div className='w-full h-auto'>
+          <div className='w-full pb-10 h-auto'>
             <Image src={IMG1} alt="Market Research" className='w-full h-auto object-cover' />
           </div>
         </div>
        
 
        
-        <div className="space-y-6 bg-blue-50 p-2 md:p-6 lg:p-8">
+        <div className="space-y-6 my-10 py-10 bg-blue-50 p-2 md:p-6 lg:p-8">
   <div className="md:flex md:gap-8">
     {/* Image Section */}
     <div className="w-full md:w-1/2 pt-8 md:pt-16">
@@ -122,7 +122,7 @@ const Page = () => {
          
 
          
-        <div className='bg-blue-50 space-y-10 p-2 mt-6 md:mt-10 md:p-6 rounded-lg shadow-md'>
+        <div className='bg-blue-50 my-10 py-10 space-y-10 p-2 mt-6 md:mt-10 md:p-6 rounded-lg shadow-md'>
   {/* Main Heading */}
   <h1 className='text-start text-3xl md:text-4xl font-bold text-black'>
     Why do you need a Business Model Transformation?

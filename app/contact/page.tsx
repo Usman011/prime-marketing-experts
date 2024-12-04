@@ -49,11 +49,11 @@ export default function Contact() {
 	return (
 		
 		
-		<section className="py-16 container w-full overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50">
+		<section className="py-10 container w-full overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50 px-2 md:px-12 lg:px-24">
 		
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<motion.h2
-					className="md:text-4xl text-3xl font-bold text-start md:text-center pb-2"
+					className="md:text-4xl text-3xl font-bold text-start md:text-center"
 					initial={{ opacity: 0, y: -20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5 }}

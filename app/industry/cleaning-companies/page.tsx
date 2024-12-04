@@ -21,7 +21,7 @@ export default function CleaningCompanies() {
       </div>
       <div className="mx-auto ">
         {/* Hero Section */}
-        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl p-2 md:p-6 transition-shadow duration-300  lg:flex-row items-center justify-between mb-16">
+        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl p-2 md:p-6 transition-shadow duration-300  lg:flex-row items-center justify-between mb-10 pb-10">
           {/* Left Side - Content */}
           <div className="w-full lg:w-1/2 lg:pr-12 transform transition-all space-y-8 duration-500 hover:scale-105">
             <h1 className="text-3xl md:text-4xl font-bold text-start text-gray-800 leading-tight">
@@ -56,7 +56,7 @@ export default function CleaningCompanies() {
         </div>
 
         {/* Cleaning Services Section */}
-        <div className="bg-blue-50 my-10 p-2 md:p-10 ">
+        <div className="bg-blue-50 my-10 py-10 p-2 md:6 ">
           <h2 className="text-3xl md:text-4xl font-bold text-start text-gray-800">Our Tailored Cleaning Marketing Services</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="flex flex-col items-center p-2 md:p-6 bg-gray-100 rounded-lg shadow-md hover:bg-gray-200 transition-all">
@@ -141,7 +141,7 @@ export default function CleaningCompanies() {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 py-16">
+        <div className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 my-10 py-10">
           <h2 className="text-3xl md:text-4xl font-bold text-start text-gray-800">Why Cleaning Businesses Choose Prime Marketing Experts</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
@@ -186,7 +186,7 @@ export default function CleaningCompanies() {
        
 
        {/* Tourism Call-to-Action Section */}
-<div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 pt-4 mb-6 lg:flex-row items-center justify-evenly px-6 lg:px-12">
+<div className="w-full flex flex-col lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto my-10 py-10 lg:flex-row items-center justify-evenly px-6 lg:px-12">
   <h1 className="font-bold text-white text-2xl md:text-4xl text-center leading-tight">
   Ready to Grow Your Cleaning Business?
   </h1>

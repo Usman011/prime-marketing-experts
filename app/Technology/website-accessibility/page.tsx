@@ -161,7 +161,7 @@ const Page = () => {
             Website Accessibility Design Features
           </h1>
           <div className='space-y-6'>
-            <ul className='list-disc pl-5 space-y-2'>
+            <ul className='list-disc pl-6 space-y-2'>
               <li>Contrast Ratio</li>
               <li>Don’t Rely on Color</li>
               <li>Label Forms Clearly</li>
@@ -246,7 +246,7 @@ const Page = () => {
 </div>
 
 
-<div className='flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6 lg:space-x-6 justify-start'>
+<div className='flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl py-10 mb-10 transition-shadow duration-300 p-2 md:p-6 space-y-6 lg:space-x-6 justify-start'>
   {/* Content Section */}
   <div className='flex-1 p-2 md:p-6'>
     <h1 className='font-bold text-3xl pb-4 md:text-4xl'>

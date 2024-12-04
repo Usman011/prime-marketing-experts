@@ -113,7 +113,7 @@ const Page = () => {
       <p>We make brands and aspire ourselves to the same for many more years to come.</p>
       <p>Whether you need help with strategy, logo, UI & UX design, digital or print campaigns, we can help your brand stand out. We can help you with:</p>
       
-      <ul className='list-disc pl-5 space-y-6'>
+      <ul className='list-disc pl-6 space-y-6'>
         <li>Brand strategy</li>
         <li>Visual brand identity</li>
         <li>Verbal brand identity</li>
@@ -129,7 +129,7 @@ const Page = () => {
 </div>
 
 
-<div className='flex flex-col space-y-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 justify-start'>
+<div className='flex flex-col space-y-6 rounded-lg pb-10 mt-10 shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 justify-start'>
   <h1 className='font-bold text-3xl md:text-4xl'>
     Importance Of Branding
   </h1>
@@ -194,7 +194,7 @@ const Page = () => {
 
 
 
-          <div className='w-full flex flex-col gap-4 lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-12 my-6 lg:flex-row items-center justify-around'>
+          <div className='w-full flex flex-col gap-4 lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto py-10 mb-10 lg:flex-row items-center justify-around'>
         <h1 className='font-bold text-white text-4xl text-center'>
           Plan The Future Growth Of Your Business
         </h1>

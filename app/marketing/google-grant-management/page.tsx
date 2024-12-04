@@ -218,7 +218,7 @@ const Page = () => {
 
 
         
-        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto bg-orange-500 h-auto lg:h-32 mt-6 mb-6 pt-6 items-center justify-center lg:justify-around px-4'>
+        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto bg-orange-500 h-auto lg:h-32  mb-10  items-center justify-center lg:justify-around px-4'>
   <h1 className='font-bold text-white text-center lg:text-left text-2xl lg:text-4xl'>
     Grow Your Nonprofit Today!
   </h1>

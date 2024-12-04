@@ -28,8 +28,8 @@ const Page = () => {
       </div>
     
 
-      <div className='gap-20'>
-        <div className="flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
+      <div className='gap-10'>
+        <div className="flex flex-col mb-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-6">
         
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="space-y-8 w-full lg:w-11/12 ">
@@ -203,7 +203,7 @@ const Page = () => {
               <p>
                 Well, some people associate it with being time-consuming and believing that you always need to be on your toes with creative ideas. However, their pro outnumbers the cons. Blog marketing is:
               </p>
-              <ul className='list-disc pl-5 space-y-2'>
+              <ul className='list-disc pl-6 space-y-2'>
                 <li>Inexpensive to start and operate</li>
                 <li>Easy to work using various blogging platforms</li>
                 <li>Blogging for SEO (search engine optimization) upgrades search engine ranking.</li>
@@ -219,7 +219,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-6 space-y-6">
+        <div className="flex flex-col bg-blue-50 space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <div className="w-full bg-orange-600 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
@@ -260,7 +260,7 @@ const Page = () => {
                 Website content is a passive nurturing, too, since you cannot be available around the clock to hold all prospects and queries through the sale process.
               </p>
             </div>
-            <div className="w-full bg-blue-900 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-blue-900 h-[60vh] text-black mt-2 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG3} alt="Market Research" className='w-70 h-70' />
                 <h1 className='font-bold text-black text-3xl'>Website Content</h1>
@@ -269,9 +269,9 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
+        <div className="flex flex-col bg-blue-50 space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="w-full bg-orange-600 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-orange-600 h-[60vh] text-black mt-2 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG4} alt="Market Research" className='w-70 h-70' />
                 <h1 className='font-bold text-3xl text-black'>Email Marketing</h1>
@@ -301,7 +301,7 @@ const Page = () => {
                 Ebooks offer you the chance to showcase higher authority and ability on a subject with greater depth when compared to what blog posts offer. Therefore, it is rightly said that this service will play a vital role in content marketing and bring more traffic.
               </p>
             </div>
-            <div className="w-full bg-blue-900 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-blue-900 h-[60vh] text-black flex mt-2 justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG5} alt="Market Research" className='w-70 h-70' />
                 <h1 className='font-bold text-black text-3xl'>EBooks</h1>
@@ -310,9 +310,9 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
+        <div className="flex flex-col bg-blue-50 space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="w-full bg-orange-600 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-orange-600 h-[60vh] text-black mt-2 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG6} alt="Market Research" className='w-70 h-70' />
                 <h1 className='font-bold text-3xl text-black'>Case Studies</h1>
@@ -344,7 +344,7 @@ const Page = () => {
               <p>
                 Here is how videos can benefit your brand:
               </p>
-              <ul className='list-disc pl-5 space-y-2'>
+              <ul className='list-disc pl-6 space-y-2'>
                 <li>It increases engagement.</li>
                 <li>It generates traffic, leads, and sales.s</li>
                 <li>It boosts the conversion rate.</li>
@@ -352,7 +352,7 @@ const Page = () => {
                 <li>It helps in improving the search engine rankings.</li>
               </ul>
             </div>
-            <div className="w-full bg-blue-900 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-blue-900 h-[60vh] text-black flex mt-2 justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG7} alt="Market Research" className='w-70 h-70' />
                 <h1 className='font-bold text-black text-3xl'>Video Content</h1>
@@ -361,9 +361,9 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-2 space-y-6">
+        <div className="flex flex-col bg-blue-50 space-y-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <div className="w-full bg-orange-600 h-[60vh] text-black mt-14 flex justify-center items-center text-center">
+            <div className="w-full bg-orange-600 h-[60vh] text-black mt-2 flex justify-center items-center text-center">
               <div className='text-white space-y-4 flex flex-col justify-center items-center text-center'>
                 <Image src={IconIMG8} alt="Market Research" className='w-70 h-70' />
                 <h1 className='font-bold text-3xl text-black'>Social Media Content</h1>
@@ -389,13 +389,13 @@ const Page = () => {
         </div>
 
         <div className='gap-20  mt-10'>
-          <div className="flex flex-col rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-6  space-y-6">
+          <div className="flex flex-col rounded-lg shadow-lg my-10 hover:shadow-xl transition-shadow duration-300 p-2 md:p-6  space-y-6">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
               <div className="space-y-8 w-full lg:w-11/12 mt-14">
                 <h1 className="font-bold text-4xl">
                   Why Content Marketing?
                 </h1>
-                <ul className='list-decimal pl-5 space-y-2'>
+                <ul className='list-decimal pl-6 space-y-2'>
                   <li>93% of B2B marketers use content marketing.</li>
                   <li>73% of companies appoint someone to oversee their content strategy.</li>
                   <li>58% of marketers believe original content is the most important type of content.</li>
@@ -408,7 +408,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-6">
+          <div className="flex flex-col bg-blue-50 space-y-6">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
               <div className="w-full mt-10 h-full">
                 <Image src={IMG4} alt="Market Research" layout="responsive" width={1200} height={1000} />

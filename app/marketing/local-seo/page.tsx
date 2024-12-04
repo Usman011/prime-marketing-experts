@@ -19,7 +19,7 @@ const Page = () => {
      
 
       <div className='gap-10'>
-        <div className="flex rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 flex-col ">
+        <div className="flex rounded-lg shadow-lg mb-10 hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 flex-col ">
           <h1 className="text-3xl md:text-4xl">
           Local SEO Helps People Find Your Neighborhood Business
           </h1>
@@ -55,7 +55,7 @@ const Page = () => {
 
         </div>
 
-        <div className="flex flex-col bg-blue-50 p-2 md:p-6 space-y-6 justify-start">
+        <div className="flex flex-col mb-10 bg-blue-50 p-2 md:p-6 space-y-6 justify-start">
   
   {/* Content Section */}
   <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-14">
@@ -101,7 +101,7 @@ const Page = () => {
         
 
           
-<div className="flex flex-col rounded-lg shadow-lg  hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 mt-8 space-y-8">
+<div className="flex flex-col rounded-lg shadow-lg  hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 mb-10 space-y-8">
   {/* Title */}
   <h1 className="text-3xl md:text-4xl font-bold">Local SEO That Sells</h1>
 
@@ -167,7 +167,7 @@ const Page = () => {
 </div>
 
 
-<div className="flex flex-col mt-8 bg-blue-50 p-2 md:p-6 space-y-8">
+<div className="flex flex-col mb-10 bg-blue-50 p-2 md:p-6 space-y-8">
   {/* Title */}
   <h1 className="text-3xl md:text-4xl font-bold text-start">Benefits of Local SEO</h1>
 
@@ -256,7 +256,7 @@ const Page = () => {
           </h1>
           <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
             <div className='space-y-6'>
-              <ul className='list-disc pl-5 space-y-2'>
+              <ul className='list-disc pl-6 space-y-2'>
               <li>Website Structure</li>
               <li>Backlink Profile</li>
               <li>Domain Age</li>
@@ -270,7 +270,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className='flex flex-col mt-8 bg-blue-50 p-2 md:p-6 space-y-6 justify-start'>
+          <div className='flex flex-col my-8 bg-blue-50 p-2 md:p-6 space-y-6 justify-start'>
           <h1 className='text-3xl md:text-4xl'>
           Here Is How We Can Help
           </h1>
@@ -286,7 +286,7 @@ const Page = () => {
             </div>
           </div>
          
-          <div className='w-full flex flex-col gap-4 lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto mt-6 mb-6 lg:flex-row items-center  justify-around'>
+          <div className='w-full flex flex-col gap-4 lg:gap-auto bg-orange-500 lg:h-32 md:h-auto sm:h-auto my-10 lg:flex-row items-center  justify-around'>
         <h1 className='font-bold text-white text-3xl md:text-4xl text-center'>
           Plan The Future Growth Of Your Business
         </h1>

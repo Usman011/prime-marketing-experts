@@ -19,7 +19,7 @@ const Page = () => {
      
       
       
-      <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6  lg:grid-cols-2 gap-10 items-center justify-start'>
+      <div className='flex flex-col mb-10 pb-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6  lg:grid-cols-2 gap-10 items-center justify-start'>
         <h1 className='font-bold text-start text-3xl md:text-4xl'>
         Operational Assessment Services That Drive Growth
         </h1>
@@ -75,10 +75,10 @@ const Page = () => {
 
 
 
-        <div className='space-y-6 '>
+        <div className='space-y-6 my-10 pb-10'>
           <div className='rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 lg:grid-cols-2 gap-10 items-center'>
           <div >
-            <h1 className='pt-10 font-bold pb-4  text-3xl md:text-4xl'>
+            <h1 className='font-bold pb-8 text-3xl md:text-4xl'>
             Prepare For Future Growth with Prime Marketing Experts
             </h1>
             <p>
@@ -107,7 +107,7 @@ const Page = () => {
           </div>
           
 
-      <div className='flex flex-col bg-blue-50 p-2 md:p-6 lg:flex-row gap-8 '>
+      <div className='flex flex-col my-10 py-10 bg-blue-50 p-2 md:p-6 lg:flex-row gap-8 '>
   <div className='lg:w-1/2'>
     <h1 className='pt-4 pb-4 font-bold text-3xl md:text-4xl'>
       Why Are Operational Assessments Important?
@@ -126,7 +126,7 @@ const Page = () => {
 
 
           
-      <div className='rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 lg:grid-cols-2 gap-10 items-center'>
+      <div className='rounded-lg shadow-lg my-10 py-10 hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 lg:grid-cols-2 gap-10 items-center'>
           <div>
             <h1 className='py-8 font-bold text-3xl md:text-4xl'>
             Motivate Employees With Operational Assessments
@@ -146,8 +146,8 @@ const Page = () => {
           </ul> </div>
 
 
-          <div className='bg-blue-50 p-2 md:p-6 rounded-lg shadow-md'>
-  <h1 className='py-10 font-bold text-3xl md:text-4xl text-start  text-black'>
+          <div className='bg-blue-50 p-2 md:p-6 my-10 py-10 rounded-lg shadow-md'>
+  <h1 className='pb-10 font-bold text-3xl md:text-4xl text-start  text-black'>
     Operational Assessment Benefits
   </h1>
   

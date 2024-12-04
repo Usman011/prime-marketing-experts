@@ -11,12 +11,12 @@ export function WhoWeServeSection() {
    
     
    
-	  <section className="bg-blue-50 overflow-hidden container w-auto md:w-auto py-16 ">
+	  <section className="bg-blue-50 overflow-hidden container w-auto md:w-auto py-16 px-4 md:px-12 lg:px-24">
        
 		<div className="max-w-7xl md:mx-auto text-start md:text-center">
 		  <div className='md:mx-auto'>
 		  <h2 className="text-3xl md:text-4xl font-bold text-start md:text-center text-gray-800 mb-4">Who We Serve</h2>
-		  <p className="text-gray-700 mb-10">
+		  <p className="text-gray-700 text-start mb-10">
 		  In today`s competitive business landscape, a one-size-fits-all approach to marketing is no longer sufficient. Successful marketing strategies must be tailored to the specific needs, challenges, and goals of each industry. That is why we empower diverse industries with customized, results-driven marketing solutions tailored to their unique needs and goals.
 		  </p> 
   
@@ -32,7 +32,7 @@ export function WhoWeServeSection() {
 		  </div>
 		  </div>
   
-		  <h3 className="text-2xl font-bold text-gray-800 text-center  mb-8">Industries We Served</h3>
+		  <h3 className="text-2xl font-bold text-gray-800 text-center mb-8">Industries We Served</h3>
   
 		  <div className="grid ml:20 md:ml-20 justify-center items-center text-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
   

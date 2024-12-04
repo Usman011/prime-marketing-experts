@@ -16,8 +16,8 @@ const Page = () => {
       </div>
       
 
-      <div className='flex flex-col gap-10'>
-      <div className='flex flex-col space-y-4 justify-start p-2 md:p-6 lg:px-16  rounded-lg shadow-lg'>
+      <div className='flex flex-col'>
+      <div className='flex flex-col mb-10 pb-10 space-y-4 justify-start p-2 md:p-6 lg:px-16  rounded-lg shadow-lg'>
   {/* Main Title */}
   <h1 className='font-extrabold text-3xl md:text-4xl text-start text-black mb-8'>
     Run The Best Event With Us!
@@ -74,7 +74,7 @@ const Page = () => {
 </div>
 
 
-        <div className='flex flex-col bg-blue-50 p-2 md:p-6 space-y-6 justify-start'>
+        <div className='flex flex-col mb-10 py-10 bg-blue-50 p-2 md:p-6 space-y-6 justify-start'>
           <h1 className='font-bold text-3xl md:text-4xl'>
             Know Your Event Planners
           </h1>
@@ -93,7 +93,7 @@ const Page = () => {
           <p>We are passionate event managers, which made us won praises and awards for delivering a well-organized and flawless event. The mantra for our service is to deliver outstanding client satisfaction, so we are at your service to cater to all your needs.</p>
           </div>
 
-          <div className='bg-white p-2 md:p-6 space-y-6 rounded-lg shadow-lg'>
+          <div className='bg-white p-2 md:p-6 space-y-6 mb-10 py-10 rounded-lg shadow-lg'>
   {/* Main Title */}
   <h1 className='text-start text-3xl md:text-4xl font-bold text-black mt-10'>
     Prime Event Management Features:
@@ -183,7 +183,9 @@ const Page = () => {
   </div>
 
   {/* Additional Services Section */}
-  <div className='bg-blue-100 p-2 md:p-6 py-6 rounded-lg shadow-lg'>
+ 
+</div>
+<div className='bg-blue-100 mb-10 py-10 p-2 md:p-6  rounded-lg shadow-lg'>
     <h2 className='text-3xl md:text-4xl font-bold text-black mb-6'>
       Prime Event Management Services
     </h2>
@@ -201,10 +203,8 @@ const Page = () => {
       <li><span className='font-bold text-black'>Specialty Lighting:</span> We create unforgettable lighting setups and effects tailored to your event’s theme.</li>
       <li><span className='font-bold text-black'>Email Marketing:</span> We design and execute email campaigns that effectively promote your event.</li>
     </ul>
-  </div>
 
-  {/* Closing Statement */}
-  <div className='text-start space-y-4'>
+    <div className='text-start  space-y-4'>
     <h3 className='text-2xl font-bold text-black mt-8'>
       Host a Glorified Event With Prime Marketing Experts
     </h3>
@@ -212,7 +212,10 @@ const Page = () => {
       We take pride in our successful event projects and look forward to making your event a standout occasion. Contact us now for a free quote!
     </p>
   </div>
-</div>
+  </div>
+
+  {/* Closing Statement */}
+  
 
       </div>
     </section>

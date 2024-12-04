@@ -16,7 +16,7 @@ export default function RetailIndustry() {
       </div>
       <div className="mx-auto">
         {/* Hero Section */}
-        <div className="flex flex-col lg:flex-row items-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 py-10 justify-between mb-16">
+        <div className="flex flex-col lg:flex-row items-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6  justify-between mb-10 pb-10">
           {/* Left Side - Content */}
           <div className="w-full lg:w-1/2 text:start md:text-center lg:text-left lg:pr-12 transform transition-all duration-500 hover:scale-105">
             <h1 className="text-3xl md:text-4xl lg:text-4xl text- font-bold text-gray-800 leading-tight">
@@ -45,7 +45,7 @@ export default function RetailIndustry() {
         </div>
 
         {/* Retail Marketing Strategies Section */}
-        <div className="bg-blue-50 py-16 p-0 md:p-6 rounded-lg shadow-lg">
+        <div className="bg-blue-50 my-10 py-10 p-0 md:p-6 rounded-lg shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold text-start  text-gray-800">Our Retail Marketing Strategies</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="flex flex-col items-center p-2 md:p-6 bg-white rounded-lg shadow-md  transition-all">
@@ -91,7 +91,7 @@ export default function RetailIndustry() {
         </div>
 
         {/* Customer Testimonials Section */}
-        <div className="py-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6">
+        <div className="my-10 py-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6">
           <h2 className="text-3xl md:text-4xl font-bold text-start text-gray-800">What Our Clients Say</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-blue-50 p-2 md:p-6 rounded-lg shadow-lg">
@@ -119,7 +119,7 @@ export default function RetailIndustry() {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="py-16 bg-blue-50 p-2 md:p-6 my-10">
+        <div className="my-10 py-10 bg-blue-50 p-2 md:p-6">
           <h2 className="text-3xl md:text-4xl font-bold text-start text-gray-800">Why Choose Prime Marketing Experts?</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-2 md:p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">

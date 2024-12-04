@@ -20,7 +20,7 @@ const Page = () => {
      
 
       <div className='gap-10'>
-        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-8 justify-start'>
+        <div className='flex flex-col mb-10 pb-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 space-y-8 justify-start'>
           <h1 className='font-bold text-3xl md:text-4xl'>
             Website Development
           </h1>
@@ -51,7 +51,7 @@ const Page = () => {
           </p>
         </div>
 
-        <div className='flex flex-col bg-blue-50 p-2 md:p-6 space-y-8 justify-start'>
+        <div className='flex flex-col bg-blue-50 py-10 my-10 p-2 md:p-6 space-y-8 justify-start'>
           <h1 className='font-bold text-3xl md:text-4xl'>
             Creative & Engaging Website Design
           </h1>
@@ -70,7 +70,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl mt-10 transition-shadow duration-300 p-2 md:p-6 space-y-8 justify-start'>
+        <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl py-10 my-10 transition-shadow duration-300 p-2 md:p-6 space-y-8 justify-start'>
           <h1 className='font-bold text-3xl md:text-4xl'>
             E-Commerce Website Development
           </h1>
@@ -108,7 +108,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto bg-orange-500 h-auto lg:h-32 mt-8 mb-8 items-center justify-center py-6 lg:justify-around px-4'>
+        <div className='w-full flex flex-col lg:flex-row gap-4 lg:gap-auto bg-orange-500 h-auto lg:h-32 py-10 my-10 items-center justify-center  lg:justify-around px-4'>
   <h1 className='font-bold text-white text-center lg:text-left text-2xl lg:text-4xl'>
     Contact Us Today To Start Making The Best Statement With a New Website!
   </h1>
