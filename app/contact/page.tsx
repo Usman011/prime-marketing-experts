@@ -53,7 +53,7 @@ export default function Contact() {
 		
 			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
 				<motion.h2
-					className="md:text-4xl text-3xl font-bold text-start md:text-center"
+					className="md:text-4xl text-3xl font-bold text-start mb-2 md:text-center"
 					initial={{ opacity: 0, y: -20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5 }}

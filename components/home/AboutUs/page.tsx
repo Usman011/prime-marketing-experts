@@ -67,9 +67,7 @@ const AboutUs = () => {
             over traditional transactional approaches.”
           </blockquote>
         </div>
-
     </div>
-  
     </section>
    
    

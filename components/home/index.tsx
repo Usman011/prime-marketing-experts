@@ -13,8 +13,9 @@ export const Home = () => {
 	return (
 		<>
 		    <HomeBanner />
-			<div className='space-y-10 mb-10'>
+			
 			<CarouselSection/>
+			<div className='space-y-10 mb-10'>
 			<AboutUs/>
 			<HomeServicesPage />
 			<WhoWeServeSection />

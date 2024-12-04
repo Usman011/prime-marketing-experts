@@ -39,7 +39,7 @@ export function CarouselSection() {
         <ul className="space-y-4">
   {/* Increase qualified leads */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-300">
+    <span className="mr-3 text-orange-400">
       <FaHandshake size={20} />
     </span>
     <span className="font-semibold">Increase qualified leads.</span>
@@ -47,7 +47,7 @@ export function CarouselSection() {
 
   {/* Increase your sales team productivity */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-300">
+    <span className="mr-3 text-orange-400">
       <FaUserCircle size={20} />
     </span>
     <span className="font-semibold">Increase your sales team productivity.</span>
@@ -55,7 +55,7 @@ export function CarouselSection() {
 
   {/* Increase online market revenue */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-300">
+    <span className="mr-3 text-orange-400">
       <FaHeart size={20} />
     </span>
     <span className="font-semibold">Increase online market revenue.</span>
@@ -97,7 +97,7 @@ export function CarouselSection() {
 
   {/* Increase conversation */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-500">
+    <span className="mr-3 text-orange-400">
       <FaComments size={24} /> {/* Replaced with FaComments to represent conversation */}
     </span>
     <span className="font-semibold">Increase conversation</span>
@@ -115,7 +115,7 @@ export function CarouselSection() {
           <div className="flex flex-col md:flex-row items-center justify-center max-w-auto md:max-w-5xl mx-auto gap-7  md:gap-10">
       {/* Left Side: Text */}
     <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh]  gap-20 bg-gray-100 rounded-2xl">
-    {/* <button className="bg-gradient-main text-black  border-2  rounded-tl-2xl rounded-br-2xl px-14 py-2 hover:bg-orange-600">
+    {/* <button className="bg-gradient-main text-black  border-2  rounded-tl-2xl rounded-br-2xl px-14 py-2 hover:bg-orange-400">
      Our Culture
      </button> */}
       <div className='flex flex-col gap-6 m-4'>
@@ -144,7 +144,7 @@ export function CarouselSection() {
 
   {/* Increase conversation */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-500">
+    <span className="mr-3 text-orange-400">
       <FaComments size={24} /> {/* Replaced with FaComments to represent conversation */}
     </span>
     <span className="font-semibold">Increase conversation</span>
@@ -204,7 +204,7 @@ export function CarouselSection() {
           <div className="flex flex-col md:flex-row items-center justify-center max-w-auto md:max-w-5xl mx-auto gap-7  md:gap-10">
       {/* Left Side: Text */}
     <div className="w-full md:w-2/4 h-auto md:h-[50-vh] lg:h-[55vh] gap-20 bg-gray-100 rounded-2xl">
-    {/* <button className="bg-gradient-main text-black  border-2  rounded-tl-2xl rounded-br-2xl px-14 py-2 hover:bg-orange-600">
+    {/* <button className="bg-gradient-main text-black  border-2  rounded-tl-2xl rounded-br-2xl px-14 py-2 hover:bg-orange-400">
      Our Culture
      </button> */}
        <div className='flex flex-col gap-6 m-4'>
@@ -347,7 +347,7 @@ export function CarouselSection() {
         <ul className="space-y-4">
   {/* Save time on managing ineffective digital marketing and website campaigns */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-300">
+    <span className="mr-3 text-orange-400">
       <FaClock size={20} />
     </span>
     <span className="font-semibold">Save time on managing ineffective digital marketing and website campaigns.</span>
@@ -355,7 +355,7 @@ export function CarouselSection() {
 
   {/* Avoid ineffective marketing campaign spending */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-300">
+    <span className="mr-3 text-orange-400">
       <FaBan size={20} />
     </span>
     <span className="font-semibold">Avoid ineffective marketing campaigns spending.</span>
@@ -363,7 +363,7 @@ export function CarouselSection() {
 
   {/* Harness the power of industry */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-300">
+    <span className="mr-3 text-orange-400">
       <FaIndustry size={20} />
     </span>
     <span className="font-semibold">Harness the power of industry.</span>
@@ -395,7 +395,7 @@ export function CarouselSection() {
         <ul className="space-y-4">
   {/* Save time on managing ineffective digital marketing and website campaigns */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-300">
+    <span className="mr-3 text-orange-400">
       <FaClock size={20} />
     </span>
     <span className="font-semibold">Save time on managing ineffective digital marketing and website campaigns.</span>
@@ -403,7 +403,7 @@ export function CarouselSection() {
 
   {/* Avoid ineffective marketing campaign spending */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-300">
+    <span className="mr-3 text-orange-400">
       <FaBan size={20} />
     </span>
     <span className="font-semibold">Avoid ineffective marketing campaigns spending.</span>
@@ -411,7 +411,7 @@ export function CarouselSection() {
 
   {/* Harness the power of industry */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-300">
+    <span className="mr-3 text-orange-400">
       <FaIndustry size={20} />
     </span>
     <span className="font-semibold">Harness the power of industry.</span>
@@ -478,7 +478,7 @@ export function CarouselSection() {
         <ul className="space-y-4">
   {/* Save time on managing ineffective digital marketing and website campaigns */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-300">
+    <span className="mr-3 text-orange-400">
       <FaClock size={20} />
     </span>
     <span className="font-semibold">Save time on managing ineffective digital marketing and website campaigns.</span>
@@ -486,7 +486,7 @@ export function CarouselSection() {
 
   {/* Avoid ineffective marketing campaign spending */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-300">
+    <span className="mr-3 text-orange-400">
       <FaBan size={20} />
     </span>
     <span className="font-semibold">Avoid ineffective marketing campaigns spending.</span>
@@ -494,7 +494,7 @@ export function CarouselSection() {
 
   {/* Harness the power of industry */}
   <li className="flex items-center text-black">
-    <span className="mr-3 text-orange-300">
+    <span className="mr-3 text-orange-400">
       <FaIndustry size={20} />
     </span>
     <span className="font-semibold">Harness the power of industry.</span>
