@@ -26,34 +26,44 @@ const BlogDetails = ({ id }: { id: string }) => {
 	}, [])
 
 	return (
-		<div>
-			<div className="  py-10 bg-gray-100 ">
-				<div className="container h-96 flex items-center justify-center">
-					<div className=" text-2xl md:text-4xl font-bold ">Blog Details</div>
-				</div>
+		<div className='container px-2 md:px-12 mb-10'>
+			
+			<div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-28 flex-col text-center'>
+		     <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
+		    Blog Details
+	        </h1> 
+	       
+				
 			</div>
 			{!loading && blog ? (
-				<div className="container">
+				<div className="bg-gray-50 p-2 md:p-5">
 					<div className="pt-5">
-						<div className=" text-xl md:text-3xl font-bold  mt-5">{blog.title || ''}</div>
-						<div className=" text-base md:text-lg text-gray-500 mt-2">{`By ${blog.authorName || ''}`}</div>
+						
+						{/* <div className=" text-base md:text-lg text-gray-500 mt-2">{`By ${blog.authorName || ''}`}</div> */}
 					</div>
 					{blog?.imageUrl && (
-						<div className="flex justify-center items-center">
-							<Image
-								src={blog?.imageUrl || ''}
-								alt={'No Image'}
-								width={800}
-								height={800}
-								className="object-contain max-h-96 aspect-square "
-							/>
-						</div>
+						<div className="w-full flex justify-center items-center">
+						<Image
+						  src={blog?.imageUrl || ''}
+						  alt={'No Image'}
+						  width={1000}
+						  height={800}
+						  className="w-full object-cover max-h-[500px]"
+						/>
+					  </div>
+					  
 					)}
+					 <div className=" text-xl md:text-3xl font-bold  mt-5">{blog.title || ''}</div> 
 					<div className="editor-content py-10">
+						
 						<div
-							className="mt-1 text-sm text-gray-700 border p-5 rounded-2xl"
+							className="mt-1 text-sm text-gray-700 "
 							dangerouslySetInnerHTML={{ __html: blog?.content || '' }}
 						/>
+
+
+
+
 					</div>
 				</div>
 			) : (

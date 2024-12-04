@@ -4,26 +4,18 @@ import React from 'react'
 
 const Page = () => {
 	return (
-		<div>
-			<section className="">
-				<div className="  py-10 bg-gray-100 ">
-					<div className="container h-96 flex items-center justify-center">
-						<div>
-							<div className=" text-3xl md:text-5xl font-bold ">Our Blogs</div>
-							{/* <div className="flex gap-6 justify-center mt-4">
-								<Link href="/">
-									<p className="text-gray-500 hover:text-gray-800">Home</p>
-								</Link>
-								<ul className="list-disc">
-									<li>Blog</li>
-								</ul>
-							</div> */}
-						</div>
-					</div>
-				</div>
-				<BlogList showAll />
+		<section className='container mx-auto px-2'>
+     
+		{/* Header */}
+	 <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-28 flex-col text-center'>
+		<h1 className='font-semibold-600 text-3xl md:text-4xl leading-10 md:leading-10 tracking-wide'>
+		All blogs
+	   </h1> 
+	 </div>
+
+		<BlogList showAll />
 			</section>
-		</div>
+		
 	)
 }
 
