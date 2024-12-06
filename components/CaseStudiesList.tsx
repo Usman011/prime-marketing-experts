@@ -35,7 +35,7 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 		
 		<div className="py-10 container w-full overflow-hidden bg-blue-50 px-2 md:px-12 lg:px-24">	
 		
-			<div className="max-w-7xl mx-auto px-auto sm:px-6 lg:px-8">
+			<div className="max-w-7xl mx-auto px-auto">
 				<motion.h2 className="text-3xl md:text-4xl font-bold text-start md:text-center text-gray-900 pb-10 md:pb-14">
 					{showAll ? '' : 'Our Case Studies'}
 				</motion.h2>

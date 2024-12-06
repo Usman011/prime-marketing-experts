@@ -86,7 +86,7 @@ export default function Insight() {
 		
 		
 		
-		<div className="container w-full overflow-hidden py-10 bg-gray-50 px-2 md:px-12 lg:px-24">
+		<div className="container w-full overflow-hidden py-10 bg-gray-50 px-2 md:px-6 lg:px-12">
 		
 			<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 				<h2 className=" text-3xl md:text-4xl font-bold text-start md:text-center mb-8 text-gray-900">

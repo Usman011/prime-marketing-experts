@@ -28,7 +28,7 @@ const CaseStudyDetail = ({ id }: { id: string }) => {
 		<div className='container px-2 md:px-12 mb-10 '>
 			<div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-28 flex-col text-center'>
 		     <h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
-		    Blog Details
+			 Case Study Details
 	        </h1> 
 			</div>
 			{!loading && caseStudy ? (

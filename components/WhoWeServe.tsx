@@ -11,7 +11,7 @@ export function WhoWeServeSection() {
    
     
    
-	  <section className="bg-blue-50 overflow-hidden container w-auto md:w-auto py-16 px-4 md:px-12 lg:px-24">
+	  <section className="bg-blue-50 overflow-hidden container w-auto md:w-auto py-16 px-4 md:px-6 lg:px-24">
        
 		<div className="max-w-7xl md:mx-auto text-start md:text-center">
 		  <div className='md:mx-auto'>
