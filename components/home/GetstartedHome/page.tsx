@@ -22,27 +22,27 @@ const accordionData: AccordionItem[] = [
 	
 	{
 		question: 'How can we generate more sales-qualified leads and revenue?',
-		answer:'Are you looking to generate more leads and drive more revenue? Execute customizes revenue marketing tactics to generate more high-quality sales lead and boost overall sales? ',
+		answer:'Are you looking to generate more leads and drive more revenue? We perform customized revenue marketing tactics to generate more high-quality sales opportunities.',
 	},
 	{
 		question: 'Why is my website not attracting enough potential customers?',
 		answer:
-			'Does your business find getting qualified leads into your pipeline to be a challenge? Boost your leads generation potential with our tailored digital marketing strategies and website development services designed to meet your specific business requirements.',
+			'Does your business find getting qualified leads into your pipeline to be a challenge? Boost your lead generation potential with our tailored digital marketing strategies and website development services designed to meet your specific business requirements',
 	},
 	{
 		
 		question: 'Why is our marketing and sales data not interconnected?',
 		answer:
-			'We use marketing automation and CRM technology to align your sales and marketing efforts and maximize your return on investment for each sales qualified lead (SQL). This will help you organize your data, so salespeople can analyze efforts for better result and reports.  ',
+			'We use marketing automation and CRM technology to align sales and marketing, maximizing ROI for each sales qualified lead (SQL). This will help you organize your data, so salespeople can analyze efforts for better results and reports.',
 	},
 	{
 		question: 'Why does our website get very little traffic?',
 		answer:
-			"When your website has low traffic,your're missing out on potential business opportunities.We provide customizable SEO services, as well as Social Media and Search Engine PPC advertising, to enhance your website visibility on search engines and attract more visitors",
+			"When your website has low traffic, you're missing out on potential business opportunities. offer customizable SEO services, social media management, and PPC advertising to improve your website's visibility and attract more visitors",
 	},
 	{
 		question: 'Why does managing digital campaigns take so much time?',
-		answer:'We help your company use latest advertising strategies and technology to make the most of your advertising budget. Our experts will optimize your advertising budget by targeting ads,creating engaging graphics, and distributing your budget effectively across platforms',
+		answer:'We help your company use the latest advertising strategies and technology to make the most of your advertising budget. Our experts will optimize your advertising budget by targeting ads, creating engaging graphics, and distributing your budget effectively across platforms.',
 	},
 	
 ]

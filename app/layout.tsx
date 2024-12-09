@@ -6,7 +6,9 @@ import  {Header } from '@/components/common/Header'
 export const metadata: Metadata = {
 	title: 'Prime Marketing Experts',
 	description: 'Prime Marketing Experts',
+	
 }
+
 
 export default function RootLayout({
 	children,

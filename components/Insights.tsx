@@ -14,8 +14,8 @@ import { AnimateLeft } from './common/animate'
 
 const carouselItemsData = [
 	{
-		buttonText: 'Our Philosophy',
-		title: 'Our Philosophy',
+		buttonText: 'Our philosophy',
+		title: 'Our philosophy',
 		description: [
 			"We envision a world where every brand has the opportunity to thrive. We do not care if you are a small e-commerce store or a medium-sized real estate firm. Our solutions are based on your needs and requirements. Nor on anyone else's. By harnessing the power and range of digital marketing, we aim to bridge the gap between businesses and their customers, fostering lasting relationships built on trust and engagement.",
 		],
@@ -49,10 +49,10 @@ const carouselItemsData = [
 		buttonText: 'Careers at Prime Marketing Experts',
 		title: 'Careers',
 		description: [
-			'Our digital marketing agency is made up of elite marketers, designers, developers, and data analysts. For us, it is not just a job — it is a driving passion. And that passion has led to some of the best work on the web.',
+			'We’re always looking for great web developers and marketers. To apply, please send your resume and work samples to hello@primemarketingexperts.com and we’ll be in touch.',
 		],
 		linkText: 'Learn More',
-		linkHref: '/about',
+		linkHref: '/contact',
 		imageUrl: Image3,
 	},
 ]

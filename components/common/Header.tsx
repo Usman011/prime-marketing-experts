@@ -155,7 +155,7 @@ export function Header() {
           <ListItem href="/industry/tourism" title="Tourism" />
           <ListItem href="/industry/automotive" title="Automotive" />
           <ListItem href="/industry/restaurant" title="Restaurants" />
-          <ListItem href="/industry/retail" title="Retails" />
+          <ListItem href="/industry/retail" title="Retail" />
           <ListItem href="/industry/cleaning-companies" title="Cleaning Companies" />
           <ListItem href="/industry/gyms" title="Gyms" />
           <ListItem href="/industry/construction" title="Construction" />

@@ -140,6 +140,13 @@ export default function RetailIndustry() {
               Our team of marketing professionals has extensive experience in the retail industry, ensuring that we understand the challenges you face and know how to overcome them. 
               </p>
             </div>
+
+            <div className="bg-white p-2 md:p-6 rounded-lg shadow-lg hover:bg-gray-50 transition-all">
+              <h3 className="text-xl font-semibold text-gray-800">24/7 Support</h3>
+              <p className="mt-2 text-gray-600">
+              We offer around-the-clock support, ensuring that your marketing campaigns run smoothly and any questions are addressed promptly. 
+              </p>
+            </div>
           </div>
         </div>
       </div>

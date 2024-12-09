@@ -84,7 +84,9 @@ export default function Contact() {
 										<div>
 											<p className="font-semibold text-gray-700">Visit Us:</p>
 											<p className="text-[--main]">
-												2 Burlington Woods #100, Burlington, MA, 01803
+											74 Northeastern Blvd Bldg 12a Ste 101
+											Nashua, NH 03062
+
 											</p>
 										</div>
 									</motion.li>
@@ -156,10 +158,11 @@ export default function Contact() {
 													/>
 												</div>
 												<div className="flex justify-end">
-													<Button className="mt-5" variant="default" type="submit">
-														Submit
-													</Button>
-												</div>
+                                                <Button className="mt-5 bg-blue-900 text-white hover:bg-orange-400" variant="default" type="submit">
+                                                 Submit
+                                                </Button>
+                                                </div>
+
 											</form>
 										</Form>
 									</div>

@@ -183,6 +183,27 @@ const Page = () => {
     </div>
 
     <div className="bg-blue-50 p-2 md:p-6  rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <h2 className="font-bold text-xl text-gray-800 mb-4">Personalization at Scale</h2>
+      <p className="text-gray-700 mb-2">
+      Delivers tailored messages to individual users based on their preferences, behavior, and demographics.
+      </p>
+      <p className="text-gray-700">
+      Improves customer engagement and satisfaction by sending relevant content.
+
+      </p>
+    </div>
+
+    <div className="bg-blue-50 p-2 md:p-6  rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <h2 className="font-bold text-xl text-gray-800 mb-4">Higher Productivity and Team Collaboration</h2>
+      <p className="text-gray-700 mb-2">
+      Streamlines workflows by integrating marketing and sales tools (e.g., CRM).
+      </p>
+      <p className="text-gray-700">
+      Enables marketing and sales teams to work together seamlessly, ensuring better alignment.
+      </p>
+    </div>
+
+    <div className="bg-blue-50 p-2 md:p-6  rounded-xl shadow-lg hover:shadow-xl transition duration-300">
       <h2 className="font-bold text-xl text-gray-800 mb-4">It Reduces Operating Costs</h2>
       <p className="text-gray-700 mb-2">
         Marketing automation reduces labor costs by automating lead qualification. It allows the sales team to focus only on the most qualified leads, increasing efficiency and reducing operational expenses.

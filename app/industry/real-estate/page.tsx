@@ -107,8 +107,18 @@ const RealEstatePage = () => {
     <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-1 md:p-4 space-y-4'>
       <h2 className='font-bold text-xl'> Website Design & Development </h2>
       <p>Your website is your digital storefront, and for real estate professionals, it needs to be visually appealing, easy to navigate, and functional. We create custom, responsive websites designed to showcase your properties, provide relevant real estate information, and convert visitors into leads. </p>
-     
     </div>
+    {/* Card 8 */}
+    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-1 md:p-4 space-y-4'>
+      <h2 className='font-bold text-xl'> Local SEO Optimization </h2>
+      <p>Local SEO is essential for real estate success. When potential customers search for dining options in your area, you need to be visible. We’ll optimize your real estate’s website and online listings to ensure you appear in local search results, on Google Maps, and in local directories. This drives more organic traffic and helps you capture nearby customers.</p>
+    </div>
+    {/* Card 8 */}
+    <div className='flex flex-col rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-1 md:p-4 space-y-4'>
+      <h2 className='font-bold text-xl'>Video Marketing</h2>
+      <p>Showcase your real estate services, patient testimonials, and the unique culture of your practice through professional video marketing. We create high-quality video content to promote your services and build trust with your audience.</p>
+    </div>
+
   </div>
 </div>
 
