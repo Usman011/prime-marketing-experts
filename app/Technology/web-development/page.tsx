@@ -52,14 +52,15 @@ const Page = () => {
         </div>
 
         <div className='flex flex-col bg-blue-50 py-10 my-10 p-2 md:p-6 space-y-8 justify-start'>
-          <h1 className='font-bold text-3xl md:text-4xl'>
-            Creative & Engaging Website Design
-          </h1>
-          <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
+         
+          <div className='flex flex-col lg:flex-row gap-8 lg:gap-10'>
             <div className='w-full h-auto'>
               <Image src={IMG2} alt="Market Research" />
             </div>
             <div className='space-y-6'>
+            <h1 className='font-bold text-3xl md:text-4xl'>
+            Creative & Engaging Website Design
+          </h1>
               <p>
                 We create engaging custom website design to help you maintain a professional business image, whether you are a b2b, b2c, nonprofit, a social network, or an independent consultant. Our creative team will enhance your digital appearance through infusing branding strategy and creating interactive features consistent with the latest UX and UI trends.
               </p>
@@ -93,14 +94,15 @@ const Page = () => {
         </div>
 
         <div className='flex flex-col space-y-8 bg-blue-50 p-4 justify-start'>
-          <h1 className='font-bold text-4xl'>
-            Why is Website Design an Amazing Investment for Small Businesses?
-          </h1>
-          <div className='flex flex-col lg:flex-row gap-8 lg:gap-20'>
+         
+          <div className='flex flex-col lg:flex-row gap-8 lg:gap-10'>
             <div className='w-full h-auto'>
               <Image src={IMG4} alt="Market Research" width={800} height={600} />
             </div>
             <div className='space-y-6'>
+            <h1 className='font-bold text-4xl'>
+            Why is Website Design an Amazing Investment for Small Businesses?
+          </h1>
               <p>
                 Building a new website is an exceptional investment for small businesses as it helps people find your business, much like how the “yellow pages” worked many years ago. While small businesses can start by providing an overview of their services and contact information to visitors on a basic website, a blog can be incorporated into the website to help build trust with the community. Web apps can be developed to facilitate online ordering for a restaurant. Engaging with a <Link href='/Technology/web-development' className='text-blue-600'>top Small Business Website Design Company</Link> like Prime Marketing Experts will also help in lifting your <Link href="/marketing/video-seo" className='text-blue-600'>search engine optimization</Link> initiatives.
               </p>

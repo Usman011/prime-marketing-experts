@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import IMG1 from '../../../public/images/website-mobile-app-development/image9.png'
 import IMG2 from '../../../public/images/website-mobile-app-development/image10.png'
-import IMG3 from '../../../public/images/website-mobile-app-development/image11.png'
+import IMG3 from '../../../public/images/website-mobile-app-development/image12.png'
 
 const Page = () => {
   return (
@@ -18,7 +18,7 @@ const Page = () => {
       
 
       <div className="flex flex-col  gap-10">
-  <div className="flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-6 justify-center items-center space-y-6 lg:space-y-0">
+  <div className="flex flex-col lg:flex-row rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300  p-2 md:p-6 justify-center items-center space-y-6 lg:space-y-0">
     {/* Left Side (Text) */}
     <div className="flex-1 p-2 md:p-6 space-y-6">
       <h1 className="font-bold text-3xl md:text-4xl">
@@ -38,7 +38,7 @@ const Page = () => {
       <Image 
         src={IMG1}
         alt="Accessibility Image" 
-        className="w-[500px] object-cover rounded-lg"
+        className="w-[600px] h-[350px] object-cover rounded-lg"
        
       />
     </div>
@@ -263,10 +263,22 @@ const Page = () => {
   </div>
 </div>
 
+
 </div>
-     
+<video
+        width="640"
+        height="360"
+        controls
+        autoPlay
+        muted
+        loop
+      >
+        <source src="/https://assets.kwanso.com/OPEN_AI_RAG_0916f6c58e.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </section>
   );
 }
 
 export default Page;
+
