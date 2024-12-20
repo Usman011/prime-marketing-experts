@@ -1,10 +1,8 @@
-import HomeServicesPage from '@/components/home/ServicesHme/page';
-import React from 'react';
+import HomeServicesPage from '@/components/home/OurServices'
+import React from 'react'
 
 const Page = () => {
-    return (
-        <HomeServicesPage />
-    );
+	return <HomeServicesPage />
 }
 
-export default Page;
+export default Page

@@ -29,7 +29,7 @@ const carouselItemsData = [
 		description: [
 			'Integrity: We believe in transparency and honesty in all our dealings.',
 			'Innovation: We continuously seek new ideas and approaches to stay ahead in the ever-evolving marketing landscape.',
-      'Collaboration: We work closely with our clients, valuing their input and insights to achieve common goals.'
+			'Collaboration: We work closely with our clients, valuing their input and insights to achieve common goals.',
 		],
 		linkText: 'Learn More ',
 		linkHref: '/about',
@@ -83,11 +83,7 @@ export default function Insight() {
 	}, [emblaApi, onSelect])
 
 	return (
-		
-		
-		
-		<div className="container w-full overflow-hidden py-10 bg-gray-50 px-2 md:px-6 lg:px-12">
-		
+		<div className=" w-full overflow-hidden py-10">
 			<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 				<h2 className=" text-3xl md:text-4xl font-bold text-start md:text-center mb-8 text-gray-900">
 					Explore Prime Marketing Experts
@@ -105,7 +101,6 @@ export default function Insight() {
 					))}
 				</div>
 				<div className="overflow-hidden" ref={emblaRef}>
-				
 					<div className="flex">
 						{carouselItemsData.map((item, index) => (
 							<div className="flex-[0_0_100%] min-w-0 px-0  md:px-5" key={index}>
@@ -141,7 +136,6 @@ export default function Insight() {
 							</div>
 						))}
 					</div>
-					
 				</div>
 				<div className="flex justify-center mt-8 gap-4">
 					<Button variant="outline" size="icon" onClick={() => emblaApi?.scrollPrev()}>
@@ -152,11 +146,6 @@ export default function Insight() {
 					</Button>
 				</div>
 			</div>
-			
 		</div>
-	
-		
-		
-		
 	)
 }
