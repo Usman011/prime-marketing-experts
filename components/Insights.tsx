@@ -1,18 +1,28 @@
 'use client'
-import { motion } from 'framer-motion'
-import { useState, useCallback, useEffect } from 'react'
+
+import { useState } from 'react'
+import Image from 'next/image'
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
+import { Navigation, Pagination } from 'swiper/modules'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import useEmblaCarousel from 'embla-carousel-react'
-import Image from 'next/image'
-import Image1 from '../public/images/carousel/image02.png'
-import Image2 from '../public/images/eventmanagement/image.png'
-import Image4 from '../public/images/section02.jpg'
-import Image3 from '../public/images/section_04.webp'
-import { AnimateLeft } from './common/animate'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import type { Swiper as SwiperInstance } from 'swiper'
 
-const carouselItemsData = [
+// Define types for carousel data
+interface CarouselItem {
+	buttonText: string
+	title: string
+	description: string[]
+	linkText: string
+	linkHref: string
+	imageUrl: string
+}
+
+const carouselItemsData: CarouselItem[] = [
 	{
 		buttonText: 'Our philosophy',
 		title: 'Our philosophy',
@@ -21,7 +31,7 @@ const carouselItemsData = [
 		],
 		linkText: 'Learn More',
 		linkHref: '/about',
-		imageUrl: Image2,
+		imageUrl: '/images/eventmanagement/image.png',
 	},
 	{
 		buttonText: 'Our Values',
@@ -31,83 +41,100 @@ const carouselItemsData = [
 			'Innovation: We continuously seek new ideas and approaches to stay ahead in the ever-evolving marketing landscape.',
 			'Collaboration: We work closely with our clients, valuing their input and insights to achieve common goals.',
 		],
-		linkText: 'Learn More ',
+		linkText: 'Learn More',
 		linkHref: '/about',
-		imageUrl: Image1,
+		imageUrl: '/images/carousel/image02.png',
 	},
 	{
-		buttonText: 'Our Team ',
-		title: 'Our Team ',
+		buttonText: 'Our Team',
+		title: 'Our Team',
 		description: [
-			'Our team is composed of passionate professionals with diverse backgrounds in marketing, design, and technology. Each member brings unique skills and perspectives, allowing us to craft comprehensive strategies that cater to our clients’ specific needs.',
+			"Our team is composed of passionate professionals with diverse backgrounds in marketing, design, and technology. Each member brings unique skills and perspectives, allowing us to craft comprehensive strategies that cater to our clients' specific needs.",
 		],
-		linkText: 'Learn More ',
+		linkText: 'Learn More',
 		linkHref: '/about',
-		imageUrl: Image4,
+		imageUrl: '/images/section02.jpg',
 	},
 	{
 		buttonText: 'Careers at Prime Marketing Experts',
 		title: 'Careers',
 		description: [
-			'We’re always looking for great web developers and marketers. To apply, please send your resume and work samples to hello@primemarketingexperts.com and we’ll be in touch.',
+			"We're always looking for great web developers and marketers. To apply, please send your resume and work samples to hello@primemarketingexperts.com and we'll be in touch.",
 		],
 		linkText: 'Learn More',
 		linkHref: '/contact',
-		imageUrl: Image3,
+		imageUrl: '/images/section_04.webp',
 	},
 ]
 
-export default function Insight() {
-	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
-	const [selectedIndex, setSelectedIndex] = useState(0)
-
-	const scrollTo = useCallback(
-		(index: number) => {
-			if (emblaApi) emblaApi.scrollTo(index)
-		},
-		[emblaApi],
+const SwiperNavButtons = () => {
+	const swiper = useSwiper()
+	return (
+		<div className="z-10 flex justify-center items-center w-full mt-10">
+			<div className="space-x-4">
+				<Button
+					variant="outline"
+					size="icon"
+					className="bg-white hover:bg-gray-100"
+					onClick={() => swiper.slidePrev()}
+				>
+					<ChevronLeft className="h-4 w-4" />
+				</Button>
+				<Button
+					variant="outline"
+					size="icon"
+					className="bg-white hover:bg-gray-100"
+					onClick={() => swiper.slideNext()}
+				>
+					<ChevronRight className="h-4 w-4" />
+				</Button>
+			</div>
+		</div>
 	)
+}
 
-	const onSelect = useCallback(() => {
-		if (!emblaApi) return
-		setSelectedIndex(emblaApi.selectedScrollSnap())
-	}, [emblaApi, setSelectedIndex])
-
-	useEffect(() => {
-		if (!emblaApi) return
-		const handleSelect = () => onSelect()
-		emblaApi.on('select', handleSelect)
-		return () => {
-			emblaApi.off('select', handleSelect)
-		}
-	}, [emblaApi, onSelect])
+export default function Insight() {
+	const [swiper, setSwiper] = useState<SwiperInstance | null>(null)
+	const [activeIndex, setActiveIndex] = useState<number>(0)
 
 	return (
-		<div className=" w-full overflow-hidden py-10">
-			<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-				<h2 className=" text-3xl md:text-4xl font-bold text-start md:text-center mb-8 text-gray-900">
+		<div className="w-full overflow-hidden py-10 bg-gray-50">
+			<div className="container">
+				<h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">
 					Explore Prime Marketing Experts
 				</h2>
-				<div className=" hidden md:flex items-center justify-center mb-8 flex-wrap">
+				<div className="hidden md:flex items-center justify-center mb-8 flex-wrap">
 					{carouselItemsData.map((item, index) => (
 						<Button
 							key={index}
-							variant={selectedIndex === index ? 'default' : 'outline'}
-							className={`m-2 transition-all duration-300 ${selectedIndex === index ? 'bg-gradient-main hover:bg-[#ff962c]' : ''}`}
-							onClick={() => scrollTo(index)}
+							variant={activeIndex === index ? 'default' : 'outline'}
+							className={`m-2 transition-all duration-300 ${
+								activeIndex === index
+									? 'bg-gradient-to-r from-orange-400 to-pink-600 text-white'
+									: ''
+							}`}
+							onClick={() => swiper?.slideTo(index)}
 						>
 							{item.buttonText}
 						</Button>
 					))}
 				</div>
-				<div className="overflow-hidden" ref={emblaRef}>
-					<div className="flex">
-						{carouselItemsData.map((item, index) => (
-							<div className="flex-[0_0_100%] min-w-0 px-0  md:px-5" key={index}>
-								<Card className="border-none shadow-lg p-auto md:p-4 bg-white rounded-2xl overflow-hidden">
+				<Swiper
+					modules={[Navigation, Pagination]}
+					spaceBetween={30}
+					slidesPerView={1}
+					pagination={{ clickable: true }}
+					onSwiper={setSwiper}
+					onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+					className="mySwiper relative"
+				>
+					{carouselItemsData.map((item, index) => (
+						<SwiperSlide key={index}>
+							<div className=" flex justify-center">
+								<Card className="border max-w-5xl rounded-2xl overflow-hidden bg-white">
 									<CardContent className="p-0">
-										<div className="flex flex-col lg:flex-row">
-											<div className="lg:w-1/2 p-2 lg:p-12">
+										<div className="flex flex-col lg:flex-row ">
+											<div className="lg:w-1/2 p-6 lg:p-12 flex flex-col justify-center items-start">
 												<h3 className="text-3xl font-bold mb-4 text-gray-900">{item.title}</h3>
 												{item.description.map((paragraph, idx) => (
 													<p key={idx} className="text-gray-600 mb-4">
@@ -116,35 +143,29 @@ export default function Insight() {
 												))}
 												<Button
 													asChild
-													className={`my-4  justify-center items-center ${selectedIndex === index ? 'bg-gradient-main hover:bg-[#ff962c]' : ''}`}
+													className="mt-4 bg-gradient-to-r from-orange-400 to-pink-600 text-white hover:from-orange-500 hover:to-pink-700"
 												>
 													<a href={item.linkHref}>{item.linkText}</a>
 												</Button>
 											</div>
-											<div className="lg:w-1/2 xl:h-96">
+											<div className="lg:w-1/2">
 												<Image
 													src={item.imageUrl}
 													alt={item.title}
-													className="w-full h-full object-cover"
+													className="w-full object-cover h-full md:h-[450px]"
 													width={800}
-													height={800}
+													height={600}
+													unoptimized
 												/>
 											</div>
 										</div>
 									</CardContent>
 								</Card>
 							</div>
-						))}
-					</div>
-				</div>
-				<div className="flex justify-center mt-8 gap-4">
-					<Button variant="outline" size="icon" onClick={() => emblaApi?.scrollPrev()}>
-						<ChevronLeft className="h-4 w-4" />
-					</Button>
-					<Button variant="outline" size="icon" onClick={() => emblaApi?.scrollNext()}>
-						<ChevronRight className="h-4 w-4" />
-					</Button>
-				</div>
+						</SwiperSlide>
+					))}
+					<SwiperNavButtons />
+				</Swiper>
 			</div>
 		</div>
 	)

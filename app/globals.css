@@ -164,7 +164,7 @@
 .editor-content pre {
 	background-color: #2d2d2d;
 	color: #f1f1f1;
-	font-family: "JetBrains Mono", monospace;
+	font-family: 'JetBrains Mono', monospace;
 	padding: 1rem;
 	border-radius: 6px;
 	overflow-x: auto;
@@ -200,7 +200,11 @@
 
 .tiptap p:empty::before,
 .editor-content p:empty::before {
-	content: "\00a0";
+	content: '\00a0';
 	display: block;
 	min-height: 0.5em;
+}
+
+.swiper-pagination-bullet {
+	display: none !important;
 }

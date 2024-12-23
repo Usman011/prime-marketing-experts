@@ -3,14 +3,14 @@ import { ourSolutionsData } from '@/constants'
 
 export function OurSolutionSection() {
 	return (
-		<div className=" container my-20 ">
+		<div className=" container py-10 md:py-12  ">
 			<div className="flex justify-center items-center">
-				<h1
-					className="text-3xl md:text-4xl font-bold mb-12 text-center max-w-[600px]"
-					style={{ lineHeight: '52px' }}
+				<div
+					className="text-2xl md:text-4xl font-bold mb-5 md:mb-12 text-center max-w-[600px]"
+					// style={{ lineHeight: '52px' }}
 				>
 					Solving your Digital Marketing and E-commerce Bottlenecks
-				</h1>
+				</div>
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 				{ourSolutionsData.map((service, index) => (

@@ -23,7 +23,7 @@ export default function OurServices() {
 					<h2 className="text-3xl md:text-4xl font-bold text-start md:text-center mb-2">
 						Our Services
 					</h2>
-					<p className="text-base text-gray-500 max-w-96 md:max-w-4xl w-[100%] text-center mx-auto mb-8 mt-5">
+					<p className="text-base text-gray-500 max-w-96 md:max-w-4xl w-[100%] md:text-center mx-auto mb-8 mt-5">
 						Prime Marketing Experts is a digital marketing and website services company focused on
 						helping small and medium-sized businesses in the Boston area prosper. Since 2017, we’ve
 						served hundreds of companies and thousands of clients, offering a wide range of

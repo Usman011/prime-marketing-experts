@@ -1,22 +1,15 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronRight, Loader2 } from 'lucide-react'
+import { ArrowRightIcon, Loader2 } from 'lucide-react'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import firebaseService from '@/utils/firebase.utils'
 import { DocumentData } from 'firebase/firestore'
 import Link from 'next/link'
 import Image from 'next/image'
-import { AnimateLeft } from './common/animate'
-
-
 
 export default function BlogList({ showAll }: { showAll?: boolean }) {
-	const [hoveredId, setHoveredId] = useState<string | null>(null)
 	const [blogs, setBlogs] = useState<DocumentData[]>([])
 	const [loading, setLoading] = useState(true)
 	const allBlogs = showAll ? blogs : blogs.slice(0, 3)
@@ -32,81 +25,61 @@ export default function BlogList({ showAll }: { showAll?: boolean }) {
 	}, [])
 
 	return (
-     
-  
-    
-		<div className="py-10 container overflow-hidden bg-[#FAFAFA] px-2 md:px-12 lg:px-24">
-    
-			<div className="max-w-7xl mx-auto px-auto">
-				<motion.h2 className="text-3xl md:text-4xl font-bold text-start md:text-center text-gray-900 pb-10 md:pb-14">
-					{showAll ? '' : 'Trending Articles'}
-				</motion.h2>
-				<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-  {loading ? (
-    <div className="h-60 w-full flex justify-center items-center md:col-span-2 lg:col-span-3 ">
-      <Loader2 className="w-10 h-10 ml-2 animate-spin" />
-    </div>
-  ) : (
-    allBlogs.map((blog, index) => (
-      <motion.div
-        key={blog.documentId || index} // Ensure each child has a unique key
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        whileHover={{ y: -5 }}
-        onHoverStart={() => setHoveredId(blog.documentId)}
-        onHoverEnd={() => setHoveredId(null)}
-        className="cursor-pointer"
-      >
-        <Card className="overflow-hidden h-full flex flex-col bg-white/80 backdrop-blur-sm border-none shadow-lg">
-          <div className="relative">
-            {blog.imageUrl ? (
-              <Image
-                width={800}
-                height={800}
-                src={blog.imageUrl}
-                alt={blog.title}
-                className="w-full h-60 object-cover"
-              />
-            ) : (
-              <div className="bg-gray-300 h-60 w-full flex justify-center items-center">
-                <div className="text-white text-4xl font-bold">400 x 400</div>
-              </div>
-            )}
-            {/* <Badge className="absolute top-4 left-4 py-2 bg-primary text-primary-foreground">
-              {blog.category || 'Category'}
-            </Badge> */}
-          </div>
-          <CardContent className="flex-grow p-2 md:p-4">
-            <h3 className="text-xl font-bold mb-2 line-clamp-2">{blog.title || ''}</h3>
-            <p className="text-muted-foreground mb-4 line-clamp-3">{blog.description || ''}</p>
-          </CardContent>
-          <CardFooter className="border-t p-6 bg-gray-50">
-            <div className="flex items-center justify-center w-full">
-              <Link href={`/blog/${blog.documentId}`}>
-                <button className="relative inline-flex items-center justify-center px-4 py-2 text-orange-600 font-medium group">
-                  <span className="absolute inset-0 w-full h-full border-b-2 border-orange-600 transform scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
-                  <span className="relative">Read More</span>
-                </button>
-              </Link>
-            </div>
-          </CardFooter>
-        </Card>
-      </motion.div>
-    ))
-  )}
-</div>
-
+		<div className="py-16 bg-gray-50 ">
+			<div className="container px-4 mx-auto">
+				<h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+					{showAll ? 'Our Blog' : 'Trending Articles'}
+				</h2>
+				{loading ? (
+					<div className="flex justify-center items-center h-60">
+						<Loader2 className="w-10 h-10 animate-spin text-primary" />
+					</div>
+				) : (
+					<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+						{allBlogs.map((blog, index) => (
+							<Link href={`/blog/${blog.documentId}`} key={blog.documentId || index}>
+								<Card className="overflow-hidden h-full flex flex-col bg-white shadow-sm hover:shadow-md transition-shadow duration-300 hover:scale-[1.03]">
+									<div className="relative aspect-video">
+										{blog.imageUrl ? (
+											<Image src={blog.imageUrl} alt={blog.title} fill className="object-cover" />
+										) : (
+											<div className="absolute inset-0 bg-gray-200 flex justify-center items-center">
+												<span className="text-gray-400 text-lg font-medium">No image</span>
+											</div>
+										)}
+									</div>
+									<CardContent className="flex-grow p-6">
+										<div className="flex justify-between items-start">
+											<div className="flex-1 pr-4">
+												<h3 className="text-xl font-bold mb-4 text-gray-900 line-clamp-2 leading-[32px] ">
+													{blog.title || ''}
+												</h3>
+												<p className="text-gray-600 line-clamp-3 text-sm leading-[24px]">
+													{blog.description || ''}
+												</p>
+											</div>
+										</div>
+									</CardContent>
+									<CardFooter>
+										<div className="text-sm font-semibold w-full text-orange-600 flex justify-end items-center gap-3 ">
+											Read More <ArrowRightIcon className="w-4 h-4" />
+										</div>
+									</CardFooter>
+								</Card>
+							</Link>
+						))}
+					</div>
+				)}
 				{!showAll && (
-					<Link href={'/blog'}>
-						<div className="flex justify-center mt-10 md:mt-14 ">
-							<Button className="bg-gradient-main hover:bg-[#ff962c]">Read More Blogs</Button>
-						</div>
-					</Link>
+					<div className="flex justify-center mt-12">
+						<Link href="/blog">
+							<Button className="bg-gradient-main text-white font-semibold px-6 py-3">
+								View All Articles
+							</Button>
+						</Link>
+					</div>
 				)}
 			</div>
-     
 		</div>
-    
 	)
 }

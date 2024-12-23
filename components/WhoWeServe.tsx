@@ -223,7 +223,7 @@ export function WhoWeServeSection() {
 					customized, results-driven marketing solutions tailored to their unique needs and goals.
 				</p>
 
-				<Card className="mb-10 p-5">
+				<Card className="mb-8 md:p-5">
 					<CardHeader>
 						<CardTitle className="text-2xl text-orange-600">
 							Marketing for Small to Medium Business Owners

@@ -1,361 +1,504 @@
 'use client'
 
-import * as React from "react"
-import Link from "next/link" // Importing a specific icon from react-icons
+import * as React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { cn } from '@/lib/utils'
+import { Menu, ChevronUp, ChevronDown, Calendar } from 'lucide-react'
 import NaveLogo from '../../public/images/Untitled design.png'
 import FooterLogo from '../../public/logo.png'
-import { cn } from "@/lib/utils"
-import { FaFacebookF } from "react-icons/fa";
-import { CiTwitter } from "react-icons/ci";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { FaPinterestP } from "react-icons/fa6";
+import {
+	MapPin,
+	Mail,
+	Phone,
+	Facebook,
+	Twitter,
+	Linkedin,
+	Instagram,
+	PinIcon as PinterestIcon,
+} from 'lucide-react'
+
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 
 import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet"
+	NavigationMenu,
+	NavigationMenuContent,
+	NavigationMenuItem,
+	NavigationMenuLink,
+	NavigationMenuList,
+	NavigationMenuTrigger,
+	navigationMenuTriggerStyle,
+} from '@/components/ui/navigation-menu'
 
-
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
-import Image from "next/image"
-import { MdEmail } from "react-icons/md"
-import { FacebookIcon, Instagram, Linkedin, Menu, TwitterIcon } from "lucide-react";
-import { mobileMenu } from "@/constants"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
-import { Button } from "../ui/button"
-import { FaChevronUp, FaChevronDown } from "react-icons/fa";
+import { Button } from '../ui/button'
+import { mobileMenu } from '@/constants'
 
-const components: { title: string; href: string; }[] = [
-  {
-    title: "Branding",
-    href: "/marketing/branding",
-    
-  },
-  {
-    title: "Social Media Marketing",
-    href: "/marketing/social-media-marketing",
-   
-  },
-  
-  {
-    title: "Google Grant Management",
-    href: "/marketing/google-grant-management",
+// Import icons for submenu items
+import {
+	Plane,
+	Car,
+	Utensils,
+	ShoppingBag,
+	Sparkles,
+	Dumbbell,
+	HardHat,
+	Home,
+	Stethoscope,
+	Search,
+	ClipboardCheck,
+	FileText,
+	RefreshCw,
+	CalendarDays,
+	BarChart,
+	Globe,
+	MessageSquare,
+	Smartphone,
+	Eye,
+} from 'lucide-react'
 
-  },
-  {
-    title: "Google Shopping Campaigns",
-    href: "/marketing/google-shopping-campaigns",
-      },
-  
-  {
-    title: "SEO Web Design",
-    href: "/marketing/seo-web-design",
-      },
-  {
-    title: "Video SEO",
-    href: "/marketing/video-seo",
-    },
-  {
-    title: "Local SEO",
-    href: "/marketing/local-seo",
-     },
-  {
-    title: "Content Marketing",
-    href: "/marketing/content-marketing",
-      },
-  {
-    title: "Email Marketing",
-    href: "/marketing/email-marketing",
-    },
-  {
-    title: "Text Message Marketing",
-    href: "/marketing/text-message-marketing",
-    
-  },
-  {
-    title: "Marketing Automation",
-    href: "/marketing/marketing-automation",
-   
-  },
-  {
-    title: "Marketing Plans",
-    href: "/marketing/marketing-plans",
-     },
-  {
-    title: "Inbound Marketing",
-    href: "/marketing/inbound-marketing-services",
-   
-  },
-  {
-    title: "E-Commerce Services",
-    href: "/marketing/e-commerce-digital-marketing-services",
-     },
-  
+interface Component {
+	title: string
+	href: string
+	icon: React.ReactNode
+}
+
+const components: Component[] = [
+	{
+		title: 'Branding',
+		href: '/marketing/branding',
+		icon: <BarChart className="w-4 h-4 mr-2" />,
+	},
+	{
+		title: 'Social Media Marketing',
+		href: '/marketing/social-media-marketing',
+		icon: <Globe className="w-4 h-4 mr-2" />,
+	},
+	{
+		title: 'Google Grant Management',
+		href: '/marketing/google-grant-management',
+		icon: <Search className="w-4 h-4 mr-2" />,
+	},
+	{
+		title: 'Google Shopping Campaigns',
+		href: '/marketing/google-shopping-campaigns',
+		icon: <ShoppingBag className="w-4 h-4 mr-2" />,
+	},
+	{
+		title: 'SEO Web Design',
+		href: '/marketing/seo-web-design',
+		icon: <Globe className="w-4 h-4 mr-2" />,
+	},
+	{
+		title: 'Video SEO',
+		href: '/marketing/video-seo',
+		icon: <Eye className="w-4 h-4 mr-2" />,
+	},
+	{
+		title: 'Local SEO',
+		href: '/marketing/local-seo',
+		icon: <Search className="w-4 h-4 mr-2" />,
+	},
+	{
+		title: 'Content Marketing',
+		href: '/marketing/content-marketing',
+		icon: <FileText className="w-4 h-4 mr-2" />,
+	},
+	{
+		title: 'Email Marketing',
+		href: '/marketing/email-marketing',
+		icon: <MessageSquare className="w-4 h-4 mr-2" />,
+	},
+	{
+		title: 'Text Message Marketing',
+		href: '/marketing/text-message-marketing',
+		icon: <Smartphone className="w-4 h-4 mr-2" />,
+	},
+	{
+		title: 'Marketing Automation',
+		href: '/marketing/marketing-automation',
+		icon: <RefreshCw className="w-4 h-4 mr-2" />,
+	},
+	{
+		title: 'Marketing Plans',
+		href: '/marketing/marketing-plans',
+		icon: <ClipboardCheck className="w-4 h-4 mr-2" />,
+	},
+	{
+		title: 'Inbound Marketing',
+		href: '/marketing/inbound-marketing-services',
+		icon: <BarChart className="w-4 h-4 mr-2" />,
+	},
+	{
+		title: 'E-Commerce Services',
+		href: '/marketing/e-commerce-digital-marketing-services',
+		icon: <ShoppingBag className="w-4 h-4 mr-2" />,
+	},
 ]
 
 export function Header() {
+	const [isSheetOpen, setIsSheetOpen] = React.useState(false)
+	const closeSheet = () => setIsSheetOpen(false)
 
-  const [isSheetOpen, setIsSheetOpen] = React.useState(false);
-  const closeSheet = () => setIsSheetOpen(false);
+	const [openMenu, setOpenMenu] = React.useState<string | null>(null)
 
-  const [openMenu, setOpenMenu] = React.useState<string | null>(null); // Tracks the currently open collapsible menu
+	const toggleItem = (title: string) => {
+		setOpenMenu((prev) => (prev === title ? null : title))
+	}
 
-  const toggleItem = (title: string) => {
-    setOpenMenu((prev) => (prev === title ? null : title)); // Toggle open/close or switch between menus
-  };
-  return (
-	<nav className="bg-background bg-gray-100 w-full  h-auto  shadow-lg">
+	return (
+		<nav className="bg-background bg-gray-100 w-full h-auto shadow-lg">
+			<div className=" hidden xl:flex flex-col xl:flex-row items-center justify-between px-4 py-2 xl:py-0 xl:h-16 max-w-7xl mx-auto">
+				<div className="flex items-center mb-4 md:mb-0">
+					<Link href="/" className="text-2xl font-bold text-primary">
+						<Image src={NaveLogo} alt="logo" width={200} height={90} className="w-auto h-auto" />
+					</Link>
+				</div>
 
+				<div className="w-full md:w-auto mb-4 md:mb-0 ">
+					<NavigationMenu className="w-full justify-center">
+						<NavigationMenuList className="flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
+							<NavigationMenuItem>
+								<Link href="/about" legacyBehavior passHref>
+									<NavigationMenuLink
+										className={cn(
+											navigationMenuTriggerStyle(),
+											'bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500 hover:bg-orange-50 transition-colors',
+										)}
+									>
+										About
+									</NavigationMenuLink>
+								</Link>
+							</NavigationMenuItem>
 
-		<div className="items-center justify-evenly h-16 hidden  md:flex">
+							<NavigationMenuItem>
+								<NavigationMenuTrigger className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500 hover:bg-orange-50 transition-colors">
+									Who We Serve
+								</NavigationMenuTrigger>
+								<NavigationMenuContent>
+									<ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[repeat(auto-fill,minmax(200px,1fr))]">
+										<ListItem
+											href="/industry/tourism"
+											title="Tourism"
+											icon={<Plane className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/industry/automotive"
+											title="Automotive"
+											icon={<Car className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/industry/restaurant"
+											title="Restaurants"
+											icon={<Utensils className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/industry/retail"
+											title="Retail"
+											icon={<ShoppingBag className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/industry/cleaning-companies"
+											title="Cleaning Companies"
+											icon={<Sparkles className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/industry/gyms"
+											title="Gyms"
+											icon={<Dumbbell className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/industry/construction"
+											title="Construction"
+											icon={<HardHat className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/industry/real-estate"
+											title="Real Estate"
+											icon={<Home className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/industry/healthcare"
+											title="Healthcare"
+											icon={<Stethoscope className="w-4 h-4 mr-2" />}
+										/>
+									</ul>
+								</NavigationMenuContent>
+							</NavigationMenuItem>
 
-    <div className="flex items-center">
-  <Link href="/" className="text-2xl font-bold text-primary">
-    <Image src={NaveLogo} alt="logo" width={400} height={180} />
-  </Link>
-</div>
+							<NavigationMenuItem>
+								<NavigationMenuTrigger className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500 hover:bg-orange-50 transition-colors">
+									Business
+								</NavigationMenuTrigger>
+								<NavigationMenuContent>
+									<ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+										<ListItem
+											href="/business/market-research"
+											title="Market Research"
+											icon={<Search className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/business/operational-assessment"
+											title="Operational Assessment"
+											icon={<ClipboardCheck className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/business/professional-business-plans"
+											title="Professional Business Plans"
+											icon={<FileText className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/business/business-model-transformation"
+											title="Business Model Transformation"
+											icon={<RefreshCw className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/business/event-management"
+											title="Event Management"
+											icon={<CalendarDays className="w-4 h-4 mr-2" />}
+										/>
+									</ul>
+								</NavigationMenuContent>
+							</NavigationMenuItem>
 
-<div>
+							<NavigationMenuItem>
+								<NavigationMenuTrigger className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500 hover:bg-orange-50 transition-colors">
+									Marketing
+								</NavigationMenuTrigger>
+								<NavigationMenuContent>
+									<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+										{components.map((component) => (
+											<ListItem
+												key={component.title}
+												title={component.title}
+												href={component.href}
+												icon={component.icon}
+											/>
+										))}
+									</ul>
+								</NavigationMenuContent>
+							</NavigationMenuItem>
 
-<NavigationMenu>
-  <NavigationMenuList>
-    
-    <div className="space-x-5 pr-1 flex">
+							<NavigationMenuItem>
+								<NavigationMenuTrigger className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500 hover:bg-orange-50 transition-colors">
+									Technology
+								</NavigationMenuTrigger>
+								<NavigationMenuContent>
+									<ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+										<ListItem
+											href="/Technology/web-development"
+											title="Web Development"
+											icon={<Globe className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/Technology/chatbot-development"
+											title="Chatbot Development"
+											icon={<MessageSquare className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/Technology/mobile-app-development"
+											title="Mobile App Development"
+											icon={<Smartphone className="w-4 h-4 mr-2" />}
+										/>
+										<ListItem
+											href="/Technology/website-accessibility"
+											title="Website Accessibility"
+											icon={<Eye className="w-4 h-4 mr-2" />}
+										/>
+									</ul>
+								</NavigationMenuContent>
+							</NavigationMenuItem>
 
-    <NavigationMenuItem>
-      <Link href="/about" legacyBehavior passHref>
-        <NavigationMenuLink className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500">
-        About
-        </NavigationMenuLink>
-      </Link>
-    </NavigationMenuItem>
+							<NavigationMenuItem>
+								<Link href="/blog" legacyBehavior passHref>
+									<NavigationMenuLink
+										className={cn(
+											navigationMenuTriggerStyle(),
+											'bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500 hover:bg-orange-50 transition-colors',
+										)}
+									>
+										Blog
+									</NavigationMenuLink>
+								</Link>
+							</NavigationMenuItem>
 
-    </div>
+							<NavigationMenuItem>
+								<Link href="/contact" legacyBehavior passHref>
+									<NavigationMenuLink
+										className={cn(
+											navigationMenuTriggerStyle(),
+											'bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500 hover:bg-orange-50 transition-colors',
+										)}
+									>
+										Contact
+									</NavigationMenuLink>
+								</Link>
+							</NavigationMenuItem>
+						</NavigationMenuList>
+					</NavigationMenu>
+				</div>
 
+				<div className="w-full md:w-auto">
+					<Link href="/free-strategy-session" className="w-full md:w-auto inline-block">
+						<button className="w-full md:w-auto bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold py-2 px-6 rounded-full hover:from-orange-600 hover:to-orange-700 hover:shadow-lg transition duration-300 ease-in-out flex items-center justify-center">
+							<Calendar className="w-4 h-4 mr-2" />
+							Free Strategy Session
+						</button>
+					</Link>
+				</div>
+			</div>
 
-    <NavigationMenuItem>
-      <NavigationMenuTrigger className="bg-transparent text-black  font-sans text-[16px] font-semibold hover:text-orange-500">
-        Who We Serve
-      </NavigationMenuTrigger>
-      <NavigationMenuContent>
-        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-3 lg:w-[600px]">
-          <ListItem href="/industry/tourism" title="Tourism" />
-          <ListItem href="/industry/automotive" title="Automotive" />
-          <ListItem href="/industry/restaurant" title="Restaurants" />
-          <ListItem href="/industry/retail" title="Retail" />
-          <ListItem href="/industry/cleaning-companies" title="Cleaning Companies" />
-          <ListItem href="/industry/gyms" title="Gyms" />
-          <ListItem href="/industry/construction" title="Construction" />
-          <ListItem href="/industry/real-estate" title="Real Estate" />
-          <ListItem href="/industry/healthcare" title="Healthcare" />
-        </ul>
-      </NavigationMenuContent>
-    </NavigationMenuItem>
-  
-
-    <NavigationMenuItem>
-      <NavigationMenuTrigger className="bg-transparent text-black  font-sans text-[16px] font-semibold hover:text-orange-500">
-        Business
-      </NavigationMenuTrigger>
-      <NavigationMenuContent>
-        <ul className="grid gap-3  p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-          <ListItem href="/business/market-research" title="Market Research" />
-          <ListItem href="/business/operational-assessment" title="Operational Assessment" />
-          <ListItem href="/business/professional-business-plans" title="Professional Business Plans" />
-          <ListItem href="/business/business-model-transformation" title="Business Model Transformation" />
-          <ListItem href="/business/event-management" title="Event Management" />
-        </ul>
-      </NavigationMenuContent>
-    </NavigationMenuItem>
-
-    <NavigationMenuItem>
-      <NavigationMenuTrigger className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500">
-        Marketing
-      </NavigationMenuTrigger>
-      <NavigationMenuContent>
-        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-3 lg:w-[600px]">
-          {components.map((component) => (
-            <ListItem key={component.title} title={component.title} href={component.href} />
-          ))}
-        </ul>
-      </NavigationMenuContent>
-    </NavigationMenuItem>
-
-    <NavigationMenuItem>
-      <NavigationMenuTrigger className="bg-transparent  text-black font-sans text-[16px] font-semibold hover:text-orange-500">
-        Technology
-      </NavigationMenuTrigger>
-      <NavigationMenuContent>
-        <ul className="grid gap-3  p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-          <ListItem href="/Technology/web-development" title="Web Development" />
-          <ListItem href="/Technology/chatbot-development" title="Chatbot Development" />
-          <ListItem href="/Technology/mobile-app-development" title="Mobile App Development" />
-          <ListItem href="/Technology/website-accessibility" title="Website Accessibility" />
-        </ul>
-      </NavigationMenuContent>
-    </NavigationMenuItem>
-
-    <NavigationMenuItem>
-      <Link href="/blog" legacyBehavior passHref>
-        <NavigationMenuLink className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500">
-          Blog
-        </NavigationMenuLink>
-      </Link>
-    </NavigationMenuItem>
-
-    <div className="pl-4">
-      <NavigationMenuItem>
-        <Link href="/contact" legacyBehavior passHref>
-          <NavigationMenuLink className="bg-transparent text-black font-sans text-[16px] font-semibold hover:text-orange-500">
-            Contact
-          </NavigationMenuLink>
-        </Link>
-      </NavigationMenuItem>
-    </div>
-  </NavigationMenuList>
-</NavigationMenu>
-    </div>
-
-    <Link href="/free-strategy-session">
-  <button className=" bg-gradient-main text-white font-semibold py-2 px-4 rounded-3xl hover:bg-orange-600 hover:shadow-lg transition duration-300 ease-in-out">
-    Free Strategy Session
-  </button>
-</Link>
-
-	</div>
-
-   {/* Mobile Menu */}
-   <div className="flex justify-between items-center md:hidden lg:hidden container">
-        <div>
-          <Link href="/" className="text-2xl font-bold text-primary">
-            <Image src={NaveLogo} alt="logo" width={400} height={180} />
-          </Link>
-        </div>
-        <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-          <SheetTrigger asChild>
-            <Menu className="h-10 w-10" color="#000" />
-          </SheetTrigger>
-          <SheetContent
-            side="right"
-            className="w-[450px] sm:w-[400px] h-screen overflow-scroll bg-[#040c5e]"
-          >
-            <nav className="flex flex-col space-y-4 ml-20 mt-10 pb-20">
-              {mobileMenu.map((item) => (
-                <div key={item.title} className="font-normal text-white mr-10">
-                  {item.children ? (
-                    <Collapsible open={openMenu === item.title} onOpenChange={() => toggleItem(item.title)}>
-                      <CollapsibleTrigger asChild>
-                        <Button
-                          variant="link"
-                          className="w-full justify-between px-0 py-2 text-base hover:no-underline outline-none font-normal text-white gap-2 all-none  transition-colors focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-ring focus-visible:ring-offset-0 "
-                        >
-                          {item.title}
-                          {openMenu === item.title ? (
-                            <FaChevronUp className="text-base" />
-                          ) : (
-                            <FaChevronDown className="text-base" />
-                          )}
-                        </Button>
-                      </CollapsibleTrigger>
-                      <CollapsibleContent className="mt-2 space-y-4 pb-3">
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.title}
-                            href={child.url}
-                            onClick={closeSheet}
-                            className="block pl-4 text-sm text-gray-200"
-                          >
-                            {child.title}
-                          </Link>
-                        ))}
-                      </CollapsibleContent>
-                    </Collapsible>
-                  ) : (
-                    <Link
-                      href={item.url}
-                      onClick={closeSheet}
-                      className="text-base text-gray-200"
-                    >
-                      {item.title}
-                    </Link>
-                  )}
-                </div>
-              ))}
-              <Link href="/free-strategy-session" onClick={closeSheet}>
-                <button className="bg-orange-500 mb-10 mt-5 text-white font-semibold py-2 px-4 w-full rounded-md hover:bg-orange-600 hover:shadow-lg transition duration-300 ease-in-out">
-                  Free Strategy Session
-                </button>
-              </Link>
-              <div className='flex w-full lg:w-80 flex-col gap-6'>
-					<Image src={FooterLogo} alt="logo" className="w-40 md:w-32 lg:w-40"/>
-        <p className='text-xs text-white md:text-sm lg:text-lg'>74 Northeastern Blvd #12a Ste 101 Nashua, NH 03062</p>
-					<p className='text-xs text-white md:text-sm lg:text-lg'> hello@primemarketingexperts.com</p>
-					<p className='text-xs text-white md:text-sm lg:text-lg'> 617-651-1457</p>
-          <ul className='flex items-center justify-start gap-3 lg:gap-5'>
-						<li className='w-8 md:w-10 rounded-full p-2 border hover:bg-blue-600 hover:text-white bg-white text-blue-950'>
-							<Link href="https://www.facebook.com/primemarketingexperts"><FaFacebookF/></Link>
-						</li>
-						<li className='w-8 md:w-10 rounded-full p-2 border hover:bg-cyan-400 hover:text-white bg-white text-blue-950'>
-							<Link href="https://twitter.com/primeexperts"><CiTwitter/></Link>
-						</li>
-						<li className='w-8 md:w-10 rounded-full p-2 border hover:bg-cyan-400 hover:text-white bg-white text-blue-950'>
-							<Link href="https://www.linkedin.com/company/prime-marketing-experts"><FaLinkedinIn/></Link>
-						</li>
-						<li className='w-8 md:w-10 rounded-full p-2 border hover:bg-red-500 hover:text-white bg-white text-blue-950'>
-							<Link href="https://www.instagram.com/primemarketingexperts/"><FaInstagram/></Link>
-						</li>
-						<li className='w-8 md:w-10 rounded-full p-2 border hover:bg-red-500 hover:text-white bg-white text-blue-950'>
-							<Link href="https://www.pinterest.com/primemarketingexperts"><FaPinterestP/></Link>
-						</li>
-					</ul>
-          </div>
-            </nav>
-          </SheetContent>
-        </Sheet>
-      </div>
-
- 
-
-	</nav>
-  )
+			{/* Mobile Menu */}
+			<div className="flex justify-between items-center xl:hidden container py-2">
+				<div>
+					<Link href="/" className="text-2xl font-bold text-primary">
+						<Image src={NaveLogo} alt="logo" width={180} height={80} />
+					</Link>
+				</div>
+				<Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+					<SheetTrigger asChild>
+						<Button variant="ghost" className="xl:hidden p-2">
+							<Menu className="h-6 w-6" color="#000" />
+							<span className="sr-only">Open menu</span>
+						</Button>
+					</SheetTrigger>
+					<SheetContent
+						side="right"
+						className="w-[300px] sm:w-[400px] h-screen overflow-y-auto bg-white"
+					>
+						<nav className="flex flex-col space-y-4 mt-6 pb-20 px-4">
+							{mobileMenu.map((item) => (
+								<div key={item.title} className="font-normal text-gray-800">
+									{item.children ? (
+										<Collapsible
+											open={openMenu === item.title}
+											onOpenChange={() => toggleItem(item.title)}
+										>
+											<CollapsibleTrigger asChild>
+												<Button
+													variant="ghost"
+													className="w-full justify-between px-2 py-2 text-base hover:no-underline outline-none font-medium text-gray-800 gap-2 transition-colors focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 hover:bg-gray-100"
+												>
+													<span className="flex items-center">
+														{item.icon}
+														<span className="ml-2">{item.title}</span>
+													</span>
+													{openMenu === item.title ? (
+														<ChevronUp className="w-4 h-4" />
+													) : (
+														<ChevronDown className="w-4 h-4" />
+													)}
+												</Button>
+											</CollapsibleTrigger>
+											<CollapsibleContent className="mt-2 space-y-2 ml-6">
+												{item.children.map((child) => (
+													<Link
+														key={child.title}
+														href={child.url}
+														onClick={closeSheet}
+														className="block py-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
+													>
+														{child.title}
+													</Link>
+												))}
+											</CollapsibleContent>
+										</Collapsible>
+									) : (
+										<Link
+											href={item.url}
+											onClick={closeSheet}
+											className="flex items-center text-base text-gray-800 hover:text-gray-900 transition-colors py-2 px-2 hover:bg-gray-100 rounded-md"
+										>
+											{item.icon}
+											<span className="ml-2">{item.title}</span>
+										</Link>
+									)}
+								</div>
+							))}
+							<Link href="/free-strategy-session" onClick={closeSheet} className="mt-6 block">
+								<button className="bg-orange-500 w-full text-white font-semibold py-3 px-4 rounded-md hover:bg-orange-600 hover:shadow-lg transition duration-300 ease-in-out flex items-center justify-center">
+									Free Strategy Session
+								</button>
+							</Link>
+							<div className="flex flex-col gap-6 mt-8 px-2 border-t pt-6">
+								<Image src={FooterLogo} alt="logo" className="w-32 mx-auto" />
+								<div className="space-y-2">
+									<p className="text-sm text-gray-600 flex items-center">
+										<MapPin className="w-4 h-4 mr-2 text-orange-500" />
+										74 Northeastern Blvd #12a Ste 101 Nashua, NH 03062
+									</p>
+									<p className="text-sm text-gray-600 flex items-center">
+										<Mail className="w-4 h-4 mr-2 text-orange-500" />
+										hello@primemarketingexperts.com
+									</p>
+									<p className="text-sm text-gray-600 flex items-center">
+										<Phone className="w-4 h-4 mr-2 text-orange-500" />
+										617-651-1457
+									</p>
+								</div>
+								<ul className="flex items-center justify-center gap-4">
+									<li className="rounded-full p-2 bg-gray-100 text-gray-800 hover:bg-orange-500 hover:text-white transition-colors">
+										<Link href="https://www.facebook.com/primemarketingexperts">
+											<Facebook className="w-5 h-5" />
+										</Link>
+									</li>
+									<li className="rounded-full p-2 bg-gray-100 text-gray-800 hover:bg-orange-500 hover:text-white transition-colors">
+										<Link href="https://twitter.com/primeexperts">
+											<Twitter className="w-5 h-5" />
+										</Link>
+									</li>
+									<li className="rounded-full p-2 bg-gray-100 text-gray-800 hover:bg-orange-500 hover:text-white transition-colors">
+										<Link href="https://www.linkedin.com/company/prime-marketing-experts">
+											<Linkedin className="w-5 h-5" />
+										</Link>
+									</li>
+									<li className="rounded-full p-2 bg-gray-100 text-gray-800 hover:bg-orange-500 hover:text-white transition-colors">
+										<Link href="https://www.instagram.com/primemarketingexperts/">
+											<Instagram className="w-5 h-5" />
+										</Link>
+									</li>
+									<li className="rounded-full p-2 bg-gray-100 text-gray-800 hover:bg-orange-500 hover:text-white transition-colors">
+										<Link href="https://www.pinterest.com/primemarketingexperts">
+											<PinterestIcon className="w-5 h-5" />
+										</Link>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</SheetContent>
+				</Sheet>
+			</div>
+		</nav>
+	)
 }
 
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-	
-  )
-})
-ListItem.displayName = "ListItem"
+interface ListItemProps extends React.ComponentPropsWithoutRef<'a'> {
+	icon?: React.ReactNode
+	title: string
+}
+
+const ListItem = React.forwardRef<React.ElementRef<'a'>, ListItemProps>(
+	({ className, title, children, icon, ...props }, ref) => {
+		return (
+			<li>
+				<NavigationMenuLink asChild>
+					<a
+						ref={ref}
+						className={cn(
+							'flex items-center select-none rounded-md p-3 leading-snug no-underline outline-none transition-colors hover:bg-orange-50 hover:text-orange-500 focus:bg-orange-100 focus:text-orange-600',
+							className,
+						)}
+						{...props}
+					>
+						{icon && <span className="mr-2 flex-shrink-0">{icon}</span>}
+						<div>
+							<div className="text-sm font-medium mb-1">{title}</div>
+							{children && <p className="text-xs text-muted-foreground">{children}</p>}
+						</div>
+					</a>
+				</NavigationMenuLink>
+			</li>
+		)
+	},
+)
+ListItem.displayName = 'ListItem'

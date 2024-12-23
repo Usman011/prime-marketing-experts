@@ -13,7 +13,6 @@ import Image from 'next/image'
 import { CaseStudyType } from '@/types'
 import { AnimateRight } from './common/animate'
 
-
 export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 	const [hoveredId, setHoveredId] = useState<string | null>(null)
 	const [caseStudy, setCaseStudy] = useState<CaseStudyType[]>([])
@@ -31,11 +30,8 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 	}, [])
 
 	return (
-		
-		
-		<div className="py-10 container w-full overflow-hidden bg-blue-50 px-2 md:px-12 lg:px-24">	
-		
-			<div className="max-w-7xl mx-auto px-auto">
+		<div className="bg-blue-50 py-10 w-full">
+			<div className="container">
 				<motion.h2 className="text-3xl md:text-4xl font-bold text-start md:text-center text-gray-900 pb-10 md:pb-14">
 					{showAll ? '' : 'Our Case Studies'}
 				</motion.h2>
@@ -76,19 +72,20 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 										</Badge> */}
 									</div>
 									<CardContent className="flex-grow w-full">
-										<h3 className="text-xl font-bold mb-2 mt-2 line-clamp-2">{caseStudy.title || ''}</h3>
+										<h3 className="text-xl font-bold mb-2 mt-2 line-clamp-2">
+											{caseStudy.title || ''}
+										</h3>
 										<p className="text-muted-foreground mb-4 line-clamp-3">
 											{caseStudy.description || ''}
 										</p>
 									</CardContent>
 									<CardFooter className="border-t p-2 md:p-6 bg-gray-50">
 										<div className="flex items-center justify-center w-full">
-											
 											<Link href={`/case-studies/${caseStudy.documentId}`}>
-											<button className="relative inline-flex items-center justify-center px-4 py-2 text-orange-600 font-medium group">
-						                    <span className="absolute inset-0 w-full h-full border-b-2 border-orange-600 transform scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
-						                    <span className="relative">Read More</span>
-					                        </button>
+												<button className="relative inline-flex items-center justify-center px-4 py-2 text-orange-600 font-medium group">
+													<span className="absolute inset-0 w-full h-full border-b-2 border-orange-600 transform scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
+													<span className="relative">Read More</span>
+												</button>
 											</Link>
 										</div>
 									</CardFooter>
@@ -105,9 +102,6 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 					</Link>
 				)}
 			</div>
-			
 		</div>
-		
-		
 	)
 }

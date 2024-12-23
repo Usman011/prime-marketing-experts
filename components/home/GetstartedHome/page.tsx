@@ -1,17 +1,13 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image'
-import sampleImage from '../../../public/images/section_01.jpg' // Replace with your image
-import { MdExpandLess, MdExpandMore } from 'react-icons/md'
+import sampleImage from '../../../public/images/section_01.jpg'
 import {
 	Accordion,
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,
 } from '@/components/ui/accordion'
-import { AnimateRight } from '@/components/common/animate'
-import { motion } from 'framer-motion'
-
 
 interface AccordionItem {
 	question: string
@@ -19,10 +15,10 @@ interface AccordionItem {
 }
 
 const accordionData: AccordionItem[] = [
-	
 	{
 		question: 'How can we generate more sales-qualified leads and revenue?',
-		answer:'Are you looking to generate more leads and drive more revenue? We perform customized revenue marketing tactics to generate more high-quality sales opportunities.',
+		answer:
+			'Are you looking to generate more leads and drive more revenue? We perform customized revenue marketing tactics to generate more high-quality sales opportunities.',
 	},
 	{
 		question: 'Why is my website not attracting enough potential customers?',
@@ -30,7 +26,6 @@ const accordionData: AccordionItem[] = [
 			'Does your business find getting qualified leads into your pipeline to be a challenge? Boost your lead generation potential with our tailored digital marketing strategies and website development services designed to meet your specific business requirements',
 	},
 	{
-		
 		question: 'Why is our marketing and sales data not interconnected?',
 		answer:
 			'We use marketing automation and CRM technology to align sales and marketing, maximizing ROI for each sales qualified lead (SQL). This will help you organize your data, so salespeople can analyze efforts for better results and reports.',
@@ -42,61 +37,42 @@ const accordionData: AccordionItem[] = [
 	},
 	{
 		question: 'Why does managing digital campaigns take so much time?',
-		answer:'We help your company use the latest advertising strategies and technology to make the most of your advertising budget. Our experts will optimize your advertising budget by targeting ads, creating engaging graphics, and distributing your budget effectively across platforms.',
+		answer:
+			'We help your company use the latest advertising strategies and technology to make the most of your advertising budget. Our experts will optimize your advertising budget by targeting ads, creating engaging graphics, and distributing your budget effectively across platforms.',
 	},
-	
 ]
 
-const InfoSection: React.FC = () => {
-	const [openIndex, setOpenIndex] = useState<number | null>(null)
+const InfoSection: React.FC = () => (
+	<div className="container py-10 mt-5  rounded-lg ">
+		<h1 className="text-3xl font-bold text-start md:text-center mb-3">FAQ</h1>
+		<p className="text-base text-start md:text-center mb-5 md:mb-12 text-gray-600">
+			Prime Marketing Experts solves your digital marketing and website bottlenecks.
+		</p>
 
-	const toggleAccordion = (index: number) => {
-		setOpenIndex(openIndex === index ? null : index)
-	}
-	return (
-		
-	
-			
-			<div className="mx-auto container overflow-hidden px-2 md:px-12 lg:px-24 py-10 mt-5  rounded-lg ">
-			
-				<h1 className="text-3xl font-bold text-start md:text-center mb-3">FAQ</h1>
-				<p className="text-base text-start md:text-center mb-12 text-gray-600">
-					Prime Marketing Experts solves your digital marketing and website bottlenecks.
-				</p>
-				<motion.div
-						initial={{ opacity: 0, x: 50 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.5, delay: 0.6 }}
-					>
-				<div className="flex flex-col lg:flex-row h-full gap-8 border p-2  md:p-10 ">
-					<div className="lg:w-1/2">
-						<Image
-							src={sampleImage}
-							alt="FAQ Illustration"
-							className="rounded-lg shadow-md pt-6 w-full h-auto object-cover"
-						/>
-					</div>
-					<div className="lg:w-1/2 h-auto flex items-center">
-						<Accordion type="single" collapsible className="w-full space-y-4">
-							{accordionData.map((item, index) => (
-								<AccordionItem
-									value={`item-${index}`}
-									key={index}
-									className=" border border-gray-200 rounded-lg px-2 md:px-5 py-2"
-								>
-									<AccordionTrigger className='text-start'>{item.question}</AccordionTrigger>
-									<AccordionContent>{item.answer}</AccordionContent>
-								</AccordionItem>
-							))}
-						</Accordion>
-					</div>
-				</div>
-				</motion.div>
-				
+		<div className="flex flex-col lg:flex-row rounded-2xl h-full gap-8 md:border md:p-10 ">
+			<div className="lg:w-1/2 flex justify-center items-center">
+				<Image
+					src={sampleImage}
+					alt="FAQ Illustration"
+					className="md:rounded-lg md:shadow-md w-full h-auto object-cover"
+				/>
 			</div>
-			
-
-			)
-}
+			<div className="lg:w-1/2 h-auto flex items-center">
+				<Accordion type="single" collapsible className="w-full space-y-4">
+					{accordionData.map((item, index) => (
+						<AccordionItem
+							value={`item-${index}`}
+							key={index}
+							className=" md:border md:shadow-none border-gray-200 md:rounded-lg px-2 md:px-5 py-2"
+						>
+							<AccordionTrigger className="text-start">{item.question}</AccordionTrigger>
+							<AccordionContent>{item.answer}</AccordionContent>
+						</AccordionItem>
+					))}
+				</Accordion>
+			</div>
+		</div>
+	</div>
+)
 
 export default InfoSection

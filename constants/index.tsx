@@ -16,6 +16,16 @@ import {
 	Target,
 } from 'lucide-react'
 
+interface MenuItem {
+	title: string
+	url: string
+	icon?: React.ReactNode
+	children?: {
+		title: string
+		url: string
+	}[]
+}
+
 export enum INPUT_TYPES {
 	NUMBER = 'number',
 	EMAIL = 'email',
@@ -129,7 +139,7 @@ export const TechnologyData = [
 	},
 ]
 
-export const mobileMenu = [
+export const mobileMenu: MenuItem[] = [
 	{
 		title: 'Home',
 		url: '/',
