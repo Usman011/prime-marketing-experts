@@ -147,8 +147,8 @@ export function Header() {
 	}
 
 	return (
-		<nav className="bg-background bg-gray-100 w-full h-auto shadow-lg">
-			<div className=" hidden xl:flex flex-col xl:flex-row items-center justify-between px-4 py-2 xl:py-0 xl:h-16 max-w-7xl mx-auto">
+		<nav className="bg-background bg-gray-50 w-full h-auto shadow-lg">
+			<div className=" hidden xl:flex flex-col xl:flex-row items-center justify-between py-10 xl:h-16 container">
 				<div className="flex items-center mb-4 md:mb-0">
 					<Link href="/" className="text-2xl font-bold text-primary">
 						<Image src={NaveLogo} alt="logo" width={200} height={90} className="w-auto h-auto" />
