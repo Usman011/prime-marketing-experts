@@ -32,18 +32,18 @@ export default function RestaurantIndustry() {
 							</h2>
 							<div className="space-y-6 text-lg text-gray-600">
 								<p>
-									At Prime Marketing Experts, we understand that the restaurant industry is
+									{`At Prime Marketing Experts, we understand that the restaurant industry is
 									competitive and constantly evolving. Whether you run a casual eatery, a fine
 									dining restaurant, or a fast-casual chain, we offer specialized marketing
 									solutions designed to attract more customers, build brand loyalty, and increase
-									your online visibility.
+									your online visibility.`}
 								</p>
 								<p>
-									Our comprehensive marketing strategies are crafted to highlight your unique
+									{`Our comprehensive marketing strategies are crafted to highlight your unique
 									offerings and connect with the right audience. From social media campaigns to
 									local SEO optimization and reputation management, we'll help you grow your
 									restaurant's presence both online and offline, ensuring you stand out in the
-									crowded marketplace.
+									crowded marketplace.`}
 								</p>
 							</div>
 							<Link href="/free-strategy-session">
@@ -102,10 +102,10 @@ export default function RestaurantIndustry() {
 							</div>
 							<h3 className="text-2xl font-bold text-gray-800 mb-4">Local SEO Optimization</h3>
 							<p className="text-gray-600 text-lg leading-relaxed">
-								Local SEO is essential for restaurant success. When potential customers search for
+								{`Local SEO is essential for restaurant success. When potential customers search for
 								dining options in your area, you need to be visible. We'll optimize your
 								restaurant's website and online listings to ensure you appear in local search
-								results.
+								results.`}
 							</p>
 						</div>
 					</div>

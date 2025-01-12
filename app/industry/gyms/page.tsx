@@ -109,8 +109,7 @@ export default function GymIndustryPage() {
 						{[
 							{
 								name: 'Pulse Fitness',
-								quote:
-									"Our gym's brand visibility has skyrocketed, and we’ve gained a loyal following.",
+								quote: `Our gym's brand visibility has skyrocketed, and we have gained a loyal following.`,
 								author: 'Sarah Lee, Marketing Director',
 							},
 							{
@@ -121,8 +120,7 @@ export default function GymIndustryPage() {
 							},
 							{
 								name: 'Elevate Fitness Studio',
-								quote:
-									'The team’s tailored strategies helped us attract a younger audience and increase class participation.',
+								quote: `The team is tailored strategies helped us attract a younger audience and increase class participation.`,
 								author: 'Emily Carter, Studio Manager',
 							},
 						].map((story, index) => (
@@ -141,7 +139,7 @@ export default function GymIndustryPage() {
 			<div className="bg-orange-500 mt-20 py-12 px-6 lg:px-12">
 				<div className="flex flex-col lg:flex-row items-center justify-between gap-8 container mx-auto">
 					<h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center lg:text-left leading-tight max-w-2xl">
-						Don't wait any longer to take your gym to the next level
+						{`Don't wait any longer to take your gym to the next level`}
 					</h2>
 					<Link href="/contact">
 						<button className="bg-white px-8 py-3 text-sm text-orange-500 rounded-md shadow-md transition-all duration-200 font-semibold tracking-wide border border-orange-500 hover:bg-orange-600 hover:text-white hover:border-white hover:shadow-lg active:transform active:scale-95">

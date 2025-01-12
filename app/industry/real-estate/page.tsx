@@ -34,10 +34,10 @@ const RealEstatePage = () => {
 									tailored marketing strategies designed specifically for real estate professionals.
 								</p>
 								<p className="leading-relaxed">
-									Our comprehensive real estate marketing services ensure that your properties reach
+									{`Our comprehensive real estate marketing services ensure that your properties reach
 									the right audience, engage potential buyers, and drive more qualified traffic to
 									your listings. From SEO-optimized property listings to social media campaigns,
-									we've got the tools and expertise to help you thrive in the real estate market.
+									we've got the tools and expertise to help you thrive in the real estate market.`}
 								</p>
 							</div>
 

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import IMG from '../../../public/industry/construction/image1.png'
 import IMG1 from '../../../public/industry/construction/image2.png'
 
@@ -18,9 +17,7 @@ export default function CleaningCompanies() {
 			</div>
 
 			<div className="container mx-auto px-4 py-16 space-y-12 ">
-				{/* Hero Section */}
 				<div className="flex flex-col lg:flex-row rounded-2xl p-8 items-center gap-12 border border-gray-200">
-					{/* Left Side - Content */}
 					<div className="w-full lg:w-1/2 space-y-6">
 						<h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
 							Build a Stronger Future with Strategic Marketing for Construction
@@ -34,9 +31,9 @@ export default function CleaningCompanies() {
 								clients.
 							</p>
 							<p className="text-lg md:text-xl text-gray-700">
-								Whether you're a general contractor, a specialty contractor, or a large-scale
+								{`Whether you're a general contractor, a specialty contractor, or a large-scale
 								developer, we offer comprehensive marketing strategies designed to highlight your
-								expertise, build trust with your audience, and generate more project inquiries.
+								expertise, build trust with your audience, and generate more project inquiries.`}
 							</p>
 						</div>
 					</div>
