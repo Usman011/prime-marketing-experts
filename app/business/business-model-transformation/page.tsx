@@ -8,20 +8,18 @@ const Page = () => {
 	return (
 		<section>
 			{/* Header */}
-			<div className="bg-gradient-to-r from-orange-400 to-red-500 py-20 mb-12">
-				<div className="container mx-auto px-4">
-					<div className="max-w-5xl mx-auto min-h-40 flex flex-col justify-center items-center">
-						<h1 className="text-center font-bold text-5xl md:text-6xl leading-tight tracking-wide text-white mb-4">
-							Business Model Transformation
-						</h1>
-						<p className="text-center text-white text-xl md:text-2xl max-w-2xl">
-							Revolutionize your business strategy for the digital age
-						</p>
-					</div>
+			<div className="bg-gradient-to-r from-orange-50 to-red-50 py-8 md:py-16">
+				<div className="container mx-auto px-4 max-w-4xl">
+					<h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight md:leading-tight text-center">
+						Business Model Transformation
+					</h1>
+					<p className="text-base md:text-lg text-gray-600 leading-relaxed md:leading-relaxed text-center max-w-2xl mx-auto">
+						Transform your business with data-driven strategies for the digital age
+					</p>
 				</div>
 			</div>
 
-			<div className="container mx-auto px-4">
+			<div className="container mx-auto px-4 mt-10">
 				<div className="flex flex-col space-y-6 mb-10 pb-10 justify-start">
 					<h2 className="font-bold mb-4 text-3xl md:text-4xl text-gray-800">
 						Market Research Services That Spark Profitable Growth!

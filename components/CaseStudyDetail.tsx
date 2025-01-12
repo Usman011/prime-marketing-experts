@@ -25,14 +25,20 @@ const CaseStudyDetail = ({ id }: { id: string }) => {
 	}, [id])
 
 	return (
-		<div className="container px-2 md:px-12 mb-10 ">
-			<div className="flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-28 flex-col text-center">
-				<h1 className="font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide">
-					Case Study Details
-				</h1>
+		<div>
+			<div className="bg-gradient-to-r from-orange-50 to-red-50 py-8 md:py-16 w-full">
+				<div className="container mx-auto px-4 max-w-4xl">
+					<h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight md:leading-tight text-center">
+						{caseStudy?.title || 'Case Study Details'}
+					</h1>
+					<p className="text-base md:text-lg text-gray-600 leading-relaxed md:leading-relaxed text-center max-w-2xl mx-auto">
+						{caseStudy?.description ||
+							'Explore how we helped our client achieve their business goals through innovative solutions and strategic planning.'}
+					</p>
+				</div>
 			</div>
 			{!loading && caseStudy ? (
-				<div className="bg-blue-50 p-2 md:p-5 text-black">
+				<div className="text-black container mx-auto px-4 max-w-5xl mt-10">
 					<div className="pt-5">
 						{/* <div className=" text-base md:text-lg text-gray-500 mt-2">{`By ${caseStudy.authorName || ''}`}</div> */}
 					</div>
@@ -43,7 +49,7 @@ const CaseStudyDetail = ({ id }: { id: string }) => {
 								alt={'No Image'}
 								width={1000}
 								height={800}
-								className="w-full object-cover max-h-[500px]"
+								className="w-full object-cover max-h-[500px] rounded-lg"
 							/>
 						</div>
 					)}

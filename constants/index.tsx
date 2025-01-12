@@ -139,186 +139,205 @@ export const TechnologyData = [
 	},
 ]
 
-export const mobileMenu: MenuItem[] = [
+export const mobileMenu = [
 	{
 		title: 'Home',
 		url: '/',
 	},
-
 	{
 		title: 'About',
 		url: '/about',
 	},
-
 	{
 		title: 'Who We Serve',
 		url: '/weserve',
-		children: [
+		submenu: [
 			{
-				title: 'Tourism',
-				url: '/industry/tourism',
-			},
-			{
-				title: 'Automotive',
-				url: '/industry/automotive',
-			},
-			{
-				title: 'Restaurant',
-				url: '/industry/restaurant',
-			},
-			{
-				title: 'Retail',
-				url: '/industry/retail',
-			},
-			{
-				title: 'Cleaning Companies',
-				url: '/industry/cleaning-companies',
-			},
-			{
-				title: 'Gyms',
-				url: '/industry/gyms',
-			},
-			{
-				title: 'Construction',
-				url: '/industry/construction',
-			},
-			{
-				title: 'Real Estate',
-				url: '/industry/real-estate',
-			},
-			{
-				title: 'Healthcare',
-				url: '/industry/healthcare',
-			},
-			{
-				title: 'Event Management',
-				url: '/business/event-management/',
+				category: 'Industries',
+				items: [
+					{
+						title: 'Tourism',
+						url: '/industry/tourism',
+					},
+					{
+						title: 'Automotive',
+						url: '/industry/automotive',
+					},
+					{
+						title: 'Restaurant',
+						url: '/industry/restaurant',
+					},
+					{
+						title: 'Retail',
+						url: '/industry/retail',
+					},
+					{
+						title: 'Cleaning Companies',
+						url: '/industry/cleaning-companies',
+					},
+					{
+						title: 'Gyms',
+						url: '/industry/gyms',
+					},
+					{
+						title: 'Construction',
+						url: '/industry/construction',
+					},
+					{
+						title: 'Real Estate',
+						url: '/industry/real-estate',
+					},
+					{
+						title: 'Healthcare',
+						url: '/industry/healthcare',
+					},
+					{
+						title: 'Event Management',
+						url: '/business/event-management/',
+					},
+				],
 			},
 		],
 	},
-
 	{
 		title: 'Business',
 		url: 'undefined',
-		children: [
+		submenu: [
 			{
-				title: 'Market Research',
-				url: '/business/market-research/',
-			},
-			{
-				title: 'Operational Assessment',
-				url: '/business/operational-assessment/',
-			},
-			{
-				title: 'Professional Business Plans',
-				url: '/business/professional-business-plans/',
-			},
-			{
-				title: 'Business Model Transformation',
-				url: '/business/business-model-transformation/',
-			},
-			{
-				title: 'Event Management',
-				url: '/business/event-management/',
+				category: 'Business Services',
+				items: [
+					{
+						title: 'Market Research',
+						url: '/business/market-research/',
+					},
+					{
+						title: 'Operational Assessment',
+						url: '/business/operational-assessment/',
+					},
+					{
+						title: 'Professional Business Plans',
+						url: '/business/professional-business-plans/',
+					},
+					{
+						title: 'Business Model Transformation',
+						url: '/business/business-model-transformation/',
+					},
+					{
+						title: 'Event Management',
+						url: '/business/event-management/',
+					},
+				],
 			},
 		],
 	},
-
 	{
 		title: 'Marketing',
 		url: 'undefined',
-		children: [
+		submenu: [
 			{
-				title: 'Social Media Marketing',
-				url: '/marketing/social-media-marketing',
+				category: 'SEO & Lead Generation',
+				items: [
+					{
+						title: 'Local SEO',
+						url: '/marketing/local-seo/',
+					},
+					{
+						title: 'SEO Web Design',
+						url: '/marketing/seo-web-design/',
+					},
+					{
+						title: 'Video SEO',
+						url: '/marketing/video-seo/',
+					},
+					{
+						title: 'Google Shopping Campaigns',
+						url: '/marketing/google-shopping-campaigns/',
+					},
+					{
+						title: 'Google Grant Management',
+						url: '/marketing/google-grant-management/',
+					},
+				],
 			},
 			{
-				title: 'Content Marketing',
-				url: '/marketing/content-marketing/',
+				category: 'Digital Marketing',
+				items: [
+					{
+						title: 'Social Media Marketing',
+						url: '/marketing/social-media-marketing/',
+					},
+					{
+						title: 'Content Marketing',
+						url: '/marketing/content-marketing/',
+					},
+					{
+						title: 'Email Marketing',
+						url: '/marketing/email-marketing/',
+					},
+					{
+						title: 'Text Message Marketing',
+						url: '/marketing/text-message-marketing/',
+					},
+				],
 			},
 			{
-				title: 'Local SEO',
-				url: '/marketing/local-seo/',
-			},
-			{
-				title: 'SEO Web Design',
-				url: '/marketing/seo-web-design/',
-			},
-			{
-				title: 'Video SEO',
-				url: '/marketing/video-seo/',
-			},
-			{
-				title: 'Google Shopping Campaigns',
-				url: '/marketing/google-shopping-campaigns/',
-			},
-			{
-				title: 'Google Grant Management',
-				url: '/marketing/google-grant-management/',
-			},
-			{
-				title: 'Email Marketing',
-				url: '/marketing/email-marketing/',
-			},
-			{
-				title: 'Branding',
-				url: '/marketing/branding/',
-			},
-			{
-				title: 'Social Media Marketing',
-				url: '/marketing/social-media-marketing/',
-			},
-			{
-				title: 'Text Message Marketing',
-				url: '/marketing/text-message-marketing/',
-			},
-			{
-				title: 'Marketing Automation',
-				url: '/marketing/marketing-automation/',
-			},
-			{
-				title: 'Marketing Plans',
-				url: '/marketing/marketing-plans/',
-			},
-			{
-				title: 'Inbound Marketing',
-				url: '/marketing/inbound-marketing-services/',
-			},
-			{
-				title: 'E-Commerce Services',
-				url: '/marketing/e-commerce-digital-marketing-services/',
+				category: 'Strategy & Planning',
+				items: [
+					{
+						title: 'Marketing Automation',
+						url: '/marketing/marketing-automation/',
+					},
+					{
+						title: 'Marketing Plans',
+						url: '/marketing/marketing-plans/',
+					},
+					{
+						title: 'Inbound Marketing',
+						url: '/marketing/inbound-marketing-services/',
+					},
+					{
+						title: 'E-Commerce Services',
+						url: '/marketing/e-commerce-digital-marketing-services/',
+					},
+					{
+						title: 'Branding',
+						url: '/marketing/branding/',
+					},
+				],
 			},
 		],
 	},
-
 	{
 		title: 'Technology',
 		url: 'undefined',
-		children: [
+		submenu: [
 			{
-				title: 'Website Development',
-				url: '/Technology/chatbot-development',
-			},
-			{
-				title: 'Chatbot Development',
-				url: '/Technology/chatbot-development',
-			},
-			{
-				title: 'Mobile Application Development',
-				url: '/Technology/mobile-app-development',
-			},
-			{
-				title: 'Website Accessibility',
-				url: '/Technology/website-accessibility',
+				category: 'Development Services',
+				items: [
+					{
+						title: 'Website Development',
+						url: '/Technology/chatbot-development',
+					},
+					{
+						title: 'Chatbot Development',
+						url: '/Technology/chatbot-development',
+					},
+					{
+						title: 'Mobile Application Development',
+						url: '/Technology/mobile-app-development',
+					},
+					{
+						title: 'Website Accessibility',
+						url: '/Technology/website-accessibility',
+					},
+				],
 			},
 		],
 	},
-
 	{
 		title: 'Blog',
 		url: '/blog',
 	},
-
 	{
 		title: 'Contact',
 		url: '/contact',

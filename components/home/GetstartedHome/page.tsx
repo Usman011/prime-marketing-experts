@@ -43,7 +43,7 @@ const accordionData: AccordionItem[] = [
 ]
 
 const InfoSection: React.FC = () => (
-	<div className="container py-10 mt-5  rounded-lg ">
+	<div className="container py-10 md:pb-20 mt-5  rounded-lg ">
 		<h1 className="text-3xl font-bold text-start md:text-center mb-3">FAQ</h1>
 		<p className="text-base text-start md:text-center mb-5 md:mb-12 text-gray-600">
 			Prime Marketing Experts solves your digital marketing and website bottlenecks.

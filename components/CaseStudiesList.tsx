@@ -1,20 +1,17 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronRight, Loader2 } from 'lucide-react'
-import { Card, CardContent, CardFooter } from '@/components/ui/card'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { motion } from 'framer-motion'
+import { ChevronRight, Loader2, ArrowRightIcon } from 'lucide-react'
+import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import firebaseService from '@/utils/firebase.utils'
 import Link from 'next/link'
 import Image from 'next/image'
 import { CaseStudyType } from '@/types'
-import { AnimateRight } from './common/animate'
 
 export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
-	const [hoveredId, setHoveredId] = useState<string | null>(null)
 	const [caseStudy, setCaseStudy] = useState<CaseStudyType[]>([])
 	const [loading, setLoading] = useState(true)
 	const allCaseStudy = showAll ? caseStudy : caseStudy.slice(0, 3)
@@ -30,76 +27,67 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 	}, [])
 
 	return (
-		<div className="bg-blue-50 py-10 w-full">
+		<div className="py-16">
 			<div className="container">
-				<motion.h2 className="text-3xl md:text-4xl font-bold text-start md:text-center text-gray-900 pb-10 md:pb-14">
-					{showAll ? '' : 'Our Case Studies'}
-				</motion.h2>
-				<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-					{loading ? (
-						<div className="h-60 w-full flex justify-center items-center md:col-span-2 lg:col-span-3 ">
-							<Loader2 className="w-10 h-10 ml-2 animate-spin" />
-						</div>
-					) : (
-						allCaseStudy.map((caseStudy) => (
-							<motion.div
-								key={caseStudy.documentId}
-								initial={{ opacity: 0, y: 20 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{ duration: 0.5 }}
-								whileHover={{ y: -5 }}
-								onHoverStart={() => setHoveredId(caseStudy.documentId)}
-								onHoverEnd={() => setHoveredId(null)}
-								className=" cursor-pointer"
-							>
-								<Card className="overflow-hidden h-full flex flex-col bg-white/80 backdrop-blur-sm border-none shadow-lg">
-									<div className="relative">
-										{caseStudy.imageUrl ? (
+				{!showAll && (
+					<h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Our Case Studies</h2>
+				)}
+
+				{loading ? (
+					<div className="flex justify-center items-center h-60">
+						<Loader2 className="w-8 h-8 animate-spin text-primary" />
+					</div>
+				) : (
+					<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+						{allCaseStudy.map((study) => (
+							<Link key={study.documentId} href={`/case-studies/${study.documentId}`}>
+								<article className="overflow-hidden rounded-lg border transition-all duration-300 bg-white">
+									<div className="relative aspect-[16/9]">
+										{study.imageUrl ? (
 											<Image
-												width={800}
-												height={800}
-												src={caseStudy.imageUrl}
-												alt={caseStudy.title}
-												className="w-full h-60 object-cover"
+												src={study.imageUrl}
+												alt={study.title}
+												fill
+												className="object-cover transition duration-300 hover:scale-105"
 											/>
 										) : (
-											<div className="bg-gray-300 h-60 w-full flex justify-center items-center">
-												<div className="text-white text-4xl font-bold">400 x 400</div>
+											<div className="w-full h-full bg-gray-100 flex items-center justify-center">
+												<span className="text-gray-400">No image</span>
 											</div>
 										)}
-										{/* <Badge className="absolute top-4 left-4 py-2 bg-primary text-primary-foreground">
-											{caseStudy.category || 'Category'}
-										</Badge> */}
 									</div>
-									<CardContent className="flex-grow w-full">
-										<h3 className="text-xl font-bold mb-2 mt-2 line-clamp-2">
-											{caseStudy.title || ''}
-										</h3>
-										<p className="text-muted-foreground mb-4 line-clamp-3">
-											{caseStudy.description || ''}
-										</p>
-									</CardContent>
-									<CardFooter className="border-t p-2 md:p-6 bg-gray-50">
-										<div className="flex items-center justify-center w-full">
-											<Link href={`/case-studies/${caseStudy.documentId}`}>
-												<button className="relative inline-flex items-center justify-center px-4 py-2 text-orange-600 font-medium group">
-													<span className="absolute inset-0 w-full h-full border-b-2 border-orange-600 transform scale-x-0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
-													<span className="relative">Read More</span>
-												</button>
-											</Link>
+
+									<div className="p-6">
+										<div className="flex justify-between items-start">
+											<div className="flex-1 pr-4">
+												<h3 className="text-xl font-bold mb-4 text-gray-900 line-clamp-2 leading-[32px]">
+													{study.title}
+												</h3>
+												<p className="text-gray-600 line-clamp-3 text-sm leading-[24px]">
+													{study.description}
+												</p>
+											</div>
 										</div>
-									</CardFooter>
-								</Card>
-							</motion.div>
-						))
-					)}
-				</div>
+
+										<div className="text-sm font-semibold w-full text-orange-600 flex justify-end items-center gap-3">
+											Read More <ArrowRightIcon className="w-4 h-4" />
+										</div>
+									</div>
+								</article>
+							</Link>
+						))}
+					</div>
+				)}
+
 				{!showAll && (
-					<Link href={'/case-studies'}>
-						<div className="flex justify-center mt-10 md:mt-14 ">
-							<Button className="bg-gradient-main hover:bg-[#ff962c]">Read More</Button>
-						</div>
-					</Link>
+					<div className="text-center mt-12">
+						<Link href="/case-studies">
+							<Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white transition-colors px-6 py-4 rounded-lg">
+								View All Case Studies
+								<ChevronRight className="w-5 h-5 ml-2" />
+							</Button>
+						</Link>
+					</div>
 				)}
 			</div>
 		</div>

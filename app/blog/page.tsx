@@ -4,12 +4,19 @@ import React from 'react'
 
 const Page = () => {
 	return (
-		<section className="container mx-auto mb-10 px-2">
+		<section className="px-2">
 			{/* Header */}
-			<div className="flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-28 flex-col text-center">
-				<h1 className="font-semibold-600 text-3xl md:text-4xl leading-10 md:leading-10 tracking-wide">
-					All blogs
-				</h1>
+
+			<div className="bg-gradient-to-r from-orange-50 to-red-50 py-10 md:py-16">
+				<div className="container mx-auto px-4">
+					<h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 md:!leading-[68px] text-center">
+						Insights & Resources
+					</h1>
+					<p className="md:text-lg text-gray-600 mb-6 mx-auto md:!leading-[36px] text-center">
+						Discover the latest insights, trends, and strategies in digital marketing, technology,
+						and business growth.
+					</p>
+				</div>
 			</div>
 
 			<BlogList showAll />

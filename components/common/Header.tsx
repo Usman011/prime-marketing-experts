@@ -362,108 +362,150 @@ export function Header() {
 							<span className="sr-only">Open menu</span>
 						</Button>
 					</SheetTrigger>
-					<SheetContent
-						side="right"
-						className="w-[300px] sm:w-[400px] h-screen overflow-y-auto bg-white"
-					>
-						<nav className="flex flex-col space-y-4 mt-6 pb-20 px-4">
-							{mobileMenu.map((item) => (
-								<div key={item.title} className="font-normal text-gray-800">
-									{item.children ? (
-										<Collapsible
-											open={openMenu === item.title}
-											onOpenChange={() => toggleItem(item.title)}
-										>
-											<CollapsibleTrigger asChild>
-												<Button
-													variant="ghost"
-													className="w-full justify-between px-2 py-2 text-base hover:no-underline outline-none font-medium text-gray-800 gap-2 transition-colors focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 hover:bg-gray-100"
-												>
-													<span className="flex items-center">
-														{item.icon}
-														<span className="ml-2">{item.title}</span>
-													</span>
-													{openMenu === item.title ? (
-														<ChevronUp className="w-4 h-4" />
-													) : (
-														<ChevronDown className="w-4 h-4" />
-													)}
-												</Button>
-											</CollapsibleTrigger>
-											<CollapsibleContent className="mt-2 space-y-2 ml-6">
-												{item.children.map((child) => (
-													<Link
-														key={child.title}
-														href={child.url}
-														onClick={closeSheet}
-														className="block py-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
+					<SheetContent side="right" className="h-screen overflow-y-auto bg-white">
+						<nav className="flex flex-col h-full">
+							{/* Main Navigation */}
+							<div className="flex-1 overflow-y-auto py-6">
+								{mobileMenu.map((item) => (
+									<div key={item.title} className="mb-2">
+										{item.submenu ? (
+											<Collapsible
+												open={openMenu === item.title}
+												onOpenChange={() => toggleItem(item.title)}
+											>
+												<CollapsibleTrigger asChild>
+													<Button
+														variant="ghost"
+														className={cn(
+															'w-full justify-between px-4 py-3 text-base hover:no-underline font-medium rounded-lg hover:bg-orange-50 hover:text-orange-500 transition-all',
+															openMenu === item.title ? 'text-orange-500' : 'text-gray-800',
+														)}
 													>
-														{child.title}
-													</Link>
-												))}
-											</CollapsibleContent>
-										</Collapsible>
-									) : (
-										<Link
-											href={item.url}
-											onClick={closeSheet}
-											className="flex items-center text-base text-gray-800 hover:text-gray-900 transition-colors py-2 px-2 hover:bg-gray-100 rounded-md"
-										>
-											{item.icon}
-											<span className="ml-2">{item.title}</span>
-										</Link>
-									)}
+														<span>{item.title}</span>
+														{openMenu === item.title ? (
+															<ChevronUp className="w-4 h-4 text-orange-500" />
+														) : (
+															<ChevronDown className="w-4 h-4" />
+														)}
+													</Button>
+												</CollapsibleTrigger>
+												<CollapsibleContent className="mt-1 ml-4">
+													{item.submenu.map((submenuItem) => (
+														<Collapsible key={submenuItem.category}>
+															<CollapsibleTrigger asChild>
+																<Button
+																	variant="ghost"
+																	className={cn(
+																		'w-full justify-between px-4 py-2.5 text-sm font-medium rounded-lg hover:bg-orange-50 hover:text-orange-500',
+																		openMenu === submenuItem.category
+																			? 'text-orange-500'
+																			: 'text-gray-700',
+																	)}
+																>
+																	{submenuItem.category}
+																	<ChevronDown
+																		className={cn(
+																			'w-4 h-4',
+																			openMenu === submenuItem.category ? 'text-orange-500' : '',
+																		)}
+																	/>
+																</Button>
+															</CollapsibleTrigger>
+															<CollapsibleContent className="ml-4">
+																{submenuItem.items.map((subItem) => (
+																	<Link
+																		key={subItem.title}
+																		href={subItem.url}
+																		onClick={closeSheet}
+																		className="block px-4 py-2 text-sm text-gray-600 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-all"
+																	>
+																		{subItem.title}
+																	</Link>
+																))}
+															</CollapsibleContent>
+														</Collapsible>
+													))}
+												</CollapsibleContent>
+											</Collapsible>
+										) : (
+											<Link
+												href={item.url}
+												onClick={closeSheet}
+												className="flex items-center px-4 py-3 text-base text-gray-800 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-all"
+											>
+												{item.title}
+											</Link>
+										)}
+									</div>
+								))}
+								<div className="border-t border-gray-100 px-4 py-6 space-y-6">
+									<Link href="/free-strategy-session" onClick={closeSheet}>
+										<button className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-orange-600 hover:to-orange-700 transition duration-300 ease-in-out flex items-center justify-center gap-2">
+											<Calendar className="w-4 h-4" />
+											Free Strategy Session
+										</button>
+									</Link>
+
+									<div className="space-y-4">
+										<Image src={FooterLogo} alt="logo" className="w-32 mx-auto" />
+
+										<div className="space-y-3">
+											<a
+												href="#"
+												className="flex items-center text-gray-600 hover:text-orange-500 transition-colors"
+											>
+												<MapPin className="w-4 h-4 mr-3 text-orange-500 flex-shrink-0" />
+												<span className="text-sm">
+													74 Northeastern Blvd #12a Ste 101 Nashua, NH 03062
+												</span>
+											</a>
+											<a
+												href="mailto:hello@primemarketingexperts.com"
+												className="flex items-center text-gray-600 hover:text-orange-500 transition-colors"
+											>
+												<Mail className="w-4 h-4 mr-3 text-orange-500 flex-shrink-0" />
+												<span className="text-sm">hello@primemarketingexperts.com</span>
+											</a>
+											<a
+												href="tel:617-651-1457"
+												className="flex items-center text-gray-600 hover:text-orange-500 transition-colors"
+											>
+												<Phone className="w-4 h-4 mr-3 text-orange-500 flex-shrink-0" />
+												<span className="text-sm">617-651-1457</span>
+											</a>
+										</div>
+
+										<div className="flex items-center justify-center gap-3">
+											{[
+												{ icon: Facebook, href: 'https://www.facebook.com/primemarketingexperts' },
+												{ icon: Twitter, href: 'https://twitter.com/primeexperts' },
+												{
+													icon: Linkedin,
+													href: 'https://www.linkedin.com/company/prime-marketing-experts',
+												},
+												{
+													icon: Instagram,
+													href: 'https://www.instagram.com/primemarketingexperts/',
+												},
+												{
+													icon: PinterestIcon,
+													href: 'https://www.pinterest.com/primemarketingexperts',
+												},
+											].map((social, index) => (
+												<Link
+													key={index}
+													href={social.href}
+													className="p-2 rounded-full bg-gray-50 text-gray-600 hover:bg-orange-500 hover:text-white transition-all duration-300"
+												>
+													<social.icon className="w-5 h-5" />
+												</Link>
+											))}
+										</div>
+									</div>
 								</div>
-							))}
-							<Link href="/free-strategy-session" onClick={closeSheet} className="mt-6 block">
-								<button className="bg-orange-500 w-full text-white font-semibold py-3 px-4 rounded-md hover:bg-orange-600 hover:shadow-lg transition duration-300 ease-in-out flex items-center justify-center">
-									Free Strategy Session
-								</button>
-							</Link>
-							<div className="flex flex-col gap-6 mt-8 px-2 border-t pt-6">
-								<Image src={FooterLogo} alt="logo" className="w-32 mx-auto" />
-								<div className="space-y-2">
-									<p className="text-sm text-gray-600 flex items-center">
-										<MapPin className="w-4 h-4 mr-2 text-orange-500" />
-										74 Northeastern Blvd #12a Ste 101 Nashua, NH 03062
-									</p>
-									<p className="text-sm text-gray-600 flex items-center">
-										<Mail className="w-4 h-4 mr-2 text-orange-500" />
-										hello@primemarketingexperts.com
-									</p>
-									<p className="text-sm text-gray-600 flex items-center">
-										<Phone className="w-4 h-4 mr-2 text-orange-500" />
-										617-651-1457
-									</p>
-								</div>
-								<ul className="flex items-center justify-center gap-4">
-									<li className="rounded-full p-2 bg-gray-100 text-gray-800 hover:bg-orange-500 hover:text-white transition-colors">
-										<Link href="https://www.facebook.com/primemarketingexperts">
-											<Facebook className="w-5 h-5" />
-										</Link>
-									</li>
-									<li className="rounded-full p-2 bg-gray-100 text-gray-800 hover:bg-orange-500 hover:text-white transition-colors">
-										<Link href="https://twitter.com/primeexperts">
-											<Twitter className="w-5 h-5" />
-										</Link>
-									</li>
-									<li className="rounded-full p-2 bg-gray-100 text-gray-800 hover:bg-orange-500 hover:text-white transition-colors">
-										<Link href="https://www.linkedin.com/company/prime-marketing-experts">
-											<Linkedin className="w-5 h-5" />
-										</Link>
-									</li>
-									<li className="rounded-full p-2 bg-gray-100 text-gray-800 hover:bg-orange-500 hover:text-white transition-colors">
-										<Link href="https://www.instagram.com/primemarketingexperts/">
-											<Instagram className="w-5 h-5" />
-										</Link>
-									</li>
-									<li className="rounded-full p-2 bg-gray-100 text-gray-800 hover:bg-orange-500 hover:text-white transition-colors">
-										<Link href="https://www.pinterest.com/primemarketingexperts">
-											<PinterestIcon className="w-5 h-5" />
-										</Link>
-									</li>
-								</ul>
 							</div>
+
+							{/* Footer Section */}
 						</nav>
 					</SheetContent>
 				</Sheet>
@@ -476,7 +518,6 @@ interface ListItemProps extends React.ComponentPropsWithoutRef<'a'> {
 	icon?: React.ReactNode
 	title: string
 }
-
 const ListItem = React.forwardRef<React.ElementRef<'a'>, ListItemProps>(
 	({ className, title, children, icon, ...props }, ref) => {
 		return (

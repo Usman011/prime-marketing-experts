@@ -1,28 +1,26 @@
-import BlogList from '@/components/BlogList'
 import CaseStudiesList from '@/components/CaseStudiesList'
-import Link from 'next/link'
 import React from 'react'
 
 const Page = () => {
 	return (
+		<section className="">
+			{/* Header */}
+			<div className="bg-gradient-to-r from-orange-50 to-red-50 py-8 md:py-16">
+				<div className="container mx-auto px-4 max-w-4xl">
+					<h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight md:leading-tight text-center">
+						Case Studies
+					</h1>
+					<p className="text-base md:text-lg text-gray-600 leading-relaxed md:leading-relaxed text-center max-w-2xl mx-auto">
+						Discover our success stories and learn how we&apos;ve helped businesses achieve their
+						goals through innovative solutions.
+					</p>
+				</div>
+			</div>
 
-		<section className='container mx-auto px-2'>
-		{/* Header */}
-	 {/* <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-40 flex-col text-center'>
-	<h1 className='font-semibold-600 text-4xl md:text-5xl leading-10 md:leading-10 tracking-wide'>
-		Our Case Studies
-	</h1> 
-	  
-	 </div> */}
-	 {/* Header */}
-	 <div className='flex justify-center sm:items-center lg:items-center md:pl-10 sm:pl-20 lg:ml-auto w-full h-28 flex-col text-center'>
-		<h1 className='font-semibold-600 text-3xl md:text-4xl leading-10 md:leading-10 tracking-wide'>
-		All Case Studies
-	   </h1> 
-	 </div>
-	 <CaseStudiesList showAll />
-	</section>
-		
+			<div className="container mx-auto px-4 py-8">
+				<CaseStudiesList showAll />
+			</div>
+		</section>
 	)
 }
 
