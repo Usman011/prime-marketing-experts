@@ -1,13 +1,13 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { ArrowRightIcon, ChevronRight, Loader2 } from 'lucide-react'
-import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import firebaseService from '@/utils/firebase.utils'
 import { DocumentData } from 'firebase/firestore'
-import Link from 'next/link'
+import { ArrowRightIcon, ChevronRight, Loader2 } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 export default function BlogList({ showAll }: { showAll?: boolean }) {
 	const [blogs, setBlogs] = useState<DocumentData[]>([])
@@ -38,7 +38,7 @@ export default function BlogList({ showAll }: { showAll?: boolean }) {
 					) : (
 						<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 							{allBlogs.map((blog, index) => (
-								<Link href={`/blog/${blog.documentId}`} key={blog.documentId || index}>
+								<Link href={`/blog/${blog.slug}`} key={blog.slug || index}>
 									<Card className="overflow-hidden h-full flex flex-col bg-white shadow-sm hover:shadow-md transition-shadow duration-300 hover:scale-[1.03]">
 										<div className="relative aspect-video">
 											{blog.imageUrl ? (

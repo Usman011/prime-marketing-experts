@@ -32,4 +32,5 @@ export interface CaseStudyType {
 	documentId: string
 	content: string
 	category: string
+	slug: string
 }

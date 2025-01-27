@@ -1,15 +1,12 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
-import { ChevronRight, Loader2, ArrowRightIcon } from 'lucide-react'
-import { Card, CardContent } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import firebaseService from '@/utils/firebase.utils'
-import Link from 'next/link'
-import Image from 'next/image'
 import { CaseStudyType } from '@/types'
+import firebaseService from '@/utils/firebase.utils'
+import { ArrowRightIcon, ChevronRight, Loader2 } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 	const [caseStudy, setCaseStudy] = useState<CaseStudyType[]>([])
@@ -40,7 +37,7 @@ export default function CaseStudiesList({ showAll }: { showAll?: boolean }) {
 				) : (
 					<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 						{allCaseStudy.map((study) => (
-							<Link key={study.documentId} href={`/case-studies/${study.documentId}`}>
+							<Link key={study.documentId} href={`/case-studies/${study.slug}`}>
 								<article className="overflow-hidden rounded-lg border transition-all duration-300 bg-white">
 									<div className="relative aspect-[16/9]">
 										{study.imageUrl ? (
